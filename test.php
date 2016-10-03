@@ -19,7 +19,8 @@
 <body>
 <input type="radio" name="radio1" value="huntly" id="radio">
 <label for="radio">radio test</label>
-<br>S
+<br>
+<p>Mike test</p>
 
 </body>
 <?php
