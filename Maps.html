@@ -5,8 +5,23 @@
 
     <meta charset="UTF-8">
     <title>Maps</title>
+
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC8HwZx1Aknt-BHgT2vYtcgeBBvokVzWU&callback=initMap">
+    </script>
+    <script type="text/javascript">
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: 57.0617, lng: 2.1295},
+                zoom: 12,
+                MapTypeId: "Terrain"
+            });
+        }
+    </script>
+
+
 </head>
-<body class="grid-container">
+<body class="grid-container" onload="initMap">
 
 
 <div class="grid-container">
@@ -25,6 +40,10 @@ Murray & Jamie yo - aye
 
 <div id="section3" class="grid-33 tablet-grid-50 mobile-grid-100">
     <p>This is my third section</p>
+</div>
+
+<div id="map" style="height:600px; length:600px">
+
 </div>
 </body>
 </html>
