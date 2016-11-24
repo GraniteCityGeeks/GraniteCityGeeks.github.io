@@ -6,9 +6,7 @@
     <meta charset="UTF-8">
     <title>Maps</title>
 
-    <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC8HwZx1Aknt-BHgT2vYtcgeBBvokVzWU&callback=initMap">
-    </script>
+
     <script type="text/javascript">
         function initMap() {
             map = new google.maps.Map(document.getElementById('map'), {
@@ -17,6 +15,9 @@
                 MapTypeId: "Terrain"
             });
         }
+    </script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC8HwZx1Aknt-BHgT2vYtcgeBBvokVzWU&callback=initMap">
     </script>
 
 
@@ -42,7 +43,7 @@ Murray & Jamie yo - aye
     <p>This is my third section</p>
 </div>
 
-<div id="map" style="height:600px; length:600px">
+<div id="map" style="height:600px; width:600px">
 
 </div>
 </body>
