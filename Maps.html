@@ -16,9 +16,50 @@
             });
         }
     </script>
+    <script type="text/javascript">
+        var mongodb = require("mongodb");
+        //and our HTTP server
+        var http = require('http');
+        //setup our port
+        var port = process.env.PORT || 1337; //WHHHYYYYYYYYYYY SO MUCH
+
+        var url = 'mongodb://MLYNE:CATS@ds163677.mlab.com:63677/markers
+
+        var MongoClient  = mongodb.MongoClient;
+
+
+
+        var markersArray = [];
+        function addMarker(id,lat,long,type) {
+            id = new google.maps.Marker({
+                map: map,
+                draggable: false,
+                animation: google.maps.Animation.DROP,
+                position: {lat: lat, lng: long}
+
+            });
+
+            markersArray.push(id);
+            id.addListener('click', toggleBounce(id));
+            }
+
+            function toggleBounce(marker) {
+                if (marker.getAnimation() !== null) {
+                    marker.setAnimation(null);
+                } else {
+                    marker.setAnimation(google.maps.Animation.BOUNCE);
+                }
+            }
+
+
+
+
+
+    </script>
     <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC8HwZx1Aknt-BHgT2vYtcgeBBvokVzWU&callback=initMap">
     </script>
+
 
 
 </head>
