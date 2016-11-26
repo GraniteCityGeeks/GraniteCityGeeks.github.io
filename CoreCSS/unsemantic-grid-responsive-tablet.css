@@ -14,6 +14,16 @@
     width: 0;
     height: 0;
 }
+.nav {
+    background-color: #ffffff;
+    color: #000000;
+    list-style: none;
+    text-align: center;
+    padding:0 20px 0 20px 0;
+
+
+}
+
 
 .grid-container:before, .mobile-grid-5:before, .mobile-grid-10:before, .mobile-grid-15:before, .mobile-grid-20:before, .mobile-grid-25:before, .mobile-grid-30:before, .mobile-grid-35:before, .mobile-grid-40:before, .mobile-grid-45:before, .mobile-grid-50:before, .mobile-grid-55:before, .mobile-grid-60:before, .mobile-grid-65:before, .mobile-grid-70:before, .mobile-grid-75:before, .mobile-grid-80:before, .mobile-grid-85:before, .mobile-grid-90:before, .mobile-grid-95:before, .mobile-grid-100:before, .mobile-grid-33:before, .mobile-grid-66:before, .tablet-grid-5:before, .tablet-grid-10:before, .tablet-grid-15:before, .tablet-grid-20:before, .tablet-grid-25:before, .tablet-grid-30:before, .tablet-grid-35:before, .tablet-grid-40:before, .tablet-grid-45:before, .tablet-grid-50:before, .tablet-grid-55:before, .tablet-grid-60:before, .tablet-grid-65:before, .tablet-grid-70:before, .tablet-grid-75:before, .tablet-grid-80:before, .tablet-grid-85:before, .tablet-grid-90:before, .tablet-grid-95:before, .tablet-grid-100:before, .tablet-grid-33:before, .tablet-grid-66:before, .grid-5:before, .grid-10:before, .grid-15:before, .grid-20:before, .grid-25:before, .grid-30:before, .grid-35:before, .grid-40:before, .grid-45:before, .grid-50:before, .grid-55:before, .grid-60:before, .grid-65:before, .grid-70:before, .grid-75:before, .grid-80:before, .grid-85:before, .grid-90:before, .grid-95:before, .grid-100:before, .grid-33:before, .grid-66:before, .grid-offset:before, .clearfix:before,
 .grid-container:after,
