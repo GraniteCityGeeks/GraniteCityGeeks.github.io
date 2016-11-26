@@ -49,6 +49,18 @@ Murray & Jamie yo - aye aye
 </div>
 
 <div id="map" style="height:800px; width:1230px">
+    <script type="text/javascript">
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: 57.061681, lng: -2.129468},
+                zoom: 12,
+                MapTypeId: "satellite"
+            });
+        }
+    </script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC8HwZx1Aknt-BHgT2vYtcgeBBvokVzWU&callback=initMap">
+    </script>
 
 </div>
 </body>
