@@ -14,6 +14,19 @@
     width: 0;
     height: 0;
 }
+
+.logo {
+    color: #000000;
+    float: left;
+    padding-left: 25px;
+    font-size: 25px;
+}
+
+.logo > a {
+    text-decoration: none;
+    color: #000000;
+}
+
 .nav {
     background-color: #b3d4fc;
     color: #000000;
