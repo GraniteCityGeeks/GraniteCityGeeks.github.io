@@ -27,6 +27,15 @@
     color: #000000;
 }
 
+.banner {
+    width: 100%;
+    display:block;
+}
+.banner > .banner-image{
+    width: 100%;
+    display: block;
+}
+
 .nav {
     background-color: #b3d4fc;
     color: #000000;
