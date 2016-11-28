@@ -89,7 +89,7 @@ include 'master.php';
 
 <div id="top" style="float:left">
 
-    <div id="map" style="height:700px;width:500px; float:left;">
+    <div id="map" style="height:700px;width:800px; float:left;">
 
     </div>
 
