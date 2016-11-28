@@ -1,6 +1,6 @@
 <?php
 include("scripts/dbconnect.php");
-include("scripts/Header.php");
+include("scripts/header.php");
 echo "
 <main>
 <h2>Blog Articles</h2>
@@ -20,5 +20,5 @@ li>";
 echo "
 </main>
 ";
-include("scripts/Footer.php");
+include("scripts/footer.php");
 ?>

@@ -1,48 +1,54 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans|Pacifico';
+body{
+    max-width:960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1, h2, p{
+    margin-top: 0;
+}
+*{
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+h1, h2{
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+/* HEADER */
 header{
-    background-color: green;
+    background-color: #393939;
+    padding-top: 14px;
 }
-
-aside{
-    background-color: red;
+header>h1{
+    padding-left: 10px;
 }
-
+/* MAIN */
 main{
-    background-color: blue;
+    background-color: #6E6E6E;
+    min-height: 300px;
+    padding: 15px;
 }
-
+/* FOOTER */
 footer{
-    background-color: yellow;
+    background-color: #FF5A09;
+    padding: 5px 0 5px 10px;}
+/* NAVIGATION */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FF9900;
 }
-
-#bottom{
-    background-color: purple;
+nav li {
+    float: left;
 }
-
-#section1{
-    background-color: orange;
-}
-
-#section2{
-    background-color: palegreen;
-}
-
-#section3{
-    background-color: fuchsia;
-}
-
-/* Bellow is the Nav */
-
-li a {
+nav li a {
     display: block;
-    color: #000;
-}
-
-li a.active {
-    background-color: #af10a4;
     color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
-
-li a:hover:not(.active) {
-    background-color: #555;
-    color: white;
+nav li a:hover {
+    background-color: #111;
 }
