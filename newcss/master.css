@@ -26,6 +26,8 @@ body {
 }
 
 #map, #twitter {
+    padding-left:5%;
+    padding-right:5%;
 }
 .welcome {
     font-size: 57.6px;
