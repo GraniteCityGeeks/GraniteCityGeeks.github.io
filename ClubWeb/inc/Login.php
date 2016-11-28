@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-    include("scripts/Header.php");
+    include("scripts/header.php");
     ?>
     <main>
         <form action="login" method="post">
@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         </form>
     </main>
     <?
-    include("scripts/Footer.php");
+    include("scripts/footer.php");
 } elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
     include("scripts/dbconnect.php");
     $username = $_POST["username"];

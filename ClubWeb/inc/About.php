@@ -1,5 +1,5 @@
 <?php
-include("scripts/Header.php");
+include("scripts/header.php");
 echo "
 <main>
 <h2>About Me</h2>
@@ -19,5 +19,5 @@ sodales. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
 ridiculus mus.</p>
 </main>
 ";
-include("scripts/Footer.php");
+include("scripts/footer.php");
 ?>

@@ -1,10 +1,10 @@
 <?php
-include("scripts/Header.php");
+include("scripts/header.php");
 echo "
 <main>
 <h2>Contact</h2>
-<p>Send me an email</p>
+<p>Send me an email at babbage@babbage-labs.com</p>
 </main>
 ";
-include("scripts/Footer.php");
+include("scripts/footer.php");
 ?>

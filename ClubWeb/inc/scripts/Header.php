@@ -6,17 +6,17 @@ session_start();
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>The Blog</title>
+    <title>The Blog of D'Jambo Unchained</title>
     <link rel="stylesheet" href="style/style.css">
 
 </head>
 
 <body>
 <header>
-    <h1>The Blog</h1>
+    <h1>The Blog of D'Jambo Unchained</h1>
     <nav>
         <ul>
-            <li><a href="">Home Page</a></li>
+            <li><a href="./">Home Pagezzz</a></li>
             <li><a href="blog">My Blog</a></li>
             <li><a href="about">About Me</a></li>
             <li><a href="contactus">Contact Me</a></li>
