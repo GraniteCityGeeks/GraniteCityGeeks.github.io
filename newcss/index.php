@@ -66,7 +66,7 @@ include 'master.php';
 
         });
         id.addListener('click', function() {
-            map.setZoom(3);
+            map.setZoom(15);
             map.setCenter(id.getPosition());
 
         });
