@@ -1,0 +1,48 @@
+header{
+    background-color: green;
+}
+
+aside{
+    background-color: red;
+}
+
+main{
+    background-color: blue;
+}
+
+footer{
+    background-color: yellow;
+}
+
+#bottom{
+    background-color: purple;
+}
+
+#section1{
+    background-color: orange;
+}
+
+#section2{
+    background-color: palegreen;
+}
+
+#section3{
+    background-color: fuchsia;
+}
+
+/* Bellow is the Nav */
+
+li a {
+    display: block;
+    color: #000;
+}
+
+li a.active {
+    background-color: #af10a4;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}

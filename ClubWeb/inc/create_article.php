@@ -3,7 +3,7 @@ session_start();
 if (isset($_SESSION['username'])) //SESSION DOES EXIST
 {
     if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-        include("scripts/header.php");
+        include("scripts/Header.php");
         ?>
         <main>
             <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
@@ -15,7 +15,7 @@ if (isset($_SESSION['username'])) //SESSION DOES EXIST
             </form>
         </main>
         <?
-        include("scripts/footer.php");
+        include("scripts/Footer.php");
     } elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
         include('scripts/dbconnect.php');
         $articleID = str_replace(' ', '-', $_POST["articleName"]);

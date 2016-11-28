@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-    include("scripts/header.php");
+    include("scripts/Header.php");
     ?>
     <main>
         <form action="login" method="post">
@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         </form>
     </main>
     <?
-    include("scripts/footer.php");
+    include("scripts/Footer.php");
 } elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
     include("scripts/dbconnect.php");
     $username = $_POST["username"];
@@ -33,7 +33,7 @@ password='" . $password . "'";
         header("location:login");
     }
 } else {
-    // this is impossible
+// this is impossible
     print('whoops');
 }
 ?>

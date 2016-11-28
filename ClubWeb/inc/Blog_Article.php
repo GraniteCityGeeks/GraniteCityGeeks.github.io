@@ -1,6 +1,6 @@
 <?php
 include("scripts/dbconnect.php");
-include ("scripts/header_l2.php");
+include("scripts/header_l2.php");
 $articleID = $params['blogID'];
 echo "
 <main>
@@ -15,13 +15,13 @@ while($row = $result->fetch_array())
     $articleText = $row['articleText'];
     echo "
 <atricle>
- <h2>{$articleName}</h2>
- <h3>by {$articleAuthor}</h3>
- {$articleText}
- </atricle>";
+<h2>{$articleName}</h2>
+<h3>by {$articleAuthor}</h3>
+{$articleText}
+</atricle>";
 }
 echo "
 </main>
 ";
-include("scripts/footer.php");
+include("scripts/Footer.php");
 ?>
