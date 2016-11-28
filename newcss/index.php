@@ -90,8 +90,9 @@ include 'master.php';
 <div id="map" style="height:700px;width:100%;"></div>
 
 
-<a class="twitter-timeline"  href="https://twitter.com/hashtag/tatties" data-widget-id="803334424075075584">#tatties Tweets</a>
+<a class="twitter-timeline" href="https://twitter.com/PortlethenGC" style="float:right;">Tweets by PortlethenGC</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
 
 </body>
 </html>

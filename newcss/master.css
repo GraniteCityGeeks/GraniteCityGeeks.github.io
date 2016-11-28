@@ -68,6 +68,9 @@ body {
     -moz-animation: 6s linear 0s normal none infinite change;
     -o-animation: 6s linear 0s normal none infinite change;
 }
+.map {
+
+}
 .welcome ul li {
     line-height: 64px;
     margin: 0;
@@ -152,6 +155,7 @@ body {
         margin-top: 0;
     }
 }
+
 
 
 
