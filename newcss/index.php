@@ -83,19 +83,10 @@ include 'master.php';
     <title></title>
 </head>
 <body>
-<div class="welcome">
-    <div class="visible">
-        <p>
-Discover:
-        </p>
-        <ul>
-            <li> Clubs</li>
-            <li> Healthy Living</li>
-            <li> Local Trails Maps </li>
-        </ul>
-    </div>
-</div>
 
+<br>
+<br>
+<br>
 <div id="map" style="height:700px;width:1250px;"></div>
 </body>
 </html>
