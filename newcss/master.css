@@ -13,12 +13,15 @@ body {
 }
 
 
-.twitter-timeline{
+.twitter-timeline {
 
     size: 10px;
     float: right;
+    display: block;
+}
     .map{
     float: left;
+        display: block;
 }
 
 
