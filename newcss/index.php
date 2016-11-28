@@ -96,6 +96,6 @@ Discover:
     </div>
 </div>
 
-<div id="map" style="height:700px;width:1250px;"
+<div id="map" style="height:700px;width:1250px;"></div>
 </body>
 </html>
