@@ -73,6 +73,13 @@
                     marker.setAnimation(google.maps.Animation.BOUNCE);
                 }
             }
+        for(var i = 0; i < markersArray.length; i++) {
+            i.addListener('click', function () {
+                map.setZoom(8);
+                map.setCenter(i.getPosition());
+            });
+        }
+
 
 
 
