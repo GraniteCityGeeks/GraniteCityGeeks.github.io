@@ -104,7 +104,8 @@ include 'master.php';
 </div>
 
 
-    <div id=""content="">
+    <div id="content">
+
         <h1> Maps System</h1>
         <h2>Jamie Law</h2>
         <p> this is is a test on content</p>
