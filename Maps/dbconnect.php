@@ -8,9 +8,9 @@
 
 $db = new mysqli(
     "eu-cdbr-azure-west-a.cloudapp.net",
-    "b169b5e27239e9",
-    "a6f9898c",
-    "dbjamielaw");
+    "bb4983a203870b",
+    "4882ceaa",
+    "gcgdb");
 
 if ($db->connect_errno){
     die('Connectfailed['.$db->connect_error.']');

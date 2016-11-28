@@ -7,6 +7,38 @@
     <title>Maps</title>
 
 
+
+
+
+</head>
+<body class="grid-container" onload="initMap">
+<ul class="nav">
+
+    <div class="logo">
+        <a href="index.html">GoPortlethen</a>
+
+
+
+
+    <li><a href="#">Home</a> </li>
+    <li><a href="#">Clubs</a> </li>
+    <li><a href="#">Health</a> </li>
+    <li><a href="#">Maps</a> </li>
+    <li><a href="#">Contact</a> </li>
+</ul>
+</div>
+<div class="banner">
+    <img class ="banner-image"src="banner.jpg">
+</div>
+
+<div class="grid-container">
+    <div class="grid-25">
+Murray & Jamie yo - aye aye
+        </div>
+    </div>
+
+<div id="section1" class="grid-33 tablet-grid-50 mobile-grid-100">
+    <p>This is my first section</p>
     <script type="text/javascript">
         function initMap() {
             map = new google.maps.Map(document.getElementById('map'), {
@@ -41,10 +73,11 @@
 
                 var markers = xml.documentElement.getElementsByTagName("markers");
                 for (var i = 0; i < markers.length; i++) {
+
                     var point = new google.maps.LatLng(
+
                             parseFloat(markers[i].getAttribute("lat")),
                             parseFloat(markers[i].getAttribute("lng")));
-
 
                     addMarker(i, point);
 
@@ -52,7 +85,9 @@
             });
 
 
-        var markersArray = [];
+        var markersArray = [];  //array for markers
+
+        //this fucntion will add the markers.
         function addMarker(id,point) {
             id = new google.maps.Marker({
                 map: map,
@@ -76,32 +111,22 @@
     <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC8HwZx1Aknt-BHgT2vYtcgeBBvokVzWU&callback=initMap">
     </script>
-
-
-
-</head>
-<body class="grid-container" onload="initMap">
-
-
-<div class="grid-container">
-    <div class="grid-25">
-Murray & Jamie yo - aye
-        </div>
-    </div>
-
-<div id="section1" class="grid-33 tablet-grid-50 mobile-grid-100">
-    <p>This is my first section</p>
 </div>
 
 <div id="section2" class="grid-33 tablet-grid-50 mobile-grid-100">
     <p>This is my second section</p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec massa ex. Donec ac venenatis magna. Praesent justo diam, varius eget condimentum vitae, elementum vel risus. Donec dictum est quis cursus ullamcorper. Sed et porta lectus, sit amet finibus nunc. Fusce faucibus feugiat sem, eu lacinia nisi mollis fermentum. Fusce eget lobortis ligula.
+
+
 </div>
 
 <div id="section3" class="grid-33 tablet-grid-50 mobile-grid-100">
     <p>This is my third section</p>
+    Curabitur sed libero non neque tristique aliquet eget ullamcorper lorem. Nullam fermentum placerat sem eget consectetur. Maecenas molestie mauris dui, a scelerisque risus pretium quis. Pellentesque volutpat eu felis eu hendrerit. Aliquam condimentum nec nulla commodo porttitor. Nullam pharetra convallis dui, id accumsan velit hendrerit rutrum. Vestibulum odio libero, sollicitudin vitae est vel, maximus varius orci. Aliquam luctus nunc eget nulla pharetra tempor quis a est. In tincidunt at lectus id tincidunt. Etiam sem eros, porta scelerisque enim sit amet, imperdiet tincidunt enim. Mauris quis ligula neque. Suspendisse arcu lorem, hendrerit in mauris id, scelerisque feugiat massa. Quisque convallis maximus libero ut tincidunt.
 </div>
 
 <div id="map" style="height:800px; width:1230px">
+
 
 </div>
 </body>
