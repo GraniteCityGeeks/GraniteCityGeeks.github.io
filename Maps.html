@@ -35,7 +35,7 @@
 
         //download the locations.
 
-        downoadUrl("locations.php", function(data) {
+        downloadUrl()loadUrl("locations.php", function(data) {
             var xml = data.responseXML;
 
             var markers = xml.documentElement.getElementsByTagName("markers");
@@ -50,9 +50,6 @@
 
         }
         });
-
-
-
 
 
         var markersArray = [];
