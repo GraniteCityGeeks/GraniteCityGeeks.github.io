@@ -16,6 +16,12 @@ body {
 .twitter-timeline{
 
     size: 10px;
+    float: right;
+    .map{
+    float: left;
+}
+
+
 }
 
 .top {
