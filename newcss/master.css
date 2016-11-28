@@ -16,11 +16,9 @@ body {
 .twitter-timeline {
 
     size: 10px;
-    float: left;
     display: block;
 }
-    .map{
-    float: left;
+.map{
         display: block;
 }
 
@@ -28,7 +26,6 @@ body {
 }
 
 #map, #twitter {
-float:left;
 }
 .welcome {
     font-size: 57.6px;
