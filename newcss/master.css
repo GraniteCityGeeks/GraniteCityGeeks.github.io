@@ -12,6 +12,11 @@ body {
     background-size: cover;
 }
 
+
+.twitter-timeline{
+
+    size: 100px;
+}
 .welcome {
     font-size: 57.6px;
     line-height: 64px;
