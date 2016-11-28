@@ -94,9 +94,10 @@ include 'master.php';
     </div>
 
 
-    <div id="twitter">
+    <!--<div id="twitter">
 
     </div>
+    -->
 </div>
 </body>
 </html>
