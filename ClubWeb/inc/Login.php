@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     $password = $_POST["password"];
     function checklogin($username, $password, $db)
     {
-        $sql = "SELECT * FROM users WHERE username='" . $username . "' and
+        $sql = "SELECT * FROM port_users WHERE username='" . $username . "' and
 password='" . $password . "'";
         $result = $db->query($sql);
         while ($row = $result->fetch_array()) {
