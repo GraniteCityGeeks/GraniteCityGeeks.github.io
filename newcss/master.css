@@ -16,7 +16,7 @@ body {
 .twitter-timeline {
 
     size: 10px;
-    float: right;
+    float: left;
     display: block;
 }
     .map{
@@ -27,7 +27,7 @@ body {
 
 }
 
-#map, #twitter-widget-0 {
+#map, #twitter {
 float:left;
 }
 .welcome {
