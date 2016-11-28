@@ -87,6 +87,6 @@ include 'master.php';
 <br>
 <br>
 <br>
-<div id="map" style="height:700px;width:1250px;"></div>
+<div id="map" style="height:700px;width:1450px;"></div>
 </body>
 </html>
