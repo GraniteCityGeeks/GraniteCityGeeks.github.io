@@ -90,14 +90,14 @@ include 'master.php';
 <div id="top">
 
     <div id="map" style="height:700px;width:500px;">
-        <a class="twitter-timeline" data-width="300" data-height="800" d href="https://twitter.com/PortlethenGC">Tweets by PortlethenGC</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </div>
-
-
-    <!--<div id="twitter">
 
     </div>
-    -->
+
+
+   <div id="twitter">
+    <a class="twitter-timeline" data-width="300" data-height="800" d href="https://twitter.com/PortlethenGC">Tweets by PortlethenGC</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+
 </div>
 </body>
 </html>
