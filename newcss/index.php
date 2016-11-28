@@ -86,11 +86,15 @@ include 'master.php';
 
 <br>
 <br>
-<br>
-<div id="map" style="height:700px;width:500px;"></div>
+
+<div id="top">
+
+    <div id="map" style="height:700px;width:500px;"></div>
 
 
-<a class="twitter-timeline" data-width="300" data-height="800" href="https://twitter.com/PortlethenGC">Tweets by PortlethenGC</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
+    <div id="twitter">
+        <a class="twitter-timeline" data-width="300" data-height="800" d href="https://twitter.com/PortlethenGC">Tweets by PortlethenGC</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+</div>
 </body>
 </html>
