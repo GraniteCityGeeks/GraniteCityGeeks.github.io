@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="../masterStyle.css">
-    <title>PHP/MySQL & Google Maps Example</title>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvJrab9q1MPlJ4yCuv_Br5BGyP9xP5J80 "
-            type="text/JavaScript"></script>
+    <link rel="stylesheet" href="../CoreCSS/unsemantic-grid-responsive-tablet.css">
+    <title>GoPortlethen</title>
+
+
+
+
 
     <script type="text/JavaScript">
         var infoWindow = new google.maps.InfoWindow;
@@ -74,12 +76,37 @@
         }
 
     </script>
-
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC8HwZx1Aknt-BHgT2vYtcgeBBvokVzWU&callback=initMap">
+    </script>
 
 </head>
-<body onload="load()">
-<div id="map" style="width: 500px; height: 300px"></div>
+<body class="grid-container" onload="initMap">
+-
+<ul class="nav">
+    <li><a href="#">Home</a> </li>
+    <li><a href="#">Clubs</a> </li>
+    <li><a href="#">Health</a> </li>
+    <li><a href="#">Maps</a> </li>
+    <li><a href="#">Contact</a></li>
+</ul>
 
-<p> Jamie & Murray</p>
+
+<div id="map" style="height:800px;width:1230px">
+
+
+</div>
+
+
+
+
+
+
+
+
 </body>
+
+
+
+
 </html>
