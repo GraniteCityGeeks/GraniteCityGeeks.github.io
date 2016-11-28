@@ -92,7 +92,7 @@ include 'master.php';
     <div id="map" style="height:700px;width:500px;"></div>
 
 
-    <div id="twitter">
+    <div id="twitter" style="float:right;">
         <a class="twitter-timeline" data-width="300" data-height="800" d href="https://twitter.com/PortlethenGC">Tweets by PortlethenGC</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
 </div>
