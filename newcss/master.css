@@ -30,11 +30,15 @@ padding-left:30px;
     padding-right:15px;
     margin-right: 60px;
 
-
-    .content {
+.content {
     background-color: #9d9d9d;
     position: relative;
     font-family: 'Roboto', sans-serif;
+
+}
+
+
+
 }
 
 }
