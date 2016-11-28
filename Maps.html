@@ -61,26 +61,13 @@
                 position: point
 
             });
-
-            markersArray.push(id);
-            id.addListener('click', toggleBounce(id));
-            }
-
-            function toggleBounce(marker) {
-                if (marker.getAnimation() !== null) {
-                    marker.setAnimation(null);
-                } else {
-                    marker.setAnimation(google.maps.Animation.BOUNCE);
-                }
-            }
-        for(var i = 0; i < markersArray.length; i++) {
-            i.addListener('click', function () {
+            id.addListener('click', function() {
                 map.setZoom(8);
-                map.setCenter(i.getPosition());
+                map.setCenter(id.getPosition());
+
             });
-        }
-
-
+            markersArray.push(id);
+            }
 
 
 
