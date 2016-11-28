@@ -94,7 +94,7 @@ include 'master.php';
     </div>
 
 
-   <div id="twitter" style="float:left;">
+   <div id="twitter" style="float:right;">
     <a class="twitter-timeline" data-width="300" data-height="800" d href="https://twitter.com/PortlethenGC">Tweets by PortlethenGC</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
 
