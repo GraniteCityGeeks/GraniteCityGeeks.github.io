@@ -11,7 +11,6 @@ if (!$result) {
     die('Nothing in result: ');
 }
 
-
 header("Content-type: text/xml");
 
 // Iterate through the rows, adding XML nodes for each
