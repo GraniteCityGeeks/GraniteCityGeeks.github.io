@@ -16,11 +16,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     $username = $_POST["username"];
     $password = $_POST["password"];
 
-    $sql = "INSERT INTO port_users '" . $username . "' and
-password='" . $password . "'";
-        $result = $db->query($sql);
-        while ($row = $result->fetch_array()) {
-            return true;
-        }
-        return false;
+    $sql = "INSERT INTO port_users (username, password) VALUES ('" . $username . "','" . $password . "');";
 }
