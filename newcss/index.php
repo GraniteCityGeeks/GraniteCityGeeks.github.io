@@ -107,7 +107,7 @@ include 'master.php';
     background-color: #9d9d9d;
     position: relative;
     font-family: 'Roboto', sans-serif;
-    width: 25%;
+    width: 30%;
 
 
     <h1> Maps System</h1>
