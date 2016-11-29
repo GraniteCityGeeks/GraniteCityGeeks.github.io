@@ -10,7 +10,6 @@ $sql = "INSERT INTO port_users (username, password) VALUES ('$username','$passwo
 if (mysqli_query($db, $sql)) {
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($db);
+    header("location:login");
 }
-
-header("location:login");
 ?>
