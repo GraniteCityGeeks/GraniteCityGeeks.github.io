@@ -1,17 +1,5 @@
 <?php
-if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-    include("scripts/header.php");
-    ?>
-    <main>
-        <form action="login" method="post">
-            <input type="text" name="username" placeholder="username"></br>
-            <input type="password" name="password" placeholder="password"></br>
-            <p><input type="submit" value="Submit"></p>
-        </form>
-    </main>
-    <?
-    include("scripts/footer.php");
-} elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     include("scripts/dbconnect.php");
     $username = $_POST["username"];
     $password = $_POST["password"];
