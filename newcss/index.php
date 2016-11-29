@@ -108,7 +108,7 @@ include 'master.php';
     position: relative;
     font-family: 'Roboto', sans-serif;
     width: 30%;
-    height: 20%;">
+
 
     <h1> Maps System</h1>
     <h2>Jamie Law</h2>
