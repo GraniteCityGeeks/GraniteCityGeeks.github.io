@@ -5,7 +5,7 @@ include("scripts/dbconnect.php");
 $username = $_POST["username"];
 $password = $_POST["password"];
 
-$sql = "INSERT INTO port_users (username, password) VALUES ('$username','$password')";
+$sql = "INSERT INTO port_users (username, password) VALUES ('billy','yo mama')";
 
 if (mysqli_query($db, $sql)) {
 } else {
