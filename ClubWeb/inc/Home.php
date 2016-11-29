@@ -1,9 +1,10 @@
 <?php
 include ("scripts/header.php");
+include("scripts/dbconnect.php");
 $username = $_POST["username"];
 echo "
 <main>
-<p>Welcome", $username, "! In this blog you will see all of my insights and wonderful things</p>
+<p>Welcome {$username}! In this blog you will see all of my insights and wonderful things</p>
 </main>
 ";
 include ("scripts/footer.php");
