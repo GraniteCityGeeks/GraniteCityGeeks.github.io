@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         }
         return true;
     }
-    if (checkLogin($username, $password)) {
+    if (checkLogin($username, $password, $db)) {
         $sql = "INSERT INTO port_users (username, password) VALUES ('" . $username . "','" . $password . "')";
         $result = $db->query($sql);
     }
