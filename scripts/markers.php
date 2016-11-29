@@ -5,7 +5,7 @@ $dom = new DOMDocument("1.0");
 $node = $dom->createElement("markers");
 $parnode = $dom->appendChild($node);
 
-$query = "SELECT * FROM markers WHERE 1";
+$query = "SELECT * FROM port_markers WHERE 1";
 $result = $db->query($query);
 if (!$result) {
     die('Nothing in result: ');

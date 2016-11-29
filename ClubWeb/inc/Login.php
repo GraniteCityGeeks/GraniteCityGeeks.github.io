@@ -15,6 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     include("scripts/dbconnect.php");
     $username = $_POST["username"];
     $password = $_POST["password"];
+
     function checklogin($username, $password, $db)
     {
         $sql = "SELECT * FROM port_users WHERE username='" . $username . "' and
@@ -28,6 +29,7 @@ password='" . $password . "'";
     if (checklogin($username, $password, $db)) {
         session_start();
         $_SESSION['username'] = $username;
+        setcookie('username_cookie','username');
         header("location:./");
     } else {
         header("location:login");
