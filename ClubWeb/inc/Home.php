@@ -1,5 +1,4 @@
 <?php
-$username = $_POST["username"];
 include ("scripts/header.php");
 echo "
 <main>
