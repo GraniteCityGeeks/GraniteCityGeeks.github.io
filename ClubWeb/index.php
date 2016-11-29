@@ -15,7 +15,7 @@ $rules = array(
     'create_article' => "/createarticle",
     'logout' => "/logout",
     'register' => "/register",
-    'RegistrationForm' => "/RegistrationForm",
+    'Register' => "/Register",
     //
     // Home Page
     //
