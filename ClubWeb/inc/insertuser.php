@@ -2,7 +2,7 @@
 
 include ("db_connect.php");
 
-$firstname = $_POST["firstname"];
+$username = $_POST["username"];
 $lastname = $_POST["lastname"];
 $superpower = $_POST["superpower"];
 
