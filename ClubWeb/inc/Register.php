@@ -33,6 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             }
             return false;
         }
+    }
         if (checklogin($username, $password, $db)) {
             session_start();
             $_SESSION['username'] = $username;
@@ -41,8 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         } else {
             header("location:login");
         }
-    }
-}else {
+    } else {
 // this is impossible
     print('whoops');
 }
