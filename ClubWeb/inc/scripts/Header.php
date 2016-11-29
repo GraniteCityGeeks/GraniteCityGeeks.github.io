@@ -7,7 +7,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <title>The Blog of D'Jambo Unchained</title>
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="/newcss/master.css">
 
 </head>
 
