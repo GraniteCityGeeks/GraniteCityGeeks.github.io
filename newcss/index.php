@@ -105,7 +105,7 @@ include 'master.php';
     <br>
 </hr>
 <br>
-<form action="markercreate.php">
+<form action="../markercreate.php">
     Marker Name:<br>
     <input type="text" name="name" value="e.g Local Wood"><br>
     Address:<br>
