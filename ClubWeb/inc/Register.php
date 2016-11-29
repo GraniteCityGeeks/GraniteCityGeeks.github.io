@@ -22,18 +22,27 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     include("scripts/dbconnect.php");
     $username = $_POST["username"];
     $password = $_POST["password"];
-//    function checkLogin($username, $password) {
-//        if($username === 'username' || $password === 'password') {
-//            return false;
-//        }
-//        return true;
-//    }
-//    if (checkLogin($username, $password, $db)) {
-//
-//    }
-    $sql = "INSERT INTO port_users (username, password) VALUES ('" . $username . "','" . $password . "')";
-    $result = $db->query($sql);
-} else {
+
+    function checkLogin($username, $password, $db)
+    {
+        {
+            $sql = "INSERT INTO port_users (username, password) VALUES ('" . $username . "','" . $password . "')";
+            $result = $db->query($sql);
+            while ($row = $result->fetch_array()) {
+                return true;
+            }
+            return false;
+        }
+        if (checklogin($username, $password, $db)) {
+            session_start();
+            $_SESSION['username'] = $username;
+            setcookie('username_cookie', 'username');
+            header("location:./");
+        } else {
+            header("location:login");
+        }
+    }
+}else {
 // this is impossible
     print('whoops');
 }
