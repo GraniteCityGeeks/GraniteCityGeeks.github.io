@@ -1,17 +1,16 @@
 <?php
 
-include ("db_connect.php");
+include("scripts/dbconnect.php");
 
 $username = $_POST["username"];
-$lastname = $_POST["lastname"];
-$superpower = $_POST["superpower"];
+$password = $_POST["password"];
 
-$sql = "INSERT INTO superheros (firstName, lastName,mainSuperpower) VALUES ('$firstname','$lastname','$superpower')";
+$sql = "INSERT INTO port_users (username, password) VALUES ('$username','$password')";
 
 if (mysqli_query($db, $sql)) {
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($db);
 }
 
-header("location:index.php");
+header("location:login");
 ?>
