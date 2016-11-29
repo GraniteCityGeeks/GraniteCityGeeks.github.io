@@ -5,5 +5,6 @@ if (isset($_SESSION['username']))
     unset($_SESSION['username']);
 }
 header("location:./login");
-session_abort();
+session_unset();
+session_destroy();
 ?>
