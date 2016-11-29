@@ -103,13 +103,18 @@ include 'master.php';
 
 </div>
 
-
-
-</body>
-<div id="contentdiv" style="background-color: #9d9d9d;font-family: 'Roboto', sans-serif;">
+<div id="contentdiv" style="
+    background-color: #9d9d9d;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    width: 30%;
+    height: 20%;">
 
     <h1> Maps System</h1>
     <h2>Jamie Law</h2>
     <p> this is is a test on content</p>
 </div>
+
+</body>
+
 </html>
