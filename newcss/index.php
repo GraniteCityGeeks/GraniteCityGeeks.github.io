@@ -3,6 +3,7 @@ include 'master.php';
 ?>
 
 <!DOCTYPE html>
+<head>
 <html lang="en">
 <link href="master.css" rel="stylesheet" />
 
@@ -81,7 +82,6 @@ include 'master.php';
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC8HwZx1Aknt-BHgT2vYtcgeBBvokVzWU&callback=initMap">
 </script>
 
-<head>
     <meta charset="UTF-8">
     <title></title>
 </head>
