@@ -15,7 +15,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     include("scripts/dbconnect.php");
     $username = $_POST["username"];
     $password = $_POST["password"];
-    $accesslevel = $_POST["userID"];
 
     function checklogin($username, $password, $db)
     {
