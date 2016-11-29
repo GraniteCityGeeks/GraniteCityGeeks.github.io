@@ -1,21 +1,27 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: 1611267
- * Date: 29/11/2016
- * Time: 12:44
- */
+<?php     //start php tag
+//include connect.php page for database connection
+include("scripts/dbconnect.php");
+//if submit is not blanked i.e. it is clicked.
+if(isset($_REQUEST['submit'])!='')
+{
+    if($_REQUEST['name']=='' || $_REQUEST['email']=='' || $_REQUEST['password']==''|| $_REQUEST['repassword']=='')
+    {
+        echo "please fill the empty field.";
+    }
+    else
+    {
+        $sql="insert into port_users(username,password) values('".$_REQUEST['username']."', '".$_REQUEST['password']."')";
+        $res=mysqli_query($sql);
+        If($res)
+        {
+            echo "Record successfully inserted";
+        }
+        else
+        {
+            echo "There is some problem in inserting record";
+        }
 
-include('dbconnect.php');
-
-$username = $_POST["username"];
-$password = $_POST["password"];
-
-$sql = "INSERT INTO port_users (username, password) VALUES ('$username','$password')";
-
-if(mysqli_query($db, $sql)) {
-} else {
-    echo "error" . $sql . "<br>" . mysqli_error($db);
+    }
 }
 
 ?>
