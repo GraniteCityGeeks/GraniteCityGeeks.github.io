@@ -1,5 +1,4 @@
 <?php
-if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     include("scripts/header.php");
     ?>
     <main>
@@ -12,4 +11,3 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     <?
     include("scripts/footer.php");
     $sql = "INSERT INTO port_users (username, password) VALUES ('" . $username . "','" . $password . "');";
-}
