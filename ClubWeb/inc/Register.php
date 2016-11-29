@@ -11,10 +11,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     </main>
     <?
     include("scripts/footer.php");
-} elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    include("scripts/dbconnect.php");
-    $username = $_POST["username"];
-    $password = $_POST["password"];
-
     $sql = "INSERT INTO port_users (username, password) VALUES ('" . $username . "','" . $password . "');";
 }
