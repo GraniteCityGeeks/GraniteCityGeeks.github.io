@@ -103,17 +103,21 @@ include 'master.php';
 
 </div>
 
-<div id="contentdiv" style="
-    background-color: #9d9d9d;
-    position: relative;
-    font-family: 'Roboto', sans-serif;
-    width: 30%;
-
-
-    <h1> Maps System</h1>
-    <h2>Jamie Law</h2>
-    <p> this is is a test on content</p>
-</div>
+<form action="markercreate.php">
+    Marker Name:<br>
+    <input type="text" name="name" value="e.g Local Wood"><br>
+    Address:<br>
+    <input type="text" name="address" value="123 Example St."><br><br>
+    Latitude:<br>
+    <input type="text" name="lat" value=""><br><br>
+    Longitude:<br>
+    <input type="text" name="lng" value=""><br><br>
+    Type:<br>
+    <input type="text" name="type" value="e.g Playpark"><br><br>
+    Marker Description :<br>
+    <input type="text" name="address" value="123 Example St."><br><br>
+    <input type="submit" value="Submit">
+</form>
 
 </body>
 
