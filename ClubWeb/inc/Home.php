@@ -1,5 +1,6 @@
 <?php
 include ("scripts/header.php");
+include ("scripts/CheckLogin.php");
 echo "
 <main>
 <p>Welcome {$username}! In this blog you will see all of my insights and wonderful things</p>
