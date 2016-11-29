@@ -16,9 +16,9 @@
     <header class="header">
         <nav>
             <ul>
-                <li><a href="index.php"><b>Home</b></a></li>
-                <li><a href="Clubs.php"><b>Clubs</b></a></li>
-                <li><a href="../Web_Forms/FindMe.aspx"><b>Find Me</b></a></li>
+                <li><a href="index.php"><b>Maps</b></a></li>
+                <li><a href="clubs.html"><b>Clubs</b></a></li>
+                <li><a href="health.html"><b>Health</b></a></li>
                 <li><a href="../Web_Forms/ContactMe.aspx"><b>Contact Me</b></a></li>
                 <li><a href="#"><b>My Modules</b></a>
                     <ul>
