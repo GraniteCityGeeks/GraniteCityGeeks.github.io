@@ -42,7 +42,7 @@ include 'master.php';
 
     //download the locations.
 
-    downloadUrl("./scripts/markers.php", function (data) {
+    downloadUrl("../scripts/markers.php", function (data) {
         var xml = data.responseXML;
 
         var markers = xml.documentElement.getElementsByTagName("markers");
