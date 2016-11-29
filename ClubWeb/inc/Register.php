@@ -8,10 +8,10 @@
 
 include('dbconnect.php');
 
-$username = 'username';
-$password = 'password';
+$username = $_POST["username"];
+$password = $_POST["password"];
 
-$sql = "INSERT INTO port_users (username, password) VALUES ('". $username ."','" . $password . "')";
+$sql = "INSERT INTO port_users (username, password) VALUES ('$username','$password')";
 
 if(mysqli_query($db, $sql)) {
 } else {
