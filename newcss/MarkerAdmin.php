@@ -16,7 +16,7 @@ include 'master.php';
 <div id="editmap" style="float:left;">
     <form action="../markercreate.php">
         Marker Name:<br>
-        <input type="text" name="name" placeholder="e.g Local Wood"><br>
+        <input type="text" name="name" placeholder="e.g Local Wood"><br><br>
         Address:<br>
         <input type="text" name="address" placeholder="123 Example St."><br><br>
         Latitude:<br>
