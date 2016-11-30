@@ -114,7 +114,6 @@ include 'master.php';
 </div>
 <br>
 <br>
-<br>
 
 <div id="NKPAGuser" style="float:left;">
     <h4>NKPAG USER</h4>
