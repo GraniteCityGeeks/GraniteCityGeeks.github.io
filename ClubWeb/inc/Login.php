@@ -22,10 +22,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 password='" . $password . "'";
         $result = $db->query($sql);
         while ($row = $result->fetch_array()) {
-            if($row['accessLevelID']=='2')
-            {
-                echo "<nav><ul><li><a href='createarticle'>Create Article</a></li></ul></nav>";
-            }
             return true;
         }
         return false;
