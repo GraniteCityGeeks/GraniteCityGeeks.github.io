@@ -11,7 +11,7 @@ $desc = $_GET['markerdesc'];
 
 //now insert into database.
 
-$query = "INSERT INTO port_markers values ($name, $address, $lat, $lng, $type, $desc)";
+$query = "INSERT INTO port_markers(name, address, lat, lng, type, description) values ($name, $address, $lat, $lng, $type, $desc)";
 
 $result= $db->query($query);
 
