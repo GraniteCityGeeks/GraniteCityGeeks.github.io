@@ -102,8 +102,8 @@ include 'master.php';
     </div>
 
 </div>
-    <br>
-</hr>
+<br>
+<hr>
 <br>
 <form action="../markercreate.php">
     Marker Name:<br>
