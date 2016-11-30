@@ -18,7 +18,7 @@ VALUES ('$username', '$password', '1')";
         if (mysqli_query($db, $sql)) {
             echo "New record created succesfully";
             session_start();
-            $_SESSION['accessLevelID'] = $ID;
+            $_SESSION['accessLevelID'] = "1";
         } else {
             echo "Error: " . $sql . "<br>" . mysqli_error($db);
         }
