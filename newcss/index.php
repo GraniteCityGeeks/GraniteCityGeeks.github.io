@@ -116,7 +116,7 @@ include 'master.php';
 <br>
 <br>
 
-<div id="NKPAGuser">
+<div id="NKPAGuser" style="float:left;">
     <h4>NKPAG USER</h4>
     <a href="MarkerAdmin.php">Edit</a>
 </div>
