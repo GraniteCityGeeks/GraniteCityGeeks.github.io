@@ -13,8 +13,8 @@
     include("scripts/dbconnect.php");
     $username = $_POST["username"];
     $password = $_POST["password"];
-    $sql = "INSERT INTO port_users (username, password)
-VALUES ('$username', '$password')";
+    $sql = "INSERT INTO port_users (username, password, accessLevelID)
+VALUES ('$username', '$password', '1')";
         if (mysqli_query($db, $sql)) {
             echo "New record created succesfully";
         } else {
