@@ -1,13 +1,29 @@
 <?php
-    include("scripts/header.php");
+if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+    include("scripts/Header.php");
     ?>
     <main>
-        <form action="register" method="post">
+        <form action="login" method="post">
             <input type="text" name="username" placeholder="username"></br>
             <input type="password" name="password" placeholder="password"></br>
             <p><input type="submit" value="Submit"></p>
         </form>
     </main>
     <?
-    include("scripts/footer.php");
-    $sql = "INSERT INTO port_users (username, password) VALUES ('" . $username . "','" . $password . "');";
+    include("scripts/Footer.php");
+} elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    include("scripts/dbconnect.php");
+    $username = $_POST["username"];
+    $password = $_POST["password"];
+    $sql = "INSERT INTO port_users (username, password)
+VALUES ('$username', '$password')";
+
+        if (mysqli_query($db, $sql)) {
+            echo "New record created succesfully";
+        } else {
+            echo "Error: " . $sql . "<br>" . mysqli_error($db);
+        }
+        mysqli_close($db);
+// this is impossible
+}
+?>
