@@ -23,7 +23,7 @@ session_start();
             <?
             if (isset($_SESSION['username'])) {
                 echo "<li><a href='logout'>Logout</a></li>";
-                if (isset($_SESSION['accesslevelID']) == 2) {
+                if (isset($_SESSION['accesslevelID']) === 2) {
                     echo "<li><a href='createarticle'>Create Article</a></li>";
                 }
             } else {
