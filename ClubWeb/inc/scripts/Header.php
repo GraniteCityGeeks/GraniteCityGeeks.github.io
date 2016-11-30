@@ -16,7 +16,7 @@ session_start();
     <h1>The Blog of D'Jambo Unchained</h1>
     <nav>
         <ul>
-            <li><a href="./">Home Pagezzz</a></li>
+            <li><a href="./">Home Page</a></li>
             <li><a href="blog">My Blog</a></li>
             <li><a href="about">About Me</a></li>
             <li><a href="contactus">Contact Me</a></li>
