@@ -2,9 +2,8 @@
 include 'master.php';
 ?>
 
-<!DOCTYPE html>
+<html>
 <head>
-<html lang="en">
 <link href="master.css" rel="stylesheet" />
 
 <title>GoPortlethen</title>
@@ -47,13 +46,15 @@ include 'master.php';
 
         var markers = xml.documentElement.getElementsByTagName("markers");
         for (var i = 0; i < markers.length; i++) {
-
+            var desc = markers[i].getAttribute("description");
+            var name = markers[i].getAttribute("name");
             var point = new google.maps.LatLng(
 
                 parseFloat(markers[i].getAttribute("lat")),
-                parseFloat(markers[i].getAttribute("lng")));
+                parseFloat(markers[i].getAttribute("lng"))
+            );
 
-            addMarker(i, point);
+            addMarker(i, point, desc, name);
 
         }
     });
@@ -61,7 +62,7 @@ include 'master.php';
     var markersArray = [];  //array for markers
 
     //this fucntion will add the markers.
-    function addMarker(id,point) {
+    function addMarker(id,point,description,name) {
         id = new google.maps.Marker({
             map: map,
             draggable: false,
@@ -69,11 +70,20 @@ include 'master.php';
             position: point
 
         });
+        var contentstring = '<div id="content">' +
+            '<h1>'+ name +'</h1>'+
+            '<p>'+ description +'</p>';
+        var infowindow = new google.maps.InfoWindow({
+            content:contentstring
+        });
+
         id.addListener('click', function() {
             map.setZoom(15);
             map.setCenter(id.getPosition());
+            infowindow.open(map, id);
 
         });
+
         markersArray.push(id);
     }
 
