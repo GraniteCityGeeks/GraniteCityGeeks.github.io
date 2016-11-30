@@ -20,7 +20,6 @@ session_start();
             <li><a href="blog">My Blog</a></li>
             <li><a href="about">About Me</a></li>
             <li><a href="contactus">Contact Me</a></li>
-            <li><a href="createclub">Create Article</a></li>
             <?
             if (isset($_SESSION['username'])) {
                 echo "<li><a href='logout'>Logout</a></li>";
