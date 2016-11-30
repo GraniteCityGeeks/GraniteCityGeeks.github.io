@@ -1,7 +1,6 @@
 <?php
 include ("scripts/header.php");
 session_start();
-$username_cookie = $_COOKIE['username_cookie'];
 
 
 echo "
