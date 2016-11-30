@@ -26,9 +26,14 @@ body {
 
 
 #map, #twitter {
-padding-left:30px;
-    padding-right:15px;
+    padding-left: 30px;
+    padding-right: 15px;
     margin-right: 60px;
+}
+
+#editmap {
+    color:white;
+}
 
 .contentdiv {
     background-color: #9d9d9d;
@@ -42,9 +47,9 @@ padding-left:30px;
 
 
 
-}
 
-}
+
+
 .welcome {
     font-size: 57.6px;
     line-height: 64px;
