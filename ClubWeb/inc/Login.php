@@ -29,7 +29,6 @@ password='" . $password . "'";
     if (checklogin($username, $password, $db)) {
         session_start();
         $_SESSION['username'] = $username;
-        setcookie('username_cookie','username');
         header("location:./");
     } else {
         header("location:login");
