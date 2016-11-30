@@ -1,5 +1,4 @@
 <?php
-if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     include("scripts/Header.php");
     ?>
     <main>
@@ -11,13 +10,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     </main>
     <?
     include("scripts/Footer.php");
-} elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
     include("scripts/dbconnect.php");
     $username = $_POST["username"];
     $password = $_POST["password"];
     $sql = "INSERT INTO port_users (username, password)
 VALUES ('$username', '$password')";
-
         if (mysqli_query($db, $sql)) {
             echo "New record created succesfully";
         } else {
@@ -25,5 +22,4 @@ VALUES ('$username', '$password')";
         }
         mysqli_close($db);
 // this is impossible
-}
 ?>
