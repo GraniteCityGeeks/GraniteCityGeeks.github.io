@@ -17,6 +17,7 @@ $result= $db->query($query);
 
 if (!$result) {
     die(mysqli_error());
+    
 }
 
 echo("data entry successful");
