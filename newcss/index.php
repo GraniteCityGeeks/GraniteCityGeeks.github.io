@@ -103,8 +103,9 @@ include 'master.php';
 
 </div>
 <br>
-<hr>
+
 <br>
+<div id="editmap" style="float:left;">
 <form action="../markercreate.php">
     Marker Name:<br>
     <input type="text" name="name" value="e.g Local Wood"><br>
@@ -120,6 +121,7 @@ include 'master.php';
     <input type="text" name="address" value="123 Example St."><br><br>
     <input type="submit" value="Submit">
 </form>
+</div>
 
 </body>
 
