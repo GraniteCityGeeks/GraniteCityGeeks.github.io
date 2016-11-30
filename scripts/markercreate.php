@@ -16,7 +16,7 @@ $query = "INSERT INTO port_markers(name, address, lat, lng, type, description) v
 $result= $db->query($query);
 
 if (!$result) {
-    die("could not enter data: " . mysqli_error());
+    die(mysqli_error());
 }
 
 echo("data entry successful");
