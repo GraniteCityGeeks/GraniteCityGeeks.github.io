@@ -3,8 +3,13 @@
 
 <head runat = "server">
     <title>
-        Student Profile
+        Go Portlethen - Granite City Geeks
     </title>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Healthy Living in Portlethen">
+    <meta name="keywords" content="Health,Living,Portlethen,Aberdeen,Kincardineshire,Aberdeenshire,Scotland ">
+    <meta name="author" content="Granite City Geeks">
 
 
     <link href="NavbarMaster.css" rel="stylesheet" />
