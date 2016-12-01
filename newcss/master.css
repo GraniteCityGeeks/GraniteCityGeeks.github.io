@@ -56,7 +56,26 @@ body {
 
 
 }
+.textD > h4{
+    font-size: 30px;
+    line-height: 25px;
 
+    display: inline-block;
+    top: 15%;
+    left: 40%;
+    margin-top: -15px;
+
+}
+.textD > a{
+    font-size: 30px;
+    line-height: 25px;
+
+    display: inline-block;
+    top: 15%;
+    left: 40%;
+    margin-top: -15px;
+
+}
 
 
 
