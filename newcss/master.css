@@ -1,3 +1,4 @@
+@import "unsemantic-grid-responsive-tablet.css";
 html,
 body * {
     box-sizing: border-box;
@@ -8,7 +9,7 @@ body * {
 
 body {
     background: -webkit-linear-gradient(rgba(246, 247, 249, 0.8), rgba(246, 247, 249, 0.8)), url(http://s27.postimg.org/xfhqkektv/sun_above_the_clouds_2.jpg) no-repeat center center fixed;
-    background:  url(http://travelchannel.sndimg.com/content/dam/images/travel/fullset/2011/11/30/d5/idea_ss_scotland_017_1024x768) no-repeat center center fixed;
+    background-color: lightblue;
     background-size: cover;
 }
 
