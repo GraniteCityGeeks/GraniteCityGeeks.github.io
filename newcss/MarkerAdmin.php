@@ -31,7 +31,7 @@ include 'master.php';
             <input type="submit" value="Submit">
         </form>
     </div>
-    <div id="marker-management" style="color:darkblue;">
+    <div id="marker-management" style="color:darkblue;font-family: 'Titillium Web', sans-serif;">
         <h1>Markers</h1>
         <table border="1">
             <tr>
