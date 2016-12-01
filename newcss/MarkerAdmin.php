@@ -65,7 +65,8 @@ include 'master.php';
         $db->close();
         ?>
 
-            </table>
+        </table>
+        </div>
 
 
 

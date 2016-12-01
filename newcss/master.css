@@ -35,6 +35,11 @@ body {
     color:white;
 }
 
+#marker-management {
+    color:lightyellow;
+
+}
+
 .contentdiv {
     background-color: #9d9d9d;
     position: relative;
