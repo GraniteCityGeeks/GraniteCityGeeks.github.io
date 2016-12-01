@@ -31,10 +31,11 @@ include 'master.php';
             <input type="submit" value="Submit">
         </form>
     </div>
-    <div id="marker-management" style="color:white;">
+    <div id="marker-management" style="color:darkblue;font-family: 'Titillium Web', sans-serif;">
         <h1>Markers</h1>
         <table border="1">
             <tr>
+                <th>Id No</th>
                 <th>Marker</th>
                 <th>Lat</th>
                 <th>Lng</th>
@@ -52,6 +53,7 @@ include 'master.php';
 
             while($row = $result->fetch_assoc()) {
                 echo "<tr>";
+                echo "<td>". $row["id"]."</td>";
                 echo "<td>". $row["name"]."</td>";
                 echo "<td>". $row["lat"]. "</td>";
                 echo "<td>". $row["lng"]. "</td>";
@@ -68,6 +70,8 @@ include 'master.php';
         ?>
 
         </table>
+
+
         </div>
 
 
@@ -80,7 +84,7 @@ include 'master.php';
 
 
 
-        ?>
+
     </div>
 </div>
 
