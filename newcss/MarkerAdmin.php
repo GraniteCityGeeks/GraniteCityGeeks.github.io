@@ -58,7 +58,6 @@ include 'master.php';
                 echo "<td>". $row["lat"]. "</td>";
                 echo "<td>". $row["lng"]. "</td>";
                 echo "<td>". $row["description"]. "</td>";
-                echo "<label for='delete'>delete</label>";
                 echo "<td>". "<input type='submit' name='delete' value='". $row["id"]. "'>". "</td>";
                 echo "</tr>";
 
