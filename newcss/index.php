@@ -119,10 +119,12 @@ include 'master.php';
 
 
 
-<div class="textD" style="background-color: #269abc">
+<div class="textD" style="background-color: li">
     Is this the text you are looking for Jamie???
+    <br>
     <h4>NKPAG USER</h4>
-    <a href="MarkerAdmin.php">Edit</a>
+    <br>
+    <a href="MarkerAdmin.php">Edit Markers</a>
 </div>
 
 </body>
