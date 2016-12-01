@@ -3,7 +3,7 @@ include("dbconnect.php");
 
 $id = $_GET['delete'];
 
-$query = "DELETE FROM port_markers WHERE  'id' =". $id;
+$query = "DELETE FROM port_markers WHERE  'id' =$id";
 
 $result = $db->query($query);
 
