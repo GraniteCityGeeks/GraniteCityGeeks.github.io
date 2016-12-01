@@ -33,11 +33,7 @@ include 'master.php';
     </div>
     <div id="marker-management" style="color:darkblue;font-family: 'Titillium Web', sans-serif;">
         <h1>Markers</h1>
-        <table border="1">include("../scripts/dbconnect.php");
-            $query = "SELECT * FROM port_markers";
-            $result = $db->query($query);
-
-            if ($result->num_rows > 0) {
+        <table border="1">
             <tr>
                 <th>Id No</th>
                 <th>Marker</th>
