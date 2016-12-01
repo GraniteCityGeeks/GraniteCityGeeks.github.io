@@ -45,7 +45,17 @@ body {
 
 }
 
+.textD {
+    font-size: 30px;
+    line-height: 25px;
+    position:fixed;
+    display: inline-block;
+    top: 15%;
+    left: 50%;
+    margin-top: -15px;
+    margin-left: -220px;
 
+}
 
 
 
