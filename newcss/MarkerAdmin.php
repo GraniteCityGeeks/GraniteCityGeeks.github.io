@@ -75,10 +75,7 @@ include 'master.php';
 
         </table>
 
-        <form action="deletemarker.php" method="get">
-            Enter ID No : <input type="text" name="formid"><br>
-            <input type="submit" value="id">
-        </form>
+
 
 
 
