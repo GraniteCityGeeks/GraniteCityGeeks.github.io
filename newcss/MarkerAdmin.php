@@ -78,7 +78,7 @@ include 'master.php';
 
 
 
-        ?>
+
     </div>
 </div>
 
