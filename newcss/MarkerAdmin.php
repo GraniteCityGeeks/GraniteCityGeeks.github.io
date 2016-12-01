@@ -34,6 +34,7 @@ include 'master.php';
     <div id="marker-management" style="color:darkblue;font-family: 'Titillium Web', sans-serif;">
         <h1>Markers</h1>
         <table border="1">
+
             <tr>
                 <th>Id No</th>
                 <th>Marker</th>
