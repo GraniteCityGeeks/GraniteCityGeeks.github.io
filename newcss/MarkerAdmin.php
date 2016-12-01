@@ -64,7 +64,7 @@ include 'master.php';
                 echo "</tr>";
 
             }
-        }
+
 
         $db->close();
         ?>
