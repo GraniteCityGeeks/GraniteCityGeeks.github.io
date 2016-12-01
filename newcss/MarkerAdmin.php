@@ -43,7 +43,7 @@ include 'master.php';
 
         <?php
         //connect to the database.
-        include(dbconnect.php);
+        include("../scripts/dbconnect.php");
         $query = "SELECT * FROM port_markers";
         $result = $db->query($query);
 
