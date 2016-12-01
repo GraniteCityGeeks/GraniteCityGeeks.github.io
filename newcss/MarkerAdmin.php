@@ -58,7 +58,7 @@ include 'master.php';
                 echo "<td>". $row["lat"]. "</td>";
                 echo "<td>". $row["lng"]. "</td>";
                 echo "<td>". $row["description"]. "</td>";
-                echo "<td>". "<button name='delete' type='submit' value='". $row["id"]. "'>". "delete". "</button>". "</td>";
+                echo "<td>". "<button name='delete' type='submit' action='' value='". $row["id"]. "'>". "delete". "</button>". "</td>";
                 echo "</tr>";
 
             }
