@@ -116,13 +116,12 @@ include 'master.php';
 <br>
 <br>
 
-<div id="NKPAGuser" style="float:left;">
-    <h4>NKPAG USER</h4>
-    <a href="MarkerAdmin.php">Edit</a>
-</div>
+
 
 <div class="textD" style="background-color: #269abc">
     Is this the text you are looking for Jamie???
+    <h4>NKPAG USER</h4>
+    <a href="MarkerAdmin.php">Edit</a>
 </div>
 
 </body>
