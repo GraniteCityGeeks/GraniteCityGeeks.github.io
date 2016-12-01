@@ -21,3 +21,6 @@ if (!$result) {
 }
 
 echo("data entry successful");
+
+header("Location: ../newcss/MarkerAdmin.php");
+die();
