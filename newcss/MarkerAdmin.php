@@ -49,7 +49,11 @@ include 'master.php';
 
         <?php
         //connect to the database.
+        include("../scripts/dbconnect.php");
 
+        $query = "SELECT * FROM port_markers";
+
+        $result= $db->query($query);
 
             while($row = $result->fetch_assoc()) {
                 echo "<tr>";
