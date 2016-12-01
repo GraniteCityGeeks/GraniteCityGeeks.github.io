@@ -61,8 +61,6 @@ include 'master.php';
                 echo "<td>". "<input type='submit' name='delete' value='". $row["id"]. "'>". "/td";
                 echo "</tr>";
 
-
-
             }
         }
 
