@@ -58,7 +58,9 @@ include 'master.php';
                 echo "<td>". $row["lat"]. "</td>";
                 echo "<td>". $row["lng"]. "</td>";
                 echo "<td>". $row["description"]. "</td>";
-                echo "<td>". "<button name='delete' type='submit' action='../scripts/markerdelete' value='". $row["id"]. "'>". "delete". "</button>". "</td>";
+                echo "<form action='../scripts/markerdelete.php' method='get'>";
+                echo "<td>". "<button name='delete' type='submit' value='". $row["id"]. "'>". "delete". "</button>". "</td>";
+                echo "</form>";
                 echo "</tr>";
 
             }
