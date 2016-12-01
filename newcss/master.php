@@ -19,45 +19,7 @@
                 <li><a href="index.php"><b>Maps</b></a></li>
                 <li><a href="clubs.html"><b>Clubs</b></a></li>
                 <li><a href="health.html"><b>Health</b></a></li>
-                <li><a href="../Web_Forms/ContactMe.aspx"><b>Contact Me</b></a></li>
-                <li><a href="#"><b>My Modules</b></a>
-                    <ul>
-                        <li><a href="#">Information Technology</a>
-                            <ul>
-                                <li><a href="#">HCI</a></li>
-                                <li><a href="#">Databases</a></li>
-                                <li><a href="#">ASP.net</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Computer Fundamentals</a>
-                            <ul>
-                                <li><a href="#">Linux</a></li>
-                                <li><a href="#">BASH Scripting</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Data Structures</a>
-                            <ul>
-                                <li><a href="#">Java</a></li>
-                                <li><a href="#">C++</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#"><b>My Experiences</b></a>
-                    <ul>
-                        <li><a href="#">Personal Experience</a></li>
-                        <li><a href="#">Work Experience</a></li>
-                    </ul>
-                </li>
-                <li><a href="#"><b>My Projects</b></a></li>
-
-                <li>
-                    <a href="../Web_Forms/Login.aspx"><b>Student Login</b></a>
-                </li>
-            </ul>
-
-        </nav>
+             </ul>
 
     </header>
 </form>
