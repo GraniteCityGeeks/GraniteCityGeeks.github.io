@@ -31,7 +31,7 @@ include 'master.php';
             <input type="submit" value="Submit">
         </form>
     </div>
-    <div id="marker-management" style="color:lightsteelblue;">
+    <div id="marker-management" style="color:white;">
         <h1>Markers</h1>
         <table border="1">
             <tr>
@@ -39,6 +39,7 @@ include 'master.php';
                 <th>Lat</th>
                 <th>Lng</th>
                 <th>description</th>
+                <th>Delete</th>
             </tr>
 
         <?php
@@ -55,6 +56,7 @@ include 'master.php';
                 echo "<td>". $row["lat"]. "</td>";
                 echo "<td>". $row["lng"]. "</td>";
                 echo "<td>". $row["description"]. "</td>";
+                echo "<td>". "<input type='submit' name='delete' value='". $row["id"]. "'>". "/td";
                 echo "</tr>";
 
 
