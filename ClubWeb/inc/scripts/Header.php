@@ -4,7 +4,7 @@ session_start();
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head runat = "server">
     <meta charset="UTF-8">
     <title>Sportlethen Clubs</title>
     <link rel="stylesheet" href="/newcss/NavbarMaster.css">
