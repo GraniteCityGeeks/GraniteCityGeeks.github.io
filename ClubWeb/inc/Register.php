@@ -8,7 +8,7 @@
             <p><input type="submit" value="Submit"></p>
         </form>
     </main>
-    <?
+    <?php
     include("scripts/Footer.php");
     include("scripts/dbconnect.php");
     $username = $_POST["username"];
