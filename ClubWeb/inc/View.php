@@ -8,7 +8,7 @@ $sql = "SELECT * FROM port_users";
 
 echo "<p><b>View All</b></p>";
 
-echo "<table border='1' cellpadding='10'>";
+echo "<table>";
 
 echo "<tr> <th>ID</th> <th>Username</th> <th>Password</th> <th>Bio</th> <th>Access Level</th> <th>Photo ID</th> </tr>";
 
