@@ -1,6 +1,5 @@
 <?
 session_start();
-include '/newcss/master.css';
 
 ?>
 
@@ -9,6 +8,7 @@ include '/newcss/master.css';
 <head runat = "server">
     <meta charset="UTF-8">
     <title>Sportlethen Clubs</title>
+    <link rel="stylesheet" href="/newcss/master.css">
 
 </head>
 
