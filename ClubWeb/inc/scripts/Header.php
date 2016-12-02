@@ -1,5 +1,7 @@
 <?
 session_start();
+include '/newcss/master.php';
+
 ?>
 
 <!DOCTYPE html>
@@ -7,7 +9,7 @@ session_start();
 <head runat = "server">
     <meta charset="UTF-8">
     <title>Sportlethen Clubs</title>
-    <link rel="stylesheet" href="/newcss/NavbarMaster.css">
+    <link rel="stylesheet" href="/newcss/master.css">
 
 </head>
 
