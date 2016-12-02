@@ -10,7 +10,7 @@ echo "<p><b>View All</b></p>";
 
 echo "<table border='1' cellpadding='10'>";
 
-echo "<tr> <th>ID</th> <th>username</th> <th>password</th> <th></th> <th></th></tr>";
+echo "<tr> <th>ID</th> <th>Username</th> <th>Password</th> <th>Bio</th> <th>Access Level</th> <th>Photo ID</th> </tr>";
 
 $result = $db->query($sql);
 while ($row = $result->fetch_array()) {
