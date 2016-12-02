@@ -1,5 +1,6 @@
 <?
 define('INCLUDE_DIR', dirname(__FILE__) . '/inc/');
+define('INCLUDE_DIR', dirname(__FILE__) . 'admin/');
 $rules = array(
     //
     //main pages
@@ -13,6 +14,7 @@ $rules = array(
     //
     'login' => "/login",
     'create_article' => "/createarticle",
+    'view' => "/view",
     'logout' => "/logout",
     'register' => "/register",
     //
