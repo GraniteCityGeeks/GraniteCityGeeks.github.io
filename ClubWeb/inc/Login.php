@@ -15,23 +15,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     include("scripts/dbconnect.php");
     $username = $_POST["username"];
     $password = $_POST["password"];
-
+    $accesslevel= -1;
     function checklogin($username, $password, $db)
     {
         $sql = "SELECT * FROM port_users WHERE username='" . $username . "' and
 password='" . $password . "'";
         $result = $db->query($sql);
         while ($row = $result->fetch_array()) {
-            return true;
-        }
-        return false;
-    }
-
-    function checkaccessLevelID($username, $db)
-    {
-        $access = "SELECT access_LevelID FROM port_users WHERE username = '$username'";
-        $ID = $db->query($access);
-        while ($row = $ID->fetch_array()) {
+            $accesslevel = $row['accessLevelID'];
             return true;
         }
         return false;
@@ -40,15 +31,8 @@ password='" . $password . "'";
     if (checklogin($username, $password, $db)) {
         session_start();
         $_SESSION['username'] = $username;
+        $_SESSION['accessLevelID'] = $accesslevel;
         header("location:./");
-    } else {
-        header("location:login");
-    }
-
-    if (checkaccessLevelID($username,$db)) {
-        session_start();
-        $_SESSION['accessLevelID'] = $LevelID;
-        header("location:.about");
     } else {
         header("location:login");
     }
