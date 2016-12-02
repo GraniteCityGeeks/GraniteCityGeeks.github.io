@@ -39,7 +39,7 @@
         }
         mysqli_close($db);
     } else {
-        echo "Sorry! That username is already in use.";
+        //echo "Sorry! That username is already in use.";
     }
 
 
