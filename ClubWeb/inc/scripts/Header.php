@@ -8,7 +8,7 @@ session_start();
 <head runat = "server">
     <meta charset="UTF-8">
     <title>Sportlethen Clubs</title>
-    <link rel="stylesheet" href="/newcss/master.css">
+    <link rel="stylesheet" href="/newcss/NavbarMaster.css">
 
 </head>
 
