@@ -22,6 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 password='" . $password . "'";
         $result = $db->query($sql);
         while ($row = $result->fetch_array()) {
+            global $accesslevel;
             $accesslevel = $row['accessLevelID'];
             return true;
         }
