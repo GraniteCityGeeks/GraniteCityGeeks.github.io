@@ -29,7 +29,10 @@ password='" . $password . "'";
     if (checklogin($username, $password, $db)) {
         session_start();
         $_SESSION['username'] = $username;
+        session_write_close();
+        session_start();
         $_SESSION['accessLevelID'] = $access;
+        session_write_close();
         header("location:./");
     } else {
         header("location:login");
