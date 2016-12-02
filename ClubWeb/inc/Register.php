@@ -13,6 +13,18 @@
     include("scripts/dbconnect.php");
     $username = $_POST["username"];
     $password = $_POST["password"];
+
+    function checkUsers($username, $password, $db) {
+        $sql = "SELECT username, password FROM port_users";
+        $result = $db->query($sql);
+        while ($row = $result->fetch_array()) {
+            if($row['username'] == $username || $row['password'] == $password) {
+                return true;
+            }
+            return false;
+        }
+    }
+
     $sql = "INSERT INTO port_users (username, password)
 VALUES ('$username', '$password')";
         if (mysqli_query($db, $sql)) {
