@@ -27,21 +27,15 @@ password='" . $password . "'";
         return false;
     }
 
-    function checkAccessLevel($username,$db)
-    {
-            $access = "SELECT access_LevelID FROM port_users WHERE username = '$username'";
-            $ID = $db->query($access);
-            while ($row = $ID->fetch_array()) {
-                return true;
-            }
-            return false;
-    }
-
     if (checklogin($username, $password, $db)) {
         session_start();
         $_SESSION['username'] = $username;
         session_write_close();
-        checkAccessLevel($username,$db);
+        $access = "SELECT access_LevelID FROM port_users WHERE username = '$username'";
+        $ID = $db->query($access);
+        session_start();
+        $_SESSION['accessLevelID'] = $LevelID;
+        session_write_close();
         header("location:./");
     } else {
         header("location:login");
