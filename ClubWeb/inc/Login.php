@@ -22,19 +22,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 password='" . $password . "'";
         $result = $db->query($sql);
         while ($row = $result->fetch_array()) {
+            session_start();
+            $_SESSION['accessLevelID']  = $row['accessLevelID'];
             return true;
         }
         return false;
     }
+
     if (checklogin($username, $password, $db)) {
-        session_start();
         $_SESSION['username'] = $username;
         header("location:./");
     } else {
         header("location:login");
     }
+
 } else {
 // this is impossible
-    print('whoops');
+    print('hello');
 }
 ?>

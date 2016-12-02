@@ -1,9 +1,26 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Mr_Law
- * Date: 11/29/2016
- * Time: 8:17 PM
- */
+include("dbconnect.php");
 
-echo "Lol it Worked";
+//get variables from the form first by using GET
+$name = $_GET['name'];
+$address = $_GET['address'];
+$lat = $_GET['lat'];
+$lng = $_GET['lng'];
+$type = $_GET['type'];
+$desc = $_GET['markerdesc'];
+
+//now insert into database.
+
+$query = "INSERT INTO port_markers(name, address, lat, lng, type, description) values ('$name', '$address', '$lat', '$lng', '$type', '$desc')";
+
+$result= $db->query($query);
+
+if (!$result) {
+    die("Error: " . $query . "<br>" . $db->errno);
+
+}
+
+echo("data entry successful");
+
+header("Location: ../newcss/MarkerAdmin.php");
+die();

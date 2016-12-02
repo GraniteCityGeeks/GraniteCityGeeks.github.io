@@ -1,3 +1,4 @@
+@import "unsemantic-grid-responsive-tablet.css";
 html,
 body * {
     box-sizing: border-box;
@@ -7,8 +8,8 @@ body * {
 }
 
 body {
-    background: -webkit-linear-gradient(rgba(246, 247, 249, 0.8), rgba(246, 247, 249, 0.8)), url(http://s27.postimg.org/xfhqkektv/sun_above_the_clouds_2.jpg) no-repeat center center fixed;
-    background:  url(http://travelchannel.sndimg.com/content/dam/images/travel/fullset/2011/11/30/d5/idea_ss_scotland_017_1024x768) no-repeat center center fixed;
+
+    background-color: lightblue;
     background-size: cover;
 }
 
@@ -26,9 +27,19 @@ body {
 
 
 #map, #twitter {
-padding-left:30px;
-    padding-right:15px;
+    padding-left: 30px;
+    padding-right: 15px;
     margin-right: 60px;
+}
+
+#editmap {
+    color:white;
+}
+
+#marker-management {
+    color:lightyellow;
+
+}
 
 .contentdiv {
     background-color: #9d9d9d;
@@ -40,11 +51,56 @@ padding-left:30px;
 
 }
 
+.textD {
+    font-size: 30px;
+    line-height: 25px;
+    background-color: #9d9d9d;
+    display: inline-block;
 
+    margin-top: -15px;
+    padding-left: 30px;
+    font-family: 'Titillium Web', sans-serif;
+
+}
+.textD > p {
+    font-size: 30px;
+    line-height: 25px;
+    background-color: #9d9d9d;
+    display: inline-block;
+
+    margin-top: -15px;
+    font-family: 'Titillium Web', sans-serif;
+    padding-left: 30px;
 
 }
 
+.textD > h4{
+    font-size: 30px;
+    line-height: 25px;
+    background-color: #9d9d9d;
+    display: inline-block;
+
+
+    margin-top: -15px;
+    font-family: 'Titillium Web', sans-serif;
+    padding-left: 30px;
+
 }
+.textD > a{
+    font-size: 30px;
+    line-height: 25px;
+    background-color: #9d9d9d;
+    display: inline-block;
+    top: 15%;
+    left: 40%;
+    margin-top: -15px;
+    font-family: 'Titillium Web', sans-serif;
+    padding-left: 30px;
+
+}
+
+
+
 .welcome {
     font-size: 57.6px;
     line-height: 64px;
