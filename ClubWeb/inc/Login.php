@@ -26,6 +26,7 @@ password='" . $password . "'";
         }
         return false;
     }
+
     function checkAccessLevel($username,$db)
     {
             $access = "SELECT access_LevelID FROM port_users WHERE username = '$username'";
@@ -36,15 +37,11 @@ password='" . $password . "'";
             return false;
     }
 
-    if (checkAccessLevel($username, $password, $db)) {
-        session_start();
-        $_SESSION['accessLevelID'] = $accessLevel;
-    }
-    
     if (checklogin($username, $password, $db)) {
         session_start();
         $_SESSION['username'] = $username;
         session_write_close();
+        checkAccessLevel($username,$db);
         header("location:./");
     } else {
         header("location:login");
