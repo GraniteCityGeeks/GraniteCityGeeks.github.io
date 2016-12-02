@@ -25,7 +25,7 @@
         return true;
     }
 
-    if(checkUsers($username, $password, $db)) {
+    if(checkUsers($username, $db)) {
         $sql = "INSERT INTO port_users (username, password) VALUES ('$username', '$password')";
         if (mysqli_query($db, $sql)) {
             echo "New record created succesfully";
