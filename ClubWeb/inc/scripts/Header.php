@@ -9,13 +9,9 @@ include '/newcss/master.php';
 <head runat = "server">
     <meta charset="UTF-8">
     <title>Sportlethen Clubs</title>
-    <link rel="stylesheet" href="/newcss/master.css">
+    <link href="newcss/master.css" rel="stylesheet" type="text/css">
 
 </head>
-
-<style>
-    @import url('https://fonts.googleapis.com/css?family=Roboto');
-</style>
 
 <body class="master-body">
 <header class="header">
