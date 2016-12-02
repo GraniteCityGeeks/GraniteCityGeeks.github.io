@@ -25,7 +25,7 @@ session_start();
                 echo "<li><a href='logout'>Logout</a></li>";
             } else {
                 echo "<li><a href='login'>Login</a></li>";
-                echo "<li><a href='register'>Regi</a></li>";
+                echo "<li><a href='register'>Register</a></li>";
             }
             if (isset($_SESSION['accessLevelID']) == 2){
                 echo "<li><a href='create_article'>Create Article</a></li>";
