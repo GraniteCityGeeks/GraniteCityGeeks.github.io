@@ -19,13 +19,13 @@
         $result = $db->query($sql);
         while ($row = $result->fetch_array()) {
             if($row['username'] == $username) {
-                return true;
+                return false;
             }
         }
-        return false;
+        return true;
     }
 
-    if(!checkUsers($username, $password, $db)) {
+    if(checkUsers($username, $password, $db)) {
         $sql = "INSERT INTO port_users (username, password) VALUES ('$username', '$password')";
         if (mysqli_query($db, $sql)) {
             echo "New record created succesfully";
@@ -35,7 +35,7 @@
         mysqli_close($db);
     } else {
         header("location:register");
-        echo "Sorry! That username and/or password is already in use.";
+        echo "Sorry! That username is already in use.";
     }
 
 
