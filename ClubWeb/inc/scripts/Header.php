@@ -9,7 +9,6 @@ include '/newcss/master.php';
 <head runat = "server">
     <meta charset="UTF-8">
     <title>Sportlethen Clubs</title>
-    <link href="newcss/master.css" rel="stylesheet" type="text/css">
 
 </head>
 
