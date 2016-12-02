@@ -14,24 +14,30 @@
     $username = $_POST["username"];
     $password = $_POST["password"];
 
-    function checkUsers($username, $password, $db) {
-        $sql = "SELECT username, password FROM port_users";
+    function checkUsers($username, $db) {
+        $sql = "SELECT username FROM port_users";
         $result = $db->query($sql);
         while ($row = $result->fetch_array()) {
-            if($row['username'] == $username || $row['password'] == $password) {
+            if($row['username'] == $username) {
                 return true;
             }
-            return false;
         }
+        return false;
     }
 
-    $sql = "INSERT INTO port_users (username, password)
-VALUES ('$username', '$password')";
+    if(!checkUsers($username, $password, $db)) {
+        $sql = "INSERT INTO port_users (username, password) VALUES ('$username', '$password')";
         if (mysqli_query($db, $sql)) {
             echo "New record created succesfully";
         } else {
             echo "Error: " . $sql . "<br>" . mysqli_error($db);
         }
         mysqli_close($db);
+    } else {
+        header("location:register");
+        echo "Sorry! That username and/or password is already in use.";
+    }
+
+
 // this is impossible
 ?>
