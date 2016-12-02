@@ -1,6 +1,6 @@
 <?
 session_start();
-include '/newcss/master.php';
+include '/newcss/master.css';
 
 ?>
 
