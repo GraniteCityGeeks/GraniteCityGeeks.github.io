@@ -22,8 +22,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 password='" . $password . "'";
         $result = $db->query($sql);
         while ($row = $result->fetch_array()) {
-            $accessID = $row['accessLevelID'];
-            return $accessID;
             return true;
         }
         return false;
@@ -31,6 +29,7 @@ password='" . $password . "'";
     if (checklogin($username, $password, $db)) {
         session_start();
         $_SESSION['username'] = $username;
+        $_SESSION['accessLevelID'] = $access;
         header("location:./");
     } else {
         header("location:login");
