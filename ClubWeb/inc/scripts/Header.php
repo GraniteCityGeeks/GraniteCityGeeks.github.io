@@ -8,7 +8,7 @@ include '/newcss/master.php';
 <html lang="en">
 <head runat = "server">
     <meta charset="UTF-8">
-    <title>Sport Clubs</title>
+    <title>Sportlethen Clubs</title>
     <link rel="stylesheet" href="/newcss/master.css">
 
 </head>
