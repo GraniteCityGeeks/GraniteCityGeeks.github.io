@@ -1,18 +1,6 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-
-<html>
-
-<head>
-
-    <title>View Records</title>
-
-</head>
-
-<body>
-
-
-
 <?php
+
+include("scripts/header.php");
 
 include("scripts/dbconnect.php");
 
@@ -28,23 +16,14 @@ $result = $db->query($sql);
 while ($row = $result->fetch_array()) {
     echo "<tr>";
     echo '<td>' . $row['userID'] . '</td>';
-
     echo '<td>' . $row['username'] . '</td>';
-
     echo '<td>' . $row['password'] . '</td>';
-
     echo '<td>' . $row['bio'] . '</td>';
-
     echo '<td>' . $row['accessLevelID'] . '</td>';
-
     echo '<td>' . $row['photoID'] . '</td>';
-
-//    echo '<td><a href="edit.php?id=' . $row['userID'] . '">Edit</a></td>';
-//
-//    echo '<td><a href="delete.php?id=' . $row['userID'] . '">Delete</a></td>';
-
+    echo '<td><a href="edit.php?id=' . $row['userID'] . '">Edit</a></td>';
+    echo '<td><a href="delete.php?id=' . $row['userID'] . '">Delete</a></td>';
     echo "</tr>";
-
 }
 
 echo "</table>";
