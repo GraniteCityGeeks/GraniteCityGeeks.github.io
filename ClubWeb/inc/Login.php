@@ -38,6 +38,6 @@ password='" . $password . "'";
 
 } else {
 // this is impossible
-    print('whoops');
+    print('hello');
 }
 ?>
