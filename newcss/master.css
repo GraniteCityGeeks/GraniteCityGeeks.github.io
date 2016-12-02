@@ -1,5 +1,23 @@
 @import "unsemantic-grid-responsive-tablet.css";
 html,
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    background-color: #4caf00;
+    color: white;
+}
+
 body * {
     box-sizing: border-box;
     font-family: 'Titillium Web', sans-serif;
@@ -244,24 +262,6 @@ body {
         margin-top: 0;
     }
 }
-
-table {
-    border-collapse: collapse;
-    width: 100%;
-}
-
-th, td {
-    text-align: left;
-    padding: 8px;
-}
-
-tr:nth-child(even){background-color: #f2f2f2}
-
-th {
-    background-color: #4caf00;
-    color: white;
-}
-
 
 
 
