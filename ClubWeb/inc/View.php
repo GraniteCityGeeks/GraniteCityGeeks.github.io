@@ -32,7 +32,7 @@ include("scripts/dbconnect.php");
 
 // get results from database
 
-$result = mysqli_query("SELECT * FROM port_users");
+$result = "SELECT * FROM port_users";
 
 
 // display data in table
@@ -48,8 +48,8 @@ echo "<tr> <th>ID</th> <th>First Name</th> <th>Last Name</th> <th></th> <th></th
 
 
 // loop through results of database query, displaying them in the table
-
-while($row = mysqli_fetch_array($result)) {
+$result = $db->query($sql);
+while ($row = $result->fetch_array()) {
 
 
 
