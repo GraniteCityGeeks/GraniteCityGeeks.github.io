@@ -34,13 +34,15 @@
 
         if (mysqli_query($db, $sql)) {
             echo "New record created succesfully";
-        } elseif (!mysqli_query($db, $sql)) {
-            echo "Error: " . $sql . "<br>" . mysqli_error($db);
-            mysqli_close($db);
         } else {
             echo "Sorry! That username is already in use.";
+            //echo "Error: " . $sql . "<br>" . mysqli_error($db);
         }
-    }
+
+        mysqli_close($db);
+//    } else {
+//        echo "Sorry! That username is already in use.";
+        }
 
 
 
