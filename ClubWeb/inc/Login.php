@@ -6,7 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         <form action="login" method="post">
             <input type="text" name="username" placeholder="username"></br>
             <input type="password" name="password" placeholder="password"></br>
-            <p><input type="submit" value="Submit"></p>
+            <p><input type="submit" value="Login!"></p>
         </form>
     </main>
     <?
