@@ -29,6 +29,7 @@ function checkUser($username, $db)
 if (checkUser($username, $db)) {
     echo "user exists";
 } else {
+    echo "You've registered!";
     "INSERT INTO port_users (username, password) VALUES ('$username', '$password')";
 }
 
