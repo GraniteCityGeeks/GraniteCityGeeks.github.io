@@ -14,17 +14,19 @@ include("scripts/dbconnect.php");
 $username = $_POST["username"];
 $password = $_POST["password"];
 
-function checkuser($username, $db)
+function checkUser($username, $db)
 {
-    $sql = "SELECT * FROM port_users WHERE username='" . $username . "'";
+    $sql = "SELECT username FROM port_users WHERE username='" . $username . "'";
     $result = $db->query($sql);
     while ($row = $result->fetch_array()) {
-        return true;
+        if($row['username'] == $username) {
+            return true;
+        }
     }
     return false;
 }
 
-if (checkuser($username, $db)) {
+if (checkUser($username, $db)) {
     echo "user exists";
 } else {
     "INSERT INTO port_users (username, password) VALUES ('$username', '$password')";
