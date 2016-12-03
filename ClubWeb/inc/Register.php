@@ -10,21 +10,26 @@
     </main>
 
 <?php
+include("scripts/dbconnect.php");
+$username = $_POST["username"];
+$password = $_POST["password"];
 
-    include("scripts/Footer.php");
-    include("scripts/dbconnect.php");
-
-if(isset($_POST['username'])){
-    $username = $_POST['username'];
-    $password = $_POST['password'];
-
-    $query = mysqli_query("SELECT * FROM port_users WHERE username='$username'");
-    if(mysqli_num_rows($query > 0)) { //check if there is already an entry for that username
-        echo "Username already exists!";
+function checkuser($username, $db)
+{
+    $sql = "SELECT * FROM port_users WHERE username='" . $username . "'";
+    $result = $db->query($sql);
+    while ($row = $result->fetch_array()) {
+        return true;
     }
-        mysqli_query("INSERT INTO port_users (username, password) VALUES ('$username', '$password')");
-        header("location:login");
-    }
+    return false;
+}
+
+if (checkuser($username, $db)) {
+    echo "user exists";
+} else {
+    "INSERT INTO users (username, password) VALUES ('$username', '$password')";
+}
+
 
 
 
