@@ -20,14 +20,12 @@ if(isset($_POST['username']) && isset($_POST['password'])){
 
     $query = ("SELECT * FROM port_users WHERE username='$username'");
     $result = $db->query($query);
-    if(num_rows($query) > 0 ) { //check if there is already an entry for that username
+    while($row = $result->fetch_array()) { //check if there is already an entry for that username
         echo "Username already exists!";
-    }else{
+    }
         $query = ("INSERT INTO port_users (username, password) VALUES ('$username', '$password')");
         header("location:login");
     }
-}
-mysqli_close();
 
 
 
