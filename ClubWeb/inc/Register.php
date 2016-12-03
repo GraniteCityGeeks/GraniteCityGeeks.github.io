@@ -24,7 +24,7 @@ if(isset($_POST['username']) && isset($_POST['password'])){
     }else{
         mysqli_query("SELECT * FROM port_users WHERE username='" . $username . "' and
 password='" . $password . "'");
-        header("location:/.php");
+        header("location:login");
     }
 }
 mysqli_close();
