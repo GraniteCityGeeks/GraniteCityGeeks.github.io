@@ -5,7 +5,7 @@
         <form action="register" method="post">
             <input type="text" name="username" placeholder="username"></br>
             <input type="password" name="password" placeholder="password"></br>
-            <p><input type="submit" value="Regi"></p>
+            <p><input type="submit" value="Register"></p>
         </form>
     </main>
 
@@ -14,7 +14,7 @@
     include("scripts/Footer.php");
     include("scripts/dbconnect.php");
 
-if(isset($_POST['username']) && isset($_POST['password'])){
+if(isset($_POST['username'])){
     $username = $_POST['username'];
     $password = $_POST['password'];
 
