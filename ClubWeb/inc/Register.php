@@ -22,8 +22,7 @@ if(isset($_POST['username']) && isset($_POST['password'])){
     if(mysqli_num_rows($query) > 0 ) { //check if there is already an entry for that username
         echo "Username already exists!";
     }else{
-        mysqli_query("SELECT * FROM port_users WHERE username='" . $username . "' and
-password='" . $password . "'");
+        mysqli_query("INSERT INTO users (username, password) VALUES ('$username', '$password')");
         header("location:login");
     }
 }
