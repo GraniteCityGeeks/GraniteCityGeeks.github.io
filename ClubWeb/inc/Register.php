@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    $query = "SELECT * FROM port_users WHERE username='" . $username . "'";
+    $query = mysqli_query("SELECT * FROM port_users WHERE username ='$username'");
     if(mysqli_num_rows($query) > 0 ) { //check if there is already an entry for that username
         echo "Username already exists!";
     }else{
