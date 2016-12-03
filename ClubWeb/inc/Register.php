@@ -17,16 +17,18 @@
     $username = $_POST["username"];
     $password = $_POST["password"];
 
-        $sql = "SELECT username FROM port_users WHERE username = '$username'";
+        if(isset($username)) {
+            $sql = "SELECT username FROM port_users WHERE username = '$username'";
 
-        $result=mysqli_query($sql);
+            $result = mysqli_query($sql);
 
-        if (mysqli_num_rows($result)!=0) {
-            echo "Name already exists";
-        } else {
-            "INSERT INTO port_users (username, password) VALUES ('$username', '$password')";
+            if ($result >= 1) {
+                echo "Name already exists";
+            } else {
+                "INSERT INTO port_users (username, password) VALUES ('$username', '$password')";
+            }
+            mysqli_close($db);
         }
-        mysqli_close($db);
 
 
 
