@@ -14,21 +14,19 @@
     include("scripts/Footer.php");
     include("scripts/dbconnect.php");
 
-    $username = $_POST["username"];
-    $password = $_POST["password"];
+if(isset($_POST['username']) && isset($_POST['password'])){
+    $username = $_POST['username'];
+    $password = $_POST['password'];
 
-        if(isset($username)) {
-            $sql = "SELECT username FROM port_users WHERE username = '$username'";
-
-            $result = mysqli_query($sql);
-
-            if ($result >= 1) {
-                echo "Name already exists";
-            } else {
-                "INSERT INTO port_users (username, password) VALUES ('$username', '$password')";
-            }
-            mysqli_close($db);
-        }
+    $query = $sql = "SELECT * FROM port_users WHERE username='" . $username . "'";
+    if(mysqli_num_rows($query) > 0 ) { //check if there is already an entry for that username
+        echo "Username already exists!";
+    }else{
+        mysqli_query("INSERT INTO users (Username, Password) VALUES ('$username', '$password')");
+        header("location:index.php");
+    }
+}
+mysqli_close();
 
 
 
