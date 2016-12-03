@@ -18,11 +18,12 @@ if(isset($_POST['username']) && isset($_POST['password'])){
     $user = $_POST['username'];
     $pass = $_POST['password'];
 
-    $query = query("SELECT * FROM port_users WHERE username='$username'");
-    if(num_rows($query) > -1 ) { //check if there is already an entry for that username
+    $query = ("SELECT * FROM port_users WHERE username='$username'");
+    $result = $db->query($query);
+    if(num_rows($query) > 0 ) { //check if there is already an entry for that username
         echo "Username already exists!";
     }else{
-        query("INSERT INTO port_users (username, password) VALUES ('$username', '$password')");
+        $query = ("INSERT INTO port_users (username, password) VALUES ('$username', '$password')");
         header("location:login");
     }
 }
