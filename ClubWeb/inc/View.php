@@ -30,7 +30,7 @@ echo "</table>";
 
 ?>
 
-<!--<p><a href="new.php">Add a new record</a></p>-->
+<p><a href="/ClubWeb/inc/Add.php">Add a new record</a></p>
 
 
 
