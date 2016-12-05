@@ -53,6 +53,7 @@ include 'master.php';
         $result= $db->query($query);
 
             while($row = $result->fetch_assoc()) {
+                
                 echo "<tr>";
                 echo "<td>". $row["id"]."</td>";
                 echo "<td>". $row["name"]."</td>";
