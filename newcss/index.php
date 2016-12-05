@@ -101,7 +101,7 @@ include 'master.php';
 <br>
 <br>
 
-<div id="top" style="float:left">
+<div id="top" style="float:left position:fixed;">
 
     <div id="map" style="height:700px;width:1050px; float:left;">
 
