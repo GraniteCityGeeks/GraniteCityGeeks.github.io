@@ -29,7 +29,7 @@ $bio = $_POST['bio'];
 $accessLevelID = $_POST['acessLevelID'];
 
 if (checkUsers($username, $db)) {
-    $sql = "INSERT INTO port_users (username, password,bio,accessLevelID) VALUES ('$username', '$password','$bio', '$acessLevelID')";
+    $sql = "INSERT INTO port_users (username, password,bio,accessLevelID) VALUES ('$username', '$password','$bio', '$accessLevelID')";
 
     if (mysqli_query($db, $sql)) {
         echo "New record created succesfully";
@@ -37,14 +37,17 @@ if (checkUsers($username, $db)) {
 
     } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($db);
+        header("location:./view");
     }
 
     mysqli_close($db);
 } elseif ($username == '' || $password == ''){
     echo "Please enter a username and password";
+    header("location:./view");
 }
 else{
     echo "User already exists";
+    header("location:./view");
 }
 
 function checkUsers($username, $db)
@@ -55,7 +58,9 @@ function checkUsers($username, $db)
     while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
         if ($row['username'] == $username) {
             return false;
+            header("location:./view");
         }
     }
     return true;
+    header("location:./view");
 }
