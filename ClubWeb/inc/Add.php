@@ -23,7 +23,7 @@ function renderForm($username, $password, $error)
             <strong>Username: *</strong> <input type="text" name="username" value="<?php echo $username; ?>" /><br/>
             <strong>Password: *</strong> <input type="text" name="password" value="<?php echo $password; ?>" /><br/>
             <p>* required</p>
-            <input type="submit" name="Add" value="Add">
+            <input type="submit" name="submit" value="Submit">
         </div>
     </form>
 
@@ -43,7 +43,7 @@ include("scripts/dbconnect.php");
 
 // check if the form has been submitted. If it has, start to process the form and save it to the database
 
-if (isset($_POST['Add']))
+if (isset($_POST['submit']))
 
 {
 
