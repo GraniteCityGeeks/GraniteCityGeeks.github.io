@@ -1,3 +1,4 @@
+
 <?php
 include("scripts/dbconnect.php");
 include ("scripts/header_l2.php");
@@ -8,12 +9,20 @@ $result = $db->query($query);
 while($row = $result->fetch_array()) {
     //Paste the club
     $title = $row['clubTitle'];
-    $desc = $row['description'];
+    $desc = $row['C.description'];
     $calender = $row['clubcalander'];
     $photo = $row['URL'];
-
-    //add the title
-    echo"<h1>". $title . "</h1>";
-
-
 }
+    //add the title
+    echo"<img href= '". $photo . "' height='300' width='300'>";
+    echo"<h1>". $title . "</h1>";
+    echo"<p>".desc. "</p>";
+    echo"<p>".$calender."</p>";
+
+    include("scripts/footer.php");
+
+    ?>
+
+
+
+
