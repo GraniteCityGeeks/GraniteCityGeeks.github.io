@@ -1,5 +1,5 @@
 <?php
-    //if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+    if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         include("scripts/Header.php");
         ?>
         <main>
@@ -13,7 +13,7 @@
         <?
         include("scripts/Footer.php");
 
-    //} elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    } elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         ini_set('display_errors', 1);
         ini_set('display_startup_errors', 1);
@@ -29,6 +29,7 @@
 
             if (mysqli_query($db, $sql)) {
                 echo "New record created succesfully";
+                header("location:./");
             } else {
                 echo "Error: " . $sql . "<br>" . mysqli_error($db);
             }
@@ -36,6 +37,7 @@
             mysqli_close($db);
         } else {
             echo "Sorry! That username is already in use.";
+            header("location:register");
         }
 
         function checkUsers($username, $db)
@@ -52,8 +54,8 @@
             return true;
         }
 
-//    } else {
-//// this is impossible
-//        print('hello');
-//    }
+    } else {
+// this is impossible
+        print('hello');
+    }
 ?>
