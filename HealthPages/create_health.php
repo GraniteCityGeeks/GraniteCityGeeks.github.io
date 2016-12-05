@@ -8,7 +8,8 @@ $text = $_POST["text"];
 $sql = "INSERT INTO port_articles (title, text) VALUES ('".$_POST['title']."', '".$_POST['text']."')";
 
 if ($db->query($sql) === TRUE) {
-    echo "New record created successfully..";
+    header( 'Location: http://gcg.azurewebsites.net/healthpages/health.php' ) ;
+
 } else {
     echo "Error: " . $sql . "<br>" . $db->error;
 }
