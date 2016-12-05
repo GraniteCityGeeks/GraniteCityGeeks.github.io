@@ -6,7 +6,6 @@ include("scripts/Header.php");
             <input type="text" name="username" placeholder="username"></br>
             <input type="password" name="password" placeholder="password"></br>
             <input type="text" name="bio" placeholder="bio"></br>
-            <input type="radio" name="accessLevelID" placeholder="AccessLevelID"></br>
             <input type="radio" name="accessLevelID" value="2"> Contributor<br>
             <input type="radio" name="accessLevelID" value="3"> NKPAG<br>
             <input type="radio" name="accessLevelID" value="4"> Club Administrator<br>
