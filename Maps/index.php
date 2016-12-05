@@ -103,12 +103,12 @@ include 'master.php';
 
 <div id="top" style="float:left position:absolute;">
 
-    <div id="map" style="height:700px;width:1050px; float:left;">
+    <div id="map" style="height:700px;width:1250px; float:left;">
 
     </div>
 
 
-   <div id="twitter" style="float:right;">
+   <div id="twitter" style="float:left;">
     <a class="twitter-timeline" data-width="400" data-height="800" d href="https://twitter.com/PortlethenGC">Tweets by PortlethenGC</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
 
@@ -121,7 +121,7 @@ include 'master.php';
 <br>
 
 
-<div class="textD" style="background-color: li">
+<div class="textD" style="background-color: lightgray float:left;">
     <br>
     Is this the text you are looking for Jamie???
     <br>
