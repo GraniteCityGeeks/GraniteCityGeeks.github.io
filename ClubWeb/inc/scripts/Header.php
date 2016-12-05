@@ -25,7 +25,7 @@ session_start();
 
             <?
             if (isset($_SESSION['username'])) {
-                echo "<li><a href='../Logout.php'>Logout</a></li>";
+                echo "<li><a href='./Logout.php'>Logout</a></li>";
             } else {
                 echo "<li><a href='./Login.php'>Login</a></li>";
                 echo "<li><a href='./Register.php'>Register</a></li>";
