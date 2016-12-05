@@ -26,14 +26,14 @@
 
                 if (mysqli_query($db, $sql)) {
                     echo "New record created succesfully";
-                    //header("location:./");
+
                 } else {
                     echo "Error: " . $sql . "<br>" . mysqli_error($db);
                 }
 
                 mysqli_close($db);
             } else {
-                //header("location:register");
+                
             }
 
             function checkUsers($username, $db)
