@@ -53,7 +53,7 @@ if (isset($_POST['submit'])) {
         renderForm($username, $password, $error);
     } else {
         $query = "INSERT INTO port_users (username, password) VALUES ('$username', '$password')";
-        $result = mysqli_query($db, $sql);
+        mysqli_query($db, $sql);
     }
 
 } else {
