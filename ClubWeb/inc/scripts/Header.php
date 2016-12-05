@@ -1,6 +1,6 @@
 <?
 session_start();
-include '../../../newShit/navBar.php'
+
 ?>
 
 <!DOCTYPE html>
@@ -8,15 +8,12 @@ include '../../../newShit/navBar.php'
 <head runat = "server">
     <meta charset="UTF-8">
     <title>Sportlethen Clubs</title>
-    <link href="/newShit/bootstrap.min.css" rel="stylesheet" />
-    <link href="/newShit/half-slider.css" rel="stylesheet" />
-    <link href="/newShit/healthPage.css" rel="stylesheet" />
-    <!-- <link rel="stylesheet" href="/CoreCSS/NavbarMaster.css"> -->
+    <link rel="stylesheet" href="/CoreCSS/NavbarMaster.css">
 
 </head>
 
 <body class="master-body">
-<header>
+<header class="header">
     <h1>Sportlethen Clubs</h1>
     <nav>
         <ul>
