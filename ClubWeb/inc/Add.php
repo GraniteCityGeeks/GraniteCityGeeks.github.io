@@ -1,63 +1,61 @@
 <?php
+include("scripts/Header.php");
+?>
+    <main>
+        <form action="register" method="post">
+            <input type="text" name="username" placeholder="username"></br>
+            <input type="password" name="password" placeholder="password"></br>
+            <input type="text" name="bio" placeholder="bio"></br>
+            <input type="radio" name="accessLevelID" placeholder="AccessLevelID"></br>
+            <input type="radio" name="accessLevelID" value="2"> Contributor<br>
+            <input type="radio" name="accessLevelID" value="3"> NKPAG<br>
+            <input type="radio" name="accessLevelID" value="4"> Club Administrator<br>
+            <input type="radio" name="accessLevelID" value="5"> Site Administrator<br>
+            <p><input type="submit" value="Submit"></p>
+        </form>
+    </main>
 
+<?
 include("scripts/Footer.php");
+
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-function renderForm($username, $password, $error) {
-
-    include("scripts/header.php");
-
-    if ($error != '')
-    {
-        echo '<div style="padding:4px; border:1px solid red; color:red;">'.$error.'</div>';
-    }
-
-    ?>
-
-    <form action="" method="post">
-        <div>
-            <strong>Usernameg: *</strong> <input type="text" name="username" value="<?php echo $username; ?>" /><br/>
-            <strong>Password: *</strong> <input type="text" name="password" value="<?php echo $password; ?>" /><br/>
-            <p>* required</p>
-            <input type="submit" name="submit" value="Submit">
-        </div>
-    </form>
-
-    </body>
-
-    </html>
-
-    <?php
-
-}
-
 include("scripts/dbconnect.php");
 
-// check if the form has been submitted. If it has, start to process the form and save it to the database
+$username = $_POST['username'];
+$password = $_POST['password'];
+$bio = $_POST['bio'];
+$accessLevelID = $_POST['acessLevelID'];
 
-if (isset($_POST['submit'])) {
-// get form data, making sure it is valid
+if (checkUsers($username, $db)) {
+    $sql = "INSERT INTO port_users (username, password,bio,accessLevelID) VALUES ('$username', '$password','$bio', '$acessLevelID')";
 
-    $username = $_POST['username'];
+    if (mysqli_query($db, $sql)) {
+        echo "New record created succesfully";
 
-    $password = $_POST['password'];
-
-// check to make sure both fields are entered
-
-    if ($username == '' || $password == '')
-
-    {
-        $error = 'ERROR: Please fill in all required fields!';
-        renderForm($username, $password, $error);
     } else {
-        $query = "INSERT INTO port_users (username, password) VALUES ('$username', '$password')";
-        mysqli_query($db, $sql);
+        echo "Error: " . $sql . "<br>" . mysqli_error($db);
     }
 
-} else {
-    renderForm('','','');
+    mysqli_close($db);
+} elseif ($username == '' || $password == ''){
+    echo "Please enter a username and password";
+}
+else{
+    echo "User already exists";
 }
 
-?>
+function checkUsers($username, $db)
+{
+    $sql = "SELECT username FROM port_users";
+    $result = mysqli_query($db, $sql);
+
+    while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
+        if ($row['username'] == $username) {
+            return false;
+        }
+    }
+    return true;
+}
