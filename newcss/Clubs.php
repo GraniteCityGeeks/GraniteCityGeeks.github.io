@@ -10,14 +10,14 @@ include 'master.php';
 <header id="myCarousel" class="carousel slide">
     <div class="carousel-inner">
         <div class="item active">
-            <div class="fill" style="background-image: url('train.jpg');"></div>
+            <div class="fill" style="background-image: url('images/train.jpg');"></div>
         </div>
         <div class="item">
-            <div class="fill" style="background-image: url('rain.jpg');"></div>
+            <div class="fill" style="background-image: url('images/rain.jpg');"></div>
 
         </div>
         <div class="item">
-            <div class="fill" style="background-image: url('tree.jpg');"></div>
+            <div class="fill" style="background-image: url('images/tree.jpg');"></div>
 
         </div>
     </div>
