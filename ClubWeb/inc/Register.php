@@ -33,7 +33,7 @@
 
                 mysqli_close($db);
             } elseif ($username == '' || $password == ''){
-                
+                echo "Please enter a username and password";
             }
             else{
                 echo "User already exists";
