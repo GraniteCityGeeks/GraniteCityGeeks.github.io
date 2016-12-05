@@ -5,9 +5,10 @@ $name = $_FILES['file']['name'];
 $size = $_FILES['file']['size'];
 $type = $_FILES['file']['type'];
 
-$tmp_name = $_FILES['file']['tmp_name'];
+echo $tmp_name = $_FILES['file']['tmp_name'];
 $error = $_FILES['file']['error'];
 
+die();
 if (isset($name)){
     if (!empty($name)){
         echo 'ok';
