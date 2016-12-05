@@ -4,7 +4,7 @@ include 'master.php';
 
 <!DOCTYPE html>
 <html lang="en">
-<link href="bootstrap.min.css" rel="stylesheet" />
+<link href="../Maps/bootstrap.min.css" rel="stylesheet" />
 <link href="half-slider.css" rel="stylesheet" />
 
 <header id="myCarousel" class="carousel slide">
