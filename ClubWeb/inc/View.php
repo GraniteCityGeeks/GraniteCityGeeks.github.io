@@ -41,14 +41,14 @@ while ($row = $result->fetch_array()) {
     echo '<td>' . $row['bio'] . '</td>';
     echo '<td>' . $row['accessLevelID'] . '</td>';
     echo '<td>' . $row['photoID'] . '</td>';
-    echo '<td><a href="edit' . $row['userID'] . '">Edit</a></td>';
     echo '<td><form action="edit"><input type="submit" value="Edit" /></form></td>';
+    echo '<td><form action="delete"><input type="submit" value="Delete" /></form></td>';
     echo "</tr>";
 }
 
 echo "</table>";
 
-echo "<li><a href='add'>Add New User</a></li>";
+echo '<td><form action="/add"><input type="submit" value="Add New User!" /></form></td>';
 
 ?>
 
