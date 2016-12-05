@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     function checklogin($username, $password, $db)
     {
         $sql = "SELECT * FROM port_users WHERE username='" . $username . "' and
-password='" . $password . "'";
+        password='" . $password . "'";
         $result = $db->query($sql);
         while ($row = $result->fetch_array()) {
             session_start();
