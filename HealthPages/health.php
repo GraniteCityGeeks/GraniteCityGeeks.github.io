@@ -32,7 +32,7 @@ if ($result->num_rows > 0) {
 }
 $db->close();
 ?>
-<a href="add_article.php">Add health article.</a>
+<a href="add_article.php">Add health article here.</a>
 </body>
 
 </html>
