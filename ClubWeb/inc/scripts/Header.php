@@ -18,17 +18,17 @@ session_start();
     <nav>
         <ul>
             <li><a href="./">Home Page</a></li>
-            <li><a href="../Blog.php">My Blog</a></li>
-            <li><a href="../About.php">About Me</a></li>
-            <li><a href="../ContactUs.php">Contact Me</a></li>
-            <li><a href="../Clubs.php">clubs</a></li>
+            <li><a href="./Blog.php">My Blog</a></li>
+            <li><a href="./About.php">About Me</a></li>
+            <li><a href="./ContactUs.php">Contact Me</a></li>
+            <li><a href="./Clubs.php">clubs</a></li>
 
             <?
             if (isset($_SESSION['username'])) {
                 echo "<li><a href='../Logout.php'>Logout</a></li>";
             } else {
-                echo "<li><a href='../Login.php'>Login</a></li>";
-                echo "<li><a href='../Register.php'>Register</a></li>";
+                echo "<li><a href='./Login.php'>Login</a></li>";
+                echo "<li><a href='./Register.php'>Register</a></li>";
             }
             if (isset($_SESSION['accessLevelID']) == 2){
                 echo "<li><a href='../create_article.php'>Create Art</a></li>";
