@@ -8,7 +8,7 @@ include 'navBar.php';
 
 <head>
     <meta charset="UTF-8">
-    <title>Home Page</title>
+
 </head>
 <body>
 
