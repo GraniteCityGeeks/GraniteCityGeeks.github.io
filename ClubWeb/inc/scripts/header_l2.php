@@ -12,7 +12,7 @@ session_start();
 </head>
 
 <body>
-<header>
+<header id="myCarousel" class="carousel slide">
     <h1>The Blog of Charles Babbage</h1>
     <nav>
         <ul>
