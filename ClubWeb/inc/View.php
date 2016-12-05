@@ -15,7 +15,7 @@ echo "<tr> <th>ID</th> <th>Username</th> <th>Password</th> <th>Bio</th> <th>Acce
 $result = $db->query($sql);
 while ($row = $result->fetch_array()) {
     echo "<tr>";
-    echo '<td>' . $row['userID'] . '</td>';
+    echo '<td>' . $row['userID'] . "                  " .'</td>';
     echo '<td>' . $row['username'] . '</td>';
     echo '<td>' . $row['password'] . '</td>';
     echo '<td>' . $row['bio'] . '</td>';
