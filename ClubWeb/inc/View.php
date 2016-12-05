@@ -21,7 +21,7 @@ while ($row = $result->fetch_array()) {
     echo '<td>' . $row['bio'] . '</td>';
     echo '<td>' . $row['accessLevelID'] . '</td>';
     echo '<td>' . $row['photoID'] . '</td>';
-    echo '<td><a href="edit.php?id=' . $row['userID'] . '">Edit</a></td>';
+    echo '<td><a href="edit' . $row['userID'] . '">Edit</a></td>';
     echo '<td><a href="delete.php?id=' . $row['userID'] . '">Delete</a></td>';
     echo "</tr>";
 }
