@@ -23,7 +23,7 @@
             <ul>
                 <li><a href="../Maps/Maps"><b>Maps</b></a></li>
                 <li><a href="ClubWeb"><b>Clubs</b></a></li>
-                <li><a href="../health/health.html"><b>Health</b></a></li>
+                <li><a href="../health/index.html"><b>Health</b></a></li>
              </ul>
 
     </header>
