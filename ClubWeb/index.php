@@ -13,7 +13,9 @@ $rules = array(
     //
     'login' => "/login",
     'create_article' => "/createarticle",
+    'view' => "/view",
     'logout' => "/logout",
+    'register' => "/register",
     //
     // Home Page
     //

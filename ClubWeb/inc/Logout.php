@@ -4,5 +4,6 @@ if (isset($_SESSION['username']))
 {
     unset($_SESSION['username']);
 }
-header("location:./");
+session_destroy();
+header("location:./login");
 ?>

@@ -1,11 +1,11 @@
 <?php
 include 'master.php';
+
 ?>
 
-<!DOCTYPE html>
+<html>
 <head>
-<html lang="en">
-<link href="master.css" rel="stylesheet" />
+<link href="master.css" rel="stylesheet" type="text/css">
 
 <title>GoPortlethen</title>
 <style>
@@ -47,13 +47,15 @@ include 'master.php';
 
         var markers = xml.documentElement.getElementsByTagName("markers");
         for (var i = 0; i < markers.length; i++) {
-
+            var desc = markers[i].getAttribute("description");
+            var name = markers[i].getAttribute("name");
             var point = new google.maps.LatLng(
 
                 parseFloat(markers[i].getAttribute("lat")),
-                parseFloat(markers[i].getAttribute("lng")));
+                parseFloat(markers[i].getAttribute("lng"))
+            );
 
-            addMarker(i, point);
+            addMarker(i, point, desc, name);
 
         }
     });
@@ -61,7 +63,7 @@ include 'master.php';
     var markersArray = [];  //array for markers
 
     //this fucntion will add the markers.
-    function addMarker(id,point) {
+    function addMarker(id,point,description,name) {
         id = new google.maps.Marker({
             map: map,
             draggable: false,
@@ -69,11 +71,20 @@ include 'master.php';
             position: point
 
         });
+        var contentstring = '<div id="content">' +
+            '<h1>'+ name +'</h1>'+
+            '<p>'+ description +'</p>';
+        var infowindow = new google.maps.InfoWindow({
+            content:contentstring
+        });
+
         id.addListener('click', function() {
             map.setZoom(15);
             map.setCenter(id.getPosition());
+            infowindow.open(map, id);
 
         });
+
         markersArray.push(id);
     }
 
@@ -103,12 +114,20 @@ include 'master.php';
 
 </div>
 
+<br>
+<br>
 
-    <div id="contentdiv" style="background-color: #9d9d9d;font-family: 'Roboto', sans-serif;">
 
-        <h1> Maps System</h1>
-        <h2>Jamie Law</h2>
-        <p> this is is a test on content</p>
-    </div>
+
+<div class="textD" style="background-color: li">
+    <br>
+    Is this the text you are looking for Jamie???
+    <br>
+    <h4>NKPAG USER</h4>
+    <br>
+    <a href="MarkerAdmin.php">Edit Markers</a>
+</div>
+
 </body>
+
 </html>

@@ -1,4 +1,4 @@
-<?php
+ <?php
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     include("scripts/header.php");
     ?>
@@ -6,7 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         <form action="login" method="post">
             <input type="text" name="username" placeholder="username"></br>
             <input type="password" name="password" placeholder="password"></br>
-            <p><input type="submit" value="Submit"></p>
+            <p><input type="submit" value="Login!"></p>
         </form>
     </main>
     <?
@@ -22,20 +22,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 password='" . $password . "'";
         $result = $db->query($sql);
         while ($row = $result->fetch_array()) {
+            session_start();
+            $_SESSION['accessLevelID']  = $row['accessLevelID'];
             return true;
         }
         return false;
     }
+
     if (checklogin($username, $password, $db)) {
-        session_start();
         $_SESSION['username'] = $username;
-        setcookie('username_cookie','username');
         header("location:./");
     } else {
         header("location:login");
     }
+
 } else {
 // this is impossible
-    print('whoops');
+    print('hello');
 }
 ?>
