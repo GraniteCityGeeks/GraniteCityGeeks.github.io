@@ -3,7 +3,7 @@
 
 <head runat = "server">
     <title>
-        Go Portlethen - Granite City Geeks
+        Go Portlethen - Granite City Geeks.
     </title>
 
     <meta charset="UTF-8">
