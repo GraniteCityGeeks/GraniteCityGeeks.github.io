@@ -25,7 +25,7 @@ $result = $db->query($sql);
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo "<a href='health.php?id=" . $row["id"]. "'>" . $row["title"]. "</a></br></br>";
+        echo "<a href='health.php?id=" . $row["articleid"]. "'>" . $row["title"]. "</a></br></br>";
     }
 } else {
     echo "0 results";
