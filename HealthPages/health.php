@@ -35,7 +35,7 @@ include('dbconnect.php');
           echo $row["text"];
       }
   } else {
-      echo "0 results";
+      header('http://gcg.azurewebsites.net/healthpages/get_health.php');
   }
   $db->close();
   ?>
