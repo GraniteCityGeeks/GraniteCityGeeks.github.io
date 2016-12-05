@@ -28,11 +28,9 @@ while ($row = $result->fetch_array()) {
 
 echo "</table>";
 
+echo "<li><a href='add'>Add New User!</a></li>";
+
 ?>
-
-<p><a href="/ClubWeb/inc/Add.php">Add a new record</a></p>
-
-
 
 </body>
 
