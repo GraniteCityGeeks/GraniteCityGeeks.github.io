@@ -19,8 +19,8 @@ error_reporting(E_ALL);
 
     include("scripts/dbconnect.php");
 
-    $username = $_POST["username"];
-    $password = $_POST["password"];
+    $username = $_POST['username'];
+    $password = $_POST['password'];
 
     if(checkUsers($username, $db)) {
         $sql = "INSERT INTO port_users (username, password) VALUES ('$username', '$password')";
