@@ -43,9 +43,9 @@ if (isset($_POST['submit']))
 {
 // get form data, making sure it is valid
 
-    $username = $_POST["username"];
+    $username = $_POST['username'];
 
-    $password = $_POST["password"];
+    $password = $_POST['password'];
 
 // check to make sure both fields are entered
 
@@ -57,11 +57,7 @@ if (isset($_POST['submit']))
         renderForm($username, $password, $error);
     } else {
 
-        mysqli_query("INSERT INTO port_users (username, password) VALUES ('$username', '$password')")
-
-        or die(mysqli_error());
-
-        header("location:./view");
+        mysqli_query("INSERT INTO port_users SET username='$username', password='$password'");
     }
 
 } else {
