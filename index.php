@@ -19,8 +19,7 @@ include 'master.php';
 
 <div class="container">
     <div class="row">
-        <div class="col-lg-12">
-            <h1>Clubs</h1>
+        
         </div>
     </div>
 
