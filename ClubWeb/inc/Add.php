@@ -1,22 +1,21 @@
 <?php
 
+include("scripts/Footer.php");
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 function renderForm($username, $password, $error)
 {
 
     include("scripts/header.php");
 
-
     if ($error != '')
-
     {
-
         echo '<div style="padding:4px; border:1px solid red; color:red;">'.$error.'</div>';
-
     }
 
     ?>
-
-
 
     <form action="" method="post">
         <div>
@@ -35,72 +34,38 @@ function renderForm($username, $password, $error)
 
 }
 
-// connect to the database
-
 include("scripts/dbconnect.php");
-
-
 
 // check if the form has been submitted. If it has, start to process the form and save it to the database
 
 if (isset($_POST['submit']))
 
 {
-
 // get form data, making sure it is valid
 
     $username = $_POST["username"];
 
     $password = $_POST["password"];
 
-
-
 // check to make sure both fields are entered
 
     if ($username == '' || $password == '')
 
     {
-
-// generate error message
-
         $error = 'ERROR: Please fill in all required fields!';
 
-
-
-// if either field is blank, display the form again
-
         renderForm($username, $password, $error);
+    } else {
 
-    }
-
-    else
-
-    {
-
-// save the data to the database
-
-        mysqli_query("INSERT INTO port_users (username,password) VALUES ('$username','$password') ")
+        mysqli_query("INSERT INTO port_users (username, password) VALUES ('$username', '$password')")
 
         or die(mysqli_error());
 
-
-
-// once saved, redirect back to the view page
-
         header("location:./view");
-
     }
 
-}
-
-else
-
-// if the form hasn't been submitted, display the form
-
-{
-
+} else {
     renderForm('','','');
-
 }
 
 ?>
