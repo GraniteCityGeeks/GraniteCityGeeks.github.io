@@ -57,7 +57,7 @@ if (isset($_POST['submit']))
         renderForm($username, $password, $error);
     } else {
 
-        mysqli_query("INSERT INTO port_users SET username='$username', password='$password'");
+        "INSERT INTO port_users (username, password) VALUES ('$username', '$password')";
     }
 
 } else {
