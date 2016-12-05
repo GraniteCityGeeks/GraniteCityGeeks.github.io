@@ -1,38 +1,51 @@
 <?php
-    include("scripts/Header.php");
+include("scripts/Header.php");
 ?>
+
     <main>
         <form action="register" method="post">
             <input type="text" name="username" placeholder="username"></br>
             <input type="password" name="password" placeholder="password"></br>
-            <p><input type="submit" value="Register"></p>
+            <p><input type="submit" value="Submit"></p>
         </form>
     </main>
 
 <?php
+
+include("scripts/Footer.php");
 include("scripts/dbconnect.php");
+
 $username = $_POST["username"];
 $password = $_POST["password"];
 
-function checkUser($username, $db)
-{
-    $sql = "SELECT username FROM port_users WHERE username='" . $username . "'";
-    $result = $db->query($sql);
-    while ($row = $result->fetch_array()) {
+checkUsers($username, $db);
+
+function checkUsers($username, $db) {
+    $sql = "SELECT username FROM port_users";
+    $result = mysqli_query($db, $sql);
+
+    while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
         if($row['username'] == $username) {
-            return true;
+            return false;
         }
+        //echo "<p>" . $row['username'] . "</p>";
     }
-    return false;
+    return true;
 }
 
-if (checkUser($username, $db)) {
-    echo "user exists";
+if(checkUsers($username, $db)) {
+    $sql = "INSERT INTO port_users (username, password) VALUES ('$username', '$password')";
+
+    if (mysqli_query($db, $sql)) {
+        echo "New record created succesfully";
+    } else {
+        echo "Error: " . $sql . "<br>" . mysqli_error($db);
+    }
+
+    mysqli_close($db);
 } else {
-    echo "You've registered!";
-    "INSERT INTO port_users (username, password) VALUES ('$username', '$password')";
+    echo "Sorry! That username is already in use.";
 }
-
 
 
 

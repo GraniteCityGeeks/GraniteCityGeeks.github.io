@@ -3,7 +3,7 @@
 
 <head runat = "server">
     <title>
-        Go Portlethen - Granite City Geeks.
+        Go Portlethen - Granite City Geeks
     </title>
 
     <meta charset="UTF-8">
@@ -12,7 +12,7 @@
     <meta name="author" content="Granite City Geeks">
 
 
-    <link href="NavbarMaster.css" rel="stylesheet" />
+    <link href="../CoreCSS/NavbarMaster.css" rel="stylesheet" />
 
 </head >
 
