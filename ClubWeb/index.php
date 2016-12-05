@@ -17,6 +17,7 @@ $rules = array(
     'logout' => "/logout",
     'register' => "/register",
     'add' => "/add",
+    'edit' => "/edit",
     //
     // Home Page
     //
