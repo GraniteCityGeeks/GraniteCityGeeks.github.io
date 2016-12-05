@@ -19,7 +19,7 @@ function renderForm($username, $password, $error)
 
     <form action="" method="post">
         <div>
-            <strong>Usernameggg: *</strong> <input type="text" name="username" value="<?php echo $username; ?>" /><br/>
+            <strong>Username: *</strong> <input type="text" name="username" value="<?php echo $username; ?>" /><br/>
             <strong>Password: *</strong> <input type="text" name="password" value="<?php echo $password; ?>" /><br/>
             <p>* required</p>
             <input type="submit" name="submit" value="Submit">
