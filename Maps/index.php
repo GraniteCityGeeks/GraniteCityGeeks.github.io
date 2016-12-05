@@ -121,7 +121,7 @@ include 'master.php';
 <br>
 
 
-<div class="textD" style="background-color: li">
+<div class="textD" style="background-color: lightgray float:left;">
     <br>
     Is this the text you are looking for Jamie???
     <br>
