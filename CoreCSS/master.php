@@ -21,8 +21,8 @@
     <header class="header">
         <nav>
             <ul>
-                <li><a href="../Maps/index.php"><b>Maps</b></a></li>
-                <li><a href="../newcss/clubs.html"><b>Clubs</b></a></li>
+                <li><a href="../Maps/Maps"><b>Maps</b></a></li>
+                <li><a href="ClubWeb"><b>Clubs</b></a></li>
                 <li><a href="../newcss/health.html"><b>Health</b></a></li>
              </ul>
 
