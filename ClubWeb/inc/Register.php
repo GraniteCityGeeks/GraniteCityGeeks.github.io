@@ -32,8 +32,11 @@
                 }
 
                 mysqli_close($db);
-            } else {
+            } elseif ($username == '' || $password == ''){
                 
+            }
+            else{
+                echo "User already exists";
             }
 
             function checkUsers($username, $db)
