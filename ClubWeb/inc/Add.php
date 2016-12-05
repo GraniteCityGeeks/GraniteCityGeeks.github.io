@@ -20,8 +20,8 @@ function renderForm($username, $password, $error)
 
     <form action="" method="post">
         <div>
-            <strong>First Name: *</strong> <input type="text" name="username" value="<?php echo $username; ?>" /><br/>
-            <strong>Last Name: *</strong> <input type="text" name="password" value="<?php echo $password; ?>" /><br/>
+            <strong>Username: *</strong> <input type="text" name="username" value="<?php echo $username; ?>" /><br/>
+            <strong>Password: *</strong> <input type="text" name="password" value="<?php echo $password; ?>" /><br/>
             <p>* required</p>
             <input type="submit" name="Add" value="Add">
         </div>
@@ -43,7 +43,7 @@ include("scripts/dbconnect.php");
 
 // check if the form has been submitted. If it has, start to process the form and save it to the database
 
-if (isset($_POST['submit']))
+if (isset($_POST['Add']))
 
 {
 

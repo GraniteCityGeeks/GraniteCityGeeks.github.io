@@ -28,7 +28,7 @@ while ($row = $result->fetch_array()) {
 
 echo "</table>";
 
-echo "<li><a href='add'>Add New User!</a></li>";
+echo "<li><a href='add'>Add New User</a></li>";
 
 ?>
 
