@@ -33,6 +33,7 @@ if (checkUsers($username, $db)) {
 
     if (mysqli_query($db, $sql)) {
         echo "New record created succesfully";
+        header("location:./view");
 
     } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($db);
