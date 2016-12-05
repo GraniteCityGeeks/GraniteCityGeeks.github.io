@@ -79,7 +79,8 @@ if (isset($_POST['submit']))
 
 // save the data to the database
 
-        mysqli_query("INSERT INTO port_users SET username='$username', password='$password'")
+        mysqli_query("INSERT INTO port_users WHERE username='" . $username . "' and
+password='" . $password . "'")
 
         or die(mysqli_error());
 
