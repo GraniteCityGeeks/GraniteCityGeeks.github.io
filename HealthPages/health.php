@@ -12,33 +12,26 @@
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-<?php
-include('dbconnect.php');
-?>
 </head>
 <body>
-  <?php
+<?php
+include('dbconnect.php');
+/* this script loads all the health articles from the db and displays them as a link.
+The user can click the ling and be redirected to the indiviidual article page.*/
 
-  /* this script loads the article the user clicked on.*/
+$sql = "SELECT articleid, title FROM port_articles";
+$result = $db->query($sql);
 
-  $id = $_GET['id'];
-  $sql = "SELECT * FROM port_articles WHERE articleid = $id";
-  $result = $db->query($sql);
-
-  if ($result->num_rows > 0) {
-      // output data of each row
-      while($row = $result->fetch_assoc()) {
-        echo $row["title"];
-        echo '</br>';
-        echo '</br>';
-          echo $row["text"];
-      }
-  } else {
-      header('http://gcg.azurewebsites.net/healthpages/get_health.php');
-  }
-  $db->close();
-  ?>
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        echo "<a href='health.php?id=" . $row["articleid"]. "'>" . $row["title"]. "</a></br></br>";
+    }
+} else {
+    echo "0 results";
+}
+$db->close();
+?>
 </body>
 
 </html>
