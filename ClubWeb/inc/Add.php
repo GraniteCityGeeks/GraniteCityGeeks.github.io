@@ -5,8 +5,7 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-function renderForm($username, $password, $error)
-{
+function renderForm($username, $password, $error) {
 
     include("scripts/header.php");
 
@@ -51,11 +50,10 @@ if (isset($_POST['submit'])) {
 
     {
         $error = 'ERROR: Please fill in all required fields!';
-
         renderForm($username, $password, $error);
     } else {
-
         $query = "INSERT INTO port_users (username, password) VALUES ('$username', '$password')";
+        $result = mysqli_query($db, $sql);
     }
 
 } else {
