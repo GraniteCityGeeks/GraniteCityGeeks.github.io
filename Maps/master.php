@@ -12,7 +12,7 @@
     <meta name="author" content="Granite City Geeks">
 
 
-    <link href="NavbarMaster.css" rel="stylesheet" />
+    <link href="../CoreCSS/NavbarMaster.css" rel="stylesheet" />
 
 </head >
 
@@ -21,9 +21,9 @@
     <header class="header">
         <nav>
             <ul>
-                <li><a href="../Maps/Maps"><b>Maps</b></a></li>
+                <li><a href="../Maps/index.php"><b>Maps</b></a></li>
                 <li><a href="ClubWeb"><b>Clubs</b></a></li>
-                <li><a href="../newcss/health.html"><b>Health</b></a></li>
+                <li><a href="../health/health.html"><b>Health</b></a></li>
              </ul>
 
     </header>
