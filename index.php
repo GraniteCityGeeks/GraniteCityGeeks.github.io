@@ -7,21 +7,9 @@ include 'master.php';
 <link href="bootstrap.min.css" rel="stylesheet" />
 <link href="half-slider.css" rel="stylesheet" />
 
-<header id="myCarousel" class="carousel slide">
-    <div class="carousel-inner">
-        <div class="item active">
-            <div class="fill" style="background-image: url('train.jpg');"></div>
-        </div>
-        <div class="item">
-            item class test
-            <div class="fill" style="background-image: url('rain.jpg');"></div>
-            fill class test
+<h1> Granite City Geeks - Go Portlethen</h1>
+<h2> Get Healthy, it's ace</h2>
 
-        </div>
-        <div class="item">
-            item class test
-            <div class="fill" style="background-image: url('tree.jpg');"></div>
-            fill class test
 
         </div>
     </div>
