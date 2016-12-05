@@ -14,7 +14,9 @@ if (isset($name)){
         echo 'ok';
         $location = '/uploads/';
 
-        move_uploaded_file($tmp_name);
+       if( move_uploaded_file($tmp_name,$location.$name)){
+           echo 'Uploaded!';
+       }
 
     }
     else {
