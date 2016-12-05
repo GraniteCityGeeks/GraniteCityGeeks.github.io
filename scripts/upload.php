@@ -13,7 +13,7 @@ if (isset($name)){
         echo 'ok';
         $location = '/uploads/';
 
-        move_uploaded_file($tmp_name)
+        move_uploaded_file($tmp_name);
 
     }
     else {
