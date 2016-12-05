@@ -5,7 +5,7 @@ include('dbconnect.php');
 
 $title = $_POST["title"];
 $text = $_POST["text"];
-
+echo "dfd";
 $sql = "INSERT INTO port_articles (title, text) VALUES ('".$_POST['title']."', '".$_POST['text']."')";
 
 if ($db->query($sql) === TRUE) {
