@@ -4,7 +4,7 @@ include 'master.php';
 
 <html>
 <head>
-    <link href="master.css" rel="stylesheet" type="text/css">
+    <link href="../CoreCSS/master.css" rel="stylesheet" type="text/css">
 
     <title>GoPortlethen</title>
     <style>
