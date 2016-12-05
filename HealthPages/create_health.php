@@ -6,8 +6,7 @@ include('dbconnect.php');
 $title = $_POST["title"];
 $text = $_POST["text"];
 
-$sql = "INSERT INTO port_articles (title, text)
-VALUES ($title, $text)";
+$sql = "INSERT INTO port_articles (title, text) VALUES ('$title', '$text')";
 
 if ($db->query($sql) === TRUE) {
     echo "New record created successfully..";
