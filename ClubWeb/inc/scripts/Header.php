@@ -1,6 +1,6 @@
 <?
 session_start();
-
+include '../../../newShit/navBar.php'
 ?>
 
 <!DOCTYPE html>
@@ -8,7 +8,7 @@ session_start();
 <head runat = "server">
     <meta charset="UTF-8">
     <title>Sportlethen Clubs</title>
-    <link rel="stylesheet" href="/CoreCSS/NavbarMaster.css">
+    <!-- <link rel="stylesheet" href="/CoreCSS/NavbarMaster.css"> -->
 
 </head>
 
