@@ -22,7 +22,7 @@
         <nav>
             <ul>
                 <li><a href="/Maps"><b>Maps</b></a></li>
-                <li><a href="/ClubWeb"><b>Clubs</b></a></li>
+                <li><a href="/ClubWeb/"><b>Clubs</b></a></li>
                 <li><a href="/health"><b>Health</b></a></li>
              </ul>
 
