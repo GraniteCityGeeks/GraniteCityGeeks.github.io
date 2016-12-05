@@ -11,6 +11,9 @@ $error = $_FILES['file']['error'];
 if (isset($name)){
     if (!empty($name)){
         echo 'ok';
+        $location = '/uploads/';
+
+        move_uploaded_file($tmp_name)
 
     }
     else {
