@@ -1,5 +1,5 @@
 <?php
-include 'master.php';
+include '../CoreCSS/master.php';
 
 ?>
 
