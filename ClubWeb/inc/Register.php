@@ -26,7 +26,7 @@
 
                 if (mysqli_query($db, $sql)) {
                     echo "New record created succesfully";
-                    header("location:./");
+                    //header("location:./");
                 } else {
                     echo "Error: " . $sql . "<br>" . mysqli_error($db);
                 }
@@ -34,7 +34,7 @@
                 mysqli_close($db);
             } else {
                 echo "Sorry! That username is already in use.";
-                header("location:register");
+                //header("location:register");
             }
 
             function checkUsers($username, $db)
