@@ -1,5 +1,4 @@
 <?php
-    //if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         include("scripts/Header.php");
         ?>
         <main>
@@ -12,8 +11,6 @@
 
         <?
         include("scripts/Footer.php");
-
-    //} elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             ini_set('display_errors', 1);
             ini_set('display_startup_errors', 1);
@@ -49,13 +46,7 @@
                     if ($row['username'] == $username) {
                         return false;
                     }
-                    //echo "<p>" . $row['username'] . "</p>";
                 }
                 return true;
             }
-
-//    } else {
-//// this is impossible
-//        print('hello');
-//    }
 ?>
