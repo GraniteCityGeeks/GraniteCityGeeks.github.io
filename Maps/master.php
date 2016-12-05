@@ -12,7 +12,7 @@
     <meta name="author" content="Granite City Geeks">
 
 
-    <link href="NavbarMaster.css" rel="stylesheet" />
+    <link href="../CoreCSS/NavbarMaster.css" rel="stylesheet" />
 
 </head >
 
