@@ -6,7 +6,7 @@ include("scripts/dbconnect.php");
 
 $sql = "SELECT * FROM port_users";
 
-echo"<style>
+echo "<style>
 table {
     border-collapse: collapse;
     width: 100%;
@@ -15,6 +15,10 @@ table {
 th, td {
     text-align: left;
     padding: 8px;
+}
+th {
+    background-color: #3daf6a;
+    color: white;
 }
 
 tr:nth-child(even){background-color: #f2f2f2}
