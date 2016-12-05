@@ -19,6 +19,7 @@ $rules = array(
     'add' => "/add",
     'edit' => "/edit",
     'AddUser' => "/AddUser",
+    'Clubs' => "/Clubs",
     //
     // Home Page
     //
