@@ -48,7 +48,7 @@ while ($row = $result->fetch_array()) {
 
 echo "</table>";
 
-echo '<td><form action="add"><input type="submit" value="Add New User" /></form></td>';
+echo '<td><form action="/add"><input type="submit" value="Add New User!" /></form></td>';
 
 ?>
 
