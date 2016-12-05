@@ -21,7 +21,7 @@ session_start();
             <li><a href="blog">My Blog</a></li>
             <li><a href="about">About Me</a></li>
             <li><a href="contactus">Contact Me</a></li>
-            <li><a href="Clubs">clubs Me</a></li>
+            <li><a href="clubs">clubs</a></li>
 
             <?
             if (isset($_SESSION['username'])) {
