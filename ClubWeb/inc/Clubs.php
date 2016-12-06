@@ -5,14 +5,14 @@ include ("scripts/header_l2.php");
 echo "
 <main>
 ";
-$query = "SELECT * FROM port_club as C, port_articles as A, port_genre as G, port_photo as P WHERE clubid = '1' AND G.genreid = C.genreid AND P.photoid = C.photoid AND A.articleid = C.articleid";
+$query = "SELECT *, C.description as clubDescription FROM port_club as C, port_articles as A, port_genre as G, port_photo as P WHERE clubid = '1' AND G.genreid = C.genreid AND P.photoid = C.photoid AND A.articleid = C.articleid";
 
 $result = $db->query($query);
 
 while($row = $result->fetch_array()) {
     //Paste the club
     $title = $row['clubTitle'];
-    $desc = $row['description'];
+    $desc = $row['clubDescription'];
     $calender = $row['clubcalender'];
     $photo = $row['URL'];
 }
