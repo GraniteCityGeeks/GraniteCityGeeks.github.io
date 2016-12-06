@@ -22,22 +22,21 @@ th {
 }
 
 tr:nth-child(even){background-color: #f2f2f2}
-
 .edit {
 	-moz-box-shadow: 0px 0px 0px 0px #3dc21b;
 	-webkit-box-shadow: 0px 0px 0px 0px #3dc21b;
 	box-shadow: 0px 0px 0px 0px #3dc21b;
 	background-color:#44c767;
-	-moz-border-radius:14px;
-	-webkit-border-radius:14px;
-	border-radius:14px;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	border-radius:15px;
 	border:1px solid #18ab29;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
 	font-family:Arial;
-	font-size:21px;
-	padding:9px 18px;
+	font-size:16px;
+	padding:6px 12px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #2f6627;
 }
