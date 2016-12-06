@@ -6,8 +6,9 @@
             <input type="text" name="email" placeholder="E-mail"></br>
             <input type="text" name="username" placeholder="Username"></br>
             <input type="password" name="password" placeholder="Password"></br>
-            <p><input type="submit" value="Submit"></p>
             <input type="text" name="photoid" placeholder="Insert URL of Image here"></br>
+            <p><input type="submit" value="Submit"></p>
+
         </form>
     </main>
 
