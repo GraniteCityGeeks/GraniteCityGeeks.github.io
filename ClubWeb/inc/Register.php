@@ -21,13 +21,13 @@
 
         include("scripts/dbconnect.php");
 
-        $photid = $_POST['photoid'];
+        $photoid = $_POST['photoid'];
         $email = $_POST['email'];
         $username = $_POST['username'];
         $password = $_POST['password'];
 
         if (checkUsers($username, $db)) {
-            $sql = "INSERT INTO port_users (email, username, password) VALUES ('$email', '$username', '$password')";
+            $sql = "INSERT INTO port_users (email, username, password,photoID) VALUES ('$email', '$username', '$password','$photoid')";
 
             if (mysqli_query($db, $sql)) {
                 echo "New record created succesfully";
