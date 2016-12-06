@@ -35,7 +35,7 @@ if ($result->num_rows > 0) {
 $db->close();
 ?>
 <br/>
-<a href="add_article.php">Click here to add a health article.</a>
+<a style="font-size:20px;"href="add_article.php">Click here to add a health article.</a>
 </body>
 
 </html>
