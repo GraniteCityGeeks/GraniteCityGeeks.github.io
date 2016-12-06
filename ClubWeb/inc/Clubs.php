@@ -27,7 +27,7 @@ echo"<h1>". $title . "</h1>";
 
 echo"<h3> Description </h3>";
 
-echo"<p>".$desc. "</p>";
+echo"<p>".nl2br($desc, false). "</p>";
 
 echo "<br>";
 
