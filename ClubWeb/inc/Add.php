@@ -1,5 +1,5 @@
 <?php
-include("scripts/Header.php");
+include("scripts/header.php");
 ?>
     <main>
         <form action="add" method="post">
