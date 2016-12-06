@@ -1,7 +1,7 @@
 <?php
 //$ID = $_POST['var'];
 //echo 'ID ' . $ID .';';
-echo 'hello world';
+echo 'hello world!!!';
 include("scripts/dbconnect.php");
 include("scripts/header.php");
 loadData($db);
