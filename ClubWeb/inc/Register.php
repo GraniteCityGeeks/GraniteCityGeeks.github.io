@@ -3,10 +3,11 @@
     ?>
     <main>
         <form action="register" method="post">
-            <input type="text" name="email" placeholder="email"></br>
-            <input type="text" name="username" placeholder="username"></br>
-            <input type="password" name="password" placeholder="password"></br>
+            <input type="text" name="email" placeholder="E-mail"></br>
+            <input type="text" name="username" placeholder="Username"></br>
+            <input type="password" name="password" placeholder="Password"></br>
             <p><input type="submit" value="Submit"></p>
+            <input type="text" name="photoid" placeholder="Insert URL of Image here"></br>
         </form>
     </main>
 
