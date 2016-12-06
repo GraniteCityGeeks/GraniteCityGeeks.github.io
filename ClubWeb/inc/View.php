@@ -85,7 +85,6 @@ echo "<tr> <th>ID</th> <th>Username</th> <th>Password</th> <th>Bio</th> <th>Acce
 $result = $db->query($sql);
 while ($row = $result->fetch_array()) {
     echo "<tr>";
-    echo '<form action="edit" method="post">';
     echo '<td>' . $row['userID'] .'</td>';
     echo '<td>' . $row['username'] . '</td>';
     echo '<td>' . $row['password'] . '</td>';
@@ -94,8 +93,11 @@ while ($row = $result->fetch_array()) {
     echo '<td>' . $row['photoID'] . '</td>';
     echo '<td> <input type="submit" value="Edit">';
 //    echo '<td><a href="edit" class="edit' . $row['userID']. '">Edit</a></td>';
+    echo '<form method="get" action="edit">
+        <input type="hidden" name="var" value='. $row['userID'] .'>
+        <input type="submit" value = "Edit">
+    </form>';
     echo '<td><a href="delete' . $row['userID']. '">Delete!!</a></td>';
-    echo '</form>';
     echo "</tr>";
 }
 
