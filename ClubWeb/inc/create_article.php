@@ -3,7 +3,7 @@ session_start();
 if (isset($_SESSION['username'])) //SESSION DOES EXIST
 {
     if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-        include("scripts/header.php");
+        include("scripts/Header.php");
         ?>
         <main>
             <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
