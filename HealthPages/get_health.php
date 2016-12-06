@@ -17,7 +17,8 @@
     include('dbconnect.php');
     ?>
 </head>
-<body>
+<br>
+
 <?php
 
 /* this script loads the article the user clicked on.*/
@@ -29,10 +30,14 @@ $result = $db->query($sql);
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
+        echo '<h1>';
         echo $row["title"];
+        echo '</h1>';
         echo '</br>';
         echo '</br>';
+        echo '<p>';
         echo $row["text"];
+        echo '</p>';
     }
 } else {
     echo "0 results";

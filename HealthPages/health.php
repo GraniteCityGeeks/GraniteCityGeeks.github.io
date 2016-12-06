@@ -14,6 +14,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 <body>
+<h1>List of all health articles and posts.</h1>
+<br/>
 <?php
 include('dbconnect.php');
 /* this script loads all the health articles from the db and displays them as a link.
@@ -32,7 +34,8 @@ if ($result->num_rows > 0) {
 }
 $db->close();
 ?>
-<a href="add_article.php">Add health article here.</a>
+<br/>
+<a href="add_article.php">Click here to add a health article.</a>
 </body>
 
 </html>

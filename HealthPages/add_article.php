@@ -1,4 +1,4 @@
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="utf-16">
     <meta name="test site">
@@ -15,10 +15,10 @@
   </head>
   <body>
 <h1>Add article to health pages.</h1>
+<br>
 <form method="post" action="create_health.php">
-  <input type="text" name="title" placeholder="title"/>
-
-  <textarea name="text" placeholder="text"></textarea>
+    <input type="text" name="title" placeholder="title"/></br>
+  <textarea name="text" placeholder="text"></textarea></br>
   <input type="submit" name="submit"/>
 </form>
 </body>
