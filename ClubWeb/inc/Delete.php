@@ -10,14 +10,14 @@ if (isset($_GET['userID']) && is_numeric($_GET['userID']))
 
     $result = ("DELETE FROM players WHERE userID=$id");
 
-    header("Location: view.php");
+    header("Location: view");
 
 }
 
 else
 
 {
-    header("Location: view.php");
+    header("Location: view");
 }
 
 
