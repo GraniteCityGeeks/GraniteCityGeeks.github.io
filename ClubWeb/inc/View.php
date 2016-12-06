@@ -97,7 +97,7 @@ while ($row = $result->fetch_array()) {
         <input type="hidden" name="var" value='. $row['userID'] .'>
         <input type="submit" value = "Edit">
     </form>';
-    echo '<td><a href="delete?userID=' . $row['userID']. '">Delete!!</a></td>';
+    echo '<td><a href="delete?userID=' . $row['userID']. '">Delete</a></td>';
     echo "</tr>";
 }
 
