@@ -21,7 +21,7 @@ $rules = array(
     'delete' => "/delete",
     'AddUser' => "/AddUser",
     'Clubs' => "/Clubs",
-    'blog_article' => "/delete/(?'userID'[\w\-]+)",
+    'delete' => "/view/(?'userID'[\w\-]+)",
     //
     // Home Page
     //
