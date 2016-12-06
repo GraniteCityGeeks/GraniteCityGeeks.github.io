@@ -2,11 +2,11 @@
 
 include("scripts/dbconnect.php");
 
-if (isset($_GET['userID']) && is_numeric($_GET['userID']))
+if (isset($_POST['userID']) && is_numeric($_POST['userID']))
 
 {
 
-    $id = $_GET['userID'];
+    $id = $_POST['userID'];
 
     $sql = "DELETE FROM port_users WHERE userID=$id";
     $result = $db->query($sql);
