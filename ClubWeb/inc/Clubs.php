@@ -21,16 +21,30 @@ while($row = $result->fetch_array()) {
     $article = $row['text'];
 }
     //add the title
-    echo"<img src= '". $photo . "' height='300' width='300'>";
-    echo"<h1>". $title . "</h1>";
-    echo"<h3> Description </h3>";
-    echo"<p>".$desc. "</p>";
-    echo "<br>";
-    echo "<h3> Upcoming events </h3>";
-    echo"<p>".$calender."</p>";
-    echo"<h3> Article </h3>";
+echo"<img src= '". $photo . "' height='300' width='300'>";
+
+echo"<h1>". $title . "</h1>";
+
+echo"<h3> Description </h3>";
+
+echo"<p>".nl2br($desc, false). "</p>";
+
+echo "<br>";
+
+echo "<h3> Upcoming events </h3>";
+
+echo"<p>".$calender."</p>";
+
+echo"<h3> Articles </h3>";
+
+//renew the query for the articles
 
 $result = $db->query($queryarticles);
+$total = $result->num_rows;
+
+// tell the user how many articles are displayed.
+
+echo"<h5>" .$total. " articles have been found". "</h5>";
 
 while ($row = $result->fetch_array()) {
     $title = $row['title'];
