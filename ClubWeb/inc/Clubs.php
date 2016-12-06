@@ -39,7 +39,7 @@ while ($row = $result->fetch_array()) {
 
     echo "<h2>". $title. "</h2>";
     echo "<img src= ' ". $photo. "height='300' width='300'>";
-    echo "<p>". $content . "</p>";
+    echo "<p>". nl2br($content, false). "</p>";
     echo "<br>";
 }
 echo "
