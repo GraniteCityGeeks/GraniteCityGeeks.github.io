@@ -19,7 +19,7 @@ loadData($db);
         </form>
     </main>';
 
-
+//Jordan's a kint
 include("scripts/Footer.php");
 
 ini_set('display_errors', 1);
