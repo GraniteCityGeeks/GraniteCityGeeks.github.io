@@ -29,8 +29,6 @@ echo"<h3> Description </h3>";
 
 echo"<p>".nl2br($desc, false). "</p>";
 
-echo "<br>";
-
 echo "<h3> Upcoming events </h3>";
 
 echo"<p>".$calender."</p>";
