@@ -91,7 +91,7 @@ while ($row = $result->fetch_array()) {
     echo '<td>' . $row['bio'] . '</td>';
     echo '<td>' . $row['accessLevelID'] . '</td>';
     echo '<td>' . $row['photoID'] . '</td>';
-    echo '<td> <input type="submit" value="Edit">';
+//    echo '<td> <input type="submit" value="Edit">';
 //    echo '<td><a href="edit" class="edit' . $row['userID']. '">Edit</a></td>';
     echo '<form method="post" action="edit">
         <input type="hidden" name="var" value='. $row['userID'] .'>
