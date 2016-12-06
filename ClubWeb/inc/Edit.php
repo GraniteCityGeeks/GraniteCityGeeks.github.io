@@ -1,4 +1,6 @@
 <?php
+$ID = $_POST['var'];
+echo 'ID ' . $ID .';';
 echo 'hello world';
 //include("scripts/header.php");
 //?>
