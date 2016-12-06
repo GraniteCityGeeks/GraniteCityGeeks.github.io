@@ -12,8 +12,8 @@ $result = $db->query($query);
 while($row = $result->fetch_array()) {
     //Paste the club
     $title = $row['clubTitle'];
-    $desc = $row['C.description'];
-    $calender = $row['clubcalander'];
+    $desc = $row['description'];
+    $calender = $row['clubcalender'];
     $photo = $row['URL'];
 }
     //add the title
