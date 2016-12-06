@@ -44,7 +44,7 @@ $total = $result->num_rows;
 
 // tell the user how many articles are displayed.
 
-echo"<h3>" .$total. " articles have been found". "</h3>";
+echo"<h5>" .$total. " articles have been found". "</h5>";
 
 while ($row = $result->fetch_array()) {
     $title = $row['title'];
