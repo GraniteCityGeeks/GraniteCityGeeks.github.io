@@ -6,9 +6,9 @@ if (isset($_GET['userID']) && is_numeric($_GET['userID']))
 
 {
 
-    $id = $_GET['userID'];
+    $userID = $_GET['userID'];
 
-    $sql = "DELETE FROM port_users WHERE userID=$id";
+    $sql = "DELETE FROM port_users WHERE userID=$userID";
     $result = $db->query($sql);
 
     header("Location: view");
