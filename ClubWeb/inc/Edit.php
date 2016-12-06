@@ -1,14 +1,14 @@
 <?php
 //$ID = $_POST['var'];
 //echo 'ID ' . $ID .';';
-//echo 'hello world';
+echo 'hello world!!!';
 include("scripts/dbconnect.php");
 include("scripts/header.php");
 loadData($db);
 
     echo '<main>
         <form action="edit" method="post">
-            <input type="text" name="username" placeholder="username" value="' . $row['username'] . '"></br>
+            <input type="text" name="username" placeholder="' . $_SESSION['username'] . '"></br>
             <input type="password" name="password" placeholder="password"></br>
             <input type="text" name="bio" placeholder="bio"></br>
             <input type="radio" name="accessLevelID" value= "2" > Contributor<br>
@@ -64,7 +64,11 @@ error_reporting(E_ALL);
 //}
 
 function loadData($db) {
+    session_start();
     $userID = $_POST['var'];
     $sql = "SELECT * FROM port_users WHERE userID='. $userID .'";
     $result = mysqli_query($db, $sql);
+    $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
+    $username = $row['username'];
+    $_SESSION["username"] = $username;
 }
