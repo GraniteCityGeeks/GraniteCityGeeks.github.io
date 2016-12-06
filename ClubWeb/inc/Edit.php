@@ -8,7 +8,7 @@ loadData($db);
 
     echo '<main>
         <form action="edit" method="post">
-            <input type="text" name="username" placeholder="username" value="' . $row['username'] . '"></br>
+            <input type="text" name="username" placeholder="' . $row['username'] . '"></br>
             <input type="password" name="password" placeholder="password"></br>
             <input type="text" name="bio" placeholder="bio"></br>
             <input type="radio" name="accessLevelID" value= "2" > Contributor<br>
