@@ -17,9 +17,10 @@ while($row = $result->fetch_array()) {
     $photo = $row['URL'];
 }
     //add the title
+    echo $photo;
     echo"<img href= '". $photo . "' height='300' width='300'>";
     echo"<h1>". $title . "</h1>";
-    echo"<p>".desc. "</p>";
+    echo"<p>".$desc. "</p>";
     echo"<p>".$calender."</p>";
 echo "
 </main>
