@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
     if (checklogin($username, $password, $db)) {
         $_SESSION['username'] = $username;
-        header("location:home");
+        header("location:/");
     } else {
         header("location:login");
     }
