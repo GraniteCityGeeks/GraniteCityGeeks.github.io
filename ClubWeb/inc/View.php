@@ -85,17 +85,14 @@ echo "<tr> <th>ID</th> <th>Username</th> <th>Password</th> <th>Bio</th> <th>Acce
 $result = $db->query($sql);
 while ($row = $result->fetch_array()) {
     echo "<tr>";
-    echo '<form action="edit" method="post">';
     echo '<td>' . $row['userID'] .'</td>';
     echo '<td>' . $row['username'] . '</td>';
     echo '<td>' . $row['password'] . '</td>';
     echo '<td>' . $row['bio'] . '</td>';
     echo '<td>' . $row['accessLevelID'] . '</td>';
     echo '<td>' . $row['photoID'] . '</td>';
-    echo '<td> <input type="submit" value="Edit">';
-//    echo '<td><a href="edit" class="edit' . $row['userID']. '">Edit</a></td>';
-    echo '<td><a href="delete' . $row['userID']. '">Delete!!</a></td>';
-    echo '</form>';
+    echo '<td><a href="edit" class="edit' . $row['userID']. '">Edit</a></td>';
+    echo "<td><a href=delete>Delete</a></td>";
     echo "</tr>";
 }
 
