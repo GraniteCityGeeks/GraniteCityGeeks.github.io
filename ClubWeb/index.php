@@ -18,9 +18,10 @@ $rules = array(
     'register' => "/register",
     'add' => "/add",
     'edit' => "/edit",
+    'delete' => "/delete",
     'AddUser' => "/AddUser",
     'Clubs' => "/Clubs",
-    'delete' => "/delete",
+    'delete' => "/delete/(?'userID'[\w\-]+)",
     //
     // Home Page
     //
