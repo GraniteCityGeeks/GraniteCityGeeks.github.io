@@ -1,31 +1,33 @@
 <?php
-$ID = $_POST['var'];
-echo 'ID ' . $ID .';';
+//$ID = $_POST['var'];
+//echo 'ID ' . $ID .';';
 echo 'hello world';
-//include("scripts/header.php");
-//?>
-<!--    <main>-->
-<!--        <form action="edit" method="post">-->
-<!--            <input type="text" name="username" placeholder="username"></br>-->
-<!--            <input type="password" name="password" placeholder="password"></br>-->
-<!--            <input type="text" name="bio" placeholder="bio"></br>-->
-<!--            <input type="radio" name="accessLevelID" value= "2" > Contributor<br>-->
-<!--            <input type="radio" name="accessLevelID" value= "3"> NKPAG<br>-->
-<!--            <input type="radio" name="accessLevelID" value= "4"> Club Administrator<br>-->
-<!--            <input type="radio" name="accessLevelID" value= "5"> Site Administrator<br>-->
-<!--            <p><input type="submit" value="Submit"></p>-->
-<!--        </form>-->
-<!--    </main>-->
-<!---->
-<?//
-//include("scripts/Footer.php");
-//
-//ini_set('display_errors', 1);
-//ini_set('display_startup_errors', 1);
-//error_reporting(E_ALL);
-//
-//include("scripts/dbconnect.php");
-//
+include("scripts/dbconnect.php");
+include("scripts/header.php");
+loadData($db);
+
+    echo '<main>
+        <form action="edit" method="post">
+            <input type="text" name="username" placeholder="username" value="' . $row['username'] . '"></br>
+            <input type="password" name="password" placeholder="password"></br>
+            <input type="text" name="bio" placeholder="bio"></br>
+            <input type="radio" name="accessLevelID" value= "2" > Contributor<br>
+            <input type="radio" name="accessLevelID" value= "3"> NKPAG<br>
+            <input type="radio" name="accessLevelID" value= "4"> Club Administrator<br>
+            <input type="radio" name="accessLevelID" value= "5"> Site Administrator<br>
+            <p><input type="submit" value="Submit"></p>
+        </form>
+    </main>';
+
+
+include("scripts/Footer.php");
+
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+
+
 //$username = $_POST['username'];
 //$password = $_POST['password'];
 //$bio = $_POST['bio'];
@@ -60,7 +62,9 @@ echo 'hello world';
 //    }
 //    return true;
 //}
-//
-//function loadData($db) {
-//    if(isset($_POST['']))
-//}
+
+function loadData($db) {
+    $userID = $_POST['var'];
+    $sql = "SELECT * FROM port_users WHERE userID='. $userID .'";
+    $result = mysqli_query($db, $sql);
+}

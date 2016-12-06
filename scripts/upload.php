@@ -11,7 +11,7 @@ $error = $_FILES['file']['error'];
 
 if (isset($name)){
     if (!empty($name)){
-        echo 'ok';
+        echo 'File Uploaded!';
         $location = '/uploads/';
 
        if( move_uploaded_file($tmp_name,$location.$name)){
@@ -26,8 +26,4 @@ if (isset($name)){
 
 ?>
 
-<form action="upload.php" method="POST" enctype="multipart/form-data">
-    Select image to upload:
-    <input type="file" name="file" <br> <br>
-    <input type="submit" value="Upload Image" name="submit">
-</form>
+
