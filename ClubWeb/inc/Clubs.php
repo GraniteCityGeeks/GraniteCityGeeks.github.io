@@ -13,7 +13,7 @@ while($row = $result->fetch_array()) {
     //Paste the club
     $title = $row['clubTitle'];
     $desc = $row['clubDescription'];
-    $calender = $row['clubcalender'];
+    $calender = $row['clubcalendar'];
     $photo = $row['URL'];
 }
     //add the title
