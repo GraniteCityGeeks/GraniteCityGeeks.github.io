@@ -91,8 +91,13 @@ while ($row = $result->fetch_array()) {
     echo '<td>' . $row['bio'] . '</td>';
     echo '<td>' . $row['accessLevelID'] . '</td>';
     echo '<td>' . $row['photoID'] . '</td>';
-    echo '<td><a href="edit" class="edit' . $row['userID']. '">Edit</a></td>';
-    echo "<td><a href=delete>Delete!!</a></td>";
+//    echo '<td> <input type="submit" value="Edit">';
+//    echo '<td><a href="edit" class="edit' . $row['userID']. '">Edit</a></td>';
+    echo '<form method="post" action="edit">
+        <input type="hidden" name="var" value='. $row['userID'] .'>
+        <input type="submit" value = "Edit">
+    </form>';
+    echo '<td><a href="delete' . $row['userID']. '">Delete!!</a></td>';
     echo "</tr>";
 }
 
