@@ -2,8 +2,6 @@
 
 include("scripts/dbconnect.php");
 
-$userID = $params['userID'];
-
 if (isset($_GET['userID']) && is_numeric($_GET['userID']))
 
 {
