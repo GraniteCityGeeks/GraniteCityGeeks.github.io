@@ -20,6 +20,7 @@ $rules = array(
     'edit' => "/edit",
     'AddUser' => "/AddUser",
     'Clubs' => "/Clubs",
+    'delete' => "/delete",
     //
     // Home Page
     //
