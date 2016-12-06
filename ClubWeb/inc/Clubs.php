@@ -19,7 +19,10 @@ while($row = $result->fetch_array()) {
     //add the title
     echo"<img src= '". $photo . "' height='300' width='300'>";
     echo"<h1>". $title . "</h1>";
+    echo"<h3> Description </h3>";
     echo"<p>".$desc. "</p>";
+    echo "<br>";
+    echo "<h3> Upcoming events </h3>";
     echo"<p>".$calender."</p>";
 echo "
 </main>
