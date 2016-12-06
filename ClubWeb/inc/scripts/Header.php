@@ -9,7 +9,7 @@ session_start();
     <meta charset="UTF-8">
     <title>Sportlethen Clubs</title>
     <link rel="stylesheet" href="/CoreCSS/NavbarMaster.css">
-
+    //ignore me
 </head>
 
 <body class="master-body">
