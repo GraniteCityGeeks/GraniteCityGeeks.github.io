@@ -91,8 +91,8 @@ while ($row = $result->fetch_array()) {
     echo '<td>' . $row['bio'] . '</td>';
     echo '<td>' . $row['accessLevelID'] . '</td>';
     echo '<td>' . $row['photoID'] . '</td>';
-    echo '<td><a href="edit" class="edit" >Edit</a></td>';
-    echo '<td><a href="delete">Delete!!</a></td>';
+    echo '<td><a href="edit" class="edit' . $row['userID']. '">Edit</a></td>';
+    echo '<td><a href="delete' . $row['userID']. '">Delete!!</a></td>';
     echo "</tr>";
 }
 
