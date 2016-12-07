@@ -4,7 +4,7 @@ session_start();
 
 echo "
 <main>
-<p>Welcome {$_SESSION['username']}! In this blog you will {$_SESSION['accessLevelID']} see all of my insights and wonderful things {$_SESSION['userID']}</p>
+<p>Welcome {$_SESSION['username']}! You have an access level of: {$_SESSION['accessLevelID']} your userID is: {$_SESSION['userID']} and Profile pic is: {$_SESSION['photoID']}</p>
 </main>
 ";
 include ("scripts/footer.php");

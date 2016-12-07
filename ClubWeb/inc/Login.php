@@ -25,6 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             session_start();
             $_SESSION['userID'] = $row['userID'];
             $_SESSION['accessLevelID']  = $row['accessLevelID'];
+            $_SESSION['photoID']  = $row['photoID'];
             return true;
         }
         return false;
