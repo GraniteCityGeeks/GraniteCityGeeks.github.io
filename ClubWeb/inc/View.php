@@ -1,4 +1,7 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
 include("scripts/header.php");
 
@@ -97,7 +100,7 @@ while ($row = $result->fetch_array()) {
         <input type="hidden" name="var" value='. $row['userID'] .'>
         <input type="submit" value = "Edit">
     </form></td>';
-    echo '<td><a href="delete">Delete</a></td>';
+    echo '<td><a href="delete?userID=' . $row['userID']. '">Delete</a></td>';
     echo "</tr>";
 }
 
