@@ -2,7 +2,7 @@
 $userID = $params['userID'];
 include("scripts/dbconnect.php");
 
-if (isset($_GET['userID']))
+if (isset($params['userID']))
 
 {
 
