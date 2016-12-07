@@ -12,7 +12,7 @@ session_start();
     //ignore me
     <?
     if (isset($_SESSION['username'])) {
-        echo "<li><a href='logout'>Logout({$_SESSION['username']})<img src={$_SESSION['photoID']} alt=\"Mountain View\" style=\"width:35%;height:35%;\"></a></li>";
+        echo "<li><a href='logout'>Logout({$_SESSION['username']})<img src={$_SESSION['photoID']} alt=\"Mountain View\" style=\"width:35px;height:35px;\"></a></li>";
     } else {
         echo "<li><a href='login'>Login</a></li>";
         echo "<li><a href='register'>Register</a></li>";
