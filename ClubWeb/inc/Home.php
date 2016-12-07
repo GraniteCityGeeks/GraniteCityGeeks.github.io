@@ -11,5 +11,5 @@ include ("scripts/footer.php");
 ?>
 
 <div>
-    <img src="<?php echo $_SESSION['picture']; ?>" alt="picture"/>
+    <img src="<?php echo $_SESSION['photoID']; ?>" alt="picture"/>
 </div>
