@@ -29,10 +29,10 @@ session_start();
                 echo "<li><a href='login'>Login</a></li>";
                 echo "<li><a href='register'>Register</a></li>";
             }
-            if (isset($_SESSION['accessLevelID']) == 2){
-                echo "<li><a href='create_article'>Create Art</a></li>";
-                echo "<li><a href='View'>View</a></li>";
-            }
+//            if (isset($_SESSION['accessLevelID']) == 2){
+//                echo "<li><a href='create_article'>Create Art</a></li>";
+//                echo "<li><a href='View'>View</a></li>";
+//            }
             ?>
 
         </ul>
