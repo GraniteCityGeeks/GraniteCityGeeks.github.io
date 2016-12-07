@@ -19,10 +19,10 @@ echo "<h4> Displaying ". $total . " active clubs </h4>";
 
 while($row = $result->fetch_array()) {
     //echo all clubs
-    "<img src='".$row['URL']. "height='300', width='300'>";
+    echo"<img src='".$row['URL']. "height='300', width='300'>";
     echo"<br>";
-    "<h1><a href='Clubs'>".$row['clubTitle']. "</a></h1>";
-    
+    echo"<h1><a href='Clubs'>".$row['clubTitle']. "</a></h1>";
+
 }
 
 echo "</main>";
