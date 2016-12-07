@@ -31,7 +31,7 @@
         font-size:20px;
         padding:10px 20px 10px 10px;
         color:#000;
-        text-decoration: underline;
+        font-weight:bold;
         cursor:pointer;
         display: inline-block;
     }
