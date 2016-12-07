@@ -10,6 +10,14 @@ session_start();
     <title>Sportlethen Clubs</title>
     <link rel="stylesheet" href="/CoreCSS/NavbarMaster.css">
     //ignore me
+    <?
+    if (isset($_SESSION['username'])) {
+        echo "<li><a href='logout'>Logout({$_SESSION['username']})<img src={$_SESSION['photoID']} alt=\"Mountain View\" style=\"width:35%;height:35%;\"></a></li>";
+    } else {
+        echo "<li><a href='login'>Login</a></li>";
+        echo "<li><a href='register'>Register</a></li>";
+    }
+    ?>
 </head>
 
 <body class="master-body">
@@ -23,12 +31,6 @@ session_start();
             <li><a href="contactus">Contact Me</a></li>
             <li><a href="Clubs">Clubs</a></li>
             <?
-            if (isset($_SESSION['username'])) {
-                echo "<li><a href='logout'>Logout({$_SESSION['username']})</a></li>";
-            } else {
-                echo "<li><a href='login'>Login</a></li>";
-                echo "<li><a href='register'>Register</a></li>";
-            }
             if (isset($_SESSION['accessLevelID']) == 2){
                 echo "<li><a href='create_article'>Create Art</a></li>";
                 echo "<li><a href='View'>View</a></li>";
