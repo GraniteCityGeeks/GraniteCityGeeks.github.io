@@ -9,7 +9,3 @@ echo "
 ";
 include ("scripts/footer.php");
 ?>
-
-<div>
-    <img src="<?php echo $_SESSION['photoID']; ?>" alt="picture"/>
-</div>

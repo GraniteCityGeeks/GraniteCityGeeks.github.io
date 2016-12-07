@@ -6,7 +6,7 @@
             <input type="text" name="email" placeholder="E-mail"></br>
             <input type="text" name="username" placeholder="Username"></br>
             <input type="password" name="password" placeholder="Password"></br>
-            <input type="text" name="photoid" placeholder="Insert URL of Image here"></br>
+            <input type="text" name="photoID" placeholder="Insert URL of Image here"></br>
             <p><input type="submit" value="Submit"></p>
 
         </form>
@@ -21,7 +21,7 @@
 
         include("scripts/dbconnect.php");
 
-        $photoid = $_POST['photoid'];
+        $photoID = $_POST['photoID'];
         $email = $_POST['email'];
         $username = $_POST['username'];
         $password = $_POST['password'];
