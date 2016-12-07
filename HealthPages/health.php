@@ -15,15 +15,19 @@
 </head>
 <body>
 <style>
+    a{
+        text-decoration: none;
+    }
     #nav{
         overflow: hidden;
         text-align:center;
         padding:20px;
         border:1px solid #000;
-
+        margin:10px;
     }
     #nav a{
         font-size:20px;
+        padding:10px;
     }
 </style>
 
