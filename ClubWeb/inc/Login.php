@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         while ($row = $result->fetch_array()) {
             session_start();
             $_SESSION['userID'] = $row['userID'];
-            $_SESSION['accessLevelID']  = $row['accessLevelID'];
+            //$_SESSION['accessLevelID']  = $row['accessLevelID'];
             return true;
         }
         return false;
