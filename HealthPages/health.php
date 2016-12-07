@@ -49,7 +49,9 @@
 
 <h1 id="header-h">HEATH ARTICLES AND POSTS LIST</h1>
 <br/>
-<a style="font-size:20px; color:#000; text-transform:uppercase;"href="add_article.php">Click here to add a health article.</a>
+<a style="font-size:20px; color:#000; text-transform:uppercase;"href="add_article.php">Click here to add a health article</a>
+<br/>
+
 <?php
 include('dbconnect.php');
 /* this script loads all the health articles from the db and displays them as a link.
