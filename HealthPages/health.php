@@ -45,6 +45,7 @@
     <a href="http://gcg.azurewebsites.net/">HOME</a>
     <a href="http://gcg.azurewebsites.net/maps">MAPS</a>
     <a href="http://gcg.azurewebsites.net/ClubWeb">CLUBS</a>
+    <a href="http://gcg.azurewebsites.net/healthpages/health.php">HEALTH</a>
 </div>
 
 <h1 id="header-h">HEATH ARTICLES AND POSTS LIST</h1>
