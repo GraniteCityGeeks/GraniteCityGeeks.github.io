@@ -9,7 +9,3 @@ echo "
 ";
 include ("scripts/footer.php");
 ?>
-
-<div>
-    <img src="<?php echo $_GET['photoID']; ?>" alt="picture"/>
-</div>
