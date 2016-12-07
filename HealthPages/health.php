@@ -50,7 +50,7 @@
 <h1 id="header-h">HEATH ARTICLES AND POSTS LIST</h1>
 <br/>
 <a style="font-size:20px; color:#000; text-transform:uppercase;"href="add_article.php">Click here to add a health article</a>
-<br/>
+</br>
 
 <?php
 include('dbconnect.php');
