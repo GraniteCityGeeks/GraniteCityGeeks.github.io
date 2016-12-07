@@ -17,8 +17,39 @@
     include('dbconnect.php');
     ?>
 </head>
-<br>
+<style>
+    body{
+        padding:10px 10px 10px 10px;
+        text-align: center;
+    }
+    a{
+        text-decoration: none;
+    }
+    #nav{
+        overflow: hidden;
+        text-align:center;
+        padding:0px 0px 0px 0px;
+        border-bottom:1px solid #000;
+    }
+    #nav a{
+        font-size:20px;
+        padding:10px 20px 10px 10px;
+        color:#000;
+        font-weight:bold;
+        cursor:pointer;
+        display: inline-block;
+    }
+    #header-h{
+        text-align: center;
+    }
+</style>
 
+<div id="nav">
+    <a href="http://gcg.azurewebsites.net/">HOME</a>
+    <a href="http://gcg.azurewebsites.net/maps">MAPS</a>
+    <a href="http://gcg.azurewebsites.net/ClubWeb">CLUBS</a>
+    <a href="http://gcg.azurewebsites.net/healthpages/health.php">HEALTH</a>
+</div>
 <?php
 
 /* this script loads the article the user clicked on.*/
