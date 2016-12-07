@@ -24,7 +24,7 @@
     #nav{
         overflow: hidden;
         text-align:center;
-        padding:0px;
+        padding:0px 0px 15px 0px;
         border-bottom:1px solid #000;
     }
     #nav a{
