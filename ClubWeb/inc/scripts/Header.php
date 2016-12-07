@@ -9,7 +9,6 @@ session_start();
     <meta charset="UTF-8">
     <title>Sportlethen Clubs</title>
     <link rel="stylesheet" href="/CoreCSS/NavbarMaster.css">
-    //ignore me
     <?
     if (isset($_SESSION['username'])) {
         echo "<li><a href='logout'>Logout({$_SESSION['username']})<img src={$_SESSION['photoID']} alt=\"Mountain View\" style=\"width:35px;height:35px;\"></a></li>";
