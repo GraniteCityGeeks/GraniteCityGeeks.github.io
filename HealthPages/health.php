@@ -14,6 +14,23 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 <body>
+<style>
+    #nav{
+        overflow: hidden;
+        text-align:center;
+        padding:20px;
+        border:1px solid #000;
+
+    }
+    #nav a{
+        font-size:20px;
+    }
+</style>
+<div id="nav">
+    <a href="http://gcg.azurewebsites.net/">HOME</a>
+    <a href="http://gcg.azurewebsites.net/maps">MAPS</a>
+    <a href="http://gcg.azurewebsites.net/ClubWeb">CLUBS</a>
+</div>
 <h1>List of all health articles and posts.</h1>
 <br/>
 <?php
