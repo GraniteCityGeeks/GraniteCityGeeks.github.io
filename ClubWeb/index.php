@@ -21,6 +21,7 @@ $rules = array(
     'delete' => "/delete/(?'userID'[\w\-]+)",
     'AddUser' => "/AddUser",
     'Clubs' => "/Clubs",
+    'viewclubs' => "/View",
     //
     // Home Page
     //
