@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         while ($row = $result->fetch_array()) {
             session_start();
             $_SESSION['accessLevelID']  = $row['accessLevelID'];
-            $_SESSION['photoID'] = $row['photoID'];
+            $_SESSION['email'] = $row['email'];
             return true;
         }
         return false;
