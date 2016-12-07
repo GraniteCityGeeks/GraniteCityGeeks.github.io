@@ -15,13 +15,16 @@
 </head>
 <body>
 <style>
+    body{
+        padding:20px;
+    }
     a{
         text-decoration: none;
     }
     #nav{
         overflow: hidden;
         text-align:center;
-        padding:20px;
+        padding:0px;
         border:1px solid #000;
         margin:10px;
     }
