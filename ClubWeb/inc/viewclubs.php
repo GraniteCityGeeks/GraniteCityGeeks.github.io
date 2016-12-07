@@ -20,7 +20,7 @@ echo "<h4> Displaying ". $total . " active clubs </h4>";
 while($row = $result->fetch_array()) {
     //echo all clubs
     echo"<img src='".$row['URL']. "height='300', width='300'>";
-    echo"<h1><a href='Clubs.php'>".$row['clubTitle']."</a></h1>";
+    echo"<h1><a href='Clubs'>".$row['clubTitle']."</a></h1>";
     echo"<br>";
 
 }
