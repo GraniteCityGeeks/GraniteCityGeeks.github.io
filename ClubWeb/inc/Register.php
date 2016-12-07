@@ -3,10 +3,12 @@
     ?>
     <main>
         <form action="register" method="post">
-            <input type="text" name="email" placeholder="email"></br>
-            <input type="text" name="username" placeholder="username"></br>
-            <input type="password" name="password" placeholder="password"></br>
+            <input type="text" name="email" placeholder="E-mail"></br>
+            <input type="text" name="username" placeholder="Username"></br>
+            <input type="password" name="password" placeholder="Password"></br>
+            <input type="text" name="photoid" placeholder="Insert URL of Image here"></br>
             <p><input type="submit" value="Submit"></p>
+
         </form>
     </main>
 
@@ -19,12 +21,13 @@
 
         include("scripts/dbconnect.php");
 
+        $photoid = $_POST['photoid'];
         $email = $_POST['email'];
         $username = $_POST['username'];
         $password = $_POST['password'];
 
         if (checkUsers($username, $db)) {
-            $sql = "INSERT INTO port_users (email, username, password) VALUES ('$email', '$username', '$password')";
+            $sql = "INSERT INTO port_users (email, username, password, photoID) VALUES ('$email', '$username', '$password','$photoid')";
 
             if (mysqli_query($db, $sql)) {
                 echo "New record created succesfully";
@@ -35,7 +38,7 @@
 
             mysqli_close($db);
         } elseif ($email == '' || $username == '' || $password == ''){
-            echo "Please enter an email, username and password";
+            echo "Please enter an email,username,photoURL and password";
         }
         else{
             echo "User already exists";
