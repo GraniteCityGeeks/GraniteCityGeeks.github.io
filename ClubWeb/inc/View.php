@@ -93,10 +93,10 @@ while ($row = $result->fetch_array()) {
     echo '<td>' . $row['photoID'] . '</td>';
 //    echo '<td> <input type="submit" value="Edit">';
 //    echo '<td><a href="edit" class="edit' . $row['userID']. '">Edit</a></td>';
-    echo '<form method="post" action="edit">
+    echo '<td><form method="post" action="edit">
         <input type="hidden" name="var" value='. $row['userID'] .'>
         <input type="submit" value = "Edit">
-    </form>';
+    </form></td>';
     echo '<td><a href="delete?userID=' . $row['userID']. '">Delete!!</a></td>';
     echo "</tr>";
 }
