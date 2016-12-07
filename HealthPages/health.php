@@ -17,6 +17,7 @@
 <style>
     body{
         padding:10px 10px 10px 10px;
+        text-align: center;
     }
     a{
         text-decoration: none;
@@ -48,6 +49,7 @@
 
 <h1 id="header-h">List of all health articles and posts.</h1>
 <br/>
+<a style="font-size:20px; color:#000; text-transform:uppercase;"href="add_article.php">Click here to add a health article.</a>
 <?php
 include('dbconnect.php');
 /* this script loads all the health articles from the db and displays them as a link.
@@ -66,8 +68,6 @@ if ($result->num_rows > 0) {
 }
 $db->close();
 ?>
-<br/>
-<a style="font-size:20px;"href="add_article.php">Click here to add a health article.</a>
 </body>
 
 </html>
