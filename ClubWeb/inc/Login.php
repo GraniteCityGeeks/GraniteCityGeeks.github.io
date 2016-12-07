@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         $result = $db->query($sql);
         while ($row = $result->fetch_array()) {
             session_start();
-            $_SESSION['email'] = $row['email'];
+            $_SESSION['userID'] = $row['userID'];
             $_SESSION['accessLevelID']  = $row['accessLevelID'];
             return true;
         }
