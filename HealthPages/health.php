@@ -16,7 +16,7 @@
 <body>
 <style>
     body{
-        padding:20px;
+        padding:10px 10px 10px 10px;
     }
     a{
         text-decoration: none;
@@ -35,6 +35,9 @@
         cursor:pointer;
         display: inline-block;
     }
+    #header-h{
+        text-align: center;
+    }
 </style>
 
 <div id="nav">
@@ -43,7 +46,7 @@
     <a href="http://gcg.azurewebsites.net/ClubWeb">CLUBS</a>
 </div>
 
-<h1>List of all health articles and posts.</h1>
+<h1 id="header-h">List of all health articles and posts.</h1>
 <br/>
 <?php
 include('dbconnect.php');
