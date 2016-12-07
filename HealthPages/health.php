@@ -25,12 +25,15 @@
         overflow: hidden;
         text-align:center;
         padding:0px;
-        border:1px solid #000;
+        border-bottom:1px solid #000;
         margin:10px;
     }
     #nav a{
         font-size:20px;
-        padding:10px;
+        padding:10px 20px 10px 10px;
+        color:#000;
+        text-decoration: underline;
+        cursor:pointer;
     }
 </style>
 
