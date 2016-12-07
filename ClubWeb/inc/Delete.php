@@ -1,5 +1,5 @@
 <?php
-
+$userID = $params['userID'];
 include("scripts/dbconnect.php");
 
 if (isset($_GET['userID']) && is_numeric($_GET['userID']))
