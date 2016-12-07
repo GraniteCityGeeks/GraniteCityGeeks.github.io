@@ -47,7 +47,7 @@
     <a href="http://gcg.azurewebsites.net/ClubWeb">CLUBS</a>
 </div>
 
-<h1 id="header-h">List of all health articles and posts.</h1>
+<h1 id="header-h">HEATH ARTICLES AND POSTS LIST</h1>
 <br/>
 <a style="font-size:20px; color:#000; text-transform:uppercase;"href="add_article.php">Click here to add a health article.</a>
 <?php
