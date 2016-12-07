@@ -24,7 +24,7 @@ session_start();
             <li><a href="Clubs">Clubs</a></li>
             <?
             if (isset($_SESSION['username'])) {
-                echo "<li><a href='logout'>({$_SESSION['username']})Logout</a></li>";
+                echo "<li><a href='logout'>Logout({$_SESSION['username']})</a></li>";
             } else {
                 echo "<li><a href='login'>Login</a></li>";
                 echo "<li><a href='register'>Register</a></li>";
