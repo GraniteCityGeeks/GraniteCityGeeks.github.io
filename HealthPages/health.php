@@ -26,11 +26,13 @@
         font-size:20px;
     }
 </style>
+
 <div id="nav">
     <a href="http://gcg.azurewebsites.net/">HOME</a>
     <a href="http://gcg.azurewebsites.net/maps">MAPS</a>
     <a href="http://gcg.azurewebsites.net/ClubWeb">CLUBS</a>
 </div>
+
 <h1>List of all health articles and posts.</h1>
 <br/>
 <?php
