@@ -11,14 +11,14 @@ if (isset($_GET['userID']) && is_numeric($_GET['userID']))
     $sql = "DELETE FROM port_users WHERE userID=$userID";
     $result = $db->query($sql);
 
-    header("Location: View.php");
+    header("Location: /view");
 
 }
 
 else
 
 {
-    header("Location: View.php");
+    header("Location: /view");
 }
 
 
