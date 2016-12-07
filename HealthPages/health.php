@@ -26,7 +26,6 @@
         text-align:center;
         padding:0px;
         border-bottom:1px solid #000;
-        margin:10px;
     }
     #nav a{
         font-size:20px;
