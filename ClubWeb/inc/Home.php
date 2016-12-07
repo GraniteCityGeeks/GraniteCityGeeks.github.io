@@ -4,7 +4,7 @@ session_start();
 
 echo "
 <main>
-<p>Welcome {$_SESSION['username']}! In this blog you will {$_SESSION['accessLevelID']} see all of my insights and wonderful things {$_SESSION['email']}</p>
+<p>Welcome {$_SESSION['username']}! In this blog you will {$_SESSION['accessLevelID']} see all of my insights and wonderful things {$_SESSION['email']} why</p>
 </main>
 ";
 include ("scripts/footer.php");
