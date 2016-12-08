@@ -70,7 +70,8 @@ if (isset($_POST['submit']))
 
         } else {
 
-            mysqli_query("UPDATE port_users SET username='$username', password='$password' WHERE id='$id'");
+            $sql = "UPDATE port_users SET username='$username', password='$password' WHERE id='$id'";
+            $result = query($sql);
 
             header("Location: /ClubWeb/View");
         }
