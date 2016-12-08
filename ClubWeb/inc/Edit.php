@@ -48,7 +48,7 @@ if (isset($_POST['submit']))
         if ($username == '' || $password == ''  || $bio == ''  || $photoID == '' || $accessLevelID == '') {
             $error = 'ERROR: Please fill in all required fields!';
 
-            renderForm($id, $username, $password,$bio,$photoID,$accessLevelID);
+            renderForm($id, $username, $password,$bio,$photoID,$accessLevelID,$db);
 
         } else {
 
@@ -85,7 +85,7 @@ if (isset($_POST['submit']))
             $bio = $row['bio'];
             $photoID = $row['photoID'];
             $accessLevelID = $row['accessLevelID'];
-            renderForm($id, $username, $password,$bio,$photoID,$accessLevelID);
+            renderForm($id, $username, $password,$bio,$photoID,$accessLevelID,$db);
 
         } else {
 
