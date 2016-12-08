@@ -5,7 +5,7 @@ include 'master.php';
 
 <html>
 <head>
-<link href="../CoreCSS/master.css" rel="stylesheet" type="text/css">
+<link href="/healthFinal/CSS/master.css" rel="stylesheet" type="text/css">
 
 <title>GoPortlethen</title>
 <style>
