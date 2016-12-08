@@ -105,38 +105,6 @@ include 'master.php';
 
     <div id="map" style="height:700px;width:1250px; float:left;">
 
-    </div>
-
-
-   <div id="twitter" style="float:left;">
-    <a class="twitter-timeline" data-width="400" data-height="800" d href="https://twitter.com/PortlethenGC">Tweets by PortlethenGC</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </div>
-
-</div>
-
-<br>
-<br>
-<br>
-<br>
-<br>
-
-
-<div class="textD" style="background-color: lightgray float:left;">
-    <br>
-    Is this the text you are looking for Jamie???
-    <br>
-    <h4>NKPAG USER</h4>
-    <br>
-    <a href="MarkerAdmin.php">Edit Markers</a>
-</div>
-
-<ul class="ulProducts" runat="server" id="newsFeed">
-    <li class ="display2">
-        <b>Healthy Body</b>
-        <br>
-        Excessive body fat can be caused by many factors: over eating due to stress, unbalanced diet and not enough exercise to name a few. It's really easy
-        to gain weight and even easier not to do anything about it. This page will explain why you need to lose weight and methods on how to lose weight
-        <hr>
 
 </body>
 
