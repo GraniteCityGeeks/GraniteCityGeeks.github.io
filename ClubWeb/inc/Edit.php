@@ -44,7 +44,7 @@ if (isset($_POST['submit']))
 
         } else {
 
-            $sql = "UPDATE port_users SET username='$username', password='$password' WHERE id='$id'";
+            $sql = "UPDATE port_users SET username='$username', password='$password' WHERE userID='$id'";
             $result = query($sql);
 
             header("Location: /ClubWeb/View");
@@ -66,7 +66,7 @@ if (isset($_POST['submit']))
 
     {
 
-        $result = "SELECT * FROM port_users WHERE id=$id";
+        $result = "SELECT * FROM port_users WHERE userID=$id";
 
         $row = mysqli_fetch_array($result);
 
