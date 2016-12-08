@@ -33,7 +33,7 @@
                         <li><a href="#">Contributor</a>
                         <ul>
                             <li><a href="#">Clubs</a></li>
-                            <li><a href="../webPages/contributorHealth.php">Health</a></li>
+                            <li><a href="../webPages/contributorPage.php">Health</a></li>
                             <li><a href="#">Maps</a></li>
 
                         </ul>
