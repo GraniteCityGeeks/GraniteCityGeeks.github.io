@@ -25,6 +25,7 @@
                 <li><a href="/ClubWeb/"><b>Clubs</b></a></li>
                 <li><a href="/healthpages/health.php"><b>Health</b></a></li>
              </ul>
+            </nav>
 
     </header>
 </form>
