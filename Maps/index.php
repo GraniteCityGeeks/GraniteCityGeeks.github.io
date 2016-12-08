@@ -114,7 +114,7 @@ include'../healthFinal/navBar/master.php'
 <header id="myCarousel" class="carousel slide">
     <div class="carousel-inner">
         <div class="item active">
-            <div class="fill" style="background-image: url('../Images/gym-wallpaper-workout.jpg')"></div>
+            <div class="fill" style="background-image: url('golf.jpg')"></div>
         </div>
         <div class="item">
             <div class="fill" style="background-image: url('../Images/healthyfood.jpg')"></div>
