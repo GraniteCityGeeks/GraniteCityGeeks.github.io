@@ -7,7 +7,7 @@
     </title>
 
 
-    <link href="NavbarMaster.css" rel="stylesheet" />
+    <link href="/healthFinal/CSS/master.css" />
 
 </head >
 
