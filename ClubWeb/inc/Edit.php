@@ -15,12 +15,12 @@ function renderForm($id, $username, $password,$bio,$photoID,$accessLevelID, $db)
             <p><strong>ID:</strong> <?php echo $id; ?></p>
             <strong>Username: *</strong> <input type="text" name="username" value="<?php echo $username; ?>"/><br/>
             <strong>Password: *</strong> <input type="text" name="password" value="<?php echo $password; ?>"/><br/>
-            <strong>Bio: *</strong>  <input type="text" name="bio" value="<?php echo $bio; ?>"></br>
+            <strong>Bio:</strong>  <input type="text" name="bio" value="<?php echo $bio; ?>"></br>
             <input type="radio" name="accessLevelID" <?php if (isset($accessLevelID) && $accessLevelID=="2") echo "checked";?> value="2">Contributor<br>
             <input type="radio" name="accessLevelID" <?php if (isset($accessLevelID) && $accessLevelID=="3") echo "checked";?> value="3">NKPAG<br>
             <input type="radio" name="accessLevelID" <?php if (isset($accessLevelID) && $accessLevelID=="4") echo "checked";?> value="4">Club Administrator<br>
             <input type="radio" name="accessLevelID" <?php if (isset($accessLevelID) && $accessLevelID=="5") echo "checked";?> value="5">Site Administrator<br>
-            <strong>PhotoID: *</strong>  <input type="text" name="photoID" value="<?php echo $photoID; ?>"></br>
+            <strong>PhotoID:</strong>  <input type="text" name="photoID" value="<?php echo $photoID; ?>"></br>
             <p><input type="submit" value="Submit"></p>
             </form>
         </main>
