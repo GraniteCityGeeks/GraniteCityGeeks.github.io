@@ -35,7 +35,7 @@ include('scripts/dbconnect.php');
 if (isset($_POST['submit']))
 {
 
-    if (is_numeric($_POST['id'])) {
+    if (isset($_POST['id'])) {
 
         $id = $_POST['id'];
         $username = $_POST['username'];
