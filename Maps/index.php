@@ -110,13 +110,13 @@ include '../healthFinal/navBar/master.php';
 
 <br>
 
-<header id="myCarousel" class="carousel slide">
+
 
     <div id="map">
 
     </div>
 
-</header>
+
 
 
 <div class="container">
@@ -128,23 +128,22 @@ include '../healthFinal/navBar/master.php';
 
     <hr class="type_3" />
 
-
         <div class="col-lg-12" style="width: 350px">
-            <h2>Twitter Feed!</h2>
-
             <div id="twitter">
                 <a class="twitter-timeline" data-width="400" data-height="800" d href="https://twitter.com/PortlethenGC">Tweets by PortlethenGC</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
-            <div class="col-lg-12" style="width: 350px">
-                <br>
-                Is this the text you are looking for Jamie???
-                <br>
-                <h4>NKPAG USER</h4>
-                <br>
-                <a href="MarkerAdmin.php">Edit Markers</a>
-                </div>
-</div>
-</div>
+        </div>
+
+        <div class="col-lg-12" style="width: 350px">
+            <br>
+            Is this the text you are looking for Jamie???
+            <br>
+            <h4>NKPAG USER</h4>
+            <br>
+            <a href="MarkerAdmin.php">Edit Markers</a>
+        </div>
+
+    </div>
 </div>
 
 
