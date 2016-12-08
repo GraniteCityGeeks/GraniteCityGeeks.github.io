@@ -1,6 +1,6 @@
 <?php
-include 'master.php';
-?>
+//include 'master.php';
+//?>
 
 <!DOCTYPE html>
 <html lang="en">
