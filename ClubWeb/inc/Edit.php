@@ -1,8 +1,6 @@
 <?php
 include("scripts/header.php");
-function renderForm($id, $username, $password, $error)
-
-{
+function renderForm($id, $username, $password, $error){
 
     ?>
 
