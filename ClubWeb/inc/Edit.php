@@ -6,17 +6,24 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-function renderForm($id, $username, $password, $db){
+function renderForm($id, $username, $password,$bio,$photoID,$accessLevelID, $db){
 
     ?>
     <main>
     <form action="" method="post">
             <input type="hidden" name="id" value="<?php echo $id; ?>"/>
             <p><strong>ID:</strong> <?php echo $id; ?></p>
-            <strong>First Name: *</strong> <input type="text" name="username" value="<?php echo $username; ?>"/><br/>
-            <strong>Last Name: *</strong> <input type="text" name="password" value="<?php echo $password; ?>"/><br/>
-            <p>* Required</p>
-            <input type="submit" name="submit" value="Submit">
+            <strong>Username: *</strong> <input type="text" name="username" value="<?php echo $username; ?>"/><br/>
+            <strong>Password: *</strong> <input type="text" name="password" value="<?php echo $password; ?>"/><br/>
+            <strong>Bio: *</strong>  <input type="text" value="<?php echo $bio; ?>"></br>
+            <input type="radio" name="accessLevelID" <?php if (isset($accessLevelID) && $accessLevelID=="2") echo "checked";?> value="2">Contributor<br>
+            <input type="radio" name="accessLevelID" <?php if (isset($accessLevelID) && $accessLevelID=="3") echo "checked";?> value="3">NKPAG<br>
+            <input type="radio" name="accessLevelID" <?php if (isset($accessLevelID) && $accessLevelID=="4") echo "checked";?> value="4">Club Administrator<br>
+            <input type="radio" name="accessLevelID" <?php if (isset($accessLevelID) && $accessLevelID=="5") echo "checked";?> value="5">Site Administrator<br>
+            <strong>PhotoID: *</strong>  <input type="text" value="<?php echo $photoID; ?>"></br>
+            <p><input type="submit" value="Submit"></p>
+            </form>
+        </main>
     </main>
 
     <?php
@@ -31,20 +38,21 @@ if (isset($_POST['submit']))
     if (is_numeric($_POST['id'])) {
 
         $id = $_POST['id'];
-
         $username = $_POST['username'];
-
         $password = $_POST['password'];
+        $bio = $_POST['bio'];
+        $photoID = $_POST['photoID'];
+        $accessLevelID = $_POST['acessLevelID'];
 
 
-        if ($username == '' || $password == '') {
+        if ($username == '' || $password == ''  || $bio == ''  || $photoID == '' || $accessLevelID == '') {
             $error = 'ERROR: Please fill in all required fields!';
 
-            renderForm($id, $username, $password);
+            renderForm($id, $username, $password,$bio,$photoID,$accessLevelID);
 
         } else {
 
-            $sql = "UPDATE port_users SET username='$username', password='$password' WHERE userID='$id'";
+            $sql = "UPDATE port_users SET username='$username', password='$password', bio='$bio',photoID='$photoID', accessLevelID='$accessLevelID' WHERE userID='$id'";
             $result = query($sql);
 
             header("Location: /ClubWeb/View");
@@ -73,10 +81,11 @@ if (isset($_POST['submit']))
         if($row) {
 
             $username = $row['username'];
-
             $password = $row['password'];
-
-            renderForm($id, $username, $password);
+            $bio = $row['bio'];
+            $photoID = $row['photoID'];
+            $accessLevelID = $row['accessLevelID'];
+            renderForm($id, $username, $password,$bio,$photoID,$accessLevelID);
 
         } else {
 
