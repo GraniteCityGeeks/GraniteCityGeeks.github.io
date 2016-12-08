@@ -6,7 +6,7 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-function renderForm($id, $username, $password){
+function renderForm($id, $username, $password, $db){
 
     ?>
     <main>
@@ -66,8 +66,7 @@ if (isset($_POST['submit']))
 
     {
 
-        $result = mysqli_query("SELECT * FROM port_users WHERE userID=$id")
-        or die(mysqli_error());
+        $result = mysqli_query($db,"SELECT * FROM port_users WHERE userID=$id");
 
         $row = mysqli_fetch_array($result);
 
