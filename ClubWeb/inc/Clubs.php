@@ -5,9 +5,7 @@ include ("scripts/header.php");
 echo "
 <main>
 ";
-$club = $_GET['linkref'];
-echo $club;
-
+$club = "1";
 $query = "SELECT *, C.description as clubDescription FROM port_club as C, port_articles as A, port_genre as G, port_photo as P WHERE clubid = '".$club."' AND G.genreid = C.genreid AND P.photoid = C.photoid AND A.articleid = C.articleid";
 
 //query to load up all articles
