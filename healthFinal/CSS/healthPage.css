@@ -47,6 +47,6 @@ body
 hr.type_3 {
     border: 0;
     height: 25px;
-    background-image: url(image/type_3.png);
+    background-image: url(../Images/type_3.png);
     background-repeat: no-repeat;
 }
