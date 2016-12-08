@@ -6,9 +6,9 @@ include '../healthFinal/navBar/master.php';
 <html>
 
 
-<link href="../healthFinal/CSS/bootstrap.min.css" rel="stylesheet" />
-<link href="../healthFinal/CSS/half-slider.css" rel="stylesheet" />
-<link href="../healthFinal/CSS/NavbarMaster.css" rel="stylesheet" />
+<link href="../michaelFolder/healthFinal/CSS/bootstrap.min.css" rel="stylesheet" />
+<link href="../michaelFolder/healthFinal/CSS/half-slider.css" rel="stylesheet" />
+<link href="../michaelFolder/healthFinal/CSS/NavbarMaster.css" rel="stylesheet" />
 
 
 <head>
