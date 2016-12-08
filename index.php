@@ -1,11 +1,10 @@
 <?php
-include 'master.php';
+include '/healthFinal/navBar/master.php';
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
-<link href="bootstrap.min.css" rel="stylesheet" />
-<link href="half-slider.css" rel="stylesheet" />
+
 
 <h1> Granite City Geeks - Go Portlethen</h1>
 <h2> Get Healthy, it's ace</h2>
