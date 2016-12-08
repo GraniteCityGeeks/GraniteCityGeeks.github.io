@@ -5,7 +5,7 @@ include '../healthFinal/navBar/master.php';
 
 <html>
 
-<link href="../CoreCSS/master.css" rel="stylesheet" type="text/css">
+
 <link href="../healthFinal/CSS/bootstrap.min.css" rel="stylesheet" />
 <link href="../healthFinal/CSS/half-slider.css" rel="stylesheet" />
 
