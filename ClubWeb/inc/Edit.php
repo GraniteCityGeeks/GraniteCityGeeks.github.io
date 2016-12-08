@@ -1,6 +1,8 @@
 <?php
 include("scripts/header.php");
-?>
+function renderForm($id, $username, $password){
+
+    ?>
     <main>
     <form action="" method="post">
             <input type="hidden" name="id" value="<?php echo $id; ?>"/>
@@ -13,10 +15,11 @@ include("scripts/header.php");
 
     <?php
 
+}
+
 include('scripts/dbconnect.php');
 
 if (isset($_POST['submit']))
-
 {
 
     if (is_numeric($_POST['id'])) {
@@ -31,7 +34,7 @@ if (isset($_POST['submit']))
         if ($username == '' || $password == '') {
             $error = 'ERROR: Please fill in all required fields!';
 
-            renderForm($id, $username, $password, $error);
+            renderForm($id, $username, $password);
 
         } else {
 
