@@ -41,7 +41,7 @@ include '../navBar/master.php';
             <i>This page will contain helpful information, tips & tricks for staying healthy!</i>
         </div>
     </div>
-    <hr />
+    <hr class="style-three" />
 
         <h2>News Feed!</h2>
 
