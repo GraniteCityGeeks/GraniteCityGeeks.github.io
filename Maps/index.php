@@ -1,18 +1,16 @@
 <?php
-include '../healthFinal/navBar/master.php';
+include '';
 
 ?>
 
 <html>
 
 
-<link href="/michaelFolder/healthFinal/CSS/bootstrap.min.css" rel="stylesheet" />
-<link href="/michaelFolder/healthFinal/CSS/half-slider.css" rel="stylesheet" />
-<link href="/michaelFolder/healthFinal/CSS/NavbarMaster.css" rel="stylesheet" />
+<link href="bootstrap.min.css" rel="stylesheet" />
+<link href="/healthFinal/CSS/half-slider.css" rel="stylesheet" />
 
 
 <head>
-
 
 <title>GoPortlethen</title>
 <style>

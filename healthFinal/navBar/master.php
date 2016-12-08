@@ -34,7 +34,7 @@
                         <ul>
                             <li><a href="#">Clubs</a></li>
                             <li><a href="../webPages/contributorPage.php">Health</a></li>
-                            <li><a href="#">Maps</a></li>
+                            <li><a href="/Maps/index.php">Maps</a></li>
 
                         </ul>
 
