@@ -5,7 +5,7 @@ include 'master.php';
 
 <html>
 <head>
-<link href="../CoreCSS/master.css" rel="stylesheet" type="text/css">
+<link href="/healthFinal/CSS/healthPage.css" rel="stylesheet" type="text/css">
 
 <title>GoPortlethen</title>
 <style>
@@ -129,6 +129,14 @@ include 'master.php';
     <br>
     <a href="MarkerAdmin.php">Edit Markers</a>
 </div>
+
+<ul class="ulProducts" runat="server" id="newsFeed">
+    <li class ="display2">
+        <b>Healthy Body</b>
+        <br>
+        Excessive body fat can be caused by many factors: over eating due to stress, unbalanced diet and not enough exercise to name a few. It's really easy
+        to gain weight and even easier not to do anything about it. This page will explain why you need to lose weight and methods on how to lose weight
+        <hr>
 
 </body>
 
