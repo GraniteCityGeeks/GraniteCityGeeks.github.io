@@ -1,74 +1,138 @@
 <?php
-//$ID = $_POST['var'];
-echo 'ID ' . $ID .';';
-echo 'hello world!!!';
-include("scripts/dbconnect.php");
-include("scripts/header.php");
-loadData($db);
 
-    echo '<main>
-        <form action="edit" method="post">
-            <input type="text" name="username" placeholder="' . $_SESSION['username'] . '"></br>
-            <input type="password" name="password" placeholder="password"></br>
-            <input type="text" name="bio" placeholder="bio"></br>
-            <input type="radio" name="accessLevelID" value= "2" > Contributor<br>
-            <input type="radio" name="accessLevelID" value= "3"> NKPAG<br>
-            <input type="radio" name="accessLevelID" value= "4"> Club Administrator<br>
-            <input type="radio" name="accessLevelID" value= "5"> Site Administrator<br>
-            <p><input type="submit" value="Submit"></p>
-        </form>
-    </main>';
+function renderForm($id, $username, $password, $error)
 
-//Jordan's a kint
-include("scripts/Footer.php");
+{
 
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+    ?>
+
+    <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+    <html>
+
+    <head>
+
+        <title>Edit Record</title>
+
+    </head>
+
+    <body>
+
+    <?php
+
+    // if there are any errors, display them
+
+    if ($error != '')
+
+    {
+
+        echo '<div style="padding:4px; border:1px solid red; color:red;">'.$error.'</div>';
+
+    }
+
+    ?>
 
 
 
-//$username = $_POST['username'];
-//$password = $_POST['password'];
-//$bio = $_POST['bio'];
-//$accessLevelID = $_POST['accessLevelID'];
-//
-//if (checkUsers($username, $db)) {
-//    $sql = "INSERT INTO port_users (username, password,bio,accessLevelID) VALUES ('$username', '$password','$bio', '$accessLevelID')";
-//
-//    if (mysqli_query($db, $sql)) {
-//        echo "New record created succesfully";
-//
-//    } else {
-//        echo "Error: " . $sql . "<br>" . mysqli_error($db);
-//    }
-//
-//    mysqli_close($db);
-//} elseif ($username == '' || $password == ''){
-//    echo "Please enter a username and password";
-//}
-//else{
-//    echo "User already exists";
-//}
-//
-//function checkUsers($username, $db){
-//    $sql = "SELECT username FROM port_users";
-//    $result = mysqli_query($db, $sql);
-//
-//    while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
-//        if ($row['username'] == $username) {
-//            return false;
-//        }
-//    }
-//    return true;
-//}
+    <form action="" method="post">
 
-function loadData($db) {
-    session_start();
-    $userID = $_POST['var'];
-    $sql = "SELECT * FROM port_users WHERE userID='. $userID .'";
-    $result = mysqli_query($db, $sql);
-    $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
-    $username = $row['username'];
-    $_SESSION["username"] = $username;
+        <input type="hidden" name="id" value="<?php echo $id; ?>"/>
+
+        <div>
+
+            <p><strong>ID:</strong> <?php echo $id; ?></p>
+
+            <strong>First Name: *</strong> <input type="text" name="username" value="<?php echo $username; ?>"/><br/>
+
+            <strong>Last Name: *</strong> <input type="text" name="password" value="<?php echo $password; ?>"/><br/>
+
+            <p>* Required</p>
+
+            <input type="submit" name="submit" value="Submit">
+
+        </div>
+
+    </form>
+
+    </body>
+
+    </html>
+
+    <?php
+
 }
+
+include('scripts/dbconnect.php');
+
+if (isset($_POST['submit']))
+
+{
+
+    if (is_numeric($_POST['id'])) {
+
+        $id = $_POST['id'];
+
+        $username = $_POST['username'];
+
+        $password = $_POST['password'];
+
+
+        if ($username == '' || $password == '') {
+            $error = 'ERROR: Please fill in all required fields!';
+
+            renderForm($id, $username, $password, $error);
+
+        } else {
+
+            mysqli_query("UPDATE port_users SET username='$username', password='$password' WHERE id='$id'");
+
+            header("Location: /ClubWeb/View");
+        }
+
+    } else {
+
+        echo 'Error!';
+
+    }
+
+} else {
+
+
+
+    $ID = $params['userID'];
+
+    if (isset($params['userID']) && is_numeric($params['userID']) && ($params['userID']) > 0)
+
+    {
+
+// query db
+
+        $id = ($params['userID']);
+
+        $result = "SELECT * FROM port_users WHERE id=$id";
+
+        $row = $result->fetch_array();
+
+        if($row) {
+
+            $username = $row['username'];
+
+            $password = $row['password'];
+
+            renderForm($id, $username, $password, '');
+
+        } else {
+
+            echo "No results!";
+
+        }
+
+    } else {
+
+        echo 'Error!';
+
+    }
+
+}
+
+?>
