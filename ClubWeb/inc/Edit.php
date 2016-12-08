@@ -1,16 +1,6 @@
 <?php
 include("scripts/header.php");
-function renderForm($id, $username, $password, $error){
-
-    if ($error != '')
-
-    {
-
-        echo '<div style="padding:4px; border:1px solid red; color:red;">'.$error.'</div>';
-
-    }
-
-    ?>
+?>
     <main>
     <form action="" method="post">
             <input type="hidden" name="id" value="<?php echo $id; ?>"/>
@@ -22,8 +12,6 @@ function renderForm($id, $username, $password, $error){
     </main>
 
     <?php
-
-}
 
 include('scripts/dbconnect.php');
 
