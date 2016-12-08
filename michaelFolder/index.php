@@ -4,7 +4,7 @@ include '../navBar/master.php';
 
 <!DOCTYPE html>
 <html lang="en">
-<link href="../CSS/master.css" rel="stylesheet" />
+<link href="master.css" rel="stylesheet" />
 
 <head>
     <meta charset="UTF-8">
