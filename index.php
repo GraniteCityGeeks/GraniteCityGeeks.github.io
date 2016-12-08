@@ -1,22 +1,19 @@
 <?php
-include '/healthFinal/navBar/master.php';
+include 'master.php';
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
-
-<link href="../CSS/bootstrap.min.css" rel="stylesheet" />
-<link href="../CSS/half-slider.css" rel="stylesheet" />
-<link href="../CSS/healthPage.css" rel="stylesheet" />
-
+<!--
+<link href="../CoreCSS/bootstrap.min.css" rel="stylesheet" />
+<link href="../CoreCSS/half-slider.css" rel="stylesheet" />
+<link href="../CoreCSS/healthPage.css" rel="stylesheet" />
+-->
 
 <h1> Granite City Geeks - Go Portlethen</h1>
 <h2> Get Healthy, it's ace</h2>
 
 
-        </div>
-    </div>
-</header>
 
 <body>
 
@@ -30,8 +27,8 @@ include '/healthFinal/navBar/master.php';
 </div>
 
 
-<script src="../js/jquery.js"></script>
-<script src="../js/bootstrap.min.js"></script>
+<script src="src/js/jquery.js"></script>
+<script src="src/js/bootstrap.min.js"></script>
 <script>
     $('.carousel').carousel({
         interval: 5000
