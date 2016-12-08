@@ -1,14 +1,17 @@
 <?php
-include '..healthFinal/navBar/master.php';
+include '../healthFinal/navBar/master.php';
 
 ?>
 
 <html>
-<head>
-<link href="../CoreCSS/master.css" rel="stylesheet" type="text/css">
-    <link href="..healthFinal/CSS/bootstrap.min.css" rel="stylesheet" />
-    <link href="..healthFinal/CSS/half-slider.css" rel="stylesheet" />
 
+<link href="../CoreCSS/master.css" rel="stylesheet" type="text/css">
+<link href="../healthFinal/CSS/bootstrap.min.css" rel="stylesheet" />
+<link href="../healthFinal/CSS/half-slider.css" rel="stylesheet" />
+
+
+
+<head>
 
 
 <title>GoPortlethen</title>
@@ -100,20 +103,39 @@ include '..healthFinal/navBar/master.php';
     <meta charset="UTF-8">
     <title></title>
 </head>
-<body>
+
+
 
 
 <br>
-
 <br>
+
+
 
 <header id="myCarousel" class="carousel slide">
+    <div class="carousel-inner">
+        <div class="item active">
+            <div class="fill" style="background-image: url('../Images/gym-wallpaper-workout.jpg')"></div>
+        </div>
+        <div class="item">
+            <div class="fill" style="background-image: url('../Images/healthyfood.jpg')"></div>
 
-    <div id="map">
+        </div>
+        <div class="item">
+            <div class="fill" style="background-image: url('../Images/hills.jpg')"></div>
 
+        </div>
     </div>
-
 </header>
+
+<script src="../js/jquery.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+
+<script>
+    $('.carousel').carousel({
+        interval: 5000
+    })
+</script>
 
 
 <div class="container">
@@ -125,23 +147,27 @@ include '..healthFinal/navBar/master.php';
 
     <hr class="type_3" />
 
+        <div id="map">
+
+        </div>
+
 
         <div class="col-lg-12" style="width: 350px">
-            <h2>Twitter Feed!</h2>
-
             <div id="twitter">
                 <a class="twitter-timeline" data-width="400" data-height="800" d href="https://twitter.com/PortlethenGC">Tweets by PortlethenGC</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
-            <div class="col-lg-12" style="width: 350px">
-                <br>
-                Is this the text you are looking for Jamie???
-                <br>
-                <h4>NKPAG USER</h4>
-                <br>
-                <a href="MarkerAdmin.php">Edit Markers</a>
-                </div>
-</div>
-</div>
+        </div>
+
+        <div class="col-lg-12" style="width: 350px">
+            <br>
+            Is this the text you are looking for Jamie???
+            <br>
+            <h4>NKPAG USER</h4>
+            <br>
+            <a href="MarkerAdmin.php">Edit Markers</a>
+        </div>
+
+    </div>
 </div>
 
 
@@ -151,6 +177,5 @@ include '..healthFinal/navBar/master.php';
 <br>
 <br>
 
-</body>
 
 </html>
