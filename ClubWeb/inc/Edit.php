@@ -45,16 +45,15 @@ if (isset($_POST['submit']))
         $accessLevelID = $_POST['acessLevelID'];
 
 
-        if ($username == '' || $password == ''  || $bio == ''  || $photoID == '' || $accessLevelID == '') {
-            $error = 'ERROR: Please fill in all required fields!';
+        if ($username == '' || $password == '') {
 
             renderForm($id, $username, $password,$bio,$photoID,$accessLevelID,$db);
+            echo "Please make sure they have a username and password";
+
 
         } else {
 
-            $sql = "UPDATE port_users SET username='$username', password='$password', bio='$bio',photoID='$photoID', accessLevelID='$accessLevelID' WHERE userID='$id'";
-            $result = $db->query($sql);
-
+            mysqli_query($db,"UPDATE port_users SET username='$username', password='$password', bio='$bio',photoID='$photoID', accessLevelID='$accessLevelID' WHERE userID='$id'");
             header("Location: /ClubWeb/View");
         }
 
