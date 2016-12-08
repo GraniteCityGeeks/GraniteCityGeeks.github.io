@@ -164,7 +164,7 @@ include'../healthFinal/navBar/master.php'
 <meta charset="UTF-8">
 <title></title>
 </head>
-<body>
+<body onload="initMap">
 
 <br>
 <br>
