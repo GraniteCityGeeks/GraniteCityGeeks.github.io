@@ -18,20 +18,6 @@ function renderForm($id, $username, $password, $error)
 
     <body>
 
-    <?php
-
-    // if there are any errors, display them
-
-    if ($error != '')
-
-    {
-
-        echo '<div style="padding:4px; border:1px solid red; color:red;">'.$error.'</div>';
-
-    }
-
-    ?>
-
 
 
     <form action="" method="post">
