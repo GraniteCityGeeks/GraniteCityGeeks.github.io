@@ -14,9 +14,6 @@ include '/healthFinal/navBar/master.php';
 <h2> Get Healthy, it's ace</h2>
 
 
-        </div>
-    </div>
-</header>
 
 <body>
 
