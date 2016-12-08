@@ -44,20 +44,9 @@ body
     border: solid #080808;
 }
 
-hr.style-three {
-    height: 30px;
-    border-style: solid;
-    border-color: black;
-    border-width: 1px 0 0 0;
-    border-radius: 20px;
-}
-hr.style-three:before {
-    display: block;
-    content: "";
-    height: 30px;
-    margin-top: -31px;
-    border-style: solid;
-    border-color: black;
-    border-width: 0 0 1px 0;
-    border-radius: 20px;
+hr.type_3 {
+    border: 0;
+    height: 25px;
+    background-image: url(image/type_3.png);
+    background-repeat: no-repeat;
 }
