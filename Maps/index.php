@@ -8,6 +8,7 @@ include'../healthFinal/navBar/master.php'
 
 <link href="bootstrap.min.css" rel="stylesheet" />
 <link href="/healthFinal/CSS/half-slider.css" rel="stylesheet" />
+<link href="/CoreCSS/master.css" rel="stylesheet" />
 
 
 <head>
@@ -168,6 +169,21 @@ include'../healthFinal/navBar/master.php'
     </div>
 </div>
 
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC8HwZx1Aknt-BHgT2vYtcgeBBvokVzWU&callback=initMap">
+</script>
+
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+
+<br>
+<br>
+
+<div id="top" style="float:left position:absolute;">
+
+    <div id="map" style="height:700px;width:1250px; float:left;">
 
 <br>
 <br>
