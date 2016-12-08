@@ -19,11 +19,11 @@
 <body class="master-body">
 <form id="form1" runat="server">
     <header class="header">
-        <nav>
+            <nav>
             <ul>
                 <li><a href="/Maps"><b>Maps</b></a></li>
                 <li><a href="/ClubWeb/"><b>Clubs</b></a></li>
-                <li><a href="/healthpages/health.php"><b>Health</b></a></li>
+                <li><a href="/healthpages//webPages/index.php"><b>Health</b></a></li>
              </ul>
             </nav>
 
