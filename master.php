@@ -12,7 +12,10 @@
     <meta name="author" content="Granite City Geeks">
 
 
-    <link href="NavbarMaster.css" rel="stylesheet" />
+
+    <link href="/michaelFolder/healthFinal/CSS/bootstrap.min.css" rel="stylesheet" />
+    <link href="/michaelFolder/healthFinal/CSS/half-slider.css" rel="stylesheet" />
+    <link href="/michaelFolder/healthFinal/CSS/NavbarMaster.css" rel="stylesheet" />
 
 </head >
 

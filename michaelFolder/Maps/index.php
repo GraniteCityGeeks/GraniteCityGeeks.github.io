@@ -8,7 +8,7 @@ include '../healthFinal/navBar/master.php';
 
 <link href="../healthFinal/CSS/bootstrap.min.css" rel="stylesheet" />
 <link href="../healthFinal/CSS/half-slider.css" rel="stylesheet" />
-<link href="../NavbarMaster.css" rel="stylesheet" />
+<link href="index.phpna" rel="stylesheet" />
 
 
 <head>
