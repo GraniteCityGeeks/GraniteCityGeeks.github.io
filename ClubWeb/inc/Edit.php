@@ -42,7 +42,7 @@ if (isset($_POST['submit']))
         $password = $_POST['password'];
         $bio = $_POST['bio'];
         $photoID = $_POST['photoID'];
-        $accessLevelID = $_POST['acessLevelID'];
+        $accessLevelID = $_POST['accessLevelID'];
 
 
         if ($username == '' || $password == '') {
