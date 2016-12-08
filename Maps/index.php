@@ -8,7 +8,7 @@ include'../healthFinal/navBar/master.php'
 <link href="bootstrap.min.css" rel="stylesheet" />
 <link href="/healthFinal/CSS/half-slider.css" rel="stylesheet" />
 <link href="/CoreCSS/master.css" rel="stylesheet" />
-
+<link href="/healthFinal/CSS/healthPage.css">
 <head>
 
 <title>GoPortlethen</title>
