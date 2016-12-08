@@ -69,9 +69,7 @@ if (isset($_POST['submit']))
 
     $id = $params['userID'];
 
-    if (isset($params['userID']))
-
-    {
+    if (isset($params['userID'])) {
 
         $result = mysqli_query($db,"SELECT * FROM port_users WHERE userID=$id");
 

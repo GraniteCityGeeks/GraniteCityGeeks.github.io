@@ -1,6 +1,6 @@
 <?php
-include '../navBar/master.php';
-?>
+//include '../navBar/master.php';
+//?>
 
 <!DOCTYPE html>
 <html lang="en">
