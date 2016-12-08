@@ -2,9 +2,9 @@
 include("scripts/header.php");
 
 
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+//ini_set('display_errors', 1);
+//ini_set('display_startup_errors', 1);
+//error_reporting(E_ALL);
 
 function renderForm($id, $username, $password,$bio,$photoID,$accessLevelID, $db){
 
@@ -53,7 +53,7 @@ if (isset($_POST['submit']))
         } else {
 
             $sql = "UPDATE port_users SET username='$username', password='$password', bio='$bio',photoID='$photoID', accessLevelID='$accessLevelID' WHERE userID='$id'";
-            $result = query($sql);
+            $result = $db->query($sql);
 
             header("Location: /ClubWeb/View");
         }
