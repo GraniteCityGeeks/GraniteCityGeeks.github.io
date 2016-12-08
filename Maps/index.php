@@ -16,6 +16,15 @@ include'../healthFinal/navBar/master.php'
     @import url('https://fonts.googleapis.com/css?family=Roboto');
 </style>
 
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $( function() {
+            $( "#twitter" ).draggable();
+        } );
+    </script>
+
+
 
 <script type="text/javascript">
     function initMap() {
@@ -149,6 +158,7 @@ include'../healthFinal/navBar/master.php'
 </div>
 
             <div class="col-lg-12" style="width: 350px">
+
             <div id="twitter">
                 <a class="twitter-timeline" data-width="400" data-height="800" d href="https://twitter.com/PortlethenGC">Tweets by PortlethenGC</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
