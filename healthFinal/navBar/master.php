@@ -16,7 +16,7 @@
     <header >
         <nav>
             <ul>
-                <li><a href="../webPages/index.php"><b>Home</b></a></li>
+                <li><a href="/healthFinal/webPages/index.php"><b>Home</b></a></li>
                 <li>
                     <a href="#"><b>Clubs</b></a>
                 </li>
