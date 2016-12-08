@@ -136,12 +136,15 @@ include'../healthFinal/navBar/master.php'
 
     <hr class="type_3" />
 
-        <div id="map">
-
-        </div>
-
-
         <div class="col-lg-12" style="width: 350px">
+        <div id="top" style="float:left position:absolute;">
+
+            <div id="initmap" style="height:700px;width:1250px; float:left;">
+            </div>
+    </div>
+</div>
+
+            <div class="col-lg-12" style="width: 350px">
             <div id="twitter">
                 <a class="twitter-timeline" data-width="400" data-height="800" d href="https://twitter.com/PortlethenGC">Tweets by PortlethenGC</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
@@ -169,10 +172,6 @@ include'../healthFinal/navBar/master.php'
 <br>
 <br>
 
-<div id="top" style="float:left position:absolute;">
-
-    <div id="initmap" style="height:700px;width:1250px; float:left;">
-    </div>
 
 
 
