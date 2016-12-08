@@ -13,7 +13,7 @@ function renderForm($id, $username, $password, $error){
     ?>
     <main>
     <form action="" method="post">
-        <input type="hidden" name="id" value="<?php echo $id; ?>"/>
+            <input type="hidden" name="id" value="<?php echo $id; ?>"/>
             <p><strong>ID:</strong> <?php echo $id; ?></p>
             <strong>First Name: *</strong> <input type="text" name="username" value="<?php echo $username; ?>"/><br/>
             <strong>Last Name: *</strong> <input type="text" name="password" value="<?php echo $password; ?>"/><br/>
