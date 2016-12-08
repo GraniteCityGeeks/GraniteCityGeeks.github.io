@@ -134,8 +134,12 @@ include'../healthFinal/navBar/master.php'
             <i>This page will show points of interest on an interactive map!</i>
         </div>
 
-    <hr class="type_3" />
 
+    <hr class="type_3" />
+        <br>
+        <br>
+        <br>
+        <br>
         <div class="col-lg-12" style="width: 350px">
         <div id="top" style="float:left position:absolute;">
 
