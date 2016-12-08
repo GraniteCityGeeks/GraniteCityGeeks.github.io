@@ -5,7 +5,6 @@ include'../healthFinal/navBar/master.php'
 
 <html>
 
-
 <link href="bootstrap.min.css" rel="stylesheet" />
 <link href="/healthFinal/CSS/half-slider.css" rel="stylesheet" />
 <link href="/CoreCSS/master.css" rel="stylesheet" />
@@ -20,7 +19,7 @@ include'../healthFinal/navBar/master.php'
 
 <script type="text/javascript">
     function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
+        map = new google.maps.Map(document.getElementById('initmap'), {
             center: {lat: 57.061681, lng: -2.129468},
             zoom: 12,
             MapTypeId: "satellite"
