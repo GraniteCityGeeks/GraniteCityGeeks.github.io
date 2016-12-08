@@ -87,7 +87,7 @@ include 'master.php';
 
 <div id="top" style="float:left position:absolute;">
 
-    <div id="mapdiv" style="">
+    <div id="map" style="height:700px;width:1250px; float:left;">
 
     </div>
 
