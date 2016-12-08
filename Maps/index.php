@@ -106,9 +106,6 @@ include'../healthFinal/navBar/master.php'
 
 
 
-<br>
-<br>
-
 
 
 <header id="myCarousel" class="carousel slide">
