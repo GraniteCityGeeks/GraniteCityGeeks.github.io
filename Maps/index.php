@@ -130,14 +130,7 @@ include'../healthFinal/navBar/master.php'
             </div>
         </div>
 
-        <div class="col-lg-12" style="width: 350px">
-            <br>
-            Is this the text you are looking for Jamie???
-            <br>
-            <h4>NKPAG USER</h4>
-            <br>
-            <a href="MarkerAdmin.php">Edit Markers</a>
-        </div>
+
 
     </div>
 </div>
@@ -164,6 +157,15 @@ include'../healthFinal/navBar/master.php'
     <br>
     <br>
     <br>
+
+    <div class="col-lg-12" style="width: 350px">
+        <br>
+        Is this the text you are looking for Jamie???
+        <br>
+        <h4>NKPAG USER</h4>
+        <br>
+        <a href="MarkerAdmin.php">Edit Markers</a>
+    </div>
 
 
 </html>
