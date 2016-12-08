@@ -68,7 +68,7 @@ if (isset($_POST['submit']))
 
         $result = "SELECT * FROM port_users WHERE id=$id";
 
-        $row = $result->fetch_array();
+        $row = mysqli_fetch_array($result);
 
         if($row) {
 
