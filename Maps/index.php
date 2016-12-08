@@ -1,11 +1,15 @@
 <?php
-include 'master.php';
+include '../navBar/master.php';
 
 ?>
 
 <html>
 <head>
 <link href="../CoreCSS/master.css" rel="stylesheet" type="text/css">
+    <link href="../CSS/bootstrap.min.css" rel="stylesheet" />
+    <link href="../CSS/half-slider.css" rel="stylesheet" />
+
+
 
 <title>GoPortlethen</title>
 <style>
