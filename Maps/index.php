@@ -1,5 +1,5 @@
 <?php
-include '';
+include '../healthFinal/navBar/master.php';
 
 ?>
 
