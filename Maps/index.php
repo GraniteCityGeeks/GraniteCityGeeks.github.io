@@ -160,9 +160,7 @@ include'../healthFinal/navBar/master.php'
     </div>
 </div>
 
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC8HwZx1Aknt-BHgT2vYtcgeBBvokVzWU&callback=initMap">
-</script>
+
 
 <meta charset="UTF-8">
 <title></title>
