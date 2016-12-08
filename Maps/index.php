@@ -87,7 +87,7 @@ include 'master.php';
 
 <div id="top" style="float:left position:absolute;">
 
-    <div id="map" style="height:700px;width:1250px; float:left;">
+    <div id="map" style="height:400px;width:80%; float:left;">
 
     </div>
 
@@ -105,7 +105,7 @@ include 'master.php';
 <br>
 
 
-<div class="textD" style="background-color: lightgray float:left;">
+
     <br>
     Is this the text you are looking for Jamie???
     <br>
