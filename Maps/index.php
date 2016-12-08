@@ -10,7 +10,6 @@ include'../healthFinal/navBar/master.php'
 <link href="/healthFinal/CSS/half-slider.css" rel="stylesheet" />
 <link href="/CoreCSS/master.css" rel="stylesheet" />
 
-
 <head>
 
 <title>GoPortlethen</title>
@@ -103,29 +102,24 @@ include'../healthFinal/navBar/master.php'
     <title></title>
 </head>
 
-
-
-
-
-
 <header id="myCarousel" class="carousel slide">
     <div class="carousel-inner">
         <div class="item active">
             <div class="fill" style="background-image: url('gold.jpg')"></div>
         </div>
         <div class="item">
-            <div class="fill" style="background-image: url('../Images/healthyfood.jpg')"></div>
+            <div class="fill" style="background-image: url('aberdeen_harbour_masthead_2.jpg')"></div>
 
         </div>
         <div class="item">
-            <div class="fill" style="background-image: url('../Images/hills.jpg')"></div>
+            <div class="fill" style="background-image: url('castle.jpg')"></div>
 
         </div>
     </div>
 </header>
 
-<script src="../js/jquery.js"></script>
-<script src="../js/bootstrap.min.js"></script>
+<script src="/healthFinal/js/jquery.js"></script>
+<script src="/healthFinal/js/bootstrap.min.js"></script>
 
 <script>
     $('.carousel').carousel({
@@ -165,6 +159,8 @@ include'../healthFinal/navBar/master.php'
 
     </div>
 </div>
+
+
 
 <meta charset="UTF-8">
 <title></title>
