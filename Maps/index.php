@@ -183,6 +183,9 @@ include'../healthFinal/navBar/master.php'
 
 <div id="top" style="float:left position:absolute;">
 
+
+    /div
+
     <div id="map" style="height:700px;width:1250px; float:left;">
 
 <br>
@@ -190,6 +193,6 @@ include'../healthFinal/navBar/master.php'
 <br>
 <br>
 <br>
-<div id=""
+
 
 </html>
