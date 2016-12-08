@@ -1,13 +1,13 @@
 <?php
-include '../navBar/master.php';
+include '..healthFinal/navBar/master.php';
 
 ?>
 
 <html>
 <head>
 <link href="../CoreCSS/master.css" rel="stylesheet" type="text/css">
-    <link href="../CSS/bootstrap.min.css" rel="stylesheet" />
-    <link href="../CSS/half-slider.css" rel="stylesheet" />
+    <link href="..healthFinal/CSS/bootstrap.min.css" rel="stylesheet" />
+    <link href="..healthFinal/CSS/half-slider.css" rel="stylesheet" />
 
 
 
