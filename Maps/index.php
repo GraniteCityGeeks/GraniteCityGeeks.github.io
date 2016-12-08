@@ -107,11 +107,11 @@ include'../healthFinal/navBar/master.php'
             <div class="fill" style="background-image: url('gold.jpg')"></div>
         </div>
         <div class="item">
-            <div class="fill" style="background-image: url('train.jpg')"></div>
+            <div class="fill" style="background-image: url('ASPC_ABERDEEN-IN-SNOW.jpg')"></div>
 
         </div>
         <div class="item">
-            <div class="fill" style="background-image: url('castle.jpg')"></div>
+            <div class="fill" style="background-image: url('rem.jpg')"></div>
 
         </div>
     </div>
