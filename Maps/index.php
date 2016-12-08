@@ -106,9 +106,6 @@ include'../healthFinal/navBar/master.php'
 
 
 
-<br>
-<br>
-
 
 
 <header id="myCarousel" class="carousel slide">
@@ -183,10 +180,10 @@ include'../healthFinal/navBar/master.php'
 
 <div id="top" style="float:left position:absolute;">
 
+    <div id="map" style="height:700px;width:1250px; float:left;">
+    </div>
 
-    /div
 
-    <div id="initmap" style="height:700px;width:1250px; float:left;">
 
 <br>
 <br>
