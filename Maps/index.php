@@ -106,7 +106,7 @@ include '../healthFinal/navBar/master.php';
 
 
 
-<body>
+
 <br>
 <br>
 
@@ -137,6 +137,7 @@ include '../healthFinal/navBar/master.php';
     })
 </script>
 
+
 <div class="container">
     <div class="row">
         <div class="col-lg-12">
@@ -145,8 +146,6 @@ include '../healthFinal/navBar/master.php';
         </div>
 
     <hr class="type_3" />
-
-
 
         <div id="map">
 
@@ -178,6 +177,5 @@ include '../healthFinal/navBar/master.php';
 <br>
 <br>
 
-</body>
 
 </html>
