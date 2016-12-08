@@ -186,7 +186,7 @@ include'../healthFinal/navBar/master.php'
 
     /div
 
-    <div id="map" style="height:700px;width:1250px; float:left;">
+    <div id="initmap" style="height:700px;width:1250px; float:left;">
 
 <br>
 <br>
