@@ -5,8 +5,7 @@ include 'master.php';
 
 <html>
 <head>
-    <link href="../CoreCSS/healthPage" rel="stylesheet" type="text/css">
-    <link href="../CoreCSS/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="../CoreCSS/master.css" rel="stylesheet" type="text/css">
 
 <title>GoPortlethen</title>
 <style>
@@ -122,16 +121,14 @@ include 'master.php';
 <br>
 
 
-<div class="container">
-    <div class="row">
-        <div class="col-lg-12">
-            <h1>Healthy Lifestyle</h1>
-            <i>This page will contain helpful information, tips & tricks for staying healthy!</i>
-        </div>
-    </div>
-    <hr class="type_3" />
-
-    <h2>News Feed!</h2>
+<div class="textD" style="background-color: lightgray float:left;">
+    <br>
+    Is this the text you are looking for Jamie???
+    <br>
+    <h4>NKPAG USER</h4>
+    <br>
+    <a href="MarkerAdmin.php">Edit Markers</a>
+</div>
 
 </body>
 
