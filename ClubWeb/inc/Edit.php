@@ -56,13 +56,9 @@ if (isset($_POST['submit']))
 
     $id = $params['userID'];
 
-    if (isset($params['userID']) && is_numeric($params['userID']) && ($params['userID']) > 0)
+    if (isset($params['userID']))
 
     {
-
-// query db
-
-        $id = ($params['userID']);
 
         $result = "SELECT * FROM port_users WHERE id=$id";
 
@@ -74,7 +70,7 @@ if (isset($_POST['submit']))
 
             $password = $row['password'];
 
-            renderForm($id, $username, $password, '');
+            renderForm($id, $username, $password);
 
         } else {
 
