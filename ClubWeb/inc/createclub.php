@@ -5,7 +5,6 @@ include ("scripts/header.php");
 if (isset($_SESSION['username'])) //SESSION DOES EXIST
 {
     if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-        include("scripts/header_l2.php");
         echo "
 <main>
 ";
