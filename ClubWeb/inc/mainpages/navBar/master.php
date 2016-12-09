@@ -21,7 +21,7 @@
                     <a href="/ClubWeb/inc/Home.php"><b>Clubs</b></a>
                 </li>
                 <li><a href="/healthFinal/webPages/healthyLiving.php"><b>Healthy Living</b></a></li>
-                <li><a href="/Maps/index.php"><b>Local Trails</b></a></li>
+                <li><a href="/ClubWeb/inc/mapsindex.php"><b>Local Trails</b></a></li>
                 <li><a href="#"><b>Site Users</b></a>
                     <ul>
                         <li><a href="#">Admin</a>

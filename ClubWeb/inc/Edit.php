@@ -36,6 +36,7 @@ $id = $params['userID'];
 
 // Check if userID has a value
 if (isset($params['userID'])) {
+
     // Get all attributes for that user
     $sql = "SELECT * FROM port_users WHERE userID='$id'";
     $result = mysqli_query($db, $sql);
@@ -64,7 +65,8 @@ if (isset($params['userID'])) {
 }
 
 // Wait for submit button press
-if(isset($_POST['submit'])) {
+if($_SERVER['REQUEST_METHOD'] === 'POST') {
+    echo 'submit pressed';
     // Assign values from form to variables
     $newUsername = $_POST['username'];
     $newPassword = $_POST['password'];
@@ -79,6 +81,7 @@ if(isset($_POST['submit'])) {
         echo "Please make sure the user has a username and password";
     } else {
         // Update user's details in database
+        echo 'updateUser called!';
         updateUser($id, $newUsername, $newPassword, $newBio, $newPhotoID, $newAccessLevelID, $db);
     }
 }
