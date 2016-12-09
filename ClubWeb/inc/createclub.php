@@ -16,7 +16,10 @@ if (isset($_SESSION['username'])) //SESSION DOES EXIST
             <br>
             <input type="text" name="clubTitle" placeholder="Club's Name" required>
             <br>
+            <br>
+            <br>
             <textarea name="ClubDescription" required></textarea>
+            <br>
             <br>
             <select name="genre">
                 <option value="1">Sports</option>
@@ -28,7 +31,9 @@ if (isset($_SESSION['username'])) //SESSION DOES EXIST
                 <option value="31">Other</option>
             </select>
             <br>
+            <br>
             <input type="file" name="filetoupload" id="filetoupload required">
+            <br>
             <br>
             <input type="submit" value="Create club!">
         </form>
