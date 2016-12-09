@@ -39,6 +39,14 @@ if (isset($params['userID'])) {
     // Get all attributes for that user
     $sql = "SELECT * FROM port_users WHERE userID=$id";
     $result = mysqli_query($db, $sql);
+
+
+    if (!$check1_res) {
+        printf("Error: %s\n", mysqli_error($con));
+        exit();
+    }
+
+    
     $row = mysqli_fetch_array($result);
 
     // Check row has values
