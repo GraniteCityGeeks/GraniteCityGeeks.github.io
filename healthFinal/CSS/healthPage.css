@@ -36,6 +36,7 @@ body
 
 .display2  {
     height:300px;
+    margin-top: 5px;
     width:500px;
     display:inline;
     float:left;
