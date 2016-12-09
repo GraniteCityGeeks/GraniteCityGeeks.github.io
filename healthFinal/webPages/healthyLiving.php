@@ -45,11 +45,12 @@ include '../navBar/master.php';
     </div>
     <hr class="pacman" />
 
-        <h2>News Feed!</h2>
+
 
 
 
 <ul class="ulProducts" runat="server" id="newsFeed" style="background-color: #f5f5f5">
+    <h2>News Feed!</h2>
     <?php
     include('dbconnect.php');
     /* this script loads the article the user clicked on.*/
