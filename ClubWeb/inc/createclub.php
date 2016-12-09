@@ -5,7 +5,6 @@ include ("scripts/header.php");
 if (isset($_SESSION['username'])) //SESSION DOES EXIST
 {
     if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-        include("scripts/header_l2.php");
         echo "
 <main>
 ";
@@ -34,7 +33,11 @@ if (isset($_SESSION['username'])) //SESSION DOES EXIST
             </select>
             <br>
             <br>
-            <input type="file" name="filetoupload" id="filetoupload required">
+            <select name="avatar">
+                <option value="1">Hills</option>
+                <option value="21">cyclist</option>
+                <option value="31">sunset</option>
+            </select>
             <br>
             <br>
             <input type="submit" value="Create club!">
