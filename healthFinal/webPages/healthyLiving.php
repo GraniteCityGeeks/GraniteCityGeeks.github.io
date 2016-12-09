@@ -45,11 +45,12 @@ include '../navBar/master.php';
     </div>
     <hr class="pacman" />
 
-        <h2>News Feed!</h2>
 
 
 
-<ul class="ulProducts" runat="server" id="newsFeed">
+
+<ul class="ulProducts" runat="server" id="newsFeed" style="background-color: #f5f5f5">
+    <h2>News Feed!</h2>
     <?php
     include('dbconnect.php');
     /* this script loads the article the user clicked on.*/
@@ -72,12 +73,12 @@ include '../navBar/master.php';
 </div>
 <br>
 
-<div class="container" style="background-color: #f5f5f5">
+<div class="container">
 <h2>Community Spotlight!</h2>
 <i>Articles published by users of this site!</i>
 <hr class="pacman"/>
 
-    <ul class="ulProducts" runat="server" id="newsFeed">
+    <ul class="ulProducts" runat="server" id="newsFeed" style="background-color: #f5f5f5">
 
 
 <?php
