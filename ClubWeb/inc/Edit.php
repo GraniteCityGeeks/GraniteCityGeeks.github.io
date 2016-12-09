@@ -73,6 +73,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
     $newBio = $_POST['bio'];
     $newPhotoID = $_POST['photoID'];
     $newAccessLevelID = $_POST['accessLevelID'];
+    $id = $_POST['id'];
 
     // Check if username or password is empty
     if ($newUsername == '' || $newPassword == '') {
