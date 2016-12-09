@@ -36,7 +36,9 @@ $id = $params['userID'];
 
 if (isset($params['userID'])) {
 
-    $result = mysqli_query($db, "SELECT * FROM port_users WHERE userID=$id");
+    $sql = "SELECT * FROM port_users WHERE userID=$id";
+
+    $result = mysqli_query($db, $sql);
 
     $row = mysqli_fetch_array($result);
 
