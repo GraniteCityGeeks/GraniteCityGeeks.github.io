@@ -45,7 +45,7 @@ include '../navBar/master.php';
 
         <h2>News Feed!</h2>
 
-    </div>
+
 
 <ul class="ulProducts" runat="server" id="newsFeed">
     <li class ="display2">
@@ -75,8 +75,9 @@ include '../navBar/master.php';
         Scotland. Just walking through the woods, or a small cycle or a hike up a hill will do wonders to the soul. Taking time for you is very important and will also help
         towards a healthy life
     </li>
-    </ul>
 
+    <hr class="pacman" />
+</div>
 <br>
 
 <div class="container">
@@ -84,7 +85,7 @@ include '../navBar/master.php';
     </div>
 <hr class="pacman"/>
     <ul class="ulProducts" runat="server" id="newsFeed">
-
+.
 
 <?php
 include('dbconnect.php');
