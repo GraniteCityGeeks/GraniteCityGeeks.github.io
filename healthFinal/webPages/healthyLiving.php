@@ -47,9 +47,9 @@ include '../navBar/master.php';
 
         <h2>News Feed!</h2>
 
-    </div>
 
-<ul class="ulProducts" runat="server" id="newsFeed" style="border: solid black">
+
+<ul class="ulProducts" runat="server" id="newsFeed">
     <?php
     include('dbconnect.php');
     /* this script loads the article the user clicked on.*/
@@ -69,14 +69,14 @@ include '../navBar/master.php';
     $db->close();
     ?>
     </ul>
-
+</div>
 <br>
 
 <div class="container">
 <h2>Community Spotlight!</h2>
 <i>Articles published by users of this site!</i>
 <hr class="pacman"/>
-</div>
+
     <ul class="ulProducts" runat="server" id="newsFeed">
 
 
@@ -91,6 +91,7 @@ if ($result->num_rows > 0) {
     // output data of each row
     while ($row = $result->fetch_assoc()) {
         echo '<li class="display"><b>'.$row["title"].'</b><br>'.$row["text"].'</li>';
+        echo '<hr>';
     }
 }
 else {
@@ -99,7 +100,7 @@ else {
 $db->close();
 ?>
 </ul>
-
+</div>
 <?php
 include '../webPages/footer.html';
 ?>
