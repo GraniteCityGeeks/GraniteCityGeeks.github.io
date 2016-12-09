@@ -76,6 +76,10 @@ include '../navBar/master.php';
         towards a healthy life
     </li>
     </ul>
+<div class="container">
+    <hr class="pacman" />
+    </div>
+
 
 <br>
 
@@ -84,7 +88,7 @@ include '../navBar/master.php';
     </div>
 <hr class="pacman"/>
     <ul class="ulProducts" runat="server" id="newsFeed">
-
+.
 
 <?php
 include('dbconnect.php');
