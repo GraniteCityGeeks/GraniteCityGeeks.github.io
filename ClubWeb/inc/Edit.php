@@ -65,6 +65,7 @@ if (isset($params['userID'])) {
 
 // Wait for submit button press
 if(isset($_POST['submit'])) {
+    echo 'submit pressed';
     // Assign values from form to variables
     $newUsername = $_POST['username'];
     $newPassword = $_POST['password'];
