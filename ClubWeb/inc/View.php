@@ -88,7 +88,7 @@ echo "<tr> <th>ID</th> <th>Username</th> <th>Password</th> <th>Bio</th> <th>Acce
 $result = $db->query($sql);
 while ($row = $result->fetch_array()) {
     echo "<tr>";
-    echo '<td>' . $row['userID'] .'</td>';
+    echo '<td>' . $row['userID'] . '</td>';
     echo '<td>' . $row['username'] . '</td>';
     echo '<td>' . $row['password'] . '</td>';
     echo '<td>' . $row['bio'] . '</td>';
@@ -96,8 +96,13 @@ while ($row = $result->fetch_array()) {
     echo '<td>' . $row['photoID'] . '</td>';
 //    echo '<td> <input type="submit" value="Edit">';
 //    echo '<td><a href="edit" class="edit' . $row['userID']. '">Edit</a></td>';
-    echo '<td><a href="Edit/' . $row['userID']. '">Edit</a></td>';
-    echo '<td><a href="delete/' . $row['userID']. '">Delete</a></td>';
+    echo '<td><a href="Edit/' . $row['userID'] . '">Edit</a></td>';
+    echo '<td><a href="delete/' . $row['userID'] . '">Delete</a></td>';
+    if ($row['confirmed'] == 1) {
+        echo '<td><a href="ConfirmUser/' . $row['userID'] . '">Confirm User</a></td>';
+    } else {
+        echo '<td>User Confirmed</td>';
+    }
     echo "</tr>";
 }
 

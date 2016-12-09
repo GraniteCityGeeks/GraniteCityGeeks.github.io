@@ -19,6 +19,7 @@ $rules = array(
     'add' => "/add",
     'Edit' => "/Edit/(?'userID'[\w\-]+)",
     'delete' => "/delete/(?'userID'[\w\-]+)",
+    'ConfirmUser/' => "/ConfirmUser/(?'userID'[\w\-]+)",
     'AddUser' => "/AddUser",
     'Clubs' => "/Clubs",
     'viewclubs' => "/viewclubs",
