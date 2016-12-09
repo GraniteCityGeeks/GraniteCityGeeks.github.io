@@ -16,6 +16,12 @@ $total = $result->num_rows;
 echo "<h1> Portlethen clubs </h1>";
 
 echo "<h4> Displaying ". $total . " active clubs </h4>";
+?>
+<script> document.getElementById('link').onclick = function() {
+        document.getElementById('form').submit();
+    }
+</script>
+<?
 
 while($row = $result->fetch_array()) {
     //echo all clubs
@@ -26,12 +32,7 @@ while($row = $result->fetch_array()) {
     echo "</form>";
 
 }
-?>
-<script> document.getElementById('link').onclick = function() {
-        document.getElementById('form').submit();
-    }
-</script>
-<?
+
 
 echo "</main>";
 
