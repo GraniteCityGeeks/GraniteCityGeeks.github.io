@@ -21,7 +21,7 @@ $rules = array(
     'delete' => "/delete/(?'userID'[\w\-]+)",
     'ConfirmUser' => "/ConfirmUser/(?'userID'[\w\-]+)",
     'AddUser' => "/AddUser",
-    'Clubs' => "/Clubs",
+    'Clubs' => "/Clubs/(?'linkref'[\w\-]+)",
     'viewclubs' => "/viewclubs",
     'createclub' => "/createclub",
     //
