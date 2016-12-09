@@ -211,5 +211,11 @@ include '../navBar/master.php';
         );
     }
 
+    <?php
+    include '../webPages/footer.html';
+    ?>
+
+
+
 
 </script>
