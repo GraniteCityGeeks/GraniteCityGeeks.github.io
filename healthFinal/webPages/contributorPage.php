@@ -186,6 +186,7 @@ include '../navBar/master.php';
 
                 $('#result').html(data);
                 alert(data);
+                window.location.replace("http://gcg.azurewebsites.net/healthFinal/webPages/healthyLiving.php");
             }
         );
     }
