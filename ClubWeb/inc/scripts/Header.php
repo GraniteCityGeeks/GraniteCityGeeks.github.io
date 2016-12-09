@@ -1,10 +1,11 @@
 <?
 session_start();
-include '../../../healthFinal/navBar/master.php';
+
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
+<link rel="stylesheet" href="/ClubWeb/style/style.css">
 <head runat = "server">
     <meta charset="UTF-8">
     <title>Sportlethen Clubs</title>
