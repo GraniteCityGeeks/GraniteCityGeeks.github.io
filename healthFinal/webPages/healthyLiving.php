@@ -5,10 +5,10 @@ include '../navBar/master.php';
 
 <!DOCTYPE html>
 <html lang="en">
-<link href="../CSS/bootstrap.min.css" rel="stylesheet" />
-<link href="../CSS/half-slider.css" rel="stylesheet" />
-<link href="../CSS/healthPage.css" rel="stylesheet" />
-<link href="../CSS/footer-basic-centered.css" rel="stylesheet" />
+<link href="../CSS/bootstrap.min.css?version=51" rel="stylesheet" />
+<link href="../CSS/half-slider.css?version=51" rel="stylesheet" />
+<link href="../CSS/healthPage.css?version=51" rel="stylesheet" />
+<link href="../CSS/footer-basic-centered.css?version=51" rel="stylesheet" />
 
 <header id="myCarousel" class="carousel slide">
     <div class="carousel-inner">
