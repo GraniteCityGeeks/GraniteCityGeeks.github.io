@@ -19,8 +19,8 @@ session_start();
     if (isset($_SESSION['username'])) {
         echo "<h3><a href='logout'>Logout({$_SESSION['username']})<img src={$_SESSION['photoID']} alt=\"Mountain View\" style=\"width:35px;height:35px;\"></a></h3>";
     } else {
-        echo "<h3><a href='login'>Login</a></h3>";
-        echo "<h3><a href='register'>Register</a></h3>";
+        echo "<h3><a href=' login '>Login</a></h3>";
+        echo "<h3><a href=' register '>Register</a></h3>";
     }
     ?>
     <nav>

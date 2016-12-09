@@ -26,6 +26,15 @@ header>h1{
 header>h3{
 
     float:right;
+    margin-outside: 1px;
+
+}
+
+header>h3 > a{
+
+    float:right;
+    color:white;
+
 }
 /* MAIN */
 main{
