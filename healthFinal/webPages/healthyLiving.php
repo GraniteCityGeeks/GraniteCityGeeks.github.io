@@ -49,7 +49,7 @@ include '../navBar/master.php';
 
     </div>
 
-<ul class="ulProducts" runat="server" id="newsFeed" style="border: solid black">
+<ul class="ulProducts" runat="server" id="newsFeed">
     <?php
     include('dbconnect.php');
     /* this script loads the article the user clicked on.*/
