@@ -39,7 +39,7 @@
                         </ul>
                      </ul>
                          </li>
-                <li><label>Welcome User</label></li>
+
             </ul>
         </nav>
 
