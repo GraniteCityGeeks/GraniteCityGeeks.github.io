@@ -18,7 +18,7 @@ header{
     height: 80px;
 }
 #main{
-    background-color: #9d9d9d;
+    background-color: #CAE4DB;
     height:300px;
     min-height: 300px;
     overflow:hidden;
@@ -27,7 +27,7 @@ header{
 }
 
 #column1{
-    background-color: #2e6da4;
+    background-color: #CAE4DB;
     width:60%;
     min-height: 300px;
     float:left;
@@ -35,19 +35,20 @@ header{
 }
 
 #sidebar{
-    background-color: #843534;
+    background-color: #00303F;
     margin-left: 60%;
     min-height: 300px;
 }
 
 footer{
-    background-color: #2b542c;
+    background-color: #DCAE1D;
     min-height:30px;
     text-align: center;
+    color: #00303f;
 }
 
 #nav{
-    background-color: #595959;
+    background-color: #00303f;;
     color: #ffffff;
     list-style: none;
     text-align: center;
