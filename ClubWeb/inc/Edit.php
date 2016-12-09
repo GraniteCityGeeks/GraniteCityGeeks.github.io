@@ -10,7 +10,7 @@ function renderForm($id, $username, $password,$bio,$photoID,$accessLevelID, $db)
 
     ?>
     <main>
-    <form action="" method="post">
+    <form action="edit" method="post">
             <input type="hidden" name="id" value="<?php echo $id; ?>"/>
             <p><strong>ID:</strong> <?php echo $id; ?></p>
             <strong>Username: *</strong> <input type="text" name="username" value="<?php echo $username; ?>"/><br/>
@@ -32,70 +32,108 @@ function renderForm($id, $username, $password,$bio,$photoID,$accessLevelID, $db)
 
 include('scripts/dbconnect.php');
 
-if (isset($_POST['submit']))
-{
+$id = $params['userID'];
 
-    if (isset($_POST['id'])) {
+// Check if userID has a value
+if (isset($params['userID'])) {
+    // Get all attributes for that user
+    $sql = "SELECT * FROM port_users WHERE userID='$id'";
+    $result = mysqli_query($db, $sql);
 
-        $id = $_POST['id'];
-        $username = $_POST['username'];
-        $password = $_POST['password'];
-        $bio = $_POST['bio'];
-        $photoID = $_POST['photoID'];
-        $accessLevelID = $_POST['accessLevelID'];
+//    if (!$result) {
+//        printf("Error: %s\n", mysqli_error($db));
+//        echo 'didnt work :(';
+//        exit();
+//    }
 
-
-        if ($username == '' || $password == '') {
-
-            renderForm($id, $username, $password,$bio,$photoID,$accessLevelID,$db);
-            echo "Please make sure they have a username and password";
+    $row = mysqli_fetch_array($result);
 
 
-        } else {
+    // Check row has values
+    if ($row) {
+        // Assign values in row to variables
+        $username = $row['username'];
+        $password = $row['password'];
+        $bio = $row['bio'];
+        $photoID = $row['photoID'];
+        $accessLevelID = $row['accessLevelID'];
 
-            mysqli_query($db,"UPDATE port_users SET username ='$username', password ='$password', bio ='$bio',photoID ='$photoID', accessLevelID ='$accessLevelID' WHERE userID='$id'");
-            header("Location: /ClubWeb/View");
-        }
-
-    } else {
-
-        echo 'Error!';
-
+        // Display the form with the user's current values
+        renderForm($id, $username, $password, $bio, $photoID, $accessLevelID, $db);
     }
-
-} else {
-
-
-
-    $id = $params['userID'];
-
-    if (isset($params['userID'])) {
-
-        $result = mysqli_query($db,"SELECT * FROM port_users WHERE userID=$id");
-
-        $row = mysqli_fetch_array($result);
-
-        if($row) {
-
-            $username = $row['username'];
-            $password = $row['password'];
-            $bio = $row['bio'];
-            $photoID = $row['photoID'];
-            $accessLevelID = $row['accessLevelID'];
-            renderForm($id, $username, $password,$bio,$photoID,$accessLevelID,$db);
-
-        } else {
-
-            echo "No results!";
-
-        }
-
-    } else {
-
-        echo 'Error!';
-
-    }
-
 }
+
+// Wait for submit button press
+if(isset($_POST['submit'])) {
+    // Assign values from form to variables
+    $newUsername = $_POST['username'];
+    $newPassword = $_POST['password'];
+    $newBio = $_POST['bio'];
+    $newPhotoID = $_POST['photoID'];
+    $newAccessLevelID = $_POST['accessLevelID'];
+
+    // Check if username or password is empty
+    if ($newUsername == '' || $newPassword == '') {
+        // Re-display form with existing values and inform user (no changes made)
+        //renderForm($id, $username, $password,$bio,$photoID,$accessLevelID,$db);
+        echo "Please make sure the user has a username and password";
+    } else {
+        // Update user's details in database
+        updateUser($id, $newUsername, $newPassword, $newBio, $newPhotoID, $newAccessLevelID, $db);
+    }
+}
+
+function updateUser($id, $username, $password, $bio, $photoID, $accessLevelID, $db) {
+    // Create query with new values
+    $sql = "UPDATE port_users SET username='$username', password='$password', bio='$bio', accessLevelID='$accessLevelID', photoID='$photoID' WHERE userID='$id'";
+    // Query database.
+    if (mysqli_query($db, $sql)) {
+        echo "User updated!";
+    } else {
+        // Report error if unsuccessful
+        echo "Error: " . $sql . "<br>" . mysqli_error($db);
+    }
+
+    mysqli_close($db);
+}
+
+    
+//    if (isset($_POST['submit'])) {
+//
+//        if (isset($_POST['id'])) {
+//
+//            $id = $_POST['id'];
+//            $username = $_POST['username'];
+//            $password = $_POST['password'];
+//            $bio = $_POST['bio'];
+//            $photoID = $_POST['photoID'];
+//            $accessLevelID = $_POST['accessLevelID'];
+//
+//
+//        if ($username == '' || $password == '') {
+//
+//            renderForm($id, $username, $password,$bio,$photoID,$accessLevelID,$db);
+//            echo "Please make sure they have a username and password";
+//
+//
+//        } else {
+//
+//            mysqli_query($db,"UPDATE port_users SET username ='$username', password ='$password', bio ='$bio',photoID ='$photoID', accessLevelID ='$accessLevelID' WHERE userID='$id'");
+//            header("Location: /ClubWeb/View");
+//        }
+//
+//        } else {
+//
+//            echo 'Error!';
+//
+//        }
+//
+//    } else {
+//
+//
+//        echo 'Whit!';
+//
+//
+//    }
 
 ?>

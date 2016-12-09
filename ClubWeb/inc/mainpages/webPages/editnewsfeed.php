@@ -5,7 +5,7 @@ $type = $_POST['type'];
 
 
 if($type=="insert") {
-    $sql = "INSERT INTO port_articles (title, text) VALUES ('" . $_POST['title'] . "', '" . $_POST['desc'] . "')";
+    $sql = "INSERT INTO port_newsfeed (title, text) VALUES ('" . $_POST['title'] . "', '" . $_POST['desc'] . "')";
     if ($db->query($sql) === TRUE) {
         echo $_POST['title'];
         echo " Article Added, thank you";
@@ -16,8 +16,8 @@ if($type=="insert") {
 
 if($type=="edit")
 {
-     echo $_POST['oldTitle'];
-    $sql = "UPDATE port_articles SET title='".$_POST['title']."',text='".$_POST['desc']."'WHERE title='".$_POST['oldTitle']."'";
+    echo $_POST['oldTitle'];
+    $sql = "UPDATE port_newsfeed SET title='".$_POST['title']."',text='".$_POST['desc']."'WHERE title='".$_POST['oldTitle']."'";
 
     if ($db->query($sql) === TRUE)
     {
@@ -32,7 +32,7 @@ if($type=="edit")
 if($type=="delete")
 {
     echo $_POST['toDelete'];
-    $sql = "DELETE from port_articles WHERE title='".$_POST['toDelete']."'";
+    $sql = "DELETE from port_newsfeed WHERE title='".$_POST['toDelete']."'";
 
     if ($db->query($sql) === TRUE)
     {

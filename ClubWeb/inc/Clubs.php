@@ -5,8 +5,9 @@ include ("scripts/header.php");
 echo "
 <main>
 ";
-$club = "1";
-$query = "SELECT *, C.description as clubDescription FROM port_club as C, port_articles as A, port_genre as G, port_photo as P WHERE clubid = '".$club."' AND G.genreid = C.genreid AND P.photoid = C.photoid AND A.articleid = C.articleid";
+$club = $params['linkref'];
+echo $club;
+$query = "SELECT *, C.description as clubDescription, G.description as Genre FROM port_club as C, port_articles as A, port_genre as G, port_photo as P WHERE clubid = '".$club."' AND G.genreid = C.genreid AND P.photoid = C.photoid AND A.articleid = C.articleid";
 
 //query to load up all articles
 $queryarticles ="SELECT * from port_club as C, port_club_article as A, port_photo as P WHERE C.clubid = A.clubid AND C.clubid = '".$club."'";
@@ -20,11 +21,14 @@ while($row = $result->fetch_array()) {
     $calender = $row['clubcalendar'];
     $photo = $row['URL'];
     $article = $row['text'];
+    $genre = $row['Genre'];
 }
     //add the title
 echo"<img src= '". $photo . "' height='300' width='300'>";
 
 echo"<h1>". $title . "</h1>";
+
+echo"<h5> Genre: ".$genre."</h5>";
 
 echo"<h3> Description </h3>";
 

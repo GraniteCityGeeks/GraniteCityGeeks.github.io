@@ -19,9 +19,11 @@ $rules = array(
     'add' => "/add",
     'Edit' => "/Edit/(?'userID'[\w\-]+)",
     'delete' => "/delete/(?'userID'[\w\-]+)",
+    'ConfirmUser' => "/ConfirmUser/(?'userID'[\w\-]+)",
     'AddUser' => "/AddUser",
-    'Clubs' => "/Clubs",
+    'Clubs' => "/Clubs/(?'linkref'[\w\-]+)",
     'viewclubs' => "/viewclubs",
+    'createclub' => "/createclub",
     //
     // Home Page
     //

@@ -8,6 +8,11 @@ body
 .ulProducts {
     display:inline-block;
     margin-left: calc(60% - 800px);
+    border-radius: 25px;
+    background: #73AD21;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
 }
 
     .display  {
@@ -43,3 +48,11 @@ body
 .formBox{
     border: solid #080808;
 }
+
+hr.pacman {
+    border: 0;
+    height: 25px;
+    background-image: url('http://www.formget.com/wp-content/uploads/2014/12/type_3.png');
+}
+
+
