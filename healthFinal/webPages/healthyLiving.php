@@ -79,7 +79,7 @@ include '../navBar/master.php';
 <hr class="pacman"/>
 
     <ul class="ulProducts" runat="server" id="newsFeed" style="background-color: #f5f5f5">
-<h2>Article Titles </h2>
+<h2>Article Titles!</h2>
 
 <?php
 include('dbconnect.php');
