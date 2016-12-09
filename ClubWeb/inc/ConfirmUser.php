@@ -1,3 +1,24 @@
 <?php
+$userID = $params['userID'];
+include("scripts/dbconnect.php");
 
-echo 'nothing to see here';
+if (isset($params['userID']))
+
+{
+
+    $sql = "UPDATE port_users SET confirmed = 2 WHERE userID='$id'";
+    $result = $db->query($sql);
+
+    header("Location: /ClubWeb/View");
+
+}
+
+else
+
+{
+    header("Location: /ClubWeb/View");
+}
+
+
+
+?>
