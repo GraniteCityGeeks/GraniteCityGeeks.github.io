@@ -41,8 +41,8 @@ if (isset($params['userID'])) {
     $result = mysqli_query($db, $sql);
 
 
-    if (!$check1_res) {
-        printf("Error: %s\n", mysqli_error($con));
+    if (!$result) {
+        printf("Error: %s\n", mysqli_error($db));
         exit();
     }
 
