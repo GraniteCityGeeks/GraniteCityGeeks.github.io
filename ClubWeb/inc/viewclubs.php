@@ -2,7 +2,7 @@
 include("scripts/dbconnect.php");
 include("scripts/header.php");
 
-$query = "SELECT * From port_club, port_photo WHERE clubid IS NOT NULL";
+$query = "SELECT * From port_club as C, port_photo as P WHERE clubid IS NOT NULL AND C.photoid = P.photoid";
 
 $result = $db->query($query);
 
@@ -29,7 +29,7 @@ while($row = $result->fetch_array()) {
     <h1><a href='Clubs/{$clubID}' name='linkref' id='link'>{$clubTitle}</a></h1>
     ";
 
-    
+
 
 
     /*//echo all clubs
