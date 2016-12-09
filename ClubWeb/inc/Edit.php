@@ -10,7 +10,7 @@ function renderForm($id, $username, $password,$bio,$photoID,$accessLevelID, $db)
 
     ?>
     <main>
-    <form action="edit" method="post">
+    <form action=updateUser method="post">
             <input type="hidden" name="id" value="<?php echo $id; ?>"/>
             <p><strong>ID:</strong> <?php echo $id; ?></p>
             <strong>Username: *</strong> <input type="text" name="username" value="<?php echo $username; ?>"/><br/>
@@ -60,9 +60,17 @@ function updateUser($id, $username, $password, $bio, $photoID, $accessLevelID, $
         renderForm($id, $username, $password,$bio,$photoID,$accessLevelID,$db);
         echo "Please make sure they have a username and password";
     } else {
-        
+        $sql = "UPDATE port_users SET username='$username', password='$password', bio='$password', accessLevelID='$accessLevelID', photoID='$photoID' WHERE userID='$id'";
+        if (mysqli_query($db, $sql)) {
+            echo "User updated!";
+        } else {
+            echo "Error: " . $sql . "<br>" . mysqli_error($db);
+        }
+
+        mysqli_close($db);
     }
 }
+
     
 //    if (isset($_POST['submit'])) {
 //
