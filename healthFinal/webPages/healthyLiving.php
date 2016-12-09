@@ -90,7 +90,8 @@ $result = $db->query($sql);
 if ($result->num_rows > 0) {
     // output data of each row
     while ($row = $result->fetch_assoc()) {
-        echo '<li class="display"><b>'.$row["title"].'</b><br>'.$row["text"].'<hr></li>';
+        echo '<li class="display"><b>'.$row["title"].'</b><br>'.$row["text"].'</li>';
+        echo '<hr>';
     }
 }
 else {
