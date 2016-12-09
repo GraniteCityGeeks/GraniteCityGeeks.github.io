@@ -26,6 +26,15 @@ while($row = $result->fetch_array()) {
     echo "</form>";
 
 }
+?>
+<script> document.getElementById('link').onclick = function() {
+        document.getElementById('form').submit();
+    }
+</script>
+<?
 
 echo "</main>";
+
 include("scripts/footer.php");
+?>
+
