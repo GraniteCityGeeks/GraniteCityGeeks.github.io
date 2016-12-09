@@ -36,7 +36,7 @@ include '../navBar/master.php';
 </script>
 
 
-<div class="container" style="background-color: #f5ffdb">
+<div class="container" >
     <div class="row">
         <div class="col-lg-12">
             <h1>Healthy Lifestyle</h1>
