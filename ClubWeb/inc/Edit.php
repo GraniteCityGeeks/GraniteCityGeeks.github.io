@@ -40,11 +40,11 @@ if (isset($params['userID'])) {
     $sql = "SELECT * FROM port_users WHERE userID='$id'";
     $result = mysqli_query($db, $sql);
 
-//    if (!$result) {
-//        printf("Error: %s\n", mysqli_error($db));
-//        echo 'didnt work :(';
-//        exit();
-//    }
+    if (!$result) {
+        printf("Error: %s\n", mysqli_error($db));
+        echo 'didnt work :(';
+        exit();
+    }
 
     $row = mysqli_fetch_array($result);
 
