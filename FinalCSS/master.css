@@ -26,6 +26,7 @@ header>h1{
 header>h3{
 
     float:right;
+    margin-outside: 1px;
 
 }
 
