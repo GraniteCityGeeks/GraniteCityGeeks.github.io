@@ -12,6 +12,8 @@ if (isset($_SESSION['username'])) //SESSION DOES EXIST
         <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
         <script>tinymce.init({selector: 'textarea'});</script>
         <form action="createclub" method="post">
+            <br>
+            <br>
             <input type="text" name="clubTitle" placeholder="Club's Name" required>
             <br>
             <textarea name="ClubDescription" required></textarea>
