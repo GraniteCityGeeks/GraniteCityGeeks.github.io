@@ -4,7 +4,7 @@ include '../navBar/master.php';
 
 <html xmlns="http://www.w3.org/1999/html">
     <link href="../CSS/bootstrap.min.css" rel="stylesheet" />
-    <link href="../CSS/half-slider.css" rel="stylesheet" />
+    <link href="../CSS/half-slider.css?version=51" rel="stylesheet" />
     <link href="../CSS/healthPage.css" rel="stylesheet" />
 
 
