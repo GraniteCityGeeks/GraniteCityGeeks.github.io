@@ -10,7 +10,7 @@ function renderForm($id, $username, $password,$bio,$photoID,$accessLevelID, $db)
 
     ?>
     <main>
-    <form action="" method="post">
+    <form action="edit" method="post">
             <input type="hidden" name="id" value="<?php echo $id; ?>"/>
             <p><strong>ID:</strong> <?php echo $id; ?></p>
             <strong>Username: *</strong> <input type="text" name="username" value="<?php echo $username; ?>"/><br/>
@@ -61,6 +61,8 @@ if (isset($params['userID'])) {
 
 }
 
+//
+
 if (isset($_POST['submit'])) {
 
     if (isset($_POST['id'])) {
@@ -73,17 +75,17 @@ if (isset($_POST['submit'])) {
         $accessLevelID = $_POST['accessLevelID'];
 
 
-        if ($username == '' || $password == '') {
-
-            renderForm($id, $username, $password,$bio,$photoID,$accessLevelID,$db);
-            echo "Please make sure they have a username and password";
-
-
-        } else {
-
-            mysqli_query($db,"UPDATE port_users SET username ='$username', password ='$password', bio ='$bio',photoID ='$photoID', accessLevelID ='$accessLevelID' WHERE userID='$id'");
-            header("Location: /ClubWeb/View");
-        }
+//        if ($username == '' || $password == '') {
+//
+//            renderForm($id, $username, $password,$bio,$photoID,$accessLevelID,$db);
+//            echo "Please make sure they have a username and password";
+//
+//
+//        } else {
+//
+//            mysqli_query($db,"UPDATE port_users SET username ='$username', password ='$password', bio ='$bio',photoID ='$photoID', accessLevelID ='$accessLevelID' WHERE userID='$id'");
+//            header("Location: /ClubWeb/View");
+//        }
 
     } else {
 
