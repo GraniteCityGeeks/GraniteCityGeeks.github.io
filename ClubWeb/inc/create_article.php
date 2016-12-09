@@ -11,7 +11,10 @@ if (isset($_SESSION['username'])) //SESSION DOES EXIST
             <form action="createarticle" method="post">
                 <input type="text" name="articleName" placeholder="Article Name">
                 <textarea name="articleText"></textarea>
+                <input type="checkbox" name="clubcheck" value="forclub"> Is this for club?
+                
                 <input type="submit">
+
             </form>
         </main>
         <?
