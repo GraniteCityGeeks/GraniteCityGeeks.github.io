@@ -40,7 +40,8 @@ include '../navBar/master.php';
         <div class="row">
             <div class="col-lg-12">
                 <h1>Contributor Health Page</h1>
-                <hr/>
+                <i>This page allows contributer users to publish/edit & delete articles in the health page!</i>
+                <hr class="pacman"/>
             </div>
                     <div class="col-lg-12"  style="width: 350px">
                         <h3>Add Article</h3>
