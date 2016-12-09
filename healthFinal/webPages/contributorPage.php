@@ -4,7 +4,7 @@ include '../navBar/master.php';
 
 <html xmlns="http://www.w3.org/1999/html">
     <link href="../CSS/bootstrap.min.css" rel="stylesheet" />
-    <link href="../CSS/half-slider.css" rel="stylesheet" />
+    <link href="../CSS/half-slider.css?version=51" rel="stylesheet" />
     <link href="../CSS/healthPage.css" rel="stylesheet" />
 
 
@@ -145,6 +145,10 @@ include '../navBar/master.php';
 
     <div id="result"></div>
 
+    <?php
+    include '../webPages/footer.html';
+    ?>
+
 
 </html>
 
@@ -165,7 +169,7 @@ include '../navBar/master.php';
                 {
                     $('#result').html(data);
                     alert(data);
-                    window.location.replace("http://gcg.azurewebsites.net/healthFinal/webPages/healthyLiving.php");
+                    window.location.replace("http://gcg.azurewebsites.net/healthFinal/webPages/contributorPage.php");
                 }
             );
         }
@@ -189,7 +193,7 @@ include '../navBar/master.php';
             {
                 $('#result').html(data);
                 alert(data);
-                window.location.replace("http://gcg.azurewebsites.net/healthFinal/webPages/healthyLiving.php");
+                window.location.replace("http://gcg.azurewebsites.net/healthFinal/webPages/contributorPage.php");
             }
         );
 
@@ -206,7 +210,7 @@ include '../navBar/master.php';
 
                 $('#result').html(data);
                 alert(data);
-                window.location.replace("http://gcg.azurewebsites.net/healthFinal/webPages/healthyLiving.php");
+                window.location.replace("http://gcg.azurewebsites.net/healthFinal/webPages/contributorPage.php");
             }
         );
     }

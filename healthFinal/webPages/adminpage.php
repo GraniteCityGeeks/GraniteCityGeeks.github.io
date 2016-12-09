@@ -4,7 +4,7 @@ include '../navBar/master.php';
 
 <html xmlns="http://www.w3.org/1999/html">
 <link href="../CSS/bootstrap.min.css" rel="stylesheet" />
-<link href="../CSS/half-slider.css" rel="stylesheet" />
+<link href="../CSS/half-slider.css?version=51" rel="stylesheet" />
 <link href="../CSS/healthPage.css" rel="stylesheet" />
 
 
@@ -44,8 +44,8 @@ include '../navBar/master.php';
             <hr class="pacman"/>
         </div>
         <div class="col-lg-12"  style="width: 350px">
-            <h3>Add Article</h3>
-            <i>Add a new article below!</i>
+            <h3>Add News Feed</h3>
+            <i>Add news feed below!</i>
             <br>
             <br>
 
@@ -61,13 +61,13 @@ include '../navBar/master.php';
         </div>
 
         <div class="col-lg-12" style="width: 350px">
-            <h3>Edit Article</h3>
-            <i>Edit an existing article below!</i>
+            <h3>Edit News Feed</h3>
+            <i>Edit an existing news feed below!</i>
             <br>
             <br>
 
             <form>
-                Select Article to Edit:
+                Select News Feed to Edit:
                 <br>
                 <select id="oldTitle">
                     <?php
@@ -104,13 +104,13 @@ include '../navBar/master.php';
         </div>
 
         <div class="col-lg-12" style="width: 350px">
-            <h3>Delete Article</h3>
-            <i>Delete an existing article below!</i>
+            <h3>Delete News Feed</h3>
+            <i>Delete an existing news feed below!</i>
             <br>
             <br>
 
             <form>
-                Select Article to Delete:
+                Select News Feed to Delete:
                 <br>
                 <select id="toDelete">
                     <?php
@@ -145,6 +145,9 @@ include '../navBar/master.php';
 
 <div id="result"></div>
 
+<?php
+include '../webPages/footer.html';
+?>
 
 </html>
 
@@ -165,7 +168,7 @@ include '../navBar/master.php';
                 {
                     $('#result').html(data);
                     alert(data);
-                    window.location.replace("http://gcg.azurewebsites.net/healthFinal/webPages/healthyLiving.php");
+                    window.location.replace("http://gcg.azurewebsites.net/healthFinal/webPages/contributorPage.php");
                 }
             );
         }
@@ -189,7 +192,7 @@ include '../navBar/master.php';
                 {
                     $('#result').html(data);
                     alert(data);
-                    window.location.replace("http://gcg.azurewebsites.net/healthFinal/webPages/healthyLiving.php");
+                    window.location.replace("http://gcg.azurewebsites.net/healthFinal/webPages/contributorPage.php");
                 }
             );
 
@@ -206,7 +209,7 @@ include '../navBar/master.php';
 
                 $('#result').html(data);
                 alert(data);
-                window.location.replace("http://gcg.azurewebsites.net/healthFinal/webPages/healthyLiving.php");
+                window.location.replace("http://gcg.azurewebsites.net/healthFinal/webPages/contributorPage.php");
             }
         );
     }

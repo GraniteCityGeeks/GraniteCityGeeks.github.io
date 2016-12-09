@@ -6,22 +6,19 @@ echo "
 <main>
 ";
 $club = $params['linkref'];
-echo $club;
-$query = "SELECT *, C.description as clubDescription, G.description as Genre FROM port_club as C, port_articles as A, port_genre as G, port_photo as P WHERE clubid = '".$club."' AND G.genreid = C.genreid AND P.photoid = C.photoid AND A.articleid = C.articleid";
+$query = "SELECT clubTitle, clubcalendar, URL, C.description as clubDescription, G.description as Genre FROM port_club as C, port_genre as G, port_photo as P WHERE clubid =".$club. " AND G.genreid = C.genreid AND P.photoid = C.photoid";
 
 //query to load up all articles
-$queryarticles ="SELECT * from port_club as C, port_club_article as A, port_photo as P WHERE C.clubid = A.clubid AND C.clubid = '".$club."'";
+$queryarticles = "SELECT * from port_club as C, port_club_article as A, port_photo as P WHERE C.clubid = A.clubid AND C.clubid = '".$club."' AND A.photoid = P.photoid";
 
 $result = $db->query($query);
 
 while($row = $result->fetch_array()) {
-    echo $photo;
     //Paste the club
     $title = $row['clubTitle'];
     $desc = $row['clubDescription'];
     $calender = $row['clubcalendar'];
     $photo = $row['URL'];
-    $article = $row['text'];
     $genre = $row['Genre'];
 }
     //add the title

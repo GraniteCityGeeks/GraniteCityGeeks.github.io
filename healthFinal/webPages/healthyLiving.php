@@ -5,10 +5,10 @@ include '../navBar/master.php';
 
 <!DOCTYPE html>
 <html lang="en">
-<link href="../CSS/bootstrap.min.css" rel="stylesheet" />
-<link href="../CSS/half-slider.css" rel="stylesheet" />
-<link href="../CSS/healthPage.css" rel="stylesheet" />
-<link href="../CSS/footer-basic-centered.css" rel="stylesheet" />
+<link href="../CSS/bootstrap.min.css?version=51" rel="stylesheet" />
+<link href="../CSS/half-slider.css?version=51" rel="stylesheet" />
+<link href="../CSS/healthPage.css?version=51" rel="stylesheet" />
+
 
 <header id="myCarousel" class="carousel slide">
     <div class="carousel-inner">
@@ -47,7 +47,7 @@ include '../navBar/master.php';
 
         <h2>News Feed!</h2>
 
-    </div>
+
 
 <ul class="ulProducts" runat="server" id="newsFeed">
     <?php
@@ -69,14 +69,14 @@ include '../navBar/master.php';
     $db->close();
     ?>
     </ul>
-
+</div>
 <br>
 
 <div class="container">
 <h2>Community Spotlight!</h2>
 <i>Articles published by users of this site!</i>
 <hr class="pacman"/>
-</div>
+
     <ul class="ulProducts" runat="server" id="newsFeed">
 
 
@@ -91,6 +91,7 @@ if ($result->num_rows > 0) {
     // output data of each row
     while ($row = $result->fetch_assoc()) {
         echo '<li class="display"><b>'.$row["title"].'</b><br>'.$row["text"].'</li>';
+        echo '<hr>';
     }
 }
 else {
@@ -99,32 +100,10 @@ else {
 $db->close();
 ?>
 </ul>
-
-<footer class="footer-basic-centered">
-
-    <p class="footer-company-motto">The company motto.</p>
-
-    <p class="footer-links">
-        <a href="#">Home</a>
-        ·
-        <a href="#">Blog</a>
-        ·
-        <a href="#">Pricing</a>
-        ·
-        <a href="#">About</a>
-        ·
-        <a href="#">Faq</a>
-        ·
-        <a href="#">Contact</a>
-    </p>
-
-    <p class="footer-company-name">Company Name &copy; 2015</p>
-
-</footer>
-
-
-
-
+</div>
+<?php
+include '../webPages/footer.html';
+?>
 
 
 </html>
