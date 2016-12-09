@@ -36,7 +36,7 @@ include '../navBar/master.php';
 </script>
 
 
-<div class="container">
+<div class="container" >
     <div class="row">
         <div class="col-lg-12">
             <h1>Healthy Lifestyle</h1>
@@ -72,7 +72,7 @@ include '../navBar/master.php';
 </div>
 <br>
 
-<div class="container">
+<div class="container" style="background-color: #f5f5f5">
 <h2>Community Spotlight!</h2>
 <i>Articles published by users of this site!</i>
 <hr class="pacman"/>
@@ -91,7 +91,7 @@ if ($result->num_rows > 0) {
     // output data of each row
     while ($row = $result->fetch_assoc()) {
         echo '<li class="display"><b>'.$row["title"].'</b><br>'.$row["text"].'</li>';
-        echo '<hr>';
+
     }
 }
 else {

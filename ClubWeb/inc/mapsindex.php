@@ -40,7 +40,7 @@ include '../healthFinal/navBar/master.php'
             request.send(null);
         }
         //download the locations.
-        downloadUrl("../scripts/markers.php", function (data) {
+        downloadUrl("scripts/markers.php", function (data) {
             var xml = data.responseXML;
             var markers = xml.documentElement.getElementsByTagName("markers");
             for (var i = 0; i < markers.length; i++) {
@@ -114,7 +114,7 @@ include '../healthFinal/navBar/master.php'
     <br>
     <h4>NKPAG USER</h4>
     <br>
-    <a href="MarkerAdmin.php">Edit Markers</a>
+    <a href="scripts/MarkerAdmin.php">Edit Markers</a>
 </div>
 
 </body>
