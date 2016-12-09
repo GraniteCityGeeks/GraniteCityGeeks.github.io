@@ -31,7 +31,7 @@ $accessLevelID = $_POST['accessLevelID'];
 $photoID = $_POST['photoID'];
 
 if (checkUsers($username, $db)) {
-    $sql = "INSERT INTO port_users (username, password,bio,accessLevelID) VALUES ('$username', '$password','$bio','$photoID', '$accessLevelID')";
+    $sql = "INSERT INTO port_users (username, password,bio,photoID,accessLevelID) VALUES ('$username', '$password','$bio','$photoID', '$accessLevelID')";
 
     if (mysqli_query($db, $sql)) {
         echo "New record created succesfully";
