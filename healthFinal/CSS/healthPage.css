@@ -16,12 +16,7 @@ body
 }
 
     .display  {
-        margin-top: 50px;
-
     float:left;
-    margin-left:35px;
-    margin-bottom:5px;
-        margin-top: 5px;
     font-size:20px;
     padding:10px;
     transition:all ease-in-out 0.3s;
@@ -37,8 +32,6 @@ body
 .display2  {
     display: inline-block;
     float:left;
-    margin-left:35px;
-    margin-bottom:5px;
     font-size:20px;
     padding:10px;
     transition:all ease-in-out 0.3s;
