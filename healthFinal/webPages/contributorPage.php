@@ -155,13 +155,20 @@ include '../navBar/master.php';
         var desc = $('#text').val();
         var type = "insert";
 
-        $.post('editHealth.php',{title:title,desc:desc,type:type}, function(data)
-            {
-                $('#result').html(data);
-                alert(data);
-                window.location.replace("http://gcg.azurewebsites.net/healthFinal/webPages/healthyLiving.php");
-            }
-        );
+        if($('#title').val() == ''){
+            alert('Title input can not be left blank');
+        }else if($('#text').val() == ''){
+            alert('Text input can not be left blank');
+        }else{
+            $.post('editHealth.php',{title:title,desc:desc,type:type}, function(data)
+                {
+                    $('#result').html(data);
+                    alert(data);
+                    window.location.replace("http://gcg.azurewebsites.net/healthFinal/webPages/healthyLiving.php");
+                }
+            );
+        }
+
     }
 
     function edit()
@@ -171,6 +178,12 @@ include '../navBar/master.php';
         var type = "edit";
         var oldTitle = document.getElementById("oldTitle").options[document.getElementById("oldTitle").selectedIndex].text;
 
+        if($('#titleEdit').val() == ''){
+            alert('Title input can not be left blank');
+        }else if($('#textEdit').val() == ''){
+            alert('Text input can not be left blank');
+        }else{
+
         $.post('editHealth.php',{title:title,desc:desc,type:type,oldTitle:oldTitle}, function(data)
             {
                 $('#result').html(data);
@@ -178,6 +191,8 @@ include '../navBar/master.php';
                 window.location.replace("http://gcg.azurewebsites.net/healthFinal/webPages/healthyLiving.php");
             }
         );
+
+        }
     }
 
     function thisDelete()

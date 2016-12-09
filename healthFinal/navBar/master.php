@@ -18,7 +18,7 @@
             <ul>
                 <li><a href="/healthFinal/webPages/index.php"><b>Home</b></a></li>
                 <li>
-                    <a href="#"><b>Clubs</b></a>
+                    <a href="/ClubWeb/inc/Home.php"><b>Clubs</b></a>
                 </li>
                 <li><a href="/healthFinal/webPages/healthyLiving.php"><b>Healthy Living</b></a></li>
                 <li><a href="/Maps/index.php"><b>Local Trails</b></a></li>
@@ -27,7 +27,7 @@
                         <li><a href="#">Admin</a>
                         <ul>
                             <li><a href="#">Clubs</a></li>
-                            <li><a href="#">Health</a></li>
+                            <li><a href="/healthFinal/webPages/adminpage.php">Health</a></li>
                             <li><a href="#">Maps</a></li>
                         </ul></li>
                         <li><a href="#">Contributor</a>
