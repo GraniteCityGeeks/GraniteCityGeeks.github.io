@@ -40,7 +40,7 @@ header{
 
 footer{
     background-color: #2b542c;
-    height:60px;
+    min-height:60px;
 }
 
 
