@@ -6,6 +6,7 @@ include("scripts/header.php");
             <input type="text" name="username" placeholder="username"></br>
             <input type="password" name="password" placeholder="password"></br>
             <input type="text" name="bio" placeholder="bio"></br>
+            <input type="text" name="photoID" placeholder="Insert URL of Image here"></br>
             <input type="radio" name="accessLevelID" value= "2" > Contributor<br>
             <input type="radio" name="accessLevelID" value="3"> NKPAG<br>
             <input type="radio" name="accessLevelID" value="4"> Club Administrator<br>
@@ -27,9 +28,10 @@ $username = $_POST['username'];
 $password = $_POST['password'];
 $bio = $_POST['bio'];
 $accessLevelID = $_POST['accessLevelID'];
+$photoID = $_POST['photoID'];
 
 if (checkUsers($username, $db)) {
-    $sql = "INSERT INTO port_users (username, password,bio,accessLevelID) VALUES ('$username', '$password','$bio', '$accessLevelID')";
+    $sql = "INSERT INTO port_users (username, password,bio,accessLevelID) VALUES ('$username', '$password','$bio','$photoID', '$accessLevelID')";
 
     if (mysqli_query($db, $sql)) {
         echo "New record created succesfully";
