@@ -98,7 +98,7 @@ while ($row = $result->fetch_array()) {
 //    echo '<td><a href="edit" class="edit' . $row['userID']. '">Edit</a></td>';
     echo '<td><a href="Edit/' . $row['userID'] . '">Edit</a></td>';
     echo '<td><a href="delete/' . $row['userID'] . '">Delete</a></td>';
-    if ($row['confirmed'] == 1) {
+    if ($row['confirmed'] == 0) {
         echo '<td><a href="ConfirmUser/' . $row['userID'] . '">Confirm User</a></td>';
     } else {
         echo '<td>User Confirmed</td>';
