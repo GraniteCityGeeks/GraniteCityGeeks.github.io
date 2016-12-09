@@ -5,7 +5,7 @@ session_start();
 
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="/ClubWeb/style/style.css">
+<link rel="stylesheet" href="/FinalCSS/master.css">
 <head runat = "server">
     <meta charset="UTF-8">
     <title>Sportlethen Clubs</title>
