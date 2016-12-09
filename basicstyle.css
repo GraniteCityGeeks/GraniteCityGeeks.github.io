@@ -37,6 +37,7 @@ header{
 #sidebar{
     background-color: #843534;
     margin-left: 60%;
+    min-height: 300px;
 }
 
 footer{
