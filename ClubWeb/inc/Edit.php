@@ -10,7 +10,7 @@ function renderForm($id, $username, $password,$bio,$photoID,$accessLevelID, $db)
 
     ?>
     <main>
-    <form action=updateUser method="post">
+    <form action="edit" method="post">
             <input type="hidden" name="id" value="<?php echo $id; ?>"/>
             <p><strong>ID:</strong> <?php echo $id; ?></p>
             <strong>Username: *</strong> <input type="text" name="username" value="<?php echo $username; ?>"/><br/>
@@ -34,41 +34,59 @@ include('scripts/dbconnect.php');
 
 $id = $params['userID'];
 
+// Check if userID has a value
 if (isset($params['userID'])) {
-
+    // Get all attributes for that user
     $sql = "SELECT * FROM port_users WHERE userID=$id";
-
     $result = mysqli_query($db, $sql);
-
     $row = mysqli_fetch_array($result);
 
+    // Check row has values
     if ($row) {
-
+        // Assign values in row to variables
         $username = $row['username'];
         $password = $row['password'];
         $bio = $row['bio'];
         $photoID = $row['photoID'];
         $accessLevelID = $row['accessLevelID'];
-        renderForm($id, $username, $password, $bio, $photoID, $accessLevelID, $db);
 
+        // Display the form with the user's current values
+        renderForm($id, $username, $password, $bio, $photoID, $accessLevelID, $db);
     }
-    
+}
+
+// Wait for submit button press
+if(isset($_POST['submit'])) {
+    // Assign values from form to variables
+    $newUsername = $_POST['username'];
+    $newPassword = $_POST['password'];
+    $newBio = $_POST['bio'];
+    $newPhotoID = $_POST['photoID'];
+    $newAccessLevelID = $_POST['accessLevelID'];
+
+    // Check if username or password is empty
+    if ($newUsername == '' || $newPassword == '') {
+        // Re-display form with existing values and inform user (no changes made)
+        renderForm($id, $username, $password,$bio,$photoID,$accessLevelID,$db);
+        echo "Please make sure the user has a username and password";
+    } else {
+        // Update user's details in database
+        updateUser($id, $newUsername, $newPassword, $newBio, $newPhotoID, $newAccessLevelID, $db);
+    }
 }
 
 function updateUser($id, $username, $password, $bio, $photoID, $accessLevelID, $db) {
-    if ($username == '' || $password == '') {
-        renderForm($id, $username, $password,$bio,$photoID,$accessLevelID,$db);
-        echo "Please make sure they have a username and password";
+    // Create query with new values
+    $sql = "UPDATE port_users SET username='$username', password='$password', bio='$bio', accessLevelID='$accessLevelID', photoID='$photoID' WHERE userID='$id'";
+    // Query database.
+    if (mysqli_query($db, $sql)) {
+        echo "User updated!";
     } else {
-        $sql = "UPDATE port_users SET username='$username', password='$password', bio='$password', accessLevelID='$accessLevelID', photoID='$photoID' WHERE userID='$id'";
-        if (mysqli_query($db, $sql)) {
-            echo "User updated!";
-        } else {
-            echo "Error: " . $sql . "<br>" . mysqli_error($db);
-        }
-
-        mysqli_close($db);
+        // Report error if unsuccessful
+        echo "Error: " . $sql . "<br>" . mysqli_error($db);
     }
+
+    mysqli_close($db);
 }
 
     
