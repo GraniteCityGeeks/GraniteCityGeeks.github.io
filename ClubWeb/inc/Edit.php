@@ -90,6 +90,7 @@ function updateUser($id, $username, $password, $bio, $photoID, $accessLevelID, $
     // Create query with new values
     $sql = "UPDATE port_users SET username='$username', password='$password', bio='$bio', accessLevelID='$accessLevelID', photoID='$photoID' WHERE userID='$id'";
     // Query database.
+    var_dump($sql);
     if (mysqli_query($db, $sql)) {
         echo "User updated!";
     } else {
