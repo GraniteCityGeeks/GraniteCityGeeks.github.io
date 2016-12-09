@@ -168,7 +168,7 @@ include '../webPages/footer.html';
                 {
                     $('#result').html(data);
                     alert(data);
-                    window.location.replace("http://gcg.azurewebsites.net/healthFinal/webPages/contributorPage.php");
+                    window.location.replace("http://gcg.azurewebsites.net/healthFinal/webPages/adminPage.php");
                 }
             );
         }
@@ -192,7 +192,7 @@ include '../webPages/footer.html';
                 {
                     $('#result').html(data);
                     alert(data);
-                    window.location.replace("http://gcg.azurewebsites.net/healthFinal/webPages/contributorPage.php");
+                    window.location.replace("http://gcg.azurewebsites.net/healthFinal/webPages/adminPage.php");
                 }
             );
 
@@ -209,7 +209,7 @@ include '../webPages/footer.html';
 
                 $('#result').html(data);
                 alert(data);
-                window.location.replace("http://gcg.azurewebsites.net/healthFinal/webPages/contributorPage.php");
+                window.location.replace("http://gcg.azurewebsites.net/healthFinal/webPages/adminPage.php");
             }
         );
     }
