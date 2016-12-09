@@ -38,7 +38,7 @@
 
             mysqli_close($db);
         } elseif ($email == '' || $username == '' || $password == ''){
-            echo "Please enter an email,username,photoURL and password";
+            echo "Please enter an email,username and password";
         }
         else{
             echo "User already exists";
