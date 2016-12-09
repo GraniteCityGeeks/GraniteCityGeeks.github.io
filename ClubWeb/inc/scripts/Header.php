@@ -17,10 +17,10 @@ session_start();
     <h1>Sportlethen Clubs</h1>
     <?
     if (isset($_SESSION['username'])) {
-        echo "<h1><li><a href='logout'>Logout({$_SESSION['username']})<img src={$_SESSION['photoID']} alt=\"Mountain View\" style=\"width:35px;height:35px;\"></a></li></h1>";
+        echo "<h3><a href='logout'>Logout({$_SESSION['username']})<img src={$_SESSION['photoID']} alt=\"Mountain View\" style=\"width:35px;height:35px;\"></a></h3>";
     } else {
-        echo "<h1><li><a href='login'>Login</a></li></h1>";
-        echo "<h1><li><a href='register'>Register</a></li></h1>";
+        echo "<h3><a href='login'>Login</a></h3>";
+        echo "<h3><a href='register'>Register</a></h3>";
     }
     ?>
     <nav>

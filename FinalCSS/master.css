@@ -4,13 +4,13 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
-h1, h2, p{
+h1, h2,h3, p{
     margin-top: 0;
 }
 *{
     font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
 }
-h1, h2{
+h1, h2, h3{
     font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 /* HEADER */
@@ -20,6 +20,12 @@ header{
 }
 header>h1{
     padding-left: 10px;
+}
+
+
+header>h3{
+    padding-left: 10px;
+    float:right;
 }
 /* MAIN */
 main{
