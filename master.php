@@ -26,7 +26,7 @@
             <ul>
                 <li><a href="/Maps"><b>Maps</b></a></li>
                 <li><a href="/ClubWeb/"><b>Clubs</b></a></li>
-                <li><a href="/healthFinal//webPages/index.php"><b>Health</b></a></li>
+                <li><a href="/healthFinal/webPages/index.php"><b>Health</b></a></li>
              </ul>
             </nav>
 
