@@ -65,7 +65,7 @@ if (isset($params['userID'])) {
 }
 
 // Wait for submit button press
-if(isset($_GET['submit'])) {
+if($_SERVER['REQUEST_METHOD'] === 'POST') {
     echo 'submit pressed';
     // Assign values from form to variables
     $newUsername = $_POST['username'];
