@@ -31,7 +31,7 @@ include '../../../healthFinal/navBar/master.php';
             <li><a href="viewclubs">Clubs</a></li>
             <?
             if (isset($_SESSION['accessLevelID']) == 2){
-                echo "<li><a href='create_article'>Create Art</a></li>";
+                echo "<li><a href='createarticle'>Create Art</a></li>";
                 echo "<li><a href='View'>View</a></li>";
             }
             ?>
