@@ -65,7 +65,7 @@ if (isset($params['userID'])) {
 }
 
 // Wait for submit button press
-if(isset($_GET['submit'])) {
+if($_SERVER['REQUEST_METHOD'] === 'POST') {
     echo 'submit pressed';
     // Assign values from form to variables
     $newUsername = $_POST['username'];
@@ -73,6 +73,7 @@ if(isset($_GET['submit'])) {
     $newBio = $_POST['bio'];
     $newPhotoID = $_POST['photoID'];
     $newAccessLevelID = $_POST['accessLevelID'];
+    $id = $_POST['id'];
 
     // Check if username or password is empty
     if ($newUsername == '' || $newPassword == '') {
@@ -90,6 +91,7 @@ function updateUser($id, $username, $password, $bio, $photoID, $accessLevelID, $
     // Create query with new values
     $sql = "UPDATE port_users SET username='$username', password='$password', bio='$bio', accessLevelID='$accessLevelID', photoID='$photoID' WHERE userID='$id'";
     // Query database.
+    var_dump($sql);
     if (mysqli_query($db, $sql)) {
         echo "User updated!";
     } else {

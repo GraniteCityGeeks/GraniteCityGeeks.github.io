@@ -1,5 +1,7 @@
 <?php
 session_start();
+include("scripts/dbconnect.php");
+include ("scripts/header.php");
 if (isset($_SESSION['username'])) //SESSION DOES EXIST
 {
     if ($_SERVER['REQUEST_METHOD'] === 'GET') {

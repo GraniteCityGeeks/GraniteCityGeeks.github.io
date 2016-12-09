@@ -72,8 +72,9 @@ include '../navBar/master.php';
 
 <div class="container">
 <h2>Community Spotlight!</h2>
-    </div>
+<i>Articles published by users of this site!</i>
 <hr class="pacman"/>
+</div>
     <ul class="ulProducts" runat="server" id="newsFeed">
 
 
