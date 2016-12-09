@@ -72,7 +72,7 @@ include '../navBar/master.php';
 </div>
 <br>
 
-<div class="container" style="background-color: #f5ffdb">
+<div class="container" style="background-color: #f5f5f5">
 <h2>Community Spotlight!</h2>
 <i>Articles published by users of this site!</i>
 <hr class="pacman"/>
