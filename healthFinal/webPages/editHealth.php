@@ -7,6 +7,7 @@ $type = $_POST['type'];
 if($type=="insert") {
     $sql = "INSERT INTO port_articles (title, text) VALUES ('" . $_POST['title'] . "', '" . $_POST['desc'] . "')";
     if ($db->query($sql) === TRUE) {
+        echo $_POST['title'];
         echo " Article Added, thank you";
     } else {
         echo "Error: " . $sql . "<br>" . $db->error;
@@ -20,6 +21,7 @@ if($type=="edit")
 
     if ($db->query($sql) === TRUE)
     {
+        echo $_POST['title'];
         echo " Article Changed, thank you";
     }
     else {
