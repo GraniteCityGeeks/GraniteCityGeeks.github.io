@@ -25,7 +25,7 @@ while($row = $result->fetch_array()) {
     echo "<img src='" . $row['URL'] . "'height='300', width='300'>";
     echo "<h1><a href='Clubs' name='linkref' id='link' value='" . $row['clubid'] . "'>" . $row['clubTitle'] . "</a></h1>";
     echo "<br>";
-    echo "<input type='submit'>";
+    echo "<input type='submit' value='view'>";
     echo "</form>";
 
 }
