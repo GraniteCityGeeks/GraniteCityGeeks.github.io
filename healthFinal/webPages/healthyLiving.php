@@ -52,7 +52,7 @@ include '../navBar/master.php';
     include('dbconnect.php');
     /* this script loads the article the user clicked on.*/
 
-    $sql = "SELECT * FROM port_articles";
+    $sql = "SELECT * FROM port_newsfeed";
     $result = $db->query($sql);
 
     if ($result->num_rows > 0) {
@@ -85,7 +85,7 @@ include '../navBar/master.php';
 include('dbconnect.php');
 /* this script loads the article the user clicked on.*/
 
-$sql = "SELECT * FROM port_newsfeed";
+$sql = "SELECT * FROM port_articles";
 $result = $db->query($sql);
 
 if ($result->num_rows > 0) {
