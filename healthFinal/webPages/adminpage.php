@@ -39,8 +39,9 @@ include '../navBar/master.php';
 <div class="container">
     <div class="row">
         <div class="col-lg-12">
-            <h1>Contributor Health Page</h1>
-            <hr/>
+            <h1>Admin Health Page</h1>
+            <i>This page allows admin type users to edit the news feed on the health page!</i>
+            <hr class="pacman"/>
         </div>
         <div class="col-lg-12"  style="width: 350px">
             <h3>Add Article</h3>
