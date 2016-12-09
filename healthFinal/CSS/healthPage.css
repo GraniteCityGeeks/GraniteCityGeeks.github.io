@@ -21,6 +21,7 @@ body
     float:left;
     margin-left:35px;
     margin-bottom:5px;
+        margin-top: 10px;
     font-size:20px;
     padding:10px;
     transition:all ease-in-out 0.3s;
