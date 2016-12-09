@@ -47,7 +47,7 @@ include '../navBar/master.php';
 
         <h2>News Feed!</h2>
 
-    </div>
+
 
 <ul class="ulProducts" runat="server" id="newsFeed">
     <?php
@@ -69,7 +69,7 @@ include '../navBar/master.php';
     $db->close();
     ?>
     </ul>
-
+</div>
 <br>
 
 <div class="container">
