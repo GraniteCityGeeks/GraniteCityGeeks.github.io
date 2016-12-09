@@ -52,45 +52,54 @@ if (isset($params['userID'])) {
         renderForm($id, $username, $password, $bio, $photoID, $accessLevelID, $db);
 
     }
+    
+}
 
-//
-
-    if (isset($_POST['submit'])) {
-
-        if (isset($_POST['id'])) {
-
-            $id = $_POST['id'];
-            $username = $_POST['username'];
-            $password = $_POST['password'];
-            $bio = $_POST['bio'];
-            $photoID = $_POST['photoID'];
-            $accessLevelID = $_POST['accessLevelID'];
-
-
-        if ($username == '' || $password == '') {
-
-            renderForm($id, $username, $password,$bio,$photoID,$accessLevelID,$db);
-            echo "Please make sure they have a username and password";
-
-
-        } else {
-
-            mysqli_query($db,"UPDATE port_users SET username ='$username', password ='$password', bio ='$bio',photoID ='$photoID', accessLevelID ='$accessLevelID' WHERE userID='$id'");
-            header("Location: /ClubWeb/View");
-        }
-
-        } else {
-
-            echo 'Error!';
-
-        }
-
+function updateUser($id, $username, $password, $bio, $photoID, $accessLevelID, $db) {
+    if ($username == '' || $password == '') {
+        renderForm($id, $username, $password,$bio,$photoID,$accessLevelID,$db);
+        echo "Please make sure they have a username and password";
     } else {
-
-
-        echo 'Whit!';
-
-
+        
     }
+}
+    
+//    if (isset($_POST['submit'])) {
+//
+//        if (isset($_POST['id'])) {
+//
+//            $id = $_POST['id'];
+//            $username = $_POST['username'];
+//            $password = $_POST['password'];
+//            $bio = $_POST['bio'];
+//            $photoID = $_POST['photoID'];
+//            $accessLevelID = $_POST['accessLevelID'];
+//
+//
+//        if ($username == '' || $password == '') {
+//
+//            renderForm($id, $username, $password,$bio,$photoID,$accessLevelID,$db);
+//            echo "Please make sure they have a username and password";
+//
+//
+//        } else {
+//
+//            mysqli_query($db,"UPDATE port_users SET username ='$username', password ='$password', bio ='$bio',photoID ='$photoID', accessLevelID ='$accessLevelID' WHERE userID='$id'");
+//            header("Location: /ClubWeb/View");
+//        }
+//
+//        } else {
+//
+//            echo 'Error!';
+//
+//        }
+//
+//    } else {
+//
+//
+//        echo 'Whit!';
+//
+//
+//    }
 
-}?>
+?>
