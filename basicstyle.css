@@ -27,11 +27,13 @@ header{
     background-color: #2e6da4;
     width:60%;
     min-height: 300px;
+    float:left;
 
 }
 
 #sidebar{
     background-color: #843534;
+    margin-left: 60%;
 }
 
 footer{
