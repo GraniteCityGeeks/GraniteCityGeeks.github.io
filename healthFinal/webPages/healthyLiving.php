@@ -5,10 +5,10 @@ include '../navBar/master.php';
 
 <!DOCTYPE html>
 <html lang="en">
-<link href="../CSS/bootstrap.min.css" rel="stylesheet" />
-<link href="../CSS/half-slider.css" rel="stylesheet" />
-<link href="../CSS/healthPage.css" rel="stylesheet" />
-<link href="../CSS/footer-basic-centered.css" rel="stylesheet" />
+<link href="../CSS/bootstrap.min.css?version=51" rel="stylesheet" />
+<link href="../CSS/half-slider.css?version=51" rel="stylesheet" />
+<link href="../CSS/healthPage.css?version=51" rel="stylesheet" />
+
 
 <header id="myCarousel" class="carousel slide">
     <div class="carousel-inner">
@@ -100,31 +100,9 @@ $db->close();
 ?>
 </ul>
 
-<footer class="footer-basic-centered">
-
-    <p class="footer-company-motto">The company motto.</p>
-
-    <p class="footer-links">
-        <a href="#">Home</a>
-        ·
-        <a href="#">Blog</a>
-        ·
-        <a href="#">Pricing</a>
-        ·
-        <a href="#">About</a>
-        ·
-        <a href="#">Faq</a>
-        ·
-        <a href="#">Contact</a>
-    </p>
-
-    <p class="footer-company-name">Company Name &copy; 2015</p>
-
-</footer>
-
-
-
-
+<?php
+include '../webPages/footer.html';
+?>
 
 
 </html>
