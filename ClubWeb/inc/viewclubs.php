@@ -17,7 +17,7 @@ echo "<h1> Portlethen clubs </h1>";
 
 echo "<h4> Displaying ". $total . " active clubs </h4>";
 
-<?
+
 
 while($row = $result->fetch_array()) {
     //echo all clubs
