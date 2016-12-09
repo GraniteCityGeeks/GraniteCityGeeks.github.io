@@ -6,7 +6,7 @@ if (isset($params['userID']))
 
 {
 
-    $sql = "UPDATE port_users SET confirmed = '1' WHERE userID='$id'";
+    $sql = "UPDATE port_users SET confirmed = '1' WHERE userID='$userID'";
     $result = $db->query($sql);
 
     header("Location: /ClubWeb/View");
