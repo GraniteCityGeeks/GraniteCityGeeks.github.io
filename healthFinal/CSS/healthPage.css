@@ -45,6 +45,8 @@ body
     padding:10px;
     transition:all ease-in-out 0.3s;
     margin:20px;
+    overflow:hidden;
+    height:1%;
 }
 
 .formBox{
