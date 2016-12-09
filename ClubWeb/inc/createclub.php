@@ -22,7 +22,8 @@ if (isset($_SESSION['username'])) //SESSION DOES EXIST
             <textarea name="ClubDescription" required></textarea>
             <br>
             <br>
-            <select name="genre">
+            <label for="genre">Select genre</label>
+            <select name="genre" id="genre">
                 <option value="1">Sports</option>
                 <option value="11">Arts</option>
                 <option value="21">Cycling</option>
@@ -33,10 +34,18 @@ if (isset($_SESSION['username'])) //SESSION DOES EXIST
             </select>
             <br>
             <br>
-            <select name="avatar">
+            <label for="avatar">Select avatar</label>
+            <select name="avatar" id="avatar">
                 <option value="1">Hills</option>
                 <option value="21">cyclist</option>
-                <option value="31">sunset</option>
+                <option value="31">mountain</option>
+                <option value="51">sunset</option>
+                <option value="91">sunset 2</option>
+                <option value="61">walker</option>
+                <option value="71">runners</option>
+                <option value="81">kites</option>
+                <option value="41">Elderly</option>
+
             </select>
             <br>
             <br>
