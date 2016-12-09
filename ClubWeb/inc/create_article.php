@@ -25,7 +25,7 @@ if (isset($_SESSION['username'])) //SESSION DOES EXIST
         $articleName = $_POST["articleName"];
         $articleText = $_POST["articleText"];
         $articleAuthor = $_SESSION['username'];
-        $sql = "INSERT INTO blogArticles (articleID, articleName, articleText,
+        $sql = "INSERT INTO port_blogArticles (articleID, articleName, articleText,
 articleAuthor) VALUES ('". $articleID ."', '" .$articleName."', '".$articleText."',
 '".$articleAuthor."')";
         if (mysqli_query($db, $sql)) {
