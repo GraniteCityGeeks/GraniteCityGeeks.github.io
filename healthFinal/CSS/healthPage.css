@@ -9,6 +9,9 @@ body
     display:inline-block;
     margin-left: calc(60% - 700px);
     box-shadow: 10px 10px 5px #888888;
+    height: 800px;
+    overflow:hidden;
+    overflow-y:scroll;
 
 }
 
