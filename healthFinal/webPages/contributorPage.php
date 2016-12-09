@@ -169,7 +169,7 @@ include '../navBar/master.php';
                 {
                     $('#result').html(data);
                     alert(data);
-                    window.location.replace("http://gcg.azurewebsites.net/healthFinal/webPages/healthyLiving.php");
+                    window.location.replace("http://gcg.azurewebsites.net/healthFinal/webPages/contributorPage.php");
                 }
             );
         }
@@ -193,7 +193,7 @@ include '../navBar/master.php';
             {
                 $('#result').html(data);
                 alert(data);
-                window.location.replace("http://gcg.azurewebsites.net/healthFinal/webPages/healthyLiving.php");
+                window.location.replace("http://gcg.azurewebsites.net/healthFinal/webPages/contributorPage.php");
             }
         );
 
@@ -210,7 +210,7 @@ include '../navBar/master.php';
 
                 $('#result').html(data);
                 alert(data);
-                window.location.replace("http://gcg.azurewebsites.net/healthFinal/webPages/healthyLiving.php");
+                window.location.replace("http://gcg.azurewebsites.net/healthFinal/webPages/contributorPage.php");
             }
         );
     }
