@@ -76,7 +76,7 @@ include '../navBar/master.php';
 <h2>Community Spotlight!</h2>
 <i>Articles published by users of this site!</i>
 <hr class="pacman"/>
-</div>
+
     <ul class="ulProducts" runat="server" id="newsFeed">
 
 
@@ -99,7 +99,7 @@ else {
 $db->close();
 ?>
 </ul>
-
+</div>
 <?php
 include '../webPages/footer.html';
 ?>
