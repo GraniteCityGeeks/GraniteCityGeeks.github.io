@@ -10,6 +10,7 @@ include '../../../healthFinal/navBar/master.php';
     <title>Sportlethen Clubs</title>
     <script> document.getElementById('link').onclick = function() {
             document.getElementById('form').submit();
+        }
     </script>
 
     <?
