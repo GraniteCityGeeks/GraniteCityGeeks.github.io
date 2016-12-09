@@ -160,7 +160,7 @@ include '../navBar/master.php';
         }else if($('#text').val() == ''){
             alert('Text input can not be left blank');
         }else{
-            $.post('editHealth.php',{title:title,desc:desc,type:type}, function(data)
+            $.post('editnewsfeed.php',{title:title,desc:desc,type:type}, function(data)
                 {
                     $('#result').html(data);
                     alert(data);
@@ -184,7 +184,7 @@ include '../navBar/master.php';
             alert('Text input can not be left blank');
         }else{
 
-            $.post('editHealth.php',{title:title,desc:desc,type:type,oldTitle:oldTitle}, function(data)
+            $.post('editnewsfeed.php',{title:title,desc:desc,type:type,oldTitle:oldTitle}, function(data)
                 {
                     $('#result').html(data);
                     alert(data);
@@ -200,7 +200,7 @@ include '../navBar/master.php';
         var type = "delete";
         var toDelete = document.getElementById("toDelete").options[document.getElementById("toDelete").selectedIndex].text;
 
-        $.post('editHealth.php',{type:type,toDelete:toDelete}, function(data)
+        $.post('editnewsfeed.php',{type:type,toDelete:toDelete}, function(data)
             {
 
                 $('#result').html(data);
