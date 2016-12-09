@@ -24,6 +24,7 @@ $rules = array(
     'Clubs' => "/Clubs/(?'linkref'[\w\-]+)",
     'viewclubs' => "/viewclubs",
     'createclub' => "/createclub",
+    'mapsindex' => "/mapsindex",
     //
     // Home Page
     //
