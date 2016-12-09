@@ -64,26 +64,29 @@ if(isset($_POST['submit'])) {
     $newPhotoID = $_POST['photoID'];
     $newAccessLevelID = $_POST['accessLevelID'];
 
-    updateUser($id, $newUsername, $newPassword, $newBio, $newPhotoID, $newAccessLevelID, $db);
+    // Check if username or password is empty
+    if ($newUsername == '' || $newPassword == '') {
+        // Re-display form with existing values and inform user (no changes made)
+        renderForm($id, $username, $password,$bio,$photoID,$accessLevelID,$db);
+        echo "Please make sure the user has a username and password";
+    } else {
+        // Update user's details in database
+        updateUser($id, $newUsername, $newPassword, $newBio, $newPhotoID, $newAccessLevelID, $db);
+    }
 }
 
 function updateUser($id, $username, $password, $bio, $photoID, $accessLevelID, $db) {
-    // Check if username or password is empty
-    if ($username == '' || $password == '') {
-        // Re-display form with existing values and inform user (no changes made)
-        renderForm($id, $username, $password,$bio,$photoID,$accessLevelID,$db);
-        echo "Please make sure they have a username and password";
+    // Create query with new values
+    $sql = "UPDATE port_users SET username='$username', password='$password', bio='$bio', accessLevelID='$accessLevelID', photoID='$photoID' WHERE userID='$id'";
+    // Query database.
+    if (mysqli_query($db, $sql)) {
+        echo "User updated!";
     } else {
-        //
-        $sql = "UPDATE port_users SET username='$username', password='$password', bio='$password', accessLevelID='$accessLevelID', photoID='$photoID' WHERE userID='$id'";
-        if (mysqli_query($db, $sql)) {
-            echo "User updated!";
-        } else {
-            echo "Error: " . $sql . "<br>" . mysqli_error($db);
-        }
-
-        mysqli_close($db);
+        // Report error if unsuccessful
+        echo "Error: " . $sql . "<br>" . mysqli_error($db);
     }
+
+    mysqli_close($db);
 }
 
     
