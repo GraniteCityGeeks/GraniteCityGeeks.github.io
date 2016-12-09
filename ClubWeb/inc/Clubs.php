@@ -7,7 +7,7 @@ echo "
 ";
 $club = $params['linkref'];
 echo $club;
-$query = "SELECT *, C.description as clubDescription, G.description as Genre FROM port_club as C, port_genre as G, port_photo as P WHERE clubid = ".$club." AND G.genreid = C.genreid AND P.photoid = C.photoid";
+$query = "SELECT clubTitle, clubDescription, clubcalendar, URL, text, Genre, C.description as clubDescription, G.description as Genre FROM port_club as C, port_genre as G, port_photo as P WHERE clubid = ".$club." AND G.genreid = C.genreid AND P.photoid = C.photoid";
 
 //query to load up all articles
 $queryarticles ="SELECT * from port_club as C, port_club_article as A, port_photo as P WHERE C.clubid = A.clubid AND C.clubid = '".$club."'";
