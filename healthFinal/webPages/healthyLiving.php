@@ -47,9 +47,9 @@ include '../navBar/master.php';
 
         <h2>News Feed!</h2>
 
-    </div>
 
-<ul class="ulProducts" runat="server" id="newsFeed" style="border: solid black">
+
+<ul class="ulProducts" runat="server" id="newsFeed">
     <?php
     include('dbconnect.php');
     /* this script loads the article the user clicked on.*/
@@ -69,7 +69,7 @@ include '../navBar/master.php';
     $db->close();
     ?>
     </ul>
-
+</div>
 <br>
 
 <div class="container">

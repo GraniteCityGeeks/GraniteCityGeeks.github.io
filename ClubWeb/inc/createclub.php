@@ -55,9 +55,11 @@ if (isset($_SESSION['username'])) //SESSION DOES EXIST
         <?
     } elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
         include('scripts/dbconnect.php');
-        $clubtitle = str_replace(' ', '-', $_POST["clubTitle"]);
+        $clubtitle = $_POST["clubTitle"];
         $clubtxt = $_POST["ClubDescription"];
         $clubgenre = $_POST["genre"];
+        $clubavatar = $_POST["avatar"];
+        $sql = "INSERT INTO port_club(clubTitle, description, genreid, photoid) VALUES('$clubtitle', '$clubtxt', '$clubgenre', '$clubavatar')";
         if (mysqli_query($db, $sql)) {
         } else {
             echo "Error: " . $sql . "<br>Error Message:" . mysqli_error($db);
