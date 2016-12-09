@@ -31,16 +31,15 @@
                             <li><a href="#">Maps</a></li>
                         </ul></li>
                         <li><a href="#">Contributor</a>
-                        <ul>
+                         <ul>
                             <li><a href="#">Clubs</a></li>
                             <li><a href="/healthFinal/webPages/contributorPage.php">Health</a></li>
                             <li><a href="#">Maps</a></li>
 
                         </ul>
-                        <li>Welcome User</li>
-
-                     </ul></li>
-
+                     </ul>
+                         </li>
+                <li><label>Welcome User</label></li>
             </ul>
         </nav>
 
