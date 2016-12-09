@@ -8,12 +8,14 @@ if (isset($_SESSION['username'])) //SESSION DOES EXIST
 <main>
 ";
         ?>
-        // This will be used to make/edit club pages.
+
         <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
         <script>tinymce.init({selector: 'textarea'});</script>
         <form action="createclub" method="post">
             <input type="text" name="clubTitle" placeholder="Club's Name" required>
+            <br>
             <textarea name="ClubDescription" required></textarea>
+            <br>
             <select name="genre">
                 <option value="1">Sports</option>
                 <option value="11">Arts</option>
@@ -23,9 +25,10 @@ if (isset($_SESSION['username'])) //SESSION DOES EXIST
                 <option value="61">Hobby</option>
                 <option value="31">Other</option>
             </select>
+            <br>
             <input type="file" name="filetoupload" id="filetoupload required">
-
-            <input type="submit">
+            <br>
+            <input type="submit" value="Create club!">
         </form>
 
         <?
