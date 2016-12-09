@@ -15,6 +15,7 @@ $queryarticles ="SELECT * from port_club as C, port_club_article as A, port_phot
 $result = $db->query($query);
 
 while($row = $result->fetch_array()) {
+    echo $photo;
     //Paste the club
     $title = $row['clubTitle'];
     $desc = $row['clubDescription'];
