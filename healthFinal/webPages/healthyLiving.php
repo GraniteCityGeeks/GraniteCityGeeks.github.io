@@ -76,10 +76,6 @@ include '../navBar/master.php';
         towards a healthy life
     </li>
     </ul>
-<div class="container">
-    <hr class="pacman" />
-    </div>
-
 
 <br>
 
