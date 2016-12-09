@@ -61,7 +61,7 @@ if (isset($_SESSION['username'])) //SESSION DOES EXIST
         $clubavatar = $_POST["avatar"];
         $sql = "INSERT INTO port_club(clubTitle, description, genreid, photoid, clubcalendar) VALUES('$clubtitle', '$clubtxt', '$clubgenre', '$clubavatar', 'No events upcoming')";
         if (mysqli_query($db, $sql)) {
-            echo "<p> insertation successful </p>";
+            echo "<p> creation successful </p>";
         } else {
             echo "Error: " . $sql . "<br>Error Message:" . mysqli_error($db);
         }
