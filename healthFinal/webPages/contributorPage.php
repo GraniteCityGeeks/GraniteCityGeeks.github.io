@@ -183,6 +183,7 @@ include '../navBar/master.php';
         }else if($('#textEdit').val() == ''){
             alert('Text input can not be left blank');
         }else{
+
         $.post('editHealth.php',{title:title,desc:desc,type:type,oldTitle:oldTitle}, function(data)
             {
                 $('#result').html(data);
@@ -190,6 +191,7 @@ include '../navBar/master.php';
                 window.location.replace("http://gcg.azurewebsites.net/healthFinal/webPages/healthyLiving.php");
             }
         );
+
         }
     }
 
