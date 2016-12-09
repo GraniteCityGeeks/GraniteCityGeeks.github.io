@@ -52,12 +52,24 @@ hr.pacman {
 }
 
 
-.footer {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 1rem;
-    background-color: #efefef;
-    text-align: center;
+footer {
+
+    height:24px; // Replace with the height your footer should be
+    width: 100%; // Don't change
+    background-image: none;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-position: 0% 0%;
+    position: fixed;
+    bottom: 0pt;
+    left: 0pt;
+
+}
+
+.footer_contents {
+
+    height:24px; // Replace with the height your footer should be
+    width: 1000px; // Visible width of footer
+    margin:auto;
+
 }

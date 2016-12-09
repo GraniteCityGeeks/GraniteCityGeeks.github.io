@@ -37,6 +37,7 @@
                             <li><a href="#">Maps</a></li>
 
                         </ul>
+                        <li>Welcome User</li>
 
                      </ul></li>
 
