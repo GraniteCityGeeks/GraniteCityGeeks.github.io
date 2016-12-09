@@ -65,17 +65,17 @@ if (isset($params['userID'])) {
             $accessLevelID = $_POST['accessLevelID'];
 
 
-//        if ($username == '' || $password == '') {
-//
-//            renderForm($id, $username, $password,$bio,$photoID,$accessLevelID,$db);
-//            echo "Please make sure they have a username and password";
-//
-//
-//        } else {
-//
-//            mysqli_query($db,"UPDATE port_users SET username ='$username', password ='$password', bio ='$bio',photoID ='$photoID', accessLevelID ='$accessLevelID' WHERE userID='$id'");
-//            header("Location: /ClubWeb/View");
-//        }
+        if ($username == '' || $password == '') {
+
+            renderForm($id, $username, $password,$bio,$photoID,$accessLevelID,$db);
+            echo "Please make sure they have a username and password";
+
+
+        } else {
+
+            mysqli_query($db,"UPDATE port_users SET username ='$username', password ='$password', bio ='$bio',photoID ='$photoID', accessLevelID ='$accessLevelID' WHERE userID='$id'");
+            header("Location: /ClubWeb/View");
+        }
 
         } else {
 
