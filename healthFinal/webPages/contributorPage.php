@@ -158,6 +158,8 @@ include '../navBar/master.php';
         $.post('editHealth.php',{title:title,desc:desc,type:type}, function(data)
             {
                 $('#result').html(data);
+                alert(data);
+                window.location.replace("http://gcg.azurewebsites.net/healthFinal/webPages/healthyLiving.php");
             }
         );
     }
@@ -172,6 +174,8 @@ include '../navBar/master.php';
         $.post('editHealth.php',{title:title,desc:desc,type:type,oldTitle:oldTitle}, function(data)
             {
                 $('#result').html(data);
+                alert(data);
+                window.location.replace("http://gcg.azurewebsites.net/healthFinal/webPages/healthyLiving.php");
             }
         );
     }
