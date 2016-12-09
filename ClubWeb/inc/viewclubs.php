@@ -16,11 +16,7 @@ $total = $result->num_rows;
 echo "<h1> Portlethen clubs </h1>";
 
 echo "<h4> Displaying ". $total . " active clubs </h4>";
-?>
-<script> document.getElementById('link').onclick = function() {
-        document.getElementById('form').submit();
-    }
-</script>
+
 <?
 
 while($row = $result->fetch_array()) {
@@ -29,6 +25,7 @@ while($row = $result->fetch_array()) {
     echo "<img src='" . $row['URL'] . "'height='300', width='300'>";
     echo "<h1><a href='Clubs' name='linkref' id='link' value='" . $row['clubid'] . "'>" . $row['clubTitle'] . "</a></h1>";
     echo "<br>";
+    echo "<input type='submit'>";
     echo "</form>";
 
 }
