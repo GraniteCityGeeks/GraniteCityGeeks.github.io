@@ -1,14 +1,14 @@
 <?php
-include 'navBar.php';
+include '../navBar/master.php';
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
-<link href="master.css" rel="stylesheet" />
+<link href="../CSS/master.css" rel="stylesheet" />
 
 <head>
     <meta charset="UTF-8">
-
+    <title>Home Page</title>
 </head>
 <body>
 
@@ -16,7 +16,7 @@ include 'navBar.php';
 <div class="welcome">
     <div class="visible">
         <p>
-            Discover:
+Discover:
         </p>
         <ul>
             <li> Clubs</li>
@@ -26,3 +26,4 @@ include 'navBar.php';
     </div>
 </div>
 </body>
+</html>

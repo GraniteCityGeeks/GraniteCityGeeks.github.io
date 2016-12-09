@@ -17,10 +17,11 @@ $rules = array(
     'logout' => "/logout",
     'register' => "/register",
     'add' => "/add",
-    'edit' => "/edit",
+    'Edit' => "/Edit/(?'userID'[\w\-]+)",
     'delete' => "/delete/(?'userID'[\w\-]+)",
     'AddUser' => "/AddUser",
     'Clubs' => "/Clubs",
+    'viewclubs' => "/viewclubs",
     //
     // Home Page
     //

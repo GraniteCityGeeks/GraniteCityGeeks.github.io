@@ -4,16 +4,16 @@ include 'master.php';
 
 <!DOCTYPE html>
 <html lang="en">
-<link href="bootstrap.min.css" rel="stylesheet" />
-<link href="half-slider.css" rel="stylesheet" />
+<!--
+<link href="../CoreCSS/bootstrap.min.css" rel="stylesheet" />
+<link href="../CoreCSS/half-slider.css" rel="stylesheet" />
+<link href="../CoreCSS/healthPage.css" rel="stylesheet" />
+-->
 
 <h1> Granite City Geeks - Go Portlethen</h1>
 <h2> Get Healthy, it's ace</h2>
 
 
-        </div>
-    </div>
-</header>
 
 <body>
 
@@ -27,8 +27,8 @@ include 'master.php';
 </div>
 
 
-<script src="../js/jquery.js"></script>
-<script src="../js/bootstrap.min.js"></script>
+<script src="src/js/jquery.js"></script>
+<script src="src/js/bootstrap.min.js"></script>
 <script>
     $('.carousel').carousel({
         interval: 5000

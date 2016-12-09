@@ -12,19 +12,23 @@
     <meta name="author" content="Granite City Geeks">
 
 
-    <link href="NavbarMaster.css" rel="stylesheet" />
+
+    <link href="/michaelFolder/healthFinal/CSS/bootstrap.min.css" rel="stylesheet" />
+    <link href="/michaelFolder/healthFinal/CSS/half-slider.css" rel="stylesheet" />
+    <link href="/michaelFolder/healthFinal/CSS/NavbarMaster.css" rel="stylesheet" />
 
 </head >
 
 <body class="master-body">
 <form id="form1" runat="server">
     <header class="header">
-        <nav>
+            <nav>
             <ul>
                 <li><a href="/Maps"><b>Maps</b></a></li>
                 <li><a href="/ClubWeb/"><b>Clubs</b></a></li>
-                <li><a href="/health"><b>Health</b></a></li>
+                <li><a href="/healthFinal/webPages/index.php"><b>Health</b></a></li>
              </ul>
+            </nav>
 
     </header>
 </form>

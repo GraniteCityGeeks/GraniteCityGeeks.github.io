@@ -1,31 +1,31 @@
 <?php
-include 'navBar.php';
+include '../navBar/master.php';
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
-<link href="bootstrap.min.css" rel="stylesheet" />
-<link href="half-slider.css" rel="stylesheet" />
-<link href="healthPage.css" rel="stylesheet" />
+<link href="../CSS/bootstrap.min.css" rel="stylesheet" />
+<link href="../CSS/half-slider.css" rel="stylesheet" />
+<link href="../CSS/healthPage.css" rel="stylesheet" />
 
 <header id="myCarousel" class="carousel slide">
     <div class="carousel-inner">
         <div class="item active">
-            <div class="fill" style="background-image: url('gym-wallpaper-workout.jpg')"></div>
+            <div class="fill" style="background-image: url('../Images/gym-wallpaper-workout.jpg')"></div>
         </div>
         <div class="item">
-            <div class="fill" style="background-image: url('healthyfood.jpg')"></div>
+            <div class="fill" style="background-image: url('../Images/healthyfood.jpg')"></div>
 
         </div>
         <div class="item">
-            <div class="fill" style="background-image: url('hills.jpg')"></div>
+            <div class="fill" style="background-image: url('../Images/hills.jpg')"></div>
 
         </div>
     </div>
 </header>
 
-<script src="jquery.js"></script>
-<script src="bootstrap.min.js"></script>
+<script src="../js/jquery.js"></script>
+<script src="../js/bootstrap.min.js"></script>
 
 <script>
     $('.carousel').carousel({
@@ -43,9 +43,9 @@ include 'navBar.php';
     </div>
     <hr />
 
-    <h2>News Feed!</h2>
+        <h2>News Feed!</h2>
 
-</div>
+    </div>
 
 <ul class="ulProducts" runat="server" id="newsFeed">
     <li class ="display2">
@@ -75,28 +75,35 @@ include 'navBar.php';
         Scotland. Just walking through the woods, or a small cycle or a hike up a hill will do wonders to the soul. Taking time for you is very important and will also help
         towards a healthy life
     </li>
-</ul>
+    </ul>
 
 <br>
 
 <div class="container">
-    <h2>Community Spotlight!</h2>
-</div>
+<h2>Community Spotlight!</h2>
+    </div>
 <hr/>
-<ul class="ulProducts" runat="server" id="newsFeed">
+    <ul class="ulProducts" runat="server" id="newsFeed">
 
 
-    <?php
-    if(!$_POST['submit'])
-    {
-        echo "please use the form";
+<?php
+include('dbconnect.php');
+/* this script loads the article the user clicked on.*/
+
+$sql = "SELECT * FROM port_articles";
+$result = $db->query($sql);
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    while ($row = $result->fetch_assoc()) {
+        echo '<li class="display"><b>'.$row["title"].'</b><br>'.$row["text"].'</li>';
     }
-    else
-    {
-        $divTitle = $_POST['title'];
-        $divDesc = $_POST['desc'];
-        echo '<li class="display"><b>'.$divTitle.'</b><br>'.$divDesc.'</li>';
+}
+else {
+    echo "0 results";
     }
-    ?>
+$db->close();
+?>
 </ul>
+
 </html>

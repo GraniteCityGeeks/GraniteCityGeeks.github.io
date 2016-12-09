@@ -1,4 +1,4 @@
-@import "unsemantic-grid-responsive-tablet.css";
+
 html,
 
 table {
@@ -23,12 +23,6 @@ body * {
     font-family: 'Titillium Web', sans-serif;
     -webkit-font-smoothing: antialiased;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
-}
-
-body {
-
-    background-color: lightblue;
-    background-size: cover;
 }
 
 

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="../CoreCSS/style.css">
-    <link rel="stylesheet" href="../CoreCSS/unsemantic-grid-responsive-tablet.css">
+
+
 </head>
 <body>
 
