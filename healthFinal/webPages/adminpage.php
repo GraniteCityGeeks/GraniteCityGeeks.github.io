@@ -145,6 +145,9 @@ include '../navBar/master.php';
 
 <div id="result"></div>
 
+<?php
+include '../webPages/footer.html';
+?>
 
 </html>
 
