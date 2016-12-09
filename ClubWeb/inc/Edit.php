@@ -37,7 +37,7 @@ $id = $params['userID'];
 // Check if userID has a value
 if (isset($params['userID'])) {
     // Get all attributes for that user
-    $sql = "SELECT * FROM port_users WHERE userID=$id";
+    $sql = "SELECT * FROM port_users WHERE userID='$id'";
     $result = mysqli_query($db, $sql);
 
 //    if (!$result) {
@@ -75,7 +75,7 @@ if(isset($_POST['submit'])) {
     // Check if username or password is empty
     if ($newUsername == '' || $newPassword == '') {
         // Re-display form with existing values and inform user (no changes made)
-        renderForm($id, $username, $password,$bio,$photoID,$accessLevelID,$db);
+        //renderForm($id, $username, $password,$bio,$photoID,$accessLevelID,$db);
         echo "Please make sure the user has a username and password";
     } else {
         // Update user's details in database
