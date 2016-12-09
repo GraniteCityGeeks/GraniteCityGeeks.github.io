@@ -114,7 +114,7 @@ include '../healthFinal/navBar/master.php'
     <br>
     <h4>NKPAG USER</h4>
     <br>
-    <a href="MarkerAdmin.php">Edit Markers</a>
+    <a href="scripts/MarkerAdmin.php">Edit Markers</a>
 </div>
 
 </body>
