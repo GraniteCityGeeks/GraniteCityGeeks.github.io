@@ -183,8 +183,9 @@ include '../navBar/master.php';
 
         $.post('editHealth.php',{type:type,toDelete:toDelete}, function(data)
             {
-                alert('Post deleted');
+
                 $('#result').html(data);
+                alert(data);
             }
         );
     }
