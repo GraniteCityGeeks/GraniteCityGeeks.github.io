@@ -32,8 +32,7 @@ function renderForm($id, $username, $password,$bio,$photoID,$accessLevelID, $db)
 
 include('scripts/dbconnect.php');
 
-if (isset($_POST['submit']))
-{
+if (isset($_POST['submit'])) {
 
     if (isset($_POST['id'])) {
 
