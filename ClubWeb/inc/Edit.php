@@ -37,7 +37,7 @@ $id = $params['userID'];
 // Check if userID has a value
 if (isset($params['userID'])) {
     // Get all attributes for that user
-    $sql = "SELECT * FROM port_users WHERE userID=$id";
+    $sql = "SELECT * FROM port_users WHERE userID='$id'";
     $result = mysqli_query($db, $sql);
 
 //    if (!$result) {
