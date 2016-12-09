@@ -14,5 +14,12 @@ if (isset($_SESSION['username'])) {
 </main>
 ";
 }
+if ((isset($_SESSION['username'])) && (isset($_SESSION['confirmed']))){
+    echo "
+<main>
+<p>Welcome to the clubs page you need to get access to continue.</p>
+</main>
+";
+}
 include ("scripts/footer.php");
 ?>

@@ -1,14 +1,14 @@
+<!-- Michael, i brought back an older version because the map kept breaking. This map doesn't break. PLEASE DO NOT CHANGE
+THE NAME OF ANYTHING IN THE JAVASCRIPT AND PLEASE PLEAAAASE DON'T CHANGE THE DIV TAGS WITHOUT MY PERMISSION. Whatever you/jamie
+did broke the map's loading functions. -->
+
 <?php
 include'../healthFinal/navBar/master.php'
 ?>
 
 <html>
-
-<link href="bootstrap.min.css" rel="stylesheet" />
-<link href="/healthFinal/CSS/half-slider.css" rel="stylesheet" />
-<link href="/CoreCSS/master.css" rel="stylesheet" />
-
 <head>
+    <link href="../CoreCSS/master.css" rel="stylesheet" type="text/css">
 
     <title>GoPortlethen</title>
     <style>
@@ -18,7 +18,7 @@ include'../healthFinal/navBar/master.php'
 
     <script type="text/javascript">
         function initMap() {
-            map = new google.maps.Map(document.getElementById('initmap'), {
+            map = new google.maps.Map(document.getElementById('map'), {
                 center: {lat: 57.061681, lng: -2.129468},
                 zoom: 12,
                 MapTypeId: "satellite"
@@ -83,87 +83,40 @@ include'../healthFinal/navBar/master.php'
     <meta charset="UTF-8">
     <title></title>
 </head>
-
-<header id="myCarousel" class="carousel slide">
-    <div class="carousel-inner">
-        <div class="item active">
-            <div class="fill" style="background-image: url('gold.jpg')"></div>
-        </div>
-        <div class="item">
-            <div class="fill" style="background-image: url('train.jpg')"></div>
-
-        </div>
-        <div class="item">
-            <div class="fill" style="background-image: url('castle.jpg')"></div>
-
-        </div>
-    </div>
-</header>
-
-<script src="/healthFinal/js/jquery.js"></script>
-<script src="/healthFinal/js/bootstrap.min.js"></script>
-
-<script>
-    $('.carousel').carousel({
-        interval: 5000
-    })
-</script>
-
-
-<div class="container">
-    <div class="row">
-        <div class="col-lg-12">
-            <h1>Local Map</h1>
-            <i>This page will show points of interest on an interactive map!</i>
-        </div>
-
-        <hr class="type_3" />
-
-        <div id="map">
-
-        </div>
-
-
-        <div class="col-lg-12" style="width: 350px">
-            <div id="twitter">
-                <a class="twitter-timeline" data-width="400" data-height="800" d href="https://twitter.com/PortlethenGC">Tweets by PortlethenGC</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-            </div>
-        </div>
-
-        <div class="col-lg-12" style="width: 350px">
-            <br>
-            Is this the text you are looking for Jamie???
-            <br>
-            <h4>NKPAG USER</h4>
-            <br>
-            <a href="MarkerAdmin.php">Edit Markers</a>
-        </div>
-
-    </div>
-</div>
-
-
-
-<meta charset="UTF-8">
-<title></title>
-</head>
-<body onload="initMap">
+<body>
 
 <br>
 <br>
 
 <div id="top" style="float:left position:absolute;">
 
-    <div id="initmap" style="height:700px;width:1250px; float:left;">
+    <div id="map" style="height:700px;width:1250px; float:left;">
+
     </div>
 
 
+    <div id="twitter" style="float:left;">
+        <a class="twitter-timeline" data-width="400" data-height="800" d href="https://twitter.com/PortlethenGC">Tweets by PortlethenGC</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+</div>
 
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<div class="textD" style="background-color: lightgray float:left;">
+    <br>
+    Is this the text you are looking for Jamie???
+    <br>
+    <h4>NKPAG USER</h4>
+    <br>
+    <a href="MarkerAdmin.php">Edit Markers</a>
+</div>
+
+</body>
 
 </html>
