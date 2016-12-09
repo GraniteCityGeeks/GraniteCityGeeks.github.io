@@ -1,6 +1,9 @@
 <?php
-include("scripts/dbconnect.php");
-include ("scripts/header_l2.php.php");
+session_start();
+if (isset($_SESSION['username'])) //SESSION DOES EXIST
+{
+    if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+        include ("scripts/header_l2.php.php");
 echo "
 <main>
 ";
@@ -23,7 +26,17 @@ echo "
                 <input type="submit">
             </form>
 
-<?php
+<?
+    } elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        include('scripts/dbconnect.php');
+        $clubid = str_replace(' ', '-', $_POST["clubTitle"]);
+        $clubtxt = $_POST["ClubDescription"];
+        $clubgenre = $_POST["genre"];
+        if (mysqli_query($db, $sql)) {
+        } else {
+            echo "Error: " . $sql . "<br>Error Message:" . mysqli_error($db);
+        }
+        header("blog");
 echo "
 </main>
 ";
