@@ -19,7 +19,7 @@ if (isset($_SESSION['username'])) //SESSION DOES EXIST
             <br>
             <br>
             <br>
-            <textarea name="ClubDescription" required autofocus></textarea>
+            <input type="text" name="ClubDescription" required autofocus>
             <br>
             <br>
             <label for="genre">Select genre</label>
