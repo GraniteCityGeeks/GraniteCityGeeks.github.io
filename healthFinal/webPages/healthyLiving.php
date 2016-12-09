@@ -41,7 +41,7 @@ include '../navBar/master.php';
             <i>This page will contain helpful information, tips & tricks for staying healthy!</i>
         </div>
     </div>
-    <hr />
+    <hr class="pacman" />
 
         <h2>News Feed!</h2>
 
@@ -82,7 +82,7 @@ include '../navBar/master.php';
 <div class="container">
 <h2>Community Spotlight!</h2>
     </div>
-<hr/>
+<hr class="pacman"/>
     <ul class="ulProducts" runat="server" id="newsFeed">
 
 
