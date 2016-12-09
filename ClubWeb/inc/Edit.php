@@ -79,6 +79,7 @@ if(isset($_POST['submit'])) {
         echo "Please make sure the user has a username and password";
     } else {
         // Update user's details in database
+        echo 'updateUser called!';
         updateUser($id, $newUsername, $newPassword, $newBio, $newPhotoID, $newAccessLevelID, $db);
     }
 }
