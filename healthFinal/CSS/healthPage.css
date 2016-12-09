@@ -52,7 +52,7 @@ hr.pacman {
 }
 
 
-.footer {
+#footer {
     position: absolute;
     right: 0;
     bottom: 0;
