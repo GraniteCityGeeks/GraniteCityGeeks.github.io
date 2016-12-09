@@ -32,35 +32,6 @@ function renderForm($id, $username, $password,$bio,$photoID,$accessLevelID, $db)
 
 include('scripts/dbconnect.php');
 
-$id = $params['userID'];
-
-if (isset($params['userID'])) {
-
-    $result = mysqli_query($db,"SELECT * FROM port_users WHERE userID=$id");
-
-    $row = mysqli_fetch_array($result);
-
-    if($row) {
-
-        $username = $row['username'];
-        $password = $row['password'];
-        $bio = $row['bio'];
-        $photoID = $row['photoID'];
-        $accessLevelID = $row['accessLevelID'];
-        renderForm($id, $username, $password,$bio,$photoID,$accessLevelID,$db);
-
-    } else {
-
-        echo "No results!";
-
-    }
-
-} else {
-
-    echo 'Error!';
-
-}
-
 if (isset($_POST['submit'])) {
 
     if (isset($_POST['id'])) {
@@ -95,7 +66,34 @@ if (isset($_POST['submit'])) {
 
 
 
+    $id = $params['userID'];
 
+    if (isset($params['userID'])) {
+
+        $result = mysqli_query($db,"SELECT * FROM port_users WHERE userID=$id");
+
+        $row = mysqli_fetch_array($result);
+
+        if($row) {
+
+            $username = $row['username'];
+            $password = $row['password'];
+            $bio = $row['bio'];
+            $photoID = $row['photoID'];
+            $accessLevelID = $row['accessLevelID'];
+            renderForm($id, $username, $password,$bio,$photoID,$accessLevelID,$db);
+
+        } else {
+
+            echo "No results!";
+
+        }
+
+    } else {
+
+        echo 'Error!';
+
+    }
 
 }
 
