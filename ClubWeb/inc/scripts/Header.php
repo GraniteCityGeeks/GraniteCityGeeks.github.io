@@ -8,9 +8,6 @@ include '../../../healthFinal/navBar/master.php';
 <head runat = "server">
     <meta charset="UTF-8">
     <title>Sportlethen Clubs</title>
-    <script> document.getElementById('link').onclick = function() {
-            document.getElementById('form').submit();
-    </script>
 
     <?
     if (isset($_SESSION['username'])) {
