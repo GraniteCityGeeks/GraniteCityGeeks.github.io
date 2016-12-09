@@ -20,12 +20,24 @@ echo "<h4> Displaying ". $total . " active clubs </h4>";
 
 
 while($row = $result->fetch_array()) {
-    //echo all clubs
+    $pictureURL = $row['URL'];
+    $clubID = $row['clubid'];
+    $clubTitle = $row['clubTitle'];
+
+    echo "
+    <img src='{$pictureURL}'height='300', width='300'>
+    <h1><a href='Clubs/{$clubID}' name='linkref' id='link'>{$clubTitle}</a></h1>
+    ";
+
+    
+
+
+    /*//echo all clubs
     echo "<form action='Clubs' name='clubs_submission' method='get' id='form'>";
     echo "<img src='" . $row['URL'] . "'height='300', width='300'>";
     echo "<h1><a href='Clubs' name='linkref' id='link' value='" . $row['clubid'] . "'>" . $row['clubTitle'] . "</a></h1>";
     echo "<br>";
-    echo "</form>";
+    echo "</form>";*/
 
 }
 
