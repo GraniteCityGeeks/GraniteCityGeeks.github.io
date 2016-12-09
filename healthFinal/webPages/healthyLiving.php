@@ -1,5 +1,6 @@
 <?php
 include '../navBar/master.php';
+include '../webPages/footer.html';
 ?>
 
 <!DOCTYPE html>
