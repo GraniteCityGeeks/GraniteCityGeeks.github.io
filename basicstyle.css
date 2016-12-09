@@ -21,6 +21,15 @@ header{
     height:300px;
 }
 
+#column1{
+    background-color: #2e6da4;
+
+}
+
+#sidebar{
+    background-color: #843534;
+}
+
 footer{
     background-color: #2b542c;
     height:60px;
