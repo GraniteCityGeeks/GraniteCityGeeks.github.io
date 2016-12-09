@@ -22,6 +22,7 @@ $rules = array(
     'AddUser' => "/AddUser",
     'Clubs' => "/Clubs",
     'viewclubs' => "/viewclubs",
+    'createclub' => "/createclub",
     //
     // Home Page
     //
