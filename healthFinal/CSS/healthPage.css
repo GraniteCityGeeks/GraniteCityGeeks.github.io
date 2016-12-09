@@ -12,6 +12,7 @@ body
     height: 800px;
     overflow:hidden;
     overflow-y:scroll;
+    width:500px;
 
 }
 
@@ -27,6 +28,7 @@ body
     transition:all ease-in-out 0.3s;
     margin:20px;
         display: inline-block;
+
         }
 
 .display:hover {
@@ -37,7 +39,6 @@ body
 .display2  {
     height:300px;
     margin-top: 5px;
-    width:500px;
     display:inline;
     float:left;
     margin-left:35px;
