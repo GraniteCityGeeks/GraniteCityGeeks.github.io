@@ -178,6 +178,11 @@ include '../navBar/master.php';
         var type = "edit";
         var oldTitle = document.getElementById("oldTitle").options[document.getElementById("oldTitle").selectedIndex].text;
 
+        if($('#titleEdit').val() == ''){
+            alert('Title input can not be left blank');
+        }else if($('#textEdit').val() == ''){
+            alert('Text input can not be left blank');
+        }else{
         $.post('editHealth.php',{title:title,desc:desc,type:type,oldTitle:oldTitle}, function(data)
             {
                 $('#result').html(data);
@@ -185,6 +190,7 @@ include '../navBar/master.php';
                 window.location.replace("http://gcg.azurewebsites.net/healthFinal/webPages/healthyLiving.php");
             }
         );
+        }
     }
 
     function thisDelete()
