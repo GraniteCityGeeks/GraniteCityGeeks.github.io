@@ -32,7 +32,11 @@ if (isset($_SESSION['username'])) //SESSION DOES EXIST
             </select>
             <br>
             <br>
-            <input type="file" name="filetoupload" id="filetoupload required">
+            <select name="avatar">
+                <option value="1">Hills</option>
+                <option value="21">cyclist</option>
+                <option value="31">sunset</option>
+            </select>
             <br>
             <br>
             <input type="submit" value="Create club!">
