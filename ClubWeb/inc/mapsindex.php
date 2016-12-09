@@ -3,12 +3,12 @@ THE NAME OF ANYTHING IN THE JAVASCRIPT AND PLEASE PLEAAAASE DON'T CHANGE THE DIV
 did broke the map's loading functions. -->
 
 <?php
-include'../healthFinal/navBar/master.php'
+include '../healthFinal/navBar/master.php'
 ?>
 
 <html>
 <head>
-    <link href="../CoreCSS/master.css" rel="stylesheet" type="text/css">
+    <link href="../../CoreCSS/master.css" rel="stylesheet" type="text/css">
 
     <title>GoPortlethen</title>
     <style>
