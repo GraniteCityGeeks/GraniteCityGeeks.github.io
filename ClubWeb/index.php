@@ -28,6 +28,7 @@ $rules = array(
     'createclub' => "/createclub",
     'mapsindex' => "/mapsindex",
     'markers' => "/markers",
+    'MarkerAdmin' => "/MarkerAdmin",
     //
     // Home Page
     //
