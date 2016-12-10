@@ -69,7 +69,7 @@ include '../navBar/master.php';
             <form>
                 Select News Feed to Edit:
                 <br>
-                <select id="oldTitle">
+                <select id="oldTitle" name="oldTitle">
                     <?php
                     include('dbconnect.php');
                     /* this script loads the article the user clicked on.*/
@@ -80,7 +80,7 @@ include '../navBar/master.php';
                     if ($result->num_rows > 0) {
                         // output data of each row
                         while ($row = $result->fetch_assoc()) {
-                            echo '<option name="oldTitle" value='.htmlspecialchars($row['title']).'>'.htmlspecialchars($row['title']).'</option>';
+                            echo '<option value='.htmlspecialchars($row['title']).'>'.htmlspecialchars($row['title']).'</option>';
                         }
                     }
                     else {
