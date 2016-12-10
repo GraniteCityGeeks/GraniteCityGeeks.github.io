@@ -1,6 +1,6 @@
 <html>
 <head>
-    <link href="/basicstyle.css" rel="stylesheet" type="text/css">
+    <link href="/clubcss.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
