@@ -65,7 +65,7 @@ if (isset($_SESSION['username'])) //SESSION DOES EXIST
 
         $result = $db->query($queryuserid);
 
-        while($row = $result->fetch_query()) {
+        while($row = $result->fetch_array()) {
             $userid = $row['username'];
         }
 
