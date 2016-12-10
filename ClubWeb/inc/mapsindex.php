@@ -8,8 +8,7 @@ did broke the map's loading functions. -->
 <?php
 
 
-if(file_exists("markers.php")) { echo "markers file found"; } else { echo "markers file missing"; }
-?>
+#if(file_exists("markers.php")) { echo "markers file found"; } else { echo "markers file missing"; } ?>
 
 <html>
 <head>
