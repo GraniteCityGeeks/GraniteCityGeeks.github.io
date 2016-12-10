@@ -127,7 +127,7 @@ if(file_exists("markers.php")) { echo "markers file found"; } else { echo "marke
 <br>
 
 
-<div class="textD" style="background-color: lightgray float:left;">
+
     <br>
 
 
