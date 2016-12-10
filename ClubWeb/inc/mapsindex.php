@@ -90,6 +90,15 @@ if(file_exists("markers.php")) { echo "markers file found"; } else { echo "marke
     <title></title>
 </head>
 <body>
+
+<ul id="nav">
+    <li><a href="page1.html">Page 1</a></li>
+    <li><a href="page2.html">Page 2</a></li>
+    <li><a href="page3.html">Page 3</a></li>
+    <li><a href="page4.html">Page 4</a></li>
+    <li><a href="page5.html">Page 5</a></li>
+</ul>
+
 <div id="container">
 
 <br>
