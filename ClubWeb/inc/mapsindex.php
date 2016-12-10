@@ -106,7 +106,7 @@ if(file_exists("markers.php")) { echo "markers file found"; } else { echo "marke
 
 <div id="top" style="float:left position:absolute;">
 
-    <div id="map" style="height:700px;width:1250px; float:left;">
+    <div id="map" style="height:700px;width:60p%; float:left;">
 
     </div>
 
