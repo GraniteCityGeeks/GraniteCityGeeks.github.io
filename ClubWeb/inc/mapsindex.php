@@ -110,6 +110,8 @@ include("scripts/dbconnect.php"); ?>
 
     <div id="map" style="height:400px;width:60%; float:left;">
 
+        <h2>Map ^^^^^^</h2>
+
 
     </div>
 
