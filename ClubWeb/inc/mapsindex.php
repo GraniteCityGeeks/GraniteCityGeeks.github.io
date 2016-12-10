@@ -97,6 +97,9 @@ if(file_exists("markers.php")) { echo "markers file found"; } else { echo "marke
     <li><a href="page3.html">Page 3</a></li>
     <li><a href="page4.html">Page 4</a></li>
     <li><a href="page5.html">Page 5</a></li>
+    <li><h4>NKPAG USER</h4></li>
+    <li><a href="scripts/MarkerAdmin.php">Edit Markers</a></li>
+
 </ul>
 
 <div id="container">
@@ -107,6 +110,7 @@ if(file_exists("markers.php")) { echo "markers file found"; } else { echo "marke
 <div id="top" style="float:left position:absolute;">
 
     <div id="map" style="height:400px;width:60%; float:left;">
+
 
     </div>
 
@@ -126,11 +130,8 @@ if(file_exists("markers.php")) { echo "markers file found"; } else { echo "marke
 
 <div class="textD" style="background-color: lightgray float:left;">
     <br>
-    Is this the text you are looking for Jamie???
-    <br>
-    <h4>NKPAG USER</h4>
-    <br>
-    <a href="scripts/MarkerAdmin.php">Edit Markers</a>
+
+
 </div>
 </div>
 </body>
