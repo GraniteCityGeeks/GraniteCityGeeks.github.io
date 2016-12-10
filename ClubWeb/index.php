@@ -45,3 +45,15 @@ foreach ($rules as $action => $rule) {
 // nothing is found so handle the 404 error
 include(INCLUDE_DIR . '404.php');
 ?>
+
+<html>
+<head>
+    <link href="/clubcss.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="container">
+
+    </div>
+</body>
+</html>
