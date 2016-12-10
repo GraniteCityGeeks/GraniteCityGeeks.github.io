@@ -57,6 +57,8 @@ footer{
 #nav > li{
     display: inline-block;
     padding-right: 50px;
+    font-size: 15px;
+
 }
 #nav > li > a{
     text-decoration: none;
