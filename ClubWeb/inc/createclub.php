@@ -68,7 +68,6 @@ if (isset($_SESSION['username'])) //SESSION DOES EXIST
 
         while($row = $result->fetch_array()) {
             $userid = $row['userid'];
-            echo $userid;
         }
         $clubtitle = $_POST["clubTitle"];
         $clubtxt = $_POST["ClubDescription"];
