@@ -29,6 +29,7 @@ $rules = array(
     'mapsindex' => "/mapsindex",
     'markers' => "/markers",
     'MarkerAdmin' => "/MarkerAdmin",
+    'deletemarker' => "/deletemarker",
     //
     // Home Page
     //
