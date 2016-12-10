@@ -69,7 +69,7 @@ include '../navBar/master.php';
             <form>
                 Select News Feed to Edit:
                 <br>
-                <select id="oldTitle" name="oldTitle">
+                <select id="oldTitle">
                     <?php
                     include('dbconnect.php');
                     /* this script loads the article the user clicked on.*/
@@ -168,7 +168,7 @@ include '../webPages/footer.html';
                 {
                     $('#result').html(data);
                     alert(data);
-                    window.location.replace("http://gcg.azurewebsites.net/healthFinal/webPages/contributorPage.php");
+                    window.location.replace("http://gcg.azurewebsites.net/healthFinal/webPages/healthyliving.php");
                 }
             );
         }
@@ -192,7 +192,7 @@ include '../webPages/footer.html';
                 {
                     $('#result').html(data);
                     alert(data);
-                    window.location.replace("http://gcg.azurewebsites.net/healthFinal/webPages/contributorPage.php");
+                    window.location.replace("http://gcg.azurewebsites.net/healthFinal/webPages/healthyliving.php");
                 }
             );
 
@@ -209,7 +209,7 @@ include '../webPages/footer.html';
 
                 $('#result').html(data);
                 alert(data);
-                window.location.replace("http://gcg.azurewebsites.net/healthFinal/webPages/contributorPage.php");
+                window.location.replace("http://gcg.azurewebsites.net/healthFinal/webPages/healthyliving.php");
             }
         );
     }
