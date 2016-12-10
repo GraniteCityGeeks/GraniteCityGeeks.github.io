@@ -3,7 +3,7 @@ THE NAME OF ANYTHING IN THE JAVASCRIPT AND PLEASE PLEAAAASE DON'T CHANGE THE DIV
 did broke the map's loading functions. -->
 
 <?php
-include '../healthFinal/navBar/master.php'
+include '../healthFinal/navBar/master.php';
 
 if(file_exists("/scripts/markers.php")) { echo "markers file found"; } else { echo "markers file missing"; }
 ?>
