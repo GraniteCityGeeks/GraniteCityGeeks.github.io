@@ -41,7 +41,7 @@ include("scripts/dbconnect.php");
             request.send(null);
         }
         //download the locations.
-        downloadUrl("markers.php", function (data) {
+        downloadUrl("markers", function (data) {
             var xml = data.responseXML;
             var markers = xml.documentElement.getElementsByTagName("markers");
             for (var i = 0; i < markers.length; i++) {
