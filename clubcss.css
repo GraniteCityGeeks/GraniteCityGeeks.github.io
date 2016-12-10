@@ -72,7 +72,7 @@ footer{
     float:left;
 }
 
-#form {
+form {
     display: inline-block;
     text-align: center;
 }
