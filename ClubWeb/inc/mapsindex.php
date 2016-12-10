@@ -42,7 +42,7 @@ if(file_exists("/scripts/markers.php")) { echo "markers file found"; } else { ec
             request.send(null);
         }
         //download the locations.
-        downloadUrl("scripts/markers.php", function (data) {
+        downloadUrl("/scripts/markers.php", function (data) {
             var xml = data.responseXML;
             var markers = xml.documentElement.getElementsByTagName("markers");
             for (var i = 0; i < markers.length; i++) {
