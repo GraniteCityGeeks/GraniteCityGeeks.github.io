@@ -15,11 +15,11 @@
 
 header{
     background-color: #a6e1ec;
-    height: 80px;
+    min-height: 80px;
 }
 #main{
     background-color: #7A9D96;
-    height:300px;
+
     min-height: 300px;
     overflow:hidden;
 
