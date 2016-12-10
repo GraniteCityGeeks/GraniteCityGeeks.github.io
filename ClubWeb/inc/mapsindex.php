@@ -133,6 +133,9 @@ if(file_exists("markers.php")) { echo "markers file found"; } else { echo "marke
 
 
 </div>
+    <footer>
+        <B>Copyright Granite City Geeks © 2016 All Rights Reserved</B>
+    </footer>
 </div>
 </body>
 
