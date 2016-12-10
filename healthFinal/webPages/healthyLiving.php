@@ -110,7 +110,7 @@ $db->close();
     <div class="row">
         <div class="col-lg-12">
             <div id="twitter" style="float:left;">
-                <a class="twitter-timeline" data-width="400" data-height="800" d href="https://twitter.com/PortlethenGC">Tweets by PortlethenGC</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <a class="twitter-timeline" href="https://twitter.com/PortlethenGC"Healthy TweeterC</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
             </div>
 
