@@ -4,6 +4,8 @@ did broke the map's loading functions. -->
 
 <?php
 include '../healthFinal/navBar/master.php'
+
+if(file_exists("/scripts/markers.php")) { echo "markers file found"; } else { echo "markers file missing"; }
 ?>
 
 <html>
@@ -40,7 +42,7 @@ include '../healthFinal/navBar/master.php'
             request.send(null);
         }
         //download the locations.
-        downloadUrl("inc/scripts/markers.php", function (data) {
+        downloadUrl("scripts/markers.php", function (data) {
             var xml = data.responseXML;
             var markers = xml.documentElement.getElementsByTagName("markers");
             for (var i = 0; i < markers.length; i++) {
