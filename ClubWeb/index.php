@@ -1,4 +1,17 @@
+<html>
+<head>
+    <link href="/clubcss.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="container">
+
+</div>
+</body>
+</html>
 <?
+
+
 define('INCLUDE_DIR', dirname(__FILE__) . '/inc/');
 $rules = array(
     //
@@ -33,6 +46,8 @@ $rules = array(
     // Style
     //
 );
+
+
 $uri = rtrim(dirname($_SERVER["SCRIPT_NAME"]), '/');
 $uri = '/' . trim(str_replace($uri, '', $_SERVER['REQUEST_URI']), '/');
 $uri = urldecode($uri);
@@ -46,14 +61,4 @@ foreach ($rules as $action => $rule) {
 include(INCLUDE_DIR . '404.php');
 ?>
 
-<html>
-<head>
-    <link href="/clubcss.css" rel="stylesheet" type="text/css">
-</head>
 
-<body>
-<div id="container">
-
-    </div>
-</body>
-</html>
