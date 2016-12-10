@@ -1,23 +1,3 @@
-<html>
-<head>
-    <link href="/clubcss.css" rel="stylesheet" type="text/css">
-</head>
-
-<body>
-<ul id="nav">
-    <img href="https://www.dropbox.com/s/meq0xmxkcafrasc/logogcg.png?dl=0">
-    <li><a href="/index.php">Home</a></li>
-    <li><a href="/ClubWeb">Clubs</a></li>
-    <li><a href="/ClubWeb/inc/mapsindex/">Maps</a></li>
-    <li><a href="/healthFinal">Health</a></li>
-    <li><a href="scripts/MarkerAdmin.php">Edit Markers</a></li>
-
-</ul>
-<div id="container">
-
-</div>
-</body>
-</html>
 <?
 
 
@@ -48,6 +28,7 @@ $rules = array(
     'createclub' => "/createclub",
     'mapsindex' => "/mapsindex",
     'markers' => "/markers",
+    'MarkerAdmin' => "/MarkerAdmin",
     //
     // Home Page
     //
