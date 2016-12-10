@@ -6,8 +6,8 @@ ini_set('display_errors', 1);
 
 <!DOCTYPE html>
 <html lang="en">
-<!--<link rel="stylesheet" href="/FinalCSS/master.css">-->
-<head runat = "server">
+<link rel="stylesheet" href="/basicstyle.css">
+<head>
     <meta charset="UTF-8">
     <title>Sportlethen Clubs</title>
 
@@ -25,17 +25,17 @@ ini_set('display_errors', 1);
     }
     ?>
     <nav>
-        <ul>
+        <ul id="nav">
             <li><a href="./">Home Page</a></li>
             <li><a href="blog">My Blog</a></li>
             <li><a href="about">About Me</a></li>
             <li><a href="contactus">Contact Me</a></li>
             <li><a href="viewclubs">Clubs</a></li>
-            <li><a href="createclub">Create Clubs</a></li>
             <?
             if (isset($_SESSION['accessLevelID']) == 2){
                 echo "<li><a href='createarticle'>Create Art</a></li>";
                 echo "<li><a href='View'>View</a></li>";
+                echo "<li><a href='createclub'>Create Clubs</a></li>";
             }
             ?>
 
