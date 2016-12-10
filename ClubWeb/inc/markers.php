@@ -1,5 +1,5 @@
 <?php
-include("dbconnect.php");
+include("scripts/dbconnect.php");
 $dom = new DOMDocument("1.0");
 
 $node = $dom->createElement("markers");
