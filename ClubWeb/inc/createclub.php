@@ -1,5 +1,6 @@
 <?php
 session_start();
+$username = $_SESSION['username'];
 include("scripts/dbconnect.php");
 include ("scripts/header.php");
 if (isset($_SESSION['username'])) //SESSION DOES EXIST
@@ -8,8 +9,7 @@ if (isset($_SESSION['username'])) //SESSION DOES EXIST
         echo "
 <main>
 ";
-        $username = $_SESSION['username'];
-        echo $username;
+
         ?>
 
         <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
@@ -56,12 +56,25 @@ if (isset($_SESSION['username'])) //SESSION DOES EXIST
 
         <?
     } elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
+        //first segment: getting the userid from username
+
+        //define a new query.
+
+        $queryuserid = "select userid from port_users where username = '$username'";
+
+        $result = $db->query($queryuserid);
+
+        while($row = $result->fetch_query()) {
+            $userid = $row['username'];
+        }
+
         include('scripts/dbconnect.php');
         $clubtitle = $_POST["clubTitle"];
         $clubtxt = $_POST["ClubDescription"];
         $clubgenre = $_POST["genre"];
         $clubavatar = $_POST["avatar"];
-        $sql = "INSERT INTO port_club(clubTitle, description, genreid, photoid, clubcalendar) VALUES('$clubtitle', '$clubtxt', '$clubgenre', '$clubavatar', 'No events upcoming')";
+        $sql = "INSERT INTO port_club(clubTitle, description, genreid, photoid, clubcalendar, ownerid) VALUES('$clubtitle', '$clubtxt', '$clubgenre', '$clubavatar', 'No events upcoming', $userid)";
         if (mysqli_query($db, $sql)) {
             echo "<p> creation successful </p>";
         } else {
