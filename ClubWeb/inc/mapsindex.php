@@ -15,7 +15,7 @@ include("scripts/dbconnect.php"); ?>
 <head>
     <link href="/basicstyle.css" rel="stylesheet" type="text/css">
 
-    <title>GoPortlethen</title>
+    <title>GoPortlethen - Maps</title>
     <style>
         @import url('https://fonts.googleapis.com/css?family=Roboto');
     </style>
