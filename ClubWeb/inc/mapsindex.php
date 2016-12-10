@@ -106,7 +106,7 @@ include("scripts/dbconnect.php"); ?>
 <br>
 <br>
 
-<div id="top" style="float:left position:absolute;">
+
 
     <div id="map" style="height:400px;width:60%; float:left;">
 
