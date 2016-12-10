@@ -1,3 +1,3 @@
 <footer>
-    <p>Copyright Granite City Geeks © 2016 All Rights Reserved</p>
+    <b>Copyright Granite City Geeks © 2016 All Rights Reserved</b>
 </footer>
