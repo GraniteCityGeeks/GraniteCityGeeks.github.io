@@ -20,7 +20,7 @@ if(file_exists("markers.php")) { echo "markers file found"; } else { echo "marke
         @import url('https://fonts.googleapis.com/css?family=Roboto');
     </style>
 
-    <div id="main">
+
     <script type="text/javascript">
         function initMap() {
             map = new google.maps.Map(document.getElementById('map'), {
@@ -102,7 +102,7 @@ if(file_exists("markers.php")) { echo "markers file found"; } else { echo "marke
 </ul>
 
 <div id="container">
-
+    <div id="main">
 <br>
 <br>
 
