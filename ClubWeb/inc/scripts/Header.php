@@ -31,11 +31,11 @@ ini_set('display_errors', 1);
             <li><a href="about">About Me</a></li>
             <li><a href="contactus">Contact Me</a></li>
             <li><a href="viewclubs">Clubs</a></li>
-            <li><a href="createclub">Create Clubs</a></li>
             <?
             if (isset($_SESSION['accessLevelID']) == 2){
                 echo "<li><a href='createarticle'>Create Art</a></li>";
                 echo "<li><a href='View'>View</a></li>";
+                echo  "<li><a href='createclub'>Create Clubs</a></li>";
             }
             ?>
 
