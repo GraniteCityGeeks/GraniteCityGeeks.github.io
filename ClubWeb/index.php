@@ -47,6 +47,7 @@ $rules = array(
     'viewclubs' => "/viewclubs",
     'createclub' => "/createclub",
     'mapsindex' => "/mapsindex",
+    'markers' => "/markers",
     //
     // Home Page
     //
