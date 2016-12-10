@@ -1,15 +1,10 @@
-
-
-
 <!-- Michael, i brought back an older version because the map kept breaking. This map doesn't break. PLEASE DO NOT CHANGE
 THE NAME OF ANYTHING IN THE JAVASCRIPT AND PLEASE PLEAAAASE DON'T CHANGE THE DIV TAGS WITHOUT MY PERMISSION. Whatever you/jamie
 did broke the map's loading functions. -->
 
 <?php
-include("scripts/dbconnect.php"); ?>
-
-
-
+include("scripts/dbconnect.php");
+?>
 
 <html>
 <head>
@@ -30,7 +25,7 @@ include("scripts/dbconnect.php"); ?>
             });
         }
     </script>
-        </div>
+
     <script type="text/javascript">
         //Get the markers from the XML document.
         function downloadUrl(url, callback) {
@@ -87,46 +82,30 @@ include("scripts/dbconnect.php"); ?>
     </script>
 
     <meta charset="UTF-8">
-    <title></title>
 </head>
+
 <body>
-
-<ul id="nav">
-    <li><a href="page1.html">Page 1</a></li>
-    <li><a href="page2.html">Page 2</a></li>
-    <li><a href="page3.html">Page 3</a></li>
-    <li><a href="page4.html">Page 4</a></li>
-    <li><a href="page5.html">Page 5</a></li>
-    <li><a href="scripts/MarkerAdmin.php">Edit Markers</a></li>
-
-</ul>
-
 <div id="container">
     <div id="main">
-<br>
-<br>
+        <br>
+        <br>
 
 
 
-    <div id="map" style="height:400px;width:60%; float:left;">
+        <div id="map" style="height:400px;width:60%; float:left;">
+            <h2>Map ^^^^^^</h2>
+        </div>
 
-        <h2>Map ^^^^^^</h2>
-
+        <div id="sidebar">
+            <a class="twitter-timeline" data-width="400" data-height="800" d href="https://twitter.com/PortlethenGC">Tweets by PortlethenGC</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
 
     </div>
-
-
-    <div id="sidebar">
-        <a class="twitter-timeline" data-width="400" data-height="800" d href="https://twitter.com/PortlethenGC">Tweets by PortlethenGC</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </div>
-
-</div>
-
-<br>
-<br>
-<br>
-<br>
-<br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
 
 
@@ -134,9 +113,9 @@ include("scripts/dbconnect.php"); ?>
 
 
 </div>
-    <footer>
-        <B>Copyright Granite City Geeks © 2016 All Rights Reserved</B>
-    </footer>
+<footer>
+    <B>Copyright Granite City Geeks © 2016 All Rights Reserved</B>
+</footer>
 </div>
 </body>
 
