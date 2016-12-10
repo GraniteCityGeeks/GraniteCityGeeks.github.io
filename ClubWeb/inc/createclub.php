@@ -67,6 +67,7 @@ if (isset($_SESSION['username'])) //SESSION DOES EXIST
 
         while($row = $result->fetch_array()) {
             $userid = $row['username'];
+            echo $userid;
         }
 
         include('scripts/dbconnect.php');
