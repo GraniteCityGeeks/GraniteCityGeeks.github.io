@@ -6,21 +6,21 @@ THE NAME OF ANYTHING IN THE JAVASCRIPT AND PLEASE PLEAAAASE DON'T CHANGE THE DIV
 did broke the map's loading functions. -->
 
 <?php
-include '../healthFinal/navBar/master.php';
+
 
 if(file_exists("markers.php")) { echo "markers file found"; } else { echo "markers file missing"; }
 ?>
 
 <html>
 <head>
-    <link href="../../CoreCSS/master.css" rel="stylesheet" type="text/css">
+    <link href="/basicstyle.css" rel="stylesheet" type="text/css">
 
     <title>GoPortlethen</title>
     <style>
         @import url('https://fonts.googleapis.com/css?family=Roboto');
     </style>
 
-
+    <div id="main">
     <script type="text/javascript">
         function initMap() {
             map = new google.maps.Map(document.getElementById('map'), {
@@ -30,6 +30,7 @@ if(file_exists("markers.php")) { echo "markers file found"; } else { echo "marke
             });
         }
     </script>
+        </div>
     <script type="text/javascript">
         //Get the markers from the XML document.
         function downloadUrl(url, callback) {
@@ -90,6 +91,16 @@ if(file_exists("markers.php")) { echo "markers file found"; } else { echo "marke
 </head>
 <body>
 
+<ul id="nav">
+    <li><a href="page1.html">Page 1</a></li>
+    <li><a href="page2.html">Page 2</a></li>
+    <li><a href="page3.html">Page 3</a></li>
+    <li><a href="page4.html">Page 4</a></li>
+    <li><a href="page5.html">Page 5</a></li>
+</ul>
+
+<div id="container">
+
 <br>
 <br>
 
@@ -100,7 +111,7 @@ if(file_exists("markers.php")) { echo "markers file found"; } else { echo "marke
     </div>
 
 
-    <div id="twitter" style="float:left;">
+    <div id="sidebar">
         <a class="twitter-timeline" data-width="400" data-height="800" d href="https://twitter.com/PortlethenGC">Tweets by PortlethenGC</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
 
@@ -121,7 +132,7 @@ if(file_exists("markers.php")) { echo "markers file found"; } else { echo "marke
     <br>
     <a href="scripts/MarkerAdmin.php">Edit Markers</a>
 </div>
-
+</div>
 </body>
 
 </html>
