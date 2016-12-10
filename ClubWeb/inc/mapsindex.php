@@ -97,7 +97,6 @@ if(file_exists("markers.php")) { echo "markers file found"; } else { echo "marke
     <li><a href="page3.html">Page 3</a></li>
     <li><a href="page4.html">Page 4</a></li>
     <li><a href="page5.html">Page 5</a></li>
-    <li><h4>NKPAG USER</h4></li>
     <li><a href="scripts/MarkerAdmin.php">Edit Markers</a></li>
 
 </ul>
