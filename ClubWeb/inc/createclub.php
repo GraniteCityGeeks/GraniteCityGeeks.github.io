@@ -8,6 +8,8 @@ if (isset($_SESSION['username'])) //SESSION DOES EXIST
         echo "
 <main>
 ";
+        $username = $_SESSION['username'];
+        echo $username;
         ?>
 
         <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
