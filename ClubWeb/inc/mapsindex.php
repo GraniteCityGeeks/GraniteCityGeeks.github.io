@@ -90,6 +90,7 @@ if(file_exists("markers.php")) { echo "markers file found"; } else { echo "marke
     <title></title>
 </head>
 <body>
+<div id="container">
 
 <br>
 <br>
@@ -122,7 +123,7 @@ if(file_exists("markers.php")) { echo "markers file found"; } else { echo "marke
     <br>
     <a href="scripts/MarkerAdmin.php">Edit Markers</a>
 </div>
-
+</div>
 </body>
 
 </html>
