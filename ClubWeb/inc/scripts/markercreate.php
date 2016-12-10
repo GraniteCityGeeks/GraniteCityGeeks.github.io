@@ -22,5 +22,5 @@ if (!$result) {
 
 echo("data entry successful");
 
-header("Location: ../newcss/MarkerAdmin.php");
+header("Location: mapsindex");
 die();
