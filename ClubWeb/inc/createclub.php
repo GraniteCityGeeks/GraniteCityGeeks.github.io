@@ -56,6 +56,7 @@ if (isset($_SESSION['username'])) //SESSION DOES EXIST
 
         <?
     } elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        include('scripts/dbconnect.php');
 
         //first segment: getting the userid from username
 
@@ -69,8 +70,6 @@ if (isset($_SESSION['username'])) //SESSION DOES EXIST
             $userid = $row['username'];
             echo $userid;
         }
-
-        include('scripts/dbconnect.php');
         $clubtitle = $_POST["clubTitle"];
         $clubtxt = $_POST["ClubDescription"];
         $clubgenre = $_POST["genre"];
