@@ -4,7 +4,7 @@
 </head>
 
 <body>
-<ul id="nav">
+<ul class="nav">
     <div class="logo">
         Logo
     </div>
