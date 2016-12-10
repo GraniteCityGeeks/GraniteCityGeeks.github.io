@@ -17,6 +17,7 @@
             <a href="#">Edit Clubs (Admin)</a>
         </div>
     </li>
+    </ul>
 
 
     <li><a href="/ClubWeb/inc/mapsindex.php">Maps</a></li>
