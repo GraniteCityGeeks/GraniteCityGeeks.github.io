@@ -1,3 +1,8 @@
+
+<?php
+header("Content-type: text/xml")
+?>
+
 <!-- Michael, i brought back an older version because the map kept breaking. This map doesn't break. PLEASE DO NOT CHANGE
 THE NAME OF ANYTHING IN THE JAVASCRIPT AND PLEASE PLEAAAASE DON'T CHANGE THE DIV TAGS WITHOUT MY PERMISSION. Whatever you/jamie
 did broke the map's loading functions. -->
