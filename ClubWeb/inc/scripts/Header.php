@@ -31,6 +31,7 @@ ini_set('display_errors', 1);
             <li><a href="about">About Me</a></li>
             <li><a href="contactus">Contact Me</a></li>
             <li><a href="viewclubs">Clubs</a></li>
+            <li><a href="mapsindex"></a>Maps Index</li>
             <?
             if (isset($_SESSION['accessLevelID']) == 2){
                 echo "<li><a href='createarticle'>Create Art</a></li>";
