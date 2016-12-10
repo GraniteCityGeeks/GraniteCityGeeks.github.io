@@ -29,3 +29,5 @@ $result->close();
 $db->close();
 
 echo $dom->saveXML();
+
+?>
