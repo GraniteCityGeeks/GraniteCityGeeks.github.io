@@ -7,6 +7,8 @@
 <ul id="nav">
     <img href="https://www.dropbox.com/s/meq0xmxkcafrasc/logogcg.png?dl=0">
     <li><a href="/index.php">Home</a></li>
+
+
     <li class="dropdown">
         <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">Clubs</a>
         <div class="dropdown-content" id="myDropdown">
@@ -14,6 +16,9 @@
             <a href="#">Register Clubs (Admin)</a>
             <a href="#">Edit Clubs (Admin)</a>
         </div>
+    </li>
+
+
     <li><a href="/ClubWeb/inc/mapsindex.php">Maps</a></li>
     <li><a href="/healthFinal">Health</a></li>
     <li><a href="page5.html">Page 5</a></li>
