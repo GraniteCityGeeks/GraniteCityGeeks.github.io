@@ -16,7 +16,6 @@ if($type=="insert") {
 
 if($type=="edit")
 {
-    echo $_POST['oldTitle'];
     $sql = "UPDATE port_newsfeed SET title='".mysqli_real_escape_string($_POST['title'])."',text='".mysqli_real_escape_string($_POST['desc'])."' WHERE title='".mysqli_real_escape_string($_POST['oldTitle'])."'";
 
     if ($db->query($sql) === TRUE)
