@@ -7,14 +7,44 @@
 <ul id="nav">
     <img href="https://www.dropbox.com/s/meq0xmxkcafrasc/logogcg.png?dl=0">
     <li><a href="/index.php">Home</a></li>
-    <li><a href="/ClubWeb">Clubs</a></li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">Clubs</a>
+        <div class="dropdown-content" id="myDropdown">
+            <a href="#">View Clubs</a>
+            <a href="#">Register Clubs (Admin)</a>
+            <a href="#">Edit Clubs (Admin)</a>
+        </div>
     <li><a href="/ClubWeb/inc/mapsindex.php">Maps</a></li>
     <li><a href="/healthFinal">Health</a></li>
     <li><a href="page5.html">Page 5</a></li>
 
     <li><a href="scripts/MarkerAdmin.php">Edit Markers</a></li>
 
-</ul>
+    /ul>
+    <script>
+        /* When the user clicks on the button,
+         toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(e) {
+            if (!e.target.matches('.dropbtn')) {
+
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var d = 0; d < dropdowns.length; d++) {
+                    var openDropdown = dropdowns[d];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+
+
+<
 <div id="container">
 
 </div>
