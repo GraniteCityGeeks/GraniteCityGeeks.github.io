@@ -5,6 +5,7 @@
 
 <body>
 <ul id="nav">
+    <img href="https://www.dropbox.com/s/meq0xmxkcafrasc/logogcg.png?dl=0">
     <li><a href="page1.html">Page 1</a></li>
     <li><a href="page2.html">Page 2</a></li>
     <li><a href="page3.html">Page 3</a></li>
