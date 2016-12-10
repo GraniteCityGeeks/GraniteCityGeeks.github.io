@@ -44,7 +44,7 @@ include("scripts/Header.php")
         //download the locations.
         downloadUrl('markers', function (data) {
             var xml = data.responseXML;
-            var markers = xml.documentElement.getElementsByTagName("markers");
+            var markers = xml.documentElement.getElementsByTagName('markers');
             for (var i = 0; i < markers.length; i++) {
                 var desc = markers[i].getAttribute("description");
                 var name = markers[i].getAttribute("name");
