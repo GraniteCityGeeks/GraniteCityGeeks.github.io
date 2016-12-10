@@ -6,6 +6,7 @@ THE NAME OF ANYTHING IN THE JAVASCRIPT AND PLEASE PLEAAAASE DON'T CHANGE THE DIV
 did broke the map's loading functions. -->
 
 <?php
+include("scripts/dbconnect.php");
 
 
 #if(file_exists("markers.php")) { echo "markers file found"; } else { echo "markers file missing"; } ?>
