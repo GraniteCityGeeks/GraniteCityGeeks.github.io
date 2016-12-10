@@ -4,6 +4,7 @@ did broke the map's loading functions. -->
 
 <?php
 include("scripts/dbconnect.php");
+include("scripts/Header.php")
 ?>
 
 <html>
