@@ -21,7 +21,7 @@ if (isset($_SESSION['username'])) //SESSION DOES EXIST
             <br>
             <br>
             <br>
-            <input type="text" name="ClubDescription" style="align-content: center" placeholder="Club's Description" required autofocus>
+            <input type="text" name="ClubDescription" style="align-text: center" placeholder="Club's Description" required autofocus>
             <br>
             <br>
             <label for="genre">Select genre</label>
