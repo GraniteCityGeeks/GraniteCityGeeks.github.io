@@ -50,7 +50,6 @@ if (isset($_SESSION['username'])) //SESSION DOES EXIST
         include("scripts/footer.php");
     } elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
         include('scripts/dbconnect.php');
-        $articleID = str_replace(' ', '-', $_POST["clubarticlename"]);
         $articleName = $_POST["clubarticlename"];
         $articleText = $_POST["articleText"];
         $clubid = $_POST['club'];
