@@ -9,7 +9,7 @@ if (isset($_SESSION['username'])) //SESSION DOES EXIST
             <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
             <script>tinymce.init({selector: 'textarea'});</script>
             <form action="createarticle" method="post">
-                <input type="text" name="clubarticlename\" placeholder=\"Article Name\">
+                <input type="text" name="clubarticlename\" placeholder="Article Name">
                 <textarea name=\"articleText\"></textarea>
                 <select name="club">
                     <?
@@ -24,7 +24,7 @@ if (isset($_SESSION['username'])) //SESSION DOES EXIST
                     }
                     ?>
                 </select>
-                <select name="photo"></select>
+                <select name="photo">
                 <?
                 include('scripts/dbconnect.php');
                 $query = ("SELECT * from port_photo");
