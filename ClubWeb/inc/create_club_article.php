@@ -62,7 +62,7 @@ if (isset($_SESSION['username'])) //SESSION DOES EXIST
         } else {
             echo "Error: " . $sql . "<br>Error Message:" . mysqli_error($db);
         }
-        header("blog");
+        header("Clubs");
     }
 //test
 } else {
