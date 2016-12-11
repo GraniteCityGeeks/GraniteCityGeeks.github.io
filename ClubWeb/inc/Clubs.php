@@ -31,25 +31,21 @@ $userresult = $db->query($queryusers);
     //add the title
 echo"<img src= '". $photo . "' height='300' width='300'>";
 
-echo"<h1>". $title . "</h1>";
+echo"<h1>". $title . "</h1> <br>";
 
-echo"<h5> Genre: ".$genre."</h5>";
+echo"<h5> Genre: ".$genre."</h5> <br>";
 
-echo"<h3> Description </h3>";
+echo"<h3> Description </h3> <br>";
 
-echo"<p>".nl2br($desc, false). "</p>";
+echo"<p>".nl2br($desc, false). "</p> <br>";
 
-echo "<h3> Upcoming events </h3>";
+echo "<h3> Upcoming events </h3> <br>";
 
-echo"<p>".$calender."</p>";
+echo"<p>".$calender."</p> <br>";
 
 
-
-echo "<form action='scripts/joinclub.php' method = 'POST'>";
-echo "<button value=''>Join this club!</button>";
-echo "</form>";
-
-echo "<h3> Clubs </h3>";
+echo "<h3> Club Users </h3>";
+echo "<br><br>";
 
 echo "<table border='1'>";
 echo "<tr>";
@@ -67,6 +63,10 @@ while ($row = $userresult->fetch_array()) {
 }
 echo "</table>";
 
+echo "<form action='scripts/joinclub.php' method = 'POST'>";
+echo "<button type='submit' height='100' width='150' value=''>Join this club!</button>";
+echo "</form>";
+
 
 //renew the query for the articles
 
@@ -75,7 +75,7 @@ $total = $result->num_rows;
 
 // tell the user how many articles are displayed.
 echo"<h3> Articles </h3>";
-echo"<h5>" .$total. " articles have been found". "</h5>";
+echo"<h5>" .$total. " articles have been found". "</h5> <br> <br>";
 
 while ($row = $result->fetch_array()) {
     $title = $row['title'];
