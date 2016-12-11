@@ -56,7 +56,7 @@ if (isset($_SESSION['username'])) //SESSION DOES EXIST
         $sql = "INSERT INTO port_club_article ( clubid, title, content,
             photoid) VALUES ( '$clubid', '$articleName', '$articleText', '$photoid')";
         if (mysqli_query($db, $sql)) {
-            header("Location: Clubs");
+            header("Location: viewclubs");
         } else {
             echo "Error: " . $sql . "<br>Error Message:" . mysqli_error($db);
         }
