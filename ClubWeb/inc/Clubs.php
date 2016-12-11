@@ -25,7 +25,7 @@ while($row = $result->fetch_array()) {
 }
 $queryusers = "SELECT * from port_users as A, port_usersinclubs as C WHERE A.userID = B.userid AND B.clubid ='" .$club. "'";
 
-$userresult = $db->query($query);
+$userresult = $db->query($queryusers);
 
 
     //add the title
