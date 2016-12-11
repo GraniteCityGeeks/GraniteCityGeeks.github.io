@@ -6,12 +6,12 @@ $clubid = $_POST['clubid'];
 
 //find the username's id via query
 
-$queryuserid = ("SELECT userid from port_users where username = '$username'");
+$queryuserid = ("SELECT userID from port_users where username = '$username'");
 
 $resultuserid = $db->query($queryuserid);
 
 while($row = $resultuserid->fetch_array()) {
-    $id = $row['userid'];
+    $id = $row['userID'];
 }
 
 //before inserting check if id is already in club.
