@@ -2,7 +2,7 @@
     include("scripts/Header.php");
     ?>
     <main>
-        <form action="register" method="post">
+        <form action="register" method="post" style="text-align: center">
             <input type="text" name="email" placeholder="E-mail"></br>
             <input type="text" name="username" placeholder="Username"></br>
             <input type="password" name="password" placeholder="Password"></br>

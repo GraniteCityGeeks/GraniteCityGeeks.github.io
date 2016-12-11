@@ -9,13 +9,13 @@ ini_set('display_errors', 1);
 <link rel="stylesheet" href="/basicstyle.css">
 <head>
     <meta charset="UTF-8">
-    <title>Sportlethen Clubs</title>
+    <title>Sportlethen</title>
 
 </head>
 
 <body class="master-body">
 <header class="header">
-    <h1>Sportlethen Clubs</h1>
+    <h1>Sportlethen</h1>
     <?
     if (isset($_SESSION['username'])) {
         echo "<h3><a href='logout'>Logout({$_SESSION['username']})<img src={$_SESSION['photoID']} alt=\"Mountain View\" style=\"width:35px;height:35px;\"></a></h3>";
