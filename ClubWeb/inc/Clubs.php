@@ -63,7 +63,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     }
     echo "</table>";
 
-    echo "<form action='Clubs' method = 'POST'>";
+    echo "<form action='Clubs/{$club}' method = 'POST'>";
     echo "<button type='submit' name='clubid' height='100' width='150' value='$club'>Join this club!</button>";
     echo "</form>";
 
@@ -128,7 +128,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         $insertquery = ("INSERT INTO port_usersinclub(userid, clubid) VALUES($id, $clubid)");
 
         if (mysqli_query($db, $insertquery)) {
-            header("Location: Clubs");
+            header("Location: viewclubs");
         }
     } else {
         header('Location: login');
