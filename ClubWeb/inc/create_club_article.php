@@ -24,6 +24,7 @@ if (isset($_SESSION['username'])) //SESSION DOES EXIST
                     }
                     ?>
                 </select>
+                <select name="photo"></select>
                 <?
                 include('scripts/dbconnect.php');
                 $query = ("SELECT * from port_photo");
@@ -37,7 +38,7 @@ if (isset($_SESSION['username'])) //SESSION DOES EXIST
                 <select name="photograph">
 
                 </select>
-
+                <br><br>
                 <input type="submit">
 
             </form>
@@ -49,11 +50,11 @@ if (isset($_SESSION['username'])) //SESSION DOES EXIST
         $articleID = str_replace(' ', '-', $_POST["clubarticlename"]);
         $articleName = $_POST["clubarticlename"];
         $articleText = $_POST["articleText"];
-        $clubud = $_POST['club'];
-        $articleAuthor = $_SESSION['username'];
+        $clubid = $_POST['club'];
+        $photoid = $_POST['photo'];
         $sql = "INSERT INTO port_club_article (clubarticleid, clubid, title, content,
-articleAuthor) VALUES ('". $articleID ."', '" .$articleName."', '".$articleText."',
-'".$articleAuthor."')";
+  photoid) VALUES ('". $articleID ."', '". $clubid ."', '" .$articleName."', '".$articleText."',
+'".$photoid."')";
         if (mysqli_query($db, $sql)) {
         } else {
             echo "Error: " . $sql . "<br>Error Message:" . mysqli_error($db);
