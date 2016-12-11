@@ -11,6 +11,7 @@ if (isset($_SESSION['username'])) //SESSION DOES EXIST
             <form action="createarticle" method="post">
                 <input type="text" name="clubarticlename\" placeholder="Article Name">
                 <textarea name=\"articleText\"></textarea>
+                <label for="club">select club to make article for.</label>
                 <select name="club">
                     <?
                     //select every club that exists in the database
@@ -24,6 +25,8 @@ if (isset($_SESSION['username'])) //SESSION DOES EXIST
                     }
                     ?>
                 </select>
+                <br>
+                <label for="photo">select photograph</label>
                 <select name="photo">
                 <?
                 include('scripts/dbconnect.php');
