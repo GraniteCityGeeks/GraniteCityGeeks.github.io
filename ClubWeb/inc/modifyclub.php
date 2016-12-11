@@ -33,8 +33,11 @@ if (isset ($_SESSION['username'])) {
             }
             echo "<h1> Currently editing: $clubname </h1>";
             echo "<form name ='clubsubmit' method='POST'>";
+            echo "<br>";
             echo "<input type='text' name='clubdesc'> value='$clubdesc'";
+            echo "<br>";
             echo "<input type='text' name='clubcalendar'> value='$clubcalendar'";
+            echo "<br> <br>";
             echo "<input type='submit' value='submit'>";
             echo "<h4>Users in club</h4>";
             echo "</form>";
