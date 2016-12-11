@@ -40,6 +40,7 @@ if (isset ($_SESSION['username'])) {
             echo "<br> <br>";
             echo "<button type='submit' name='id' value='$clubid'>submit</button>";
             echo "<h4>Users in club</h4>";
+            // remember to add this in tomorrow!!!
             echo "</form>";
 
 

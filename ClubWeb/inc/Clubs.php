@@ -56,6 +56,7 @@ while ($row = $result->fetch_array()) {
     echo "<img src= ' ". $photo. "height='300' width='300'>";
     echo "<p>". nl2br($content, false). "</p>";
     echo "<br>";
+    //add button to allow user to join club. and make sure to check if they are in the club already!
 }
 echo "
 </main>
