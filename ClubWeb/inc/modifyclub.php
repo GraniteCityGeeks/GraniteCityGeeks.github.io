@@ -53,6 +53,8 @@ if (isset ($_SESSION['username'])) {
         $insert = ("UPDATE port_club SET description = '$clubdesc', clubcalendar = '$clubcalendar' WHERE clubid = $clubid");
         if (mysqli_query($db, $insert)) {
             echo "<p> edit successful! </p>";
-        }
+        }  else {
+        echo "Error: " . $insert . "<br>Error Message:" . mysqli_error($db);
+    }
     }
 }
