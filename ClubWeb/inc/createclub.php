@@ -14,6 +14,7 @@ if (isset($_SESSION['username'])) //SESSION DOES EXIST
 
         <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
         <script>tinymce.init({selector: 'textarea'});</script>
+        <div style="text-align: center;">
         <form action="createclub" method="post">
             <br>
             <br>
@@ -53,6 +54,7 @@ if (isset($_SESSION['username'])) //SESSION DOES EXIST
             <br>
             <input type="submit" value="Create club!">
         </form>
+        </div>
 
         <?
     } elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
