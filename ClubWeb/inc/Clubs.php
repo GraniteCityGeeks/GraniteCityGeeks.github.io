@@ -23,7 +23,7 @@ while($row = $result->fetch_array()) {
     $photo = $row['URL'];
     $genre = $row['Genre'];
 }
-$queryusers = "SELECT * from port_users as A, port_usersinclubs as C WHERE A.userID = B.userid AND B.clubid ='" .$club. "'";
+$queryusers = "SELECT * from port_users as A, port_usersinclubs as B WHERE A.userID = B.userid AND B.clubid ='" .$club. "'";
 
 $userresult = $db->query($queryusers);
 
