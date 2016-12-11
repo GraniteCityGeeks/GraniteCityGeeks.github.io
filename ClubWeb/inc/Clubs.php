@@ -43,9 +43,9 @@ echo "<h3> Upcoming events </h3>";
 
 echo"<p>".$calender."</p>";
 
-echo"<h3> Articles </h3>";
 
-echo "<form action='joinclub' method = 'POST'>";
+
+echo "<form action='scripts/joinclub.php' method = 'POST'>";
 echo "<button value=''>Join this club!</button>";
 echo "</form>";
 
@@ -74,7 +74,7 @@ $result = $db->query($queryarticles);
 $total = $result->num_rows;
 
 // tell the user how many articles are displayed.
-
+echo"<h3> Articles </h3>";
 echo"<h5>" .$total. " articles have been found". "</h5>";
 
 while ($row = $result->fetch_array()) {
