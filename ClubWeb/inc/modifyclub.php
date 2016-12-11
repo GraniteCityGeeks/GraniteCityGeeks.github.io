@@ -53,7 +53,7 @@ if (isset ($_SESSION['username'])) {
         $clubcalendar = $_POST['clubcalendar'];
         $insert = ("UPDATE port_club SET description = '$clubdesc', clubcalendar = '$clubcalendar' WHERE clubid = $id");
         if (mysqli_query($db, $insert)) {
-            header('Location: Clubs');
+            header('Location: viewclubs');
         }  else {
         echo "Error: " . $insert . "<br>Error Message:" . mysqli_error($db);
     }
