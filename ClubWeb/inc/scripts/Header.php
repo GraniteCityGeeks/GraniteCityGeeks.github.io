@@ -9,7 +9,7 @@ ini_set('display_errors', 1);
 <link rel="stylesheet" href="/basicstyle.css">
 <head>
     <style>
-        @import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+        @import url('https://fonts.googleapis.com/css?family=Nova+Script');
     </style>
     <meta charset="UTF-8">
     <title>Sportlethen</title>
