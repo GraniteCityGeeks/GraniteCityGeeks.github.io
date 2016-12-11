@@ -38,7 +38,7 @@ if (isset ($_SESSION['username'])) {
             echo "<br>";
             echo "<input type='text' name='clubcalendar' value='$clubcalendar'>";
             echo "<br> <br>";
-            echo "<input type='submit' value='submit'>";
+            echo "<button type='submit' name='id' value='$clubid'>submit</button>";
             echo "<h4>Users in club</h4>";
             echo "</form>";
 
@@ -48,11 +48,12 @@ if (isset ($_SESSION['username'])) {
 
 
     } else if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-        $cludesc = $_POST['clubdesc'];
+        $clubdesc = $_POST['clubdesc'];
+        $id = $_POST['id'];
         $clubcalendar = $_POST['clubcalendar'];
-        $insert = ("UPDATE port_club SET description = '$clubdesc', clubcalendar = '$clubcalendar' WHERE clubid = $clubid");
+        $insert = ("UPDATE port_club SET description = '$clubdesc', clubcalendar = '$clubcalendar' WHERE clubid = $id");
         if (mysqli_query($db, $insert)) {
-            echo "<p> edit successful! </p>";
+            header('Location: Clubs');
         }  else {
         echo "Error: " . $insert . "<br>Error Message:" . mysqli_error($db);
     }
