@@ -8,6 +8,9 @@ ini_set('display_errors', 1);
 <html lang="en">
 <link rel="stylesheet" href="/basicstyle.css">
 <head>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+    </style>
     <meta charset="UTF-8">
     <title>Sportlethen</title>
 
