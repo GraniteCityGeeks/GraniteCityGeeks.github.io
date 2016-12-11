@@ -2,7 +2,7 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     include("scripts/dbconnect.php");
-    include("scripts/header.php");
+    include("scripts/header_l2.php");
     echo "
 <main>
 ";
