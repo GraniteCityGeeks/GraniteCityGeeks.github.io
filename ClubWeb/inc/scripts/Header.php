@@ -16,7 +16,7 @@ ini_set('display_errors', 1);
 
 <body class="master-body">
 <header class="header">
-    <h1>Sportlethen</h1>
+    <a href="/index.php"Go Portlethen></a>
     <?
     if (isset($_SESSION['username'])) {
         echo "<h3><a href='logout'>Logout({$_SESSION['username']})<img src={$_SESSION['photoID']} alt=\"Mountain View\" style=\"width:35px;height:35px;\"></a></h3>";
