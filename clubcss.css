@@ -72,6 +72,11 @@ footer{
     float:left;
 }
 
+form {
+    display: inline-block;
+    text-align: center;
+}
+
 
 
 
