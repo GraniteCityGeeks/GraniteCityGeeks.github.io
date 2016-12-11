@@ -63,7 +63,7 @@ while ($row = $userresult->fetch_array()) {
 }
 echo "</table>";
 
-echo "<form action='scripts/joinclub.php' method = 'POST'>";
+echo "<form action='joinclub.php' method = 'POST'>";
 echo "<button type='submit' name='clubid' height='100' width='150' value='$club'>Join this club!</button>";
 echo "</form>";
 
