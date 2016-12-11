@@ -100,7 +100,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     if (isset($_SESSION['username'])) {
         $username = $_SESSION['username'];
 
-        $clubid = $_POST['clubid'];
+        $clubid = $params['clubid'];
 
 //find the username's id via query
 
