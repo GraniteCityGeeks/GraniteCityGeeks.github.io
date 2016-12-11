@@ -29,6 +29,7 @@ $rules = array(
     'markers' => "/markers",
     'MarkerAdmin' => "/MarkerAdmin",
     'deletemarker' => "/deletemarker",
+    'create_club_article' =>"/clubarticle",
     //
     // Home Page
     //
