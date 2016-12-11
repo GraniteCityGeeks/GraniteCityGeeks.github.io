@@ -11,6 +11,8 @@ $query = "SELECT clubTitle, clubcalendar, URL, C.description as clubDescription,
 //query to load up all articles
 $queryarticles = "SELECT * from port_club as C, port_club_article as A, port_photo as P WHERE C.clubid = A.clubid AND C.clubid = '".$club."' AND A.photoid = P.photoid";
 
+
+
 $result = $db->query($query);
 
 while($row = $result->fetch_array()) {
@@ -21,6 +23,11 @@ while($row = $result->fetch_array()) {
     $photo = $row['URL'];
     $genre = $row['Genre'];
 }
+$queryusers = "SELECT * from port_users as A, port_usersinclubs as C WHERE A.userID = B.userid AND B.clubid ='" .$club. "'";
+
+$userresult = $db->query($query);
+
+
     //add the title
 echo"<img src= '". $photo . "' height='300' width='300'>";
 
@@ -37,6 +44,29 @@ echo "<h3> Upcoming events </h3>";
 echo"<p>".$calender."</p>";
 
 echo"<h3> Articles </h3>";
+
+echo "<form action='joinclub' method = 'POST'>";
+echo "<button value=''>Join this club!</button>";
+echo "</form>";
+
+echo "<h3> Clubs </h3>";
+
+echo "<table border='1'>";
+echo "<tr>";
+echo "<th>Profile picture</th>";
+echo "<th>username</th>";
+echo "</tr>";
+while ($row = $userresult->fetch_array()) {
+    $username = $row['username'];
+    $photo = $row['photoID'];
+    echo "<tr>";
+    echo "<td><img src='$username'></td>";
+    echo "<td>$username</td>";
+    echo "</tr>";
+
+}
+echo "</table>";
+
 
 //renew the query for the articles
 
@@ -55,7 +85,7 @@ while ($row = $result->fetch_array()) {
     echo "<h2>". $title. "</h2>";
     echo "<img src= ' ". $photo. "height='300' width='300'>";
     echo "<p>". nl2br($content, false). "</p>";
-    echo "<br>";
+    echo "<br><br>";
     //add button to allow user to join club. and make sure to check if they are in the club already!
 }
 echo "
