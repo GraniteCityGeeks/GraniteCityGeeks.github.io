@@ -30,7 +30,7 @@ $rules = array(
     'MarkerAdmin' => "/MarkerAdmin",
     'deletemarker' => "/deletemarker",
     'create_club_article' =>"/clubarticle",
-    'joinclub' => "joinclub",
+    'joinclub' => "/joinclub",
     //
     // Home Page
     //
