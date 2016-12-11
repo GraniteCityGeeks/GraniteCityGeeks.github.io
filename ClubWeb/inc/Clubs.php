@@ -60,7 +60,7 @@ while ($row = $userresult->fetch_array()) {
     $username = $row['username'];
     $photo = $row['photoID'];
     echo "<tr>";
-    echo "<td><img src='$photo'></td>";
+    echo "<td><img src='$photo' height='80' width='80'></td>";
     echo "<td>$username</td>";
     echo "</tr>";
 
