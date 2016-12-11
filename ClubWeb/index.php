@@ -23,6 +23,7 @@ $rules = array(
     'AddUser' => "/AddUser",
     'Clubs' => "/Clubs/(?'linkref'[\w\-]+)",
     'viewclubs' => "/viewclubs",
+    'modifyclub' => "/modifyclub",
     'createclub' => "/createclub",
     'mapsindex' => "/mapsindex",
     'markers' => "/markers",
