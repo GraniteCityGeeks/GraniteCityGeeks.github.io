@@ -1,7 +1,6 @@
 <?php
 include('dbconnect.php');
 include('scripts/Header.php');
-session_start();
 $username = $_SESSION['username'];
 $clubid = $_POST['clubid'];
 
