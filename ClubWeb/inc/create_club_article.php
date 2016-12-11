@@ -55,9 +55,8 @@ if (isset($_SESSION['username'])) //SESSION DOES EXIST
         $articleText = $_POST["articleText"];
         $clubid = $_POST['club'];
         $photoid = $_POST['photo'];
-        $sql = "INSERT INTO port_club_article (clubarticleid, clubid, title, content,
-  photoid) VALUES ('". $articleID ."', '". $clubid ."', '" .$articleName."', '".$articleText."',
-'".$photoid."')";
+        $sql = "INSERT INTO port_club_article ( clubid, title, content,
+            photoid) VALUES ( '$clubid', '$articleName', '$articleText', '$photoid')";
         if (mysqli_query($db, $sql)) {
         } else {
             echo "Error: " . $sql . "<br>Error Message:" . mysqli_error($db);
