@@ -91,7 +91,7 @@ while ($row = $result->fetch_array()) {
     echo '<td>' . $row['clubarticleid'] . '</td>';
     echo '<td>' . $row['clubTitle'] . '</td>';
     echo '<td>' . $row['title'] . '</td>';
-    echo '<td>' . $row['P.photoID'] . '</td>';
+    echo '<td>' . $row['P.URL'] . '</td>';
 //    echo '<td> <input type="submit" value="Edit">';
 //    echo '<td><a href="edit" class="edit' . $row['userID']. '">Edit</a></td>';
     echo '<td><a href="deleteArticle/' . $row['clubarticleid'] . '">Delete</a></td>';
