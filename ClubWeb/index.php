@@ -34,12 +34,6 @@ $rules = array(
     'create_club_article' =>"/clubarticle",
     'joinclub' => "/joinclub",
     '/healthFinal/webPages/healthyLiving' => "/healthyliving",
-    '/healthFinal/webPages/adminpage' => "/adminpage",
-    '/healthFinal/webPages/contributorPage' => "/contributorpage",
-    '/healthFinal/webPages/dbconnect' => "/dbconnect",
-    '/healthFinal/webPages/editHealth' => "/editHealth",
-    '/healthFinal/webPages/editNewsfeed' => "/editNewsfeed",
-    '/healthFinal/webPages/index' => "/index",
     //
     // Home Page
     //

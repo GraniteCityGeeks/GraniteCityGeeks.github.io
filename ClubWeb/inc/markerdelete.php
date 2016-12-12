@@ -1,7 +1,7 @@
 <?php
 include("dbconnect.php");
 
-$id = $_GET['delete'];
+$id = $_POST['delete'];
 
 $query = "DELETE FROM port_markers WHERE id =$id";
 
