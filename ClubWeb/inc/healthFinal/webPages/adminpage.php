@@ -51,7 +51,7 @@ ini_set('display_errors', 1);
 
 if(isset($_SESSION['accessLevelID']) == 5){echo "";}else{
 
-    header("Location: http://gcg.azurewebsites.net/clubWeb/healthyLiving");
+    header("Location: http://gcg.azurewebsites.net/ClubWeb/healthyLiving");
 
 }
 ?>
