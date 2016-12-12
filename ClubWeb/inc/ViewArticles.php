@@ -83,20 +83,20 @@ echo "<div style=\"overflow-x:auto;\">";
 
 echo "<table>";
 
-echo "<tr> <th>Article ID</th> <th>Club Name</th> <th>Article</th> <th>Photo ID</th> </tr>";
+echo "<tr> <th>Article ID</th> <!--<th>Club Name</th>--> <th>Article</th> <th>Photo ID</th> </tr>";
 
 $result = $db->query($sql);
 while ($row = $result->fetch_array()) {
     echo "<tr>";
     echo '<td>' . $row['clubarticleid'] . '</td>';
-    echo '<td>' . $row['clubTitle'] . '</td>';
+    //echo '<td>' . $row['clubTitle'] . '</td>';
     echo '<td>' . $row['title'] . '</td>';
     echo '<td>' . $row['photoID'] . '</td>';
 //    echo '<td> <input type="submit" value="Edit">';
 //    echo '<td><a href="edit" class="edit' . $row['userID']. '">Edit</a></td>';
     echo '<td><a href="deleteArticle/' . $row['clubarticleid'] . '">Delete</a></td>';
-    if ($row['confirmed'] == 0) {
-        echo '<td><a href="ConfirmArticle/' . $row['clubarticleid'] . '">Confirm Article</a></td>';
+    if ($row['confirmArticle'] == 0) {
+        echo '<td><a href="confirmArticle/' . $row['clubarticleid'] . '">Confirm Article</a></td>';
     } else {
         echo '<td>Article Confirmed</td>';
     }
