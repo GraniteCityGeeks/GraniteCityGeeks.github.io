@@ -9,7 +9,7 @@ session_start();
 if (isset($_SESSION['username'])) {
     $username = $_SESSION['username'];
 
-    $clubid = $params['clubid'];
+    $clubid = $_POST['clubid'];
 
 //find the username's id via query
 
