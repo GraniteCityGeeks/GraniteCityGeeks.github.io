@@ -1,5 +1,6 @@
 <?php
 include 'master.php';
+session_start();
 ?>
 
 <html>
@@ -15,7 +16,7 @@ include 'master.php';
 <body>
 <div id="main">
     <div id="editmap" style="float:left;">
-        <form action="markercreate" method="get">
+        <form action="markercreate" method="POST">
             Marker Name:<br>
             <input type="text" name="name" placeholder="e.g Local Wood"><br><br>
             Address:<br>
@@ -45,33 +46,36 @@ include 'master.php';
             </tr>
 
         <?php
-        //connect to the database.
-        include("../scripts/dbconnect.php");
+        if ($_SESSION['usernameID'] == 3) {
+            //connect to the database.
+            include("../scripts/dbconnect.php");
 
-        $query = "SELECT * FROM port_markers";
+            $query = "SELECT * FROM port_markers";
 
-        $result= $db->query($query);
+            $result = $db->query($query);
 
-            while($row = $result->fetch_assoc()) {
-                
+            while ($row = $result->fetch_assoc()) {
+
                 echo "<tr>";
-                echo "<td>". $row["id"]."</td>";
-                echo "<td>". $row["name"]."</td>";
-                echo "<td>". $row["lat"]. "</td>";
-                echo "<td>". $row["lng"]. "</td>";
-                echo "<td>". $row["description"]. "</td>";
-                echo "<form action='markerdelete' method='get'>";
-                echo "<td>". "<button name='delete' type='submit' value='". $row["id"]. "'>". "delete". "</button>". "</td>";
+                echo "<td>" . $row["id"] . "</td>";
+                echo "<td>" . $row["name"] . "</td>";
+                echo "<td>" . $row["lat"] . "</td>";
+                echo "<td>" . $row["lng"] . "</td>";
+                echo "<td>" . $row["description"] . "</td>";
+                echo "<form action='markerdelete' method='POST'>";
+                echo "<td>" . "<button name='delete' type='submit' value='" . $row["id"] . "'>" . "delete" . "</button>" . "</td>";
                 echo "</form>";
                 echo "</tr>";
 
             }
 
 
-        $db->close();
-        ?>
+            $db->close();
 
-        </table>
+
+            echo "</table>";
+        }
+        ?>
 
 
 
