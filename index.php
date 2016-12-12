@@ -1,10 +1,11 @@
 <?php
-include 'master.php';
+include ("ClubWeb/inc/scripts/Header.php");
+include ("ClubWeb/inc/scripts/Footer.php");
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="FinalCSS/master.css">
+<link rel="stylesheet" href="basicstyle.css">
 <!--
 <link href="../CoreCSS/bootstrap.min.css" rel="stylesheet" />
 <link href="../CoreCSS/half-slider.css" rel="stylesheet" />
@@ -18,33 +19,26 @@ include 'master.php';
 
 <body>
 
-<div id="finalnav">
-    
-    <ul>
-    <li><a href="default.asp">Maps</a></li>
-    <li><a href="news.asp">Clubs</a></li>
-    <li><a href="contact.asp">Health</a></li>
-    <li><a href="about.asp">About</a></li>
-    </ul>
-</div>
+<div id="main">
+    This is the main area
 
-<div class="container">
-    <div class="row">
-        
-        </div>
+    <h1> Template for all pages - this is an h1</h1>
+
+    <div id="column1">
+        This is my main content area
+    </div>
+    <div id="sidebar">
+
+        This is the sidebar
     </div>
 
-    <hr />
+    <h1> Template for all pages - this is an h1</h1>
 </div>
 
 
-<script src="src/js/jquery.js"></script>
-<script src="src/js/bootstrap.min.js"></script>
-<script>
-    $('.carousel').carousel({
-        interval: 5000
-    })
-</script>
+</div>
+
+
 
 </body>
 
