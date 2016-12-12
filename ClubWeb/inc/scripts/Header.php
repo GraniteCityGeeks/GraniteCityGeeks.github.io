@@ -18,7 +18,6 @@
 <header class="header">
     <a href="/index.php"><h1>Go Portlethen</h1></a>
     <?
-    session_start();
     if (isset($_SESSION['username'])) {
         echo "<h3><a href='logout'>Logout({$_SESSION['username']})<img src={$_SESSION['photoID']} alt=\"Mountain View\" style=\"width:35px;height:35px;\"></a></h3>";
     } else {
@@ -31,6 +30,7 @@
             <li><a href="./">Home Page</a></li>
             <li><a href="mapsindex">Maps</a></li>
             <li><a href="viewclubs">Clubs</a></li>
+            <li><a href="http://gcg.azurewebsites.net/ClubWeb/index">Healthy</a></li>
             <?
             if ($_SESSION['accessLevelID'] == 2){
                 echo "<li><a href='clubarticle'>Add Club Article</a></li>";
