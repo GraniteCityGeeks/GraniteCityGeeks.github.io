@@ -34,6 +34,9 @@
     <div id="column1">
         Portlethen (/pɔərtˈlɛθən/; Scottish Gaelic: Port Leathain) is a town located approximately 7 miles south of Aberdeen, Scotland along the A90. The population according to the 2011 census was 7,130 [2] making it the seventh most populous settlement within Aberdeenshire.
         <br>
+        </hr>
+        Please Click "Clubs" to login/register to the site.
+
         
     </div>
     <div id="sidebar">
