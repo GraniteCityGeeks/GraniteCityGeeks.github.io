@@ -4,16 +4,15 @@ session_start();
 
 <!DOCTYPE html>
 <html lang="en">
-<link href="http://gcg.azurewebsites.net/healthFinal/CSS/NavbarMaster.css" rel="stylesheet" />
-<head runat="sever">
+<link href="/basicstyle.css" rel="stylesheet" />
+<head>
 
     <meta charset="UTF-8">
     <title>Sportlethen</title>
 
 </head>
 
-<body class="master-body">
-<form id="form1" runat="server" style="height: 50px">
+<body>
 <header>
     <a href="/index.php"><h1>Go Portlethen</h1></a>
     <?
@@ -53,31 +52,3 @@ session_start();
         </ul>
     </nav>
 </header>
-
-<header id="myCarousel" class="carousel slide">
-    <div class="carousel-inner">
-        <div class="item active">
-            <div class="fill" style="background-image: url('http://gcg.azurewebsites.net/healthFinal/Images/train.jpg')"></div>
-        </div>
-        <div class="item">
-            <div class="fill" style="background-image: url('http://gcg.azurewebsites.net/healthFinal/Images/rain.jpg')"></div>
-
-        </div>
-        <div class="item">
-            <div class="fill" style="background-image: url('http://gcg.azurewebsites.net/healthFinal/Images/tree.jpg')"></div>
-
-        </div>
-    </div>
-</header>
-
-<script src="http://gcg.azurewebsites.net/healthFinal/js/jquery.js"></script>
-<script src="http://gcg.azurewebsites.net/healthFinal/js/bootstrap.min.js"></script>
-
-<script>
-
-
-    $('.carousel').carousel({
-        interval: 5000
-    })
-
-</script>
