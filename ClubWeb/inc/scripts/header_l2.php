@@ -45,7 +45,7 @@ ini_set('display_errors', 1);
                 echo "<li><a href='../create_club_article'>Creat Club Article</a></li>";
                 echo "<li><a href='../modifyclub'>modify your Club</a></li>";
                 echo "<li><a href='../MarkerAdmin'>Create Map Info</a></li>";
-                echo "<li><a href='../View'>View Users</a></li>";
+                echo "<li><a href='../view'>View Users</a></li>";
             } else {
             }
             ?>
