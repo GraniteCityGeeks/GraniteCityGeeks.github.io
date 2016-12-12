@@ -281,7 +281,7 @@ if(isset($_SESSION['accessLevelID']) == 2 || isset($_SESSION['accessLevelID']) =
         var type = "delete";
         var toDelete = document.getElementById("toDelete").options[document.getElementById("toDelete").selectedIndex].text;
 
-        $.post('http://gcg.azurewebsites.net/scripts/editHealth.php',{type:type,toDelete:toDelete}, function(data)
+        $.post('http://gcg.azurewebsites.net/ClubWeb/edithealth',{type:type,toDelete:toDelete}, function(data)
             {
 
                 $('#result').html(data);
