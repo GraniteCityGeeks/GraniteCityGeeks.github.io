@@ -16,9 +16,9 @@
     <header >
         <nav>
             <ul>
-                <li><a href="http://gcg.azurewebsites.net/ClubWeb/index"><b>Home</b></a></li>
+                <li><a href="http://gcg.azurewebsites.net/ClubWeb/"><b>Home</b></a></li>
                 <li>
-                    <a href="http://gcg.azurewebsites.net/ClubWeb"><b>Clubs</b></a>
+                    <a href="http://gcg.azurewebsites.net/ClubWeb/viewclubs"><b>Clubs</b></a>
                 </li>
                 <li><a href="http://gcg.azurewebsites.net/ClubWeb/healthyLiving"><b>Healthy Living</b></a></li>
                 <li><a href="http://gcg.azurewebsites.net/ClubWeb/mapsindex"><b>Local Trails</b></a></li>
