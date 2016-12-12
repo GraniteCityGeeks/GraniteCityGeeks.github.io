@@ -96,9 +96,9 @@ nav ul ul ul {
     top: 0;
 }
 
-nav ul .right
+.right
  {
     float: right !important;
-    margin-right: -100px;
+    margin-right: 20px;
 
 }
