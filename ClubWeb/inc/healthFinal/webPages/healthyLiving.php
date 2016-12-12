@@ -1,5 +1,5 @@
 <?php
-include '../navBar/master.php';
+include 'http://gcg.azurewebsites.net/healthFinal/navBar/master.php';
 
 ?>
 
