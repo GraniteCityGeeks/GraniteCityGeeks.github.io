@@ -63,6 +63,7 @@ if($_SESSION['accessLevelID'] == 2 || $_SESSION['accessLevelID'] == 5 ){echo "";
     <link href="http://gcg.azurewebsites.net/healthFinal/CSS/footer-basic-centered.css?version=51" rel="stylesheet" />
 
 
+
     <header id="myCarousel" class="carousel slide">
         <div class="carousel-inner">
             <div class="item active">
@@ -200,9 +201,6 @@ if($_SESSION['accessLevelID'] == 2 || $_SESSION['accessLevelID'] == 5 ){echo "";
 
     <div id="result"></div>
 
-    <!DOCTYPE html>
-
-    <link href="http://gcg.azurewebsites.net/healthFinal/CSS/footer-basic-centered.css?version=51" rel="stylesheet" />
 
 
     <footer class="footer-basic-centered">
@@ -224,7 +222,6 @@ if($_SESSION['accessLevelID'] == 2 || $_SESSION['accessLevelID'] == 5 ){echo "";
 
     </footer>
 
-</html>
 
 
 </html>
