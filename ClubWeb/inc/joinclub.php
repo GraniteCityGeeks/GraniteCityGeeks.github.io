@@ -23,7 +23,7 @@ if (isset($_SESSION['username'])) {
 
 //before inserting check if id is already in club.
 
-    $checkquery = ("SELECT userid, clubid from port_usersinclubs WHERE userid = '$id' AND clubid = ''$clubid'");
+    $checkquery = ("SELECT userid, clubid from port_usersinclubs WHERE userid = '$id' AND clubid = '$clubid'");
 
     $checkresult = $db->query($checkquery);
     $row_no = $checkresult->num_rows;
