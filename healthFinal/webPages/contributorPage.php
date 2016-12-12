@@ -1,6 +1,20 @@
 <?php
 include '../navBar/master.php';
 ?>
+<?php
+include '../navBar/master.php';
+?>
+<?php
+session_start();
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+if(isset($_SESSION['accessLevelID']) == 2 || isset($_SESSION['accessLevelID']) == 5 ){echo "";}else{
+
+    header("Location: http://gcg.azurewebsites.net/healthFinal/webPages/healthyliving.php");
+
+}
+?>
 
 <html xmlns="http://www.w3.org/1999/html">
     <link href="../CSS/bootstrap.min.css" rel="stylesheet" />
