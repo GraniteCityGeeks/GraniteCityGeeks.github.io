@@ -94,7 +94,8 @@
     <ul class="ulProducts" runat="server" id="newsFeed" style="background-color: #f5f5f5">
         <h2>News Feed!</h2>
         <?php
-        include('dbconnect.php');
+        include('http://gcg.azurewebsites.net/scripts/dbconnect.php');
+
         /* this script loads the article the user clicked on.*/
 
         $sql = "SELECT * FROM port_newsfeed";
@@ -124,7 +125,7 @@
         <h2>Article Titles! </h2>
 
         <?php
-        include('dbconnect.php');
+        include('http://gcg.azurewebsites.net/scripts/dbconnect.php');
         /* this script loads the article the user clicked on.*/
 
         $sql = "SELECT * FROM port_articles";
@@ -158,10 +159,31 @@
     </div>
 </div>
 
+<!DOCTYPE html>
 
-<?php
-include '../webPages/footer.html';
-?>
+<link href="http://gcg.azurewebsites.net/healthFinal/CSS/footer-basic-centered.css?version=51" rel="stylesheet" />
+
+
+<footer class="footer-basic-centered">
+
+    <p class="footer-company-motto">Discover Aberdeen</p>
+
+    <p class="footer-links">
+        <a href="http://gcg.azurewebsites.net/ClubWeb/index">Home</a>
+        ·
+        <a href="http://gcg.azurewebsites.net/ClubWeb/viewclubs">Clubs</a>
+        ·
+        <a href="http://gcg.azurewebsites.net/ClubWeb/healthyLiving">Healthy Living</a>
+        ·
+        <a href="http://gcg.azurewebsites.net/ClubWeb/mapsindex">Maps</a>
+
+    </p>
+
+    <p class="footer-company-name">GraniteCityGeeks &copy; 2016</p>
+
+</footer>
+
+</html>
 
 
 </html>

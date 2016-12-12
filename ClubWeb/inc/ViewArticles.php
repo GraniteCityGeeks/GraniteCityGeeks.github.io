@@ -7,7 +7,7 @@ include("scripts/header.php");
 
 include("scripts/dbconnect.php");
 
-$sql = "SELECT * FROM port_club_article AS A, port_club AS C WHERE C.clubid = A.clubid";
+$sql = "SELECT * FROM port_club_article AS A, port_club AS C, port_photo AS P WHERE C.clubid = A.clubid";
 
 echo "<style>
 table {
@@ -91,7 +91,7 @@ while ($row = $result->fetch_array()) {
     echo '<td>' . $row['clubarticleid'] . '</td>';
     echo '<td>' . $row['clubTitle'] . '</td>';
     echo '<td>' . $row['title'] . '</td>';
-    echo '<td>' . $row['photoID'] . '</td>';
+    echo '<td>' . $row['P.photoID'] . '</td>';
 //    echo '<td> <input type="submit" value="Edit">';
 //    echo '<td><a href="edit" class="edit' . $row['userID']. '">Edit</a></td>';
     echo '<td><a href="deleteArticle/' . $row['clubarticleid'] . '">Delete</a></td>';
