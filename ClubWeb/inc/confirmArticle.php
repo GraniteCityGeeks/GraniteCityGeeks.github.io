@@ -10,17 +10,17 @@ if (isset($params['clubarticleid']))
 
 {
 
-    $sql = "UPDATE port_club_article SET confirmed = '1' WHERE clubarticleid='$clubarticleid'";
+    $sql = "UPDATE port_club_article SET confirmArticle = '1' WHERE clubarticleid='$clubarticleid'";
     $result = $db->query($sql);
 
-    //header("Location: /ClubWeb/ViewArticles");
+    header("Location: /ClubWeb/ViewArticles");
 
 }
 
 else
 
 {
-    //header("Location: /ClubWeb/ViewArticles");
+    header("Location: /ClubWeb/ViewArticles");
 }
 
 
