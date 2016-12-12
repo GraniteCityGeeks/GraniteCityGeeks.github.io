@@ -50,7 +50,9 @@ if (isset($_SESSION['username'])) //SESSION DOES EXIST
     } elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
         include('scripts/dbconnect.php');
         $articleName = $_POST["clubarticlename"];
+        $articleName = $db->real_escape_string($articleName);
         $articleText = $_POST["articleText"];
+        $articleText = $db->real_escape_string($articleText);
         $clubid = $_POST['club'];
         $photoid = $_POST['photo'];
         $sql = "INSERT INTO port_club_article ( clubid, title, content,
