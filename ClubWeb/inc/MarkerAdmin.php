@@ -48,7 +48,7 @@ session_start();
         <?php
         if (isset($_SESSION['username'])) {
 
-            if ($_SESSION['accessLevelID'] == 3) {
+            if ($_SESSION['accessLevelID'] >= 3) {
                 //connect to the database.
                 include("scripts/dbconnect.php");
 

@@ -1,5 +1,5 @@
 <?php
-include('../webPages/dbconnect.php');
+include('dbconnect.php');
 
 $type = $_POST['type'];
 
