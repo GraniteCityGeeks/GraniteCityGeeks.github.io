@@ -125,7 +125,7 @@ if(isset($_SESSION['accessLevelID']) == 5){echo "";}else{
                 <br>
                 <select id="oldTitle">
                     <?php
-                    include('http://gcg.azurewebsites.net/dbconnect');
+                    include('dbconnect.php');
                     /* this script loads the article the user clicked on.*/
 
                     $sql = "SELECT * FROM port_newsfeed";
@@ -168,7 +168,7 @@ if(isset($_SESSION['accessLevelID']) == 5){echo "";}else{
                 <br>
                 <select id="toDelete">
                     <?php
-                    include('http://gcg.azurewebsites.net/dbconnect');
+                    include('dbconnect.php');
                     /* this script loads the article the user clicked on.*/
 
                     $sql = "SELECT * FROM port_newsfeed";
