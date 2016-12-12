@@ -40,13 +40,10 @@
                      </ul>
                          </li>
 
-            </ul>
-            <ul class="navbar-right">
-
                 <li><label style="Width=300px Font-Bold=true" ID="WelcomeLabel">Welcome User</label> </li>
 
-            </ul>
 
+            </ul>
         </nav>
 
     </header>
