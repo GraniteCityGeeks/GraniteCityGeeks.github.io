@@ -25,7 +25,7 @@ if (isset($_SESSION['username'])) {
 
     $checkquery = ("SELECT userid, clubid from port_usersinclubs WHERE userid = '$id' AND clubid = ''$clubid'");
 
-    $checkresult = mysqli_query($db,$checkquery);
+    $checkresult = $db->query($checkquery);
     $row_no = $checkresult->num_rows;
     if ($row_no > 0) {
         echo '<script language="javascript">';
