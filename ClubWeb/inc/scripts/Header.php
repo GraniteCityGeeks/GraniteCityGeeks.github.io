@@ -1,7 +1,5 @@
 <?
-//session_start();
-//error_reporting(E_ALL);
-//ini_set('display_errors', 1);
+session_start()
 ?>
 
 <!DOCTYPE html>
@@ -30,7 +28,7 @@
             <li><a href="./">Home Page</a></li>
             <li><a href="mapsindex">Maps</a></li>
             <li><a href="viewclubs">Clubs</a></li>
-            <li><a href="http://gcg.azurewebsites.net/ClubWeb/index">Healthy</a></li>
+            <li><a href="http://gcg.azurewebsites.net/ClubWeb/index">Health</a></li>
             <?
             if ($_SESSION['accessLevelID'] == 2){
                 echo "<li><a href='clubarticle'>Add Club Article</a></li>";

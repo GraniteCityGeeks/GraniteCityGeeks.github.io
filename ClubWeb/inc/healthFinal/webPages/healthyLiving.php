@@ -1,5 +1,5 @@
 <?php
-include '../navBar/master.php';
+include 'http://gcg.azurewebsites.net/healthFinal/navBar/master.php';
 
 ?>
 
@@ -13,21 +13,21 @@ include '../navBar/master.php';
 <header id="myCarousel" class="carousel slide">
     <div class="carousel-inner">
         <div class="item active">
-            <div class="fill" style="background-image: url('../Images/gym-wallpaper-workout.jpg')"></div>
+            <div class="fill" style="background-image: url('http://gcg.azurewebsites.net/healthFinal/Images/gym-wallpaper-workout.jpg')"></div>
         </div>
         <div class="item">
-            <div class="fill" style="background-image: url('../Images/healthyfood.jpg')"></div>
+            <div class="fill" style="background-image: url('http://gcg.azurewebsites.net/healthFinal/Images/healthyfood.jpg')"></div>
 
         </div>
         <div class="item">
-            <div class="fill" style="background-image: url('../Images/hills.jpg')"></div>
+            <div class="fill" style="background-image: url('http://gcg.azurewebsites.net/healthFinal/Images/hills.jpg')"></div>
 
         </div>
     </div>
 </header>
 
-<script src="../js/jquery.js"></script>
-<script src="../js/bootstrap.min.js"></script>
+<script src="http://gcg.azurewebsites.net/healthFinal/js/jquery.js"></script>
+<script src="http://gcg.azurewebsites.net/healthFinal/js/bootstrap.min.js"></script>
 
 <script>
     $('.carousel').carousel({
