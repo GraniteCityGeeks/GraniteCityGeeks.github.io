@@ -5,7 +5,7 @@ include '../navBar/master.php';
 
 <!DOCTYPE html>
 <html lang="en">
-<link href="../CSS/bootstrap.min.css?version=51" rel="stylesheet" />
+<link href="/healthFinal/CSS/bootstrap.min.css?version=51" rel="stylesheet" />
 <link href="../CSS/half-slider.css?version=51" rel="stylesheet" />
 <link href="../CSS/healthPage.css?version=51" rel="stylesheet" />
 
