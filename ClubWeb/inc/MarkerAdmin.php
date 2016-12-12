@@ -54,7 +54,7 @@ session_start();
 
             $result = $db->query($query);
 
-            while ($row = $result->fetch_assoc()) {
+            while ($row = $result->fetch_array()) {
 
                 echo "<tr>";
                 echo "<td>" . $row["id"] . "</td>";
