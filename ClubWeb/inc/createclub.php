@@ -73,25 +73,13 @@ if (isset($_SESSION['username'])) //SESSION DOES EXIST
         while($row = $result->fetch_array()) {
             $userid = $row['userid'];
         }
-
-        //before anything else, check that the user already owns a club, if they do, send them back to viewclubs.
-        //THIS CODE IS NOW OBSELETE. IT WILL BE COMMENTED OUT INCASE WE NEED IT BACK.
-
-       // $queryowner = ("SELECT ownerid FROM port_club WHERE ownerid = '$userid'");
-
-       // $ownerresult = $db->query($queryowner);
-
-       // if($ownerresult->num_rows > 0) {
-            //if user gets to make a club, the whole site will break.
-        //   header('Location: blog');
-        //} else {
-
-
-            $clubtitle = $_POST["clubTitle"];
-            $clubtxt = $_POST["ClubDescription"];
-            $clubgenre = $_POST["genre"];
-            $clubavatar = $_POST["avatar"];
-            $sql = "INSERT INTO port_club(clubTitle, description, genreid, photoid, clubcalendar, ownerid) VALUES('$clubtitle', '$clubtxt', '$clubgenre', '$clubavatar', 'No events upcoming', $userid)";
+        $clubtitle = $_POST["clubTitle"];
+        $clubtxt = $_POST["ClubDescription"];
+        $clubgenre = $_POST["genre"];
+        $clubavatar = $_POST["avatar"];
+        $sql = sprintf("INSERT INTO port_club(clubTitle, description, genreid, photoid, clubcalendar, ownerid) VALUES('$clubtitle', '$clubtxt', '$clubgenre', '$clubavatar', 'No events upcoming', $userid)",
+                        mysqli_real_escape_string($clubtitle),
+                        mysqli_real_escape_string($clubtxt));
 
 
 
