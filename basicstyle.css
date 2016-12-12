@@ -14,7 +14,7 @@
 }
 
 header{
-    background-color: #a6e1ec;
+    background-color: #00ec03;
     min-height: 80px;
 }
 #main{
@@ -38,6 +38,7 @@ header{
     background-color: #00303F;
     margin-left: 60%;
     min-height: 300px;
+    color: #ffffff;
 }
 
 footer{
@@ -68,6 +69,10 @@ footer{
 #nav > li > a:hover {
     color:#c1c1c1;
 
+}
+
+img {
+    border-radius: 8px;
 }
 
 
