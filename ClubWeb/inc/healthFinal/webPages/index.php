@@ -16,25 +16,24 @@
     <header >
         <nav>
             <ul>
-                <li><a href="http://gcg.azurewebsites.net/ClubWeb/index"><b>Home</b></a></li>
+                <li><a href="http://gcg.azurewebsites.net/ClubWeb/"><b>Home</b></a></li>
                 <li>
-                    <a href="http://gcg.azurewebsites.net/ClubWeb"><b>Clubs</b></a>
+                    <a href="http://gcg.azurewebsites.net/ClubWeb/viewclubs"><b>Clubs</b></a>
                 </li>
-                <li><a href="http://gcg.azurewebsites.net/ClubWeb/healthLiving"><b>Healthy Living</b></a></li>
+                <li><a href="http://gcg.azurewebsites.net/ClubWeb/healthyLiving"><b>Healthy Living</b></a></li>
                 <li><a href="http://gcg.azurewebsites.net/ClubWeb/mapsindex"><b>Local Trails</b></a></li>
-                <li><a href="#"><b>Login</b></a></li>
                 <li><a href="#"><b>Site Users</b></a>
                     <ul>
                         <li><a href="#">Admin</a>
                             <ul>
                                 <li><a href="#">Clubs</a></li>
-                                <li><a href="/healthFinal/webPages/adminpage.php">Health</a></li>
+                                <li><a href="http://gcg.azurewebsites.net/ClubWeb/adminpage">Health</a></li>
                                 <li><a href="#">Maps</a></li>
                             </ul></li>
                         <li><a href="#">Contributor</a>
                             <ul>
                                 <li><a href="#">Clubs</a></li>
-                                <li><a href="/healthFinal/webPages/contributorPage.php">Health</a></li>
+                                <li><a href="http://gcg.azurewebsites.net/ClubWeb/contributorPage">Health</a></li>
                                 <li><a href="#">Maps</a></li>
 
                             </ul>
@@ -53,9 +52,6 @@
 </form>
 </body>
 </html>
-
-<?php
-?>
 
 <!DOCTYPE html>
 <html lang="en">
