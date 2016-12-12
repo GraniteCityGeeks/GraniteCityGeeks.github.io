@@ -34,7 +34,7 @@ if (isset($_SESSION['username'])) {
         header("Location: viewclubs");
 
     }
-    $insertquery = ("INSERT INTO port_usersinclub(userid, clubid) VALUES('$id', '$clubid')");
+    $insertquery = ("INSERT INTO port_usersinclubs(userid, clubid) VALUES('$id', '$clubid')");
 
     if (mysqli_query($db, $insertquery)) {
         header("Location: viewclubs");
