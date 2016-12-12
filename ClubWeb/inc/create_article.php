@@ -23,7 +23,9 @@ if (isset($_SESSION['username'])) //SESSION DOES EXIST
         include('scripts/dbconnect.php');
         $articleID = str_replace(' ', '-', $_POST["articleName"]);
         $articleName = $_POST["articleName"];
+        $articleName = $db->real_escape_string($articleName);
         $articleText = $_POST["articleText"];
+        $articleText = $db->real_escape_string($articleText);
         $articleAuthor = $_SESSION['username'];
         $sql = "INSERT INTO port_blogArticles (articleID, articleName, articleText,
 articleAuthor) VALUES ('". $articleID ."', '" .$articleName."', '".$articleText."',
