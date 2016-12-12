@@ -33,7 +33,7 @@ $rules = array(
     'markerdelete' => "/markerdelete",
     'create_club_article' =>"/clubarticle",
     'joinclub' => "/joinclub",
-    'healthFinal/webPages/healthyLiving' => "/healthyliving",
+    '/healthFinal/webPages/healthyLiving' => "/healthyliving",
     //
     // Home Page
     //
