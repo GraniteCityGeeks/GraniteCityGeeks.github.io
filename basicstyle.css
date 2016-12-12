@@ -14,8 +14,9 @@
 }
 
 header{
-    background-color: #a6e1ec;
-    min-height: 80px;
+    background: #000000 url(http://www.lboro.ac.uk/media/wwwlboroacuk/external/content/research/sti/slide1-image-tablet.png) 100% 100% no-repeat;
+    background-color: #ec99d7;
+    height: 200px;
 }
 #main{
     background-color: #ffffff;
@@ -38,6 +39,7 @@ header{
     background-color: #00303F;
     margin-left: 60%;
     min-height: 300px;
+    color: #ffffff;
 }
 
 footer{
@@ -68,6 +70,10 @@ footer{
 #nav > li > a:hover {
     color:#c1c1c1;
 
+}
+
+img {
+    border-radius: 8px;
 }
 
 

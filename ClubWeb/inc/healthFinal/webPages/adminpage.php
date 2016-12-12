@@ -51,7 +51,7 @@ ini_set('display_errors', 1);
 
 if(isset($_SESSION['accessLevelID']) == 5){echo "";}else{
 
-    header("Location: http://gcg.azurewebsites.net/ClubWeb/healthyLiving");
+    header("Location: http://gcg.azurewebsites.net/clubWeb/healthyLiving");
 
 }
 ?>
@@ -125,7 +125,7 @@ if(isset($_SESSION['accessLevelID']) == 5){echo "";}else{
                 <br>
                 <select id="oldTitle">
                     <?php
-                    include('http://gcg.azurewebsites.net/scripts/dbconnect.php');
+                    include('dbconnect.php');
                     /* this script loads the article the user clicked on.*/
 
                     $sql = "SELECT * FROM port_newsfeed";
@@ -168,7 +168,7 @@ if(isset($_SESSION['accessLevelID']) == 5){echo "";}else{
                 <br>
                 <select id="toDelete">
                     <?php
-                    include('http://gcg.azurewebsites.net/scripts/dbconnect.php');
+                    include('dbconnect.php');
                     /* this script loads the article the user clicked on.*/
 
                     $sql = "SELECT * FROM port_newsfeed";
@@ -198,7 +198,6 @@ if(isset($_SESSION['accessLevelID']) == 5){echo "";}else{
 </div>
 
 <div id="result"></div>
-
 <!DOCTYPE html>
 
 <link href="http://gcg.azurewebsites.net/healthFinal/CSS/footer-basic-centered.css?version=51" rel="stylesheet" />
@@ -224,7 +223,6 @@ if(isset($_SESSION['accessLevelID']) == 5){echo "";}else{
 </footer>
 
 </html>
-
 </html>
 
 <script type="text/javascript">
@@ -240,7 +238,7 @@ if(isset($_SESSION['accessLevelID']) == 5){echo "";}else{
         }else if($('#text').val() == ''){
             alert('Text input can not be left blank');
         }else{
-            $.post('http://gcg.azurewebsites.net/editnewsfeed',{title:title,desc:desc,type:type}, function(data)
+            $.post('http://gcg.azurewebsites.net/scripts/editnewsfeed.php',{title:title,desc:desc,type:type}, function(data)
                 {
                     $('#result').html(data);
                     alert(data);
@@ -264,7 +262,7 @@ if(isset($_SESSION['accessLevelID']) == 5){echo "";}else{
             alert('Text input can not be left blank');
         }else{
 
-            $.post('http://gcg.azurewebsites.net/editnewsfeed',{title:title,desc:desc,type:type,oldTitle:oldTitle}, function(data)
+            $.post('http://gcg.azurewebsites.net/scripts/editnewsfeed.php',{title:title,desc:desc,type:type,oldTitle:oldTitle}, function(data)
                 {
                     $('#result').html(data);
                     alert(data);
@@ -280,7 +278,7 @@ if(isset($_SESSION['accessLevelID']) == 5){echo "";}else{
         var type = "delete";
         var toDelete = document.getElementById("toDelete").options[document.getElementById("toDelete").selectedIndex].text;
 
-        $.post('http://gcg.azurewebsites.net/editnewsfeed',{type:type,toDelete:toDelete}, function(data)
+        $.post('http://gcg.azurewebsites.net/scripts/editnewsfeed.php',{type:type,toDelete:toDelete}, function(data)
             {
 
                 $('#result').html(data);

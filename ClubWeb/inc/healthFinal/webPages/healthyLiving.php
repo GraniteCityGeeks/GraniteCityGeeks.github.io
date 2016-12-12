@@ -49,7 +49,7 @@
 <html lang="en">
 <link href="http://gcg.azurewebsites.net/healthFinal/CSS/bootstrap.min.css?version=51" rel="stylesheet" />
 <link href="http://gcg.azurewebsites.net/healthFinal/CSS/half-slider.css?version=51" rel="stylesheet" />
-<link href="http://gcg.azurewebsites.net/healthFinal/CSS/CSS/healthPage.css?version=51" rel="stylesheet" />
+<link href="http://gcg.azurewebsites.net/healthFinal/CSS/healthPage.css?version=51" rel="stylesheet" />
 
 
 <header id="myCarousel" class="carousel slide">
@@ -94,7 +94,7 @@
     <ul class="ulProducts" runat="server" id="newsFeed" style="background-color: #f5f5f5">
         <h2>News Feed!</h2>
         <?php
-        include('http://gcg.azurewebsites.net/scripts/dbconnect.php');
+        include('dbconnect.php');
 
         /* this script loads the article the user clicked on.*/
 
@@ -125,7 +125,7 @@
         <h2>Article Titles! </h2>
 
         <?php
-        include('http://gcg.azurewebsites.net/scripts/dbconnect.php');
+        include('dbconnect.php');
         /* this script loads the article the user clicked on.*/
 
         $sql = "SELECT * FROM port_articles";
