@@ -12,7 +12,7 @@
 </head >
 
 <body class="master-body">
-<form id="form1" runat="server" style="height: 50px">
+<div id="form1" runat="server" style="height: 50px">
     <header >
         <nav>
             <ul>
@@ -41,7 +41,7 @@
         </nav>
 
     </header>
-</form>
+</div>
 </body>
 </html>
 <?php
