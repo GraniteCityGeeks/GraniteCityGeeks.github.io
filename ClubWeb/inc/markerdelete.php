@@ -12,6 +12,6 @@ if (!$result) {
 }
 
 else {
-    header("Location: ../newcss/MarkerAdmin.php");
+    header("Location: MarkerAdmin");
     die();
 }
