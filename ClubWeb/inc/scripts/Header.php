@@ -23,7 +23,6 @@ session_start();
         echo "<h3><a href='register'>Register</a></h3>";
     }
     ?>
-    <form id="form1" runat="server" style="height: 50px">
     <nav>
         <ul>
             <li><a href="./">Home Page</a></li>
