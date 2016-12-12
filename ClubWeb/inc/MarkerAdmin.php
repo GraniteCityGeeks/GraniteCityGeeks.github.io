@@ -1,5 +1,5 @@
 <?php
-include 'master.php';
+include 'scripts/header.php';
 session_start();
 ?>
 
