@@ -96,3 +96,9 @@ nav ul ul ul {
     top: 0;
 }
 
+.right
+ {
+    float: right !important;
+    margin-right: -50px;
+
+}
