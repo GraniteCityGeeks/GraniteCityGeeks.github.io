@@ -1,7 +1,7 @@
 <?php
-include("dbconnect.php");
+include("scripts/dbconnect.php");
 
-$id = $_GET['delete'];
+$id = $_POST['delete'];
 
 $query = "DELETE FROM port_markers WHERE id =$id";
 
@@ -12,6 +12,6 @@ if (!$result) {
 }
 
 else {
-    header("Location: ../newcss/MarkerAdmin.php");
+    header("Location: MarkerAdmin");
     die();
 }

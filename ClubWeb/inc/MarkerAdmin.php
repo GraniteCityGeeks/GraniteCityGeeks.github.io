@@ -1,5 +1,6 @@
 <?php
-include 'master.php';
+include 'scripts/header.php';
+session_start();
 ?>
 
 <html>
@@ -15,7 +16,7 @@ include 'master.php';
 <body>
 <div id="main">
     <div id="editmap" style="float:left;">
-        <form action="scripts/markercreate.php" method="get">
+        <form action="markercreate" method="POST">
             Marker Name:<br>
             <input type="text" name="name" placeholder="e.g Local Wood"><br><br>
             Address:<br>
@@ -45,33 +46,39 @@ include 'master.php';
             </tr>
 
         <?php
-        //connect to the database.
-        include("../scripts/dbconnect.php");
+        if (isset($_SESSION['username'])) {
 
-        $query = "SELECT * FROM port_markers";
+            if ($_SESSION['accessLevelID'] >= 3) {
+                //connect to the database.
+                include("scripts/dbconnect.php");
 
-        $result= $db->query($query);
+                $query = "SELECT * FROM port_markers";
 
-            while($row = $result->fetch_assoc()) {
-                
-                echo "<tr>";
-                echo "<td>". $row["id"]."</td>";
-                echo "<td>". $row["name"]."</td>";
-                echo "<td>". $row["lat"]. "</td>";
-                echo "<td>". $row["lng"]. "</td>";
-                echo "<td>". $row["description"]. "</td>";
-                echo "<form action='scripts/markerdelete.php' method='get'>";
-                echo "<td>". "<button name='delete' type='submit' value='". $row["id"]. "'>". "delete". "</button>". "</td>";
-                echo "</form>";
-                echo "</tr>";
+                $result = $db->query($query);
 
+                while ($row = $result->fetch_array()) {
+
+                    echo "<tr>";
+                    echo "<td>" . $row["id"] . "</td>";
+                    echo "<td>" . $row["name"] . "</td>";
+                    echo "<td>" . $row["lat"] . "</td>";
+                    echo "<td>" . $row["lng"] . "</td>";
+                    echo "<td>" . $row["description"] . "</td>";
+                    echo "<form action='markerdelete' method='POST'>";
+                    echo "<td>" . "<button name='delete' type='submit' value='" . $row["id"] . "'>" . "delete" . "</button>" . "</td>";
+                    echo "</form>";
+                    echo "</tr>";
+
+                }
+
+
+                $db->close();
+
+
+                echo "</table>";
             }
-
-
-        $db->close();
+        }
         ?>
-
-        </table>
 
 
 

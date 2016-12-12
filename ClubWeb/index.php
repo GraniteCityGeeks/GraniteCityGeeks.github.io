@@ -29,8 +29,20 @@ $rules = array(
     'markers' => "/markers",
     'MarkerAdmin' => "/MarkerAdmin",
     'deletemarker' => "/deletemarker",
+    'markercreate' => "/markercreate",
+    'markerdelete' => "/markerdelete",
     'create_club_article' =>"/clubarticle",
     'joinclub' => "/joinclub",
+    '/healthFinal/webPages/healthyLiving' => "/healthyliving",
+    '/healthFinal/webPages/index' => "/index",
+    '/healthFinal/webPages/adminpage' => "/adminpage",
+    '/healthFinal/webPages/contributorPage' => "/contributorPage",
+    '/healthFinal/webPages/dbconnect' => "/dbconnect",
+    '/healthFinal/webPages/editHealth' => "/editHealth",
+    '/healthFinal/webPages/editnewsfeed' => "/editnewsfeed",
+    'ViewArticles' => "/ViewArticles",
+    'deleteArticle' => "/deleteArticle/(?'clubarticleid'[\w\-]+)",
+    'confirmArticle' => "/confirmArticle/(?'clubarticleid'[\w\-]+)",
     //
     // Home Page
     //

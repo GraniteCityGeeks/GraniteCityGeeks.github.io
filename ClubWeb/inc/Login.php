@@ -26,6 +26,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             $_SESSION['userID'] = $row['userID'];
             $_SESSION['accessLevelID']  = $row['accessLevelID'];
             $_SESSION['photoID']  = $row['photoID'];
+            if ($_SESSION ['photoID'] == ""){
+                $_SESSION ['photoID'] = "https://www.mautic.org/media/images/default_avatar.png";
+            }
             $_SESSION['confirmed'] = $row['confirmed'];
             return true;
         }

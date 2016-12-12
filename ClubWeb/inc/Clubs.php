@@ -2,7 +2,7 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     include("scripts/dbconnect.php");
-    include("scripts/header.php");
+    include("scripts/header_l2.php");
     echo "
 <main>
 ";
@@ -63,9 +63,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     }
     echo "</table>";
 
-    echo "<form action='Clubs' method = 'POST'>";
-    echo "<button type='submit' name='clubid' height='100' width='150' value='$club'>Join this club!</button>";
-    echo "</form>";
+    if ($_SESSION['accessLevelID'] > 3) {
+        echo "<form action='../joinclub' method = 'POST'>";
+        echo "<button type='submit' name='clubid' height='100' width='150' value='$club'>Join this club!</button>";
+        echo "</form>";
+    }
 
 
 //renew the query for the articles
@@ -95,36 +97,43 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 } ELSE IF($_SERVER['REQUEST_METHOD'] === 'POST') {
     include('dbconnect.php');
     session_start();
-    $username = $_SESSION['username'];
-    $clubid = $_POST['clubid'];
+
+    //before we continue, check that there IS a username
+    if (isset($_SESSION['username'])) {
+        $username = $_SESSION['username'];
+
+        $clubid = $params['clubid'];
 
 //find the username's id via query
 
-    $queryuserid = ("SELECT userID from port_users where username = '$username'");
+        $queryuserid = ("SELECT userID from port_users where username = '$username'");
 
-    $resultuserid = $db->query($queryuserid);
+        $resultuserid = $db->query($queryuserid);
 
-    while($row = $resultuserid->fetch_array()) {
-        $id = $row['userID'];
-    }
+        while ($row = $resultuserid->fetch_array()) {
+            $id = $row['userID'];
+        }
 
 //before inserting check if id is already in club.
 
-    $checkquery = ("SELECT userid, clubid from port_usersinclubs WHERE userid = '$id' AND clubid = ''$clubid'");
+        $checkquery = ("SELECT userid, clubid from port_usersinclubs WHERE userid = '$id' AND clubid = ''$clubid'");
 
-    $checkresult = $db->query($checkquery);
+        $checkresult = $db->query($checkquery);
 
-    if ($checkresult->num_rows>0) {
-        echo '<script language="javascript">';
-        echo 'alert("user is already in club!")';
-        echo '</script>';
-        header("Location: viewclubs");
+        if ($checkresult->num_rows > 0) {
+            echo '<script language="javascript">';
+            echo 'alert("user is already in club!")';
+            echo '</script>';
+            header("Location: viewclubs");
 
-    }
-    $insertquery = ("INSERT INTO port_usersinclub(userid, clubid) VALUES($id, $clubid)");
+        }
+        $insertquery = ("INSERT INTO port_usersinclub(userid, clubid) VALUES($id, $clubid)");
 
-    if (mysqli_query($db, $insertquery)) {
-        header("Location: Clubs");
+        if (mysqli_query($db, $insertquery)) {
+            header("Location: viewclubs");
+        }
+    } else {
+        header('Location: login');
     }
 }
     ?>

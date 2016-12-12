@@ -1,13 +1,13 @@
 <?php
-include("dbconnect.php");
+include("scripts/dbconnect.php");
 
 //get variables from the form first by using GET
-$name = $_GET['name'];
-$address = $_GET['address'];
-$lat = $_GET['lat'];
-$lng = $_GET['lng'];
-$type = $_GET['type'];
-$desc = $_GET['markerdesc'];
+$name = $_POST['name'];
+$address = $_POST['address'];
+$lat = $_POST['lat'];
+$lng = $_POST['lng'];
+$type = $_POST['type'];
+$desc = $_POST['markerdesc'];
 
 //now insert into database.
 
