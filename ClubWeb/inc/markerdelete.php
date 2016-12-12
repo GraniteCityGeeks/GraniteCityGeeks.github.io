@@ -1,5 +1,5 @@
 <?php
-include("dbconnect.php");
+include("scripts/dbconnect.php");
 
 $id = $_POST['delete'];
 
