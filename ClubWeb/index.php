@@ -35,6 +35,11 @@ $rules = array(
     'joinclub' => "/joinclub",
     '/healthFinal/webPages/healthyLiving' => "/healthyliving",
     '/healthFinal/webPages/index' => "/index",
+    '/healthFinal/webPages/adminpage' => "/adminpage",
+    '/healthFinal/webPages/contributorPage' => "/contributorPage",
+    '/healthFinal/webPages/dbconnect' => "/dbconnect",
+    '/healthFinal/webPages/editHealth' => "/editHealth",
+    '/healthFinal/webPages/editnewsfeed' => "/editnewsfeed",
     //
     // Home Page
     //
