@@ -13,6 +13,7 @@ session_start();
 </head>
 
 <body class="master-body">
+<form id="form1" runat="server" style="height: 50px">
 <header>
     <a href="/index.php"><h1>Go Portlethen</h1></a>
     <?
