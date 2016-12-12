@@ -30,20 +30,21 @@ if (isset ($_SESSION['username'])) {
                 $clubcalendar = $row['clubcalendar'];
 
 
-            }
-            echo "<h1> Currently editing: $clubname </h1>";
-            echo "<form name ='clubsubmit' method='POST'>";
-            echo "<br>";
-            echo "<input type='text' name='clubdesc' value='$clubdesc'>";
-            echo "<br>";
-            echo "<input type='text' name='clubcalendar' value='$clubcalendar'>";
-            echo "<br> <br>";
-            echo "<button type='submit' name='id' value='$clubid'>submit</button>";
-            echo "<h4>Users in club</h4>";
-            // remember to add this in tomorrow!!!
+                echo "<h1> Currently editing: $clubname </h1>";
+                echo "<form name ='clubsubmit' method='POST'>";
+                echo "<br>";
+                echo "<input type='text' name='clubdesc' value='$clubdesc'>";
+                echo "<br>";
+                echo "<input type='text' name='clubcalendar' value='$clubcalendar'>";
+                echo "<br> <br>";
+                echo "<button type='submit' name='id' value='$clubid'>submit</button>";
+                echo "<h4>Users in club</h4>";
+                // remember to add this in tomorrow!!!
 
-            echo "<a href='clubarticle'>create an article</a>";
-            echo "</form>";
+                echo "<a href='clubarticle'>create an article</a>";
+                echo "</form>";
+                echo "<br> <br>";
+            }
 
 
 
