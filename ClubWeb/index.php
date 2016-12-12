@@ -29,10 +29,11 @@ $rules = array(
     'markers' => "/markers",
     'MarkerAdmin' => "/MarkerAdmin",
     'deletemarker' => "/deletemarker",
+    'markercreate' => "/markercreate",
+    'markerdelete' => "/markerdelete",
     'create_club_article' =>"/clubarticle",
     'joinclub' => "/joinclub",
-    'healthFinal/webPages/healthyLiving' => "/healthyliving",
-    'ViewArticles' => "/ViewArticles",
+    '/healthFinal/webPages/healthyLiving' => "/healthyliving",
     //
     // Home Page
     //

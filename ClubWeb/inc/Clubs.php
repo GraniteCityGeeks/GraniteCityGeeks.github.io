@@ -63,7 +63,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     }
     echo "</table>";
 
-    if (isset($_SESSION['accessLevelID']) > 3) {
+    if ($_SESSION['accessLevelID'] > 3) {
         echo "<form action='../joinclub' method = 'POST'>";
         echo "<button type='submit' name='clubid' height='100' width='150' value='$club'>Join this club!</button>";
         echo "</form>";
