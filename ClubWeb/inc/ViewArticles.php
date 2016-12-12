@@ -7,7 +7,7 @@ include("scripts/header.php");
 
 include("scripts/dbconnect.php");
 
-$sql = "SELECT * FROM port_club_article"; //AS A, port_club AS C WHERE C.clubid = A.clubid";
+$sql = "SELECT * FROM port_club_article AS A, port_club AS C WHERE C.clubid = A.clubid";
 
 echo "<style>
 table {
