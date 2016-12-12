@@ -1,9 +1,49 @@
-<?php
-include '../navBar/master.php';
-?>
-<?php
-include '../navBar/master.php';
-?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head runat = "server">
+    <title>
+        Discover Aberdeen
+    </title>
+
+
+    <link href="http://gcg.azurewebsites.net/healthFinal/CSS/NavbarMaster.css" rel="stylesheet" />
+
+</head >
+
+<body class="master-body">
+<form id="form1" runat="server" style="height: 50px">
+    <header >
+        <nav>
+            <ul>
+                <li><a href="http://gcg.azurewebsites.net/ClubWeb/"><b>Home</b></a></li>
+                <li>
+                    <a href="http://gcg.azurewebsites.net/ClubWeb/viewclubs"><b>Clubs</b></a>
+                </li>
+                <li><a href="http://gcg.azurewebsites.net/ClubWeb/healthyLiving"><b>Healthy Living</b></a></li>
+                <li><a href="http://gcg.azurewebsites.net/ClubWeb/mapsindex"><b>Maps</b></a></li>
+                <li><a href="#"><b>Site Users</b></a>
+                    <ul>
+                        <li><a href="#">Admin</a>
+                            <ul>
+                                <li><a href="http://gcg.azurewebsites.net/ClubWeb/adminpage">Articles</a></li>
+                            </ul></li>
+                        <li><a href="#">Contributor</a>
+                            <ul>
+                                <li><a href="http://gcg.azurewebsites.net/ClubWeb/contributorPage">Articles</a></li>
+
+                            </ul>
+                    </ul>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+</form>
+</body>
+</html>
 <?php
 session_start();
 error_reporting(E_ALL);
@@ -11,7 +51,7 @@ ini_set('display_errors', 1);
 
 if(isset($_SESSION['accessLevelID']) == 2 || isset($_SESSION['accessLevelID']) == 5 ){echo "";}else{
 
-    header("Location: http://gcg.azurewebsites.net/healthFinal/webPages/healthyliving.php");
+    header("Location: http://gcg.azurewebsites.net/ClubWeb/healthyLiving");
 
 }
 ?>
@@ -85,7 +125,7 @@ if(isset($_SESSION['accessLevelID']) == 2 || isset($_SESSION['accessLevelID']) =
                         <br>
                         <select id="oldTitle">
                             <?php
-                            include('dbconnect.php');
+                            include('http://gcg.azurewebsites.net/scripts/dbconnect.php');
                             /* this script loads the article the user clicked on.*/
 
                             $sql = "SELECT * FROM port_articles";
@@ -128,7 +168,7 @@ if(isset($_SESSION['accessLevelID']) == 2 || isset($_SESSION['accessLevelID']) =
                     <br>
                     <select id="toDelete">
                         <?php
-                        include('dbconnect.php');
+                        include('http://gcg.azurewebsites.net/scripts/dbconnect.php');
                         /* this script loads the article the user clicked on.*/
 
                         $sql = "SELECT * FROM port_articles";
@@ -159,9 +199,31 @@ if(isset($_SESSION['accessLevelID']) == 2 || isset($_SESSION['accessLevelID']) =
 
     <div id="result"></div>
 
-    <?php
-    include '../webPages/footer.html';
-    ?>
+    <!DOCTYPE html>
+
+    <link href="http://gcg.azurewebsites.net/healthFinal/CSS/footer-basic-centered.css?version=51" rel="stylesheet" />
+
+
+    <footer class="footer-basic-centered">
+
+        <p class="footer-company-motto">Discover Aberdeen</p>
+
+        <p class="footer-links">
+            <a href="http://gcg.azurewebsites.net/ClubWeb/index">Home</a>
+            ·
+            <a href="http://gcg.azurewebsites.net/ClubWeb/viewclubs">Clubs</a>
+            ·
+            <a href="http://gcg.azurewebsites.net/ClubWeb/healthyLiving">Healthy Living</a>
+            ·
+            <a href="http://gcg.azurewebsites.net/ClubWeb/mapsindex">Maps</a>
+
+        </p>
+
+        <p class="footer-company-name">GraniteCityGeeks &copy; 2016</p>
+
+    </footer>
+
+</html>
 
 
 </html>

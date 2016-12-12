@@ -1,5 +1,5 @@
 <?php
-include("dbconnect.php");
+include("scripts/dbconnect.php");
 
 $id = $_POST['delete'];
 
@@ -12,6 +12,6 @@ if (!$result) {
 }
 
 else {
-    header("Location: ../newcss/MarkerAdmin.php");
+    header("Location: MarkerAdmin");
     die();
 }
