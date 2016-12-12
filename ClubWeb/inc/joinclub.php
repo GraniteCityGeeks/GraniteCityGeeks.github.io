@@ -1,5 +1,5 @@
 <?php
-include('dbconnect.php');
+include('scripts/dbconnect.php');
 session_start();
 
 //before we continue, check that there IS a username
