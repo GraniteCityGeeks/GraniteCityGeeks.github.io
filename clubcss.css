@@ -90,6 +90,11 @@ header > a{
     text-decoration: none;
 }
 
+header > li > a:visited{
+
+    text-decoration: none;
+}
+
 
 
 
