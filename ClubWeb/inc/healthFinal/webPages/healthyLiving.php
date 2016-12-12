@@ -50,6 +50,7 @@
 <link href="http://gcg.azurewebsites.net/healthFinal/CSS/bootstrap.min.css?version=51" rel="stylesheet" />
 <link href="http://gcg.azurewebsites.net/healthFinal/CSS/half-slider.css?version=51" rel="stylesheet" />
 <link href="http://gcg.azurewebsites.net/healthFinal/CSS/healthPage.css?version=51" rel="stylesheet" />
+<link href="http://gcg.azurewebsites.net/healthFinal/CSS/footer-basic-centered.css?version=51" rel="stylesheet" />
 
 
 <header id="myCarousel" class="carousel slide">
@@ -159,10 +160,6 @@
     </div>
 </div>
 
-<!DOCTYPE html>
-
-<link href="http://gcg.azurewebsites.net/healthFinal/CSS/footer-basic-centered.css?version=51" rel="stylesheet" />
-
 
 <footer class="footer-basic-centered">
 
@@ -182,8 +179,6 @@
     <p class="footer-company-name">GraniteCityGeeks &copy; 2016</p>
 
 </footer>
-
-</html>
 
 
 </html>

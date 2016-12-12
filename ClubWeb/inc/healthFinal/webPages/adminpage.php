@@ -60,6 +60,7 @@ if(isset($_SESSION['accessLevelID']) != 5){echo "";}else{
 <link href="http://gcg.azurewebsites.net/healthFinal/CSS/bootstrap.min.css" rel="stylesheet" />
 <link href="http://gcg.azurewebsites.net/healthFinal/CSS/half-slider.css?version=51" rel="stylesheet" />
 <link href="http://gcg.azurewebsites.net/healthFinal/CSS/healthPage.css" rel="stylesheet" />
+<link href="http://gcg.azurewebsites.net/healthFinal/CSS/footer-basic-centered.css?version=51" rel="stylesheet" />
 
 
 <header id="myCarousel" class="carousel slide">
@@ -198,9 +199,8 @@ if(isset($_SESSION['accessLevelID']) != 5){echo "";}else{
 </div>
 
 <div id="result"></div>
-<!DOCTYPE html>
 
-<link href="http://gcg.azurewebsites.net/healthFinal/CSS/footer-basic-centered.css?version=51" rel="stylesheet" />
+
 
 
 <footer class="footer-basic-centered">
@@ -222,8 +222,6 @@ if(isset($_SESSION['accessLevelID']) != 5){echo "";}else{
 
 </footer>
 
-</html>
-</html>
 
 <script type="text/javascript">
 
