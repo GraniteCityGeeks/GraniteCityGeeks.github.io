@@ -8,9 +8,11 @@
 <link href="../CoreCSS/half-slider.css" rel="stylesheet" />
 <link href="../CoreCSS/healthPage.css" rel="stylesheet" />
 -->
-
+<head>
+    <title> Go Portlethen </title>
+</head>
 <h1> Granite City Geeks - Go Portlethen</h1>
-<h2> Get Healthy, it's ace</h2>
+<h2> Discover Aberdeen </h2>
 <br>
 
 
