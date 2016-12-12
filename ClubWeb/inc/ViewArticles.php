@@ -105,8 +105,6 @@ while ($row = $result->fetch_array()) {
 
 echo "</table>";
 
- echo 'ALL' . $row;
-
 //echo '<td><a href="add" class="add" >Add</a></td>';
 
 ?>
