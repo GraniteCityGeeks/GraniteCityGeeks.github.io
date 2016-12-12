@@ -6,7 +6,10 @@ session_start();
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-f (isset($_SESSION['accessLevelID']) == 5){echo "
+f (isset($_SESSION['accessLevelID']) == 5){echo "";}else{
+    header("Location: http://gcg.azurewebsites.net/healthFinal/webPages/healthyliving.php");
+
+}
 ?>
 
 <html xmlns="http://www.w3.org/1999/html">
@@ -223,7 +226,3 @@ include '../webPages/footer.html';
 
 
 </script>
-<?php
-"}else{
-header("Location: http://gcg.azurewebsites.net/healthFinal/webPages/healthyliving.php");
-}?>
