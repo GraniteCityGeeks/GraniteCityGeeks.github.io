@@ -60,14 +60,14 @@ session_start();
 <header id="myCarousel" class="carousel slide">
     <div class="carousel-inner">
         <div class="item active">
-            <div class="fill" style="background-image: url('../Images/train.jpg')"></div>
+            <div class="fill" style="background-image: url('/healthFinal/Images/train.jpg')"></div>
         </div>
         <div class="item">
-            <div class="fill" style="background-image: url('../Images/rain.jpg')"></div>
+            <div class="fill" style="background-image: url('/healthFinal/Images/rain.jpg')"></div>
 
         </div>
         <div class="item">
-            <div class="fill" style="background-image: url('../Images/tree.jpg')"></div>
+            <div class="fill" style="background-image: url('/healthFinal/Images/tree.jpg')"></div>
 
         </div>
     </div>
