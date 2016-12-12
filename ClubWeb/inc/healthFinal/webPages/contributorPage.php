@@ -57,9 +57,9 @@ if(isset($_SESSION['accessLevelID']) == 2 || isset($_SESSION['accessLevelID']) =
 ?>
 
 <html xmlns="http://www.w3.org/1999/html">
-    <link href="../CSS/bootstrap.min.css" rel="stylesheet" />
-    <link href="../CSS/half-slider.css?version=51" rel="stylesheet" />
-    <link href="../CSS/healthPage.css" rel="stylesheet" />
+    <link href="http://gcg.azurewebsites.net/healthFinal/CSS/bootstrap.min.css" rel="stylesheet" />
+    <link href="http://gcg.azurewebsites.net/healthFinal/CSS/half-slider.css?version=51" rel="stylesheet" />
+    <link href="http://gcg.azurewebsites.net/healthFinal/CSS/healthPage.css" rel="stylesheet" />
 
 
     <header id="myCarousel" class="carousel slide">
@@ -78,8 +78,8 @@ if(isset($_SESSION['accessLevelID']) == 2 || isset($_SESSION['accessLevelID']) =
         </div>
     </header>
 
-    <script src="../js/jquery.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
+    <script src="http://gcg.azurewebsites.net/healthFinal/js/jquery.js"></script>
+    <script src="http://gcg.azurewebsites.net/healthFinal/js/bootstrap.min.js"></script>
 
     <script>
 
@@ -125,7 +125,7 @@ if(isset($_SESSION['accessLevelID']) == 2 || isset($_SESSION['accessLevelID']) =
                         <br>
                         <select id="oldTitle">
                             <?php
-                            include('http://gcg.azurewebsites.net/scripts/dbconnect.php');
+                            include('dbconnect.php');
                             /* this script loads the article the user clicked on.*/
 
                             $sql = "SELECT * FROM port_articles";
@@ -168,7 +168,7 @@ if(isset($_SESSION['accessLevelID']) == 2 || isset($_SESSION['accessLevelID']) =
                     <br>
                     <select id="toDelete">
                         <?php
-                        include('http://gcg.azurewebsites.net/scripts/dbconnect.php');
+                        include('dbconnect.php');
                         /* this script loads the article the user clicked on.*/
 
                         $sql = "SELECT * FROM port_articles";
@@ -245,7 +245,7 @@ if(isset($_SESSION['accessLevelID']) == 2 || isset($_SESSION['accessLevelID']) =
                 {
                     $('#result').html(data);
                     alert(data);
-                    window.location.replace("http://gcg.azurewebsites.net/healthFinal/webPages/contributorPage.php");
+                    window.location.replace("http://gcg.azurewebsites.net/ClubWeb/contributorpage");
                 }
             );
         }
@@ -269,7 +269,7 @@ if(isset($_SESSION['accessLevelID']) == 2 || isset($_SESSION['accessLevelID']) =
             {
                 $('#result').html(data);
                 alert(data);
-                window.location.replace("http://gcg.azurewebsites.net/healthFinal/webPages/contributorPage.php");
+                window.location.replace("http://gcg.azurewebsites.net/ClubWeb/contributorpage");
             }
         );
 
@@ -281,12 +281,12 @@ if(isset($_SESSION['accessLevelID']) == 2 || isset($_SESSION['accessLevelID']) =
         var type = "delete";
         var toDelete = document.getElementById("toDelete").options[document.getElementById("toDelete").selectedIndex].text;
 
-        $.post('editHealth.php',{type:type,toDelete:toDelete}, function(data)
+        $.post('http://gcg.azurewebsites.net/ClubWeb/editHealth.php',{type:type,toDelete:toDelete}, function(data)
             {
 
                 $('#result').html(data);
                 alert(data);
-                window.location.replace("http://gcg.azurewebsites.net/healthFinal/webPages/contributorPage.php");
+                window.location.replace("http://gcg.azurewebsites.net/ClubWeb/contributorpage");
             }
         );
     }
