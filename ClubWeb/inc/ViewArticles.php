@@ -94,9 +94,9 @@ while ($row = $result->fetch_array()) {
     echo '<td>' . $row['photoID'] . '</td>';
 //    echo '<td> <input type="submit" value="Edit">';
 //    echo '<td><a href="edit" class="edit' . $row['userID']. '">Edit</a></td>';
-    echo '<td><a href="delete/' . $row['userID'] . '">Delete</a></td>';
+    echo '<td><a href="deleteArticle/' . $row['clubarticleid'] . '">Delete</a></td>';
     if ($row['confirmed'] == 0) {
-        echo '<td><a href="ConfirmUser/' . $row['userID'] . '">Confirm User</a></td>';
+        echo '<td><a href="ConfirmUser/' . $row['userID'] . '">Confirm Article</a></td>';
     } else {
         echo '<td>Article Confirmed</td>';
     }
