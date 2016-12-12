@@ -1,4 +1,8 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 session_start();
 $username = $_SESSION['username'];
 include("scripts/dbconnect.php");
@@ -60,6 +64,7 @@ if (isset($_SESSION['username'])) //SESSION DOES EXIST
     } elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
         include('scripts/dbconnect.php');
 
+
         //first segment: getting the userid from username
 
         //define a new query.
@@ -71,17 +76,43 @@ if (isset($_SESSION['username'])) //SESSION DOES EXIST
         while($row = $result->fetch_array()) {
             $userid = $row['userid'];
         }
-        $clubtitle = $_POST["clubTitle"];
-        $clubtxt = $_POST["ClubDescription"];
-        $clubgenre = $_POST["genre"];
-        $clubavatar = $_POST["avatar"];
-        $sql = "INSERT INTO port_club(clubTitle, description, genreid, photoid, clubcalendar, ownerid) VALUES('$clubtitle', '$clubtxt', '$clubgenre', '$clubavatar', 'No events upcoming', $userid)";
-        if (mysqli_query($db, $sql)) {
-            echo "<p> creation successful </p>";
+
+        //before anything else, check that the user already owns a club, if they do, send them back to viewclubs.
+
+        $queryowner = ("SELECT ownerid FROM port_club WHERE ownerid = '$userid'");
+
+        $ownerresult = $db->query($queryowner);
+
+        if($ownerresult->num_rows > 0) {
+            //if user gets to make a club, the whole site will break.
+            header('Location: blog');
         } else {
-            echo "Error: " . $sql . "<br>Error Message:" . mysqli_error($db);
+
+
+            $clubtitle = $_POST["clubTitle"];
+            $clubtxt = $_POST["ClubDescription"];
+            $clubgenre = $_POST["genre"];
+            $clubavatar = $_POST["avatar"];
+            $sql = "INSERT INTO port_club(clubTitle, description, genreid, photoid, clubcalendar, ownerid) VALUES('$clubtitle', '$clubtxt', '$clubgenre', '$clubavatar', 'No events upcoming', $userid)";
+
+            //add the user to the club while you're at it too. you'll need to get a hold of the new clubid first though.
+
+            $clubidquery = "SELECT clubid FROM port_club WHERE ownerid = '$userid'";
+
+            $clubidresult = $db->query($clubidquery);
+
+            while($row = $clubidresult->fetch_array()) {
+                $clubid = $row['clubid'];
+            }
+
+            $insertion = "INSERT INTO port_usersinclubs(clubid, userid)VALUES ('$clubid', '$userid')";
+            mysqli_query($db, $insertion);
+            if (mysqli_query($db, $sql)) {
+                echo "<p> creation successful </p>";
+            } else {
+                echo "Error: " . $sql . "<br>Error Message:" . mysqli_error($db);
+            }
         }
-        header("blog");
     }
 }
 echo "
