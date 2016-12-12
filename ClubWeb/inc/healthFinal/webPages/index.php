@@ -21,29 +21,21 @@
                     <a href="http://gcg.azurewebsites.net/ClubWeb/viewclubs"><b>Clubs</b></a>
                 </li>
                 <li><a href="http://gcg.azurewebsites.net/ClubWeb/healthyLiving"><b>Healthy Living</b></a></li>
-                <li><a href="http://gcg.azurewebsites.net/ClubWeb/mapsindex"><b>Local Trails</b></a></li>
+                <li><a href="http://gcg.azurewebsites.net/ClubWeb/mapsindex"><b>Maps</b></a></li>
                 <li><a href="#"><b>Site Users</b></a>
                     <ul>
                         <li><a href="#">Admin</a>
                             <ul>
-                                <li><a href="#">Clubs</a></li>
-                                <li><a href="http://gcg.azurewebsites.net/ClubWeb/adminpage">Health</a></li>
-                                <li><a href="#">Maps</a></li>
+                                <li><a href="http://gcg.azurewebsites.net/ClubWeb/adminpage">Articles</a></li>
                             </ul></li>
                         <li><a href="#">Contributor</a>
                             <ul>
-                                <li><a href="#">Clubs</a></li>
-                                <li><a href="http://gcg.azurewebsites.net/ClubWeb/contributorPage">Health</a></li>
-                                <li><a href="#">Maps</a></li>
+                                <li><a href="http://gcg.azurewebsites.net/ClubWeb/contributorPage">Articles</a></li>
 
                             </ul>
                     </ul>
                 </li>
 
-            </ul>
-
-            <ul class="right">
-                <li ><label style="Width=300px Font-Bold=true" ID="WelcomeLabel">Welcome User</label> </li>
             </ul>
 
         </nav>
