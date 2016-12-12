@@ -95,3 +95,9 @@ nav ul ul ul {
     left: 100%;
     top: 0;
 }
+
+nav  .navbar-right {
+    float: right !important;
+    margin-right: -15px;
+}
+

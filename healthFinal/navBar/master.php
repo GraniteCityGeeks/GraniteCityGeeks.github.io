@@ -40,6 +40,13 @@
                      </ul>
                          </li>
 
+                <ul class="nav navbar-right">
+
+                    <li><label Width="300px" ID="WelcomeLabel" Font-Bold="true" runat="server" Text="Welcome User"></label> </li>
+
+                </ul
+
+
             </ul>
         </nav>
 
