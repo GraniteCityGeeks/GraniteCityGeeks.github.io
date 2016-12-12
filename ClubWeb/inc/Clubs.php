@@ -63,9 +63,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     }
     echo "</table>";
 
-    echo "<form action='../joinclub' method = 'POST'>";
-    echo "<button type='submit' name='clubid' height='100' width='150' value='$club'>Join this club!</button>";
-    echo "</form>";
+    if (isset($_SESSION['accessLevelID']) > 3) {
+        echo "<form action='../joinclub' method = 'POST'>";
+        echo "<button type='submit' name='clubid' height='100' width='150' value='$club'>Join this club!</button>";
+        echo "</form>";
+    }
 
 
 //renew the query for the articles
