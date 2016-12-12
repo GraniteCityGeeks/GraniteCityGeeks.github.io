@@ -48,7 +48,6 @@ ini_set('display_errors', 1);
                 echo "<li><a href='../View'>View Users</a></li>";
             } else {
             }
-            }
             ?>
 
         </ul>
