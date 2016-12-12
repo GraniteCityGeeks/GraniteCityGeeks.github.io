@@ -33,7 +33,7 @@ $rules = array(
     'joinclub' => "/joinclub",
     'adminpage' => "/adminpage",
     'contributorpage' => "contributorpage",
-    'healthyliving' => "healthyliving",
+    'healthyLiving' => "healthyliving",
     //
     // Home Page
     //
