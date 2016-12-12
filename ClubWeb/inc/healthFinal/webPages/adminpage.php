@@ -65,7 +65,7 @@ if(isset($_SESSION['accessLevelID']) != 5){echo "";}else{
 <header id="myCarousel" class="carousel slide">
     <div class="carousel-inner">
         <div class="item active">
-            <div class="fill" style="background-image: url('../Images/train.jpg')"></div>
+            <div class="fill" style="background-image: url('http://gcg.azurewebsites.net/healthFinal/Images/train.jpg')"></div>
         </div>
         <div class="item">
             <div class="fill" style="background-image: url('../Images/rain.jpg')"></div>
@@ -238,11 +238,11 @@ if(isset($_SESSION['accessLevelID']) != 5){echo "";}else{
         }else if($('#text').val() == ''){
             alert('Text input can not be left blank');
         }else{
-            $.post('http://gcg.azurewebsites.net/scripts/editnewsfeed.php',{title:title,desc:desc,type:type}, function(data)
+            $.post('http://gcg.azurewebsites.net/ClubWeb/editnewsfeed',{title:title,desc:desc,type:type}, function(data)
                 {
                     $('#result').html(data);
                     alert(data);
-                    window.location.replace("http://gcg.azurewebsites.net/healthFinal/webPages/healthyliving.php");
+                    window.location.replace("http://gcg.azurewebsites.net/ClubWeb/healthyLiving");
                 }
             );
         }
@@ -262,11 +262,11 @@ if(isset($_SESSION['accessLevelID']) != 5){echo "";}else{
             alert('Text input can not be left blank');
         }else{
 
-            $.post('http://gcg.azurewebsites.net/scripts/editnewsfeed.php',{title:title,desc:desc,type:type,oldTitle:oldTitle}, function(data)
+            $.post('http://gcg.azurewebsites.net/ClubWeb/editnewsfeed',{title:title,desc:desc,type:type,oldTitle:oldTitle}, function(data)
                 {
                     $('#result').html(data);
                     alert(data);
-                    window.location.replace("http://gcg.azurewebsites.net/clubWeb/healthyliving");
+                    window.location.replace("http://gcg.azurewebsites.net/ClubWeb/healthyLiving");
                 }
             );
 
@@ -278,12 +278,12 @@ if(isset($_SESSION['accessLevelID']) != 5){echo "";}else{
         var type = "delete";
         var toDelete = document.getElementById("toDelete").options[document.getElementById("toDelete").selectedIndex].text;
 
-        $.post('http://gcg.azurewebsites.net/scripts/editnewsfeed.php',{type:type,toDelete:toDelete}, function(data)
+        $.post('http://gcg.azurewebsites.net/ClubWeb/editnewsfeed',{type:type,toDelete:toDelete}, function(data)
             {
 
                 $('#result').html(data);
                 alert(data);
-                window.location.replace("http://gcg.azurewebsites.net/clubWeb/healthyliving");
+                window.location.replace("http://gcg.azurewebsites.net/ClubWeb/healthyLiving");
             }
         );
     }

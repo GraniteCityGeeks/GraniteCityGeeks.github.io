@@ -65,7 +65,7 @@ if(isset($_SESSION['accessLevelID']) == 2 || isset($_SESSION['accessLevelID']) =
     <header id="myCarousel" class="carousel slide">
         <div class="carousel-inner">
             <div class="item active">
-                <div class="fill" style="background-image: url('../Images/train.jpg')"></div>
+                <div class="fill" style="background-image: url('http://gcg.azurewebsites.net/healthFinal/Images/train.jpg')"></div>
             </div>
             <div class="item">
                 <div class="fill" style="background-image: url('../Images/rain.jpg')"></div>
@@ -241,11 +241,11 @@ if(isset($_SESSION['accessLevelID']) == 2 || isset($_SESSION['accessLevelID']) =
         }else if($('#text').val() == ''){
             alert('Text input can not be left blank');
         }else{
-            $.post('http://gcg.azurewebsites.net/scripts/editHealth.php',{title:title,desc:desc,type:type}, function(data)
+            $.post('http://gcg.azurewebsites.net/ClubWeb/edithealth',{title:title,desc:desc,type:type}, function(data)
                 {
                     $('#result').html(data);
                     alert(data);
-                    window.location.replace("http://gcg.azurewebsites.net/ClubWeb/contributorpage");
+                    window.location.replace("http://gcg.azurewebsites.net/ClubWeb/healthyLiving");
                 }
             );
         }
@@ -265,11 +265,11 @@ if(isset($_SESSION['accessLevelID']) == 2 || isset($_SESSION['accessLevelID']) =
             alert('Text input can not be left blank');
         }else{
 
-        $.post('http://gcg.azurewebsites.net/scripts/editHealth.php',{title:title,desc:desc,type:type,oldTitle:oldTitle}, function(data)
+        $.post('http://gcg.azurewebsites.net/ClubWeb/edithealth',{title:title,desc:desc,type:type,oldTitle:oldTitle}, function(data)
             {
                 $('#result').html(data);
                 alert(data);
-                window.location.replace("http://gcg.azurewebsites.net/ClubWeb/contributorpage");
+                window.location.replace("http://gcg.azurewebsites.net/ClubWeb/healthyLiving");
             }
         );
 
@@ -286,7 +286,7 @@ if(isset($_SESSION['accessLevelID']) == 2 || isset($_SESSION['accessLevelID']) =
 
                 $('#result').html(data);
                 alert(data);
-                window.location.replace("http://gcg.azurewebsites.net/ClubWeb/contributorpage");
+                window.location.replace("http://gcg.azurewebsites.net/ClubWeb/healthyLiving");
             }
         );
     }
