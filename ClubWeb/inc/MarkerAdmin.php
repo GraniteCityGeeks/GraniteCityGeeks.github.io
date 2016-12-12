@@ -50,7 +50,7 @@ session_start();
 
             if ($_SESSION['usernameID'] == 3) {
                 //connect to the database.
-                include("/scripts/dbconnect.php");
+                include("scripts/dbconnect.php");
 
                 $query = "SELECT * FROM port_markers";
 
