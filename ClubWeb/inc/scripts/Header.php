@@ -8,7 +8,7 @@ session_start();
 <head runat="sever">
 
     <meta charset="UTF-8">
-    <title>Go Sportlethen</title>
+    <title>Sportlethen</title>
 
 </head>
 
