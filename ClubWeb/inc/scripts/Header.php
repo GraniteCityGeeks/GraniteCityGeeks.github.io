@@ -18,6 +18,7 @@
 <header class="header">
     <a href="/index.php"><h1>Go Portlethen</h1></a>
     <?
+    session_start();
     if (isset($_SESSION['username'])) {
         echo "<h3><a href='logout'>Logout({$_SESSION['username']})<img src={$_SESSION['photoID']} alt=\"Mountain View\" style=\"width:35px;height:35px;\"></a></h3>";
     } else {
