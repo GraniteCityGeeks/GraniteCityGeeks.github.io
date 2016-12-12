@@ -9,9 +9,9 @@ if (isset($_SESSION['username'])) //SESSION DOES EXIST
             <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
             <script>tinymce.init({selector: 'textarea'});</script>
             <form action="createarticle" method="post">
-                <input type="text" name="articleName" placeholder="Article Name">
-                <textarea name="articleText"></textarea>
-                <input type="checkbox" name="clubcheck" value="forclub"> Is this for club?
+                <input type="text" name="articleName" placeholder="Article Name" required>
+                <textarea name="articleText" required></textarea>
+                <input type="checkbox" name="clubcheck" value="forclub" > Is this for club?
                 
                 <input type="submit">
 
