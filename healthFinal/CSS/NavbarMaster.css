@@ -96,7 +96,7 @@ nav ul ul ul {
     top: 0;
 }
 
-nav  .navbar-right {
+.navbar-right {
     float: right !important;
     margin-right: -15px;
 }

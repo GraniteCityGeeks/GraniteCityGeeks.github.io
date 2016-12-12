@@ -41,7 +41,7 @@
                          </li>
 
             </ul>
-            <ul class="nav navbar-right">
+            <ul class="navbar-right">
 
                 <li><label style="Width=300px Font-Bold=true" ID="WelcomeLabel">Welcome User</label> </li>
 
