@@ -64,6 +64,7 @@ echo "";
 <link href="http://gcg.azurewebsites.net/healthFinal/CSS/half-slider.css?version=51" rel="stylesheet" />
 <link href="http://gcg.azurewebsites.net/healthFinal/CSS/healthPage.css" rel="stylesheet" />
 <link href="http://gcg.azurewebsites.net/healthFinal/CSS/footer-basic-centered.css?version=51" rel="stylesheet" />
+<link href="http://gcg.azurewebsites.net/healthFinal/CSS/NavbarMaster.css" rel="stylesheet" />
 
 
 <header id="myCarousel" class="carousel slide">
@@ -224,7 +225,7 @@ echo "";
     <p class="footer-company-name">GraniteCityGeeks &copy; 2016</p>
 
 </footer>
-
+</html>
 
 <script type="text/javascript">
 
