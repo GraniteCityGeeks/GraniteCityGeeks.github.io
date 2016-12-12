@@ -34,10 +34,12 @@ if (isset($_SESSION['username'])) {
         header("Location: viewclubs");
 
     }
-    $insertquery = ("INSERT INTO port_usersinclub(userid, clubid) VALUES($id, $clubid)");
+    $insertquery = ("INSERT INTO port_usersinclub(userid, clubid) VALUES('$id', '$clubid')");
 
     if (mysqli_query($db, $insertquery)) {
         header("Location: viewclubs");
+    } else {
+       echo "Error: " . $sql . "<br>Error Message:" . mysqli_error($db);
     }
 } else {
     header('Location: login');
