@@ -4,8 +4,8 @@ session_start();
 
 <!DOCTYPE html>
 <html lang="en">
-<link href="/basicstyle.css" rel="stylesheet" />
-<head>
+<link href="http://gcg.azurewebsites.net/healthFinal/CSS/NavbarMaster.css" rel="stylesheet" />
+<head runat="sever">
 
     <meta charset="UTF-8">
     <title>Sportlethen</title>
@@ -23,6 +23,7 @@ session_start();
         echo "<h3><a href='register'>Register</a></h3>";
     }
     ?>
+    <form id="form1" runat="server" style="height: 50px">
     <nav>
         <ul>
             <li><a href="./">Home Page</a></li>
