@@ -218,7 +218,7 @@ include '../webPages/footer.html';
         }else if($('#text').val() == ''){
             alert('Text input can not be left blank');
         }else{
-            $.post('http://gcg.azurewebsites.net/editnewsfeed',{title:title,desc:desc,type:type}, function(data)
+            $.post('http://gcg.azurewebsites.net/scripts/editnewsfeed.php',{title:title,desc:desc,type:type}, function(data)
                 {
                     $('#result').html(data);
                     alert(data);
@@ -242,7 +242,7 @@ include '../webPages/footer.html';
             alert('Text input can not be left blank');
         }else{
 
-            $.post('http://gcg.azurewebsites.net/editnewsfeed',{title:title,desc:desc,type:type,oldTitle:oldTitle}, function(data)
+            $.post('http://gcg.azurewebsites.net/scripts/editnewsfeed.php',{title:title,desc:desc,type:type,oldTitle:oldTitle}, function(data)
                 {
                     $('#result').html(data);
                     alert(data);
@@ -258,7 +258,7 @@ include '../webPages/footer.html';
         var type = "delete";
         var toDelete = document.getElementById("toDelete").options[document.getElementById("toDelete").selectedIndex].text;
 
-        $.post('http://gcg.azurewebsites.net/editnewsfeed',{type:type,toDelete:toDelete}, function(data)
+        $.post('http://gcg.azurewebsites.net/scripts/editnewsfeed.php',{type:type,toDelete:toDelete}, function(data)
             {
 
                 $('#result').html(data);
