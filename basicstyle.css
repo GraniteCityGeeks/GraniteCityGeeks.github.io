@@ -54,10 +54,7 @@ footer{
     color: #ffffff;
     list-style: none;
     text-align: center;
-    top:60px;
-    padding: 0;
-    position: absolute;
-    width: 100%;
+    padding: 20px 0 20px 0;
 }
 #nav > li{
     display: inline-block;

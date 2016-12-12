@@ -4,8 +4,8 @@ session_start();
 
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="/basicstyle.css">
-<head>
+<link href="http://gcg.azurewebsites.net/healthFinal/CSS/NavbarMaster.css" rel="stylesheet" />
+<head runat="sever">
 
     <meta charset="UTF-8">
     <title>Sportlethen</title>
@@ -13,7 +13,7 @@ session_start();
 </head>
 
 <body class="master-body">
-<header class="header">
+<header>
     <a href="/index.php"><h1>Go Portlethen</h1></a>
     <?
     if (isset($_SESSION['username'])) {
@@ -23,8 +23,9 @@ session_start();
         echo "<h3><a href='register'>Register</a></h3>";
     }
     ?>
+    <form id="form1" runat="server" style="height: 50px">
     <nav>
-        <ul id="nav">
+        <ul>
             <li><a href="./">Home Page</a></li>
             <li><a href="mapsindex">Maps</a></li>
             <li><a href="viewclubs">Clubs</a></li>
