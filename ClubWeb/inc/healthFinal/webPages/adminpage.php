@@ -125,7 +125,7 @@ if(isset($_SESSION['accessLevelID']) == 5){echo "";}else{
                 <br>
                 <select id="oldTitle">
                     <?php
-                    include('http://gcg.azurewebsites.net/dbconnect');
+                    include('http://gcg.azurewebsites.net/scripts/dbconnect.php');
                     /* this script loads the article the user clicked on.*/
 
                     $sql = "SELECT * FROM port_newsfeed";
@@ -168,7 +168,7 @@ if(isset($_SESSION['accessLevelID']) == 5){echo "";}else{
                 <br>
                 <select id="toDelete">
                     <?php
-                    include('http://gcg.azurewebsites.net/dbconnect');
+                    include('http://gcg.azurewebsites.net/scripts/dbconnect.php');
                     /* this script loads the article the user clicked on.*/
 
                     $sql = "SELECT * FROM port_newsfeed";
@@ -199,9 +199,31 @@ if(isset($_SESSION['accessLevelID']) == 5){echo "";}else{
 
 <div id="result"></div>
 
-<?php
-include '../webPages/footer.html';
-?>
+<!DOCTYPE html>
+
+<link href="http://gcg.azurewebsites.net/healthFinal/CSS/footer-basic-centered.css?version=51" rel="stylesheet" />
+
+
+<footer class="footer-basic-centered">
+
+    <p class="footer-company-motto">Discover Aberdeen</p>
+
+    <p class="footer-links">
+        <a href="http://gcg.azurewebsites.net/ClubWeb/index">Home</a>
+        ·
+        <a href="http://gcg.azurewebsites.net/ClubWeb/viewclubs">Clubs</a>
+        ·
+        <a href="http://gcg.azurewebsites.net/ClubWeb/healthyLiving">Healthy Living</a>
+        ·
+        <a href="http://gcg.azurewebsites.net/ClubWeb/mapsindex">Maps</a>
+
+    </p>
+
+    <p class="footer-company-name">GraniteCityGeeks &copy; 2016</p>
+
+</footer>
+
+</html>
 
 </html>
 

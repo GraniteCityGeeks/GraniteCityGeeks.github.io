@@ -1,5 +1,5 @@
 <?php
-include('../webPages/dbconnect.php');
+include('include(\'http://gcg.azurewebsites.net/dbconnect');');
 
 $type = $_POST['type'];
 
