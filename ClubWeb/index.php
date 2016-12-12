@@ -32,6 +32,7 @@ $rules = array(
     'create_club_article' =>"/clubarticle",
     'joinclub' => "/joinclub",
     'healthFinal/webPages/healthyLiving' => "/healthyliving",
+    'ViewArticles' => "/ViewArticles",
     //
     // Home Page
     //
