@@ -223,6 +223,7 @@ include '../webPages/footer.html';
 
 
 </script>
+<?php
 "}else{
 header("Location: http://gcg.azurewebsites.net/healthFinal/webPages/healthyliving.php");
 }?>
