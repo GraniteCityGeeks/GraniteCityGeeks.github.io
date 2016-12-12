@@ -83,13 +83,13 @@ echo "<div style=\"overflow-x:auto;\">";
 
 echo "<table>";
 
-echo "<tr> <th>Article ID</th> <!--<th>Club Name</th>--> <th>Article</th> <th>Photo ID</th> </tr>";
+echo "<tr> <th>Article ID</th> <th>Club Name</th> <th>Article</th> <th>Photo ID</th> </tr>";
 
 $result = $db->query($sql);
 while ($row = $result->fetch_array()) {
     echo "<tr>";
     echo '<td>' . $row['clubarticleid'] . '</td>';
-    //echo '<td>' . $row['clubTitle'] . '</td>';
+    echo '<td>' . $row['clubTitle'] . '</td>';
     echo '<td>' . $row['title'] . '</td>';
     echo '<td>' . $row['photoID'] . '</td>';
 //    echo '<td> <input type="submit" value="Edit">';
