@@ -46,34 +46,37 @@ session_start();
             </tr>
 
         <?php
-        if ($_SESSION['usernameID'] == 3) {
-            //connect to the database.
-            include("../scripts/dbconnect.php");
+        if (isset($_SESSION['username'])) {
 
-            $query = "SELECT * FROM port_markers";
+            if ($_SESSION['usernameID'] == 3) {
+                //connect to the database.
+                include("/scripts/dbconnect.php");
 
-            $result = $db->query($query);
+                $query = "SELECT * FROM port_markers";
 
-            while ($row = $result->fetch_array()) {
+                $result = $db->query($query);
 
-                echo "<tr>";
-                echo "<td>" . $row["id"] . "</td>";
-                echo "<td>" . $row["name"] . "</td>";
-                echo "<td>" . $row["lat"] . "</td>";
-                echo "<td>" . $row["lng"] . "</td>";
-                echo "<td>" . $row["description"] . "</td>";
-                echo "<form action='markerdelete' method='POST'>";
-                echo "<td>" . "<button name='delete' type='submit' value='" . $row["id"] . "'>" . "delete" . "</button>" . "</td>";
-                echo "</form>";
-                echo "</tr>";
+                while ($row = $result->fetch_array()) {
 
+                    echo "<tr>";
+                    echo "<td>" . $row["id"] . "</td>";
+                    echo "<td>" . $row["name"] . "</td>";
+                    echo "<td>" . $row["lat"] . "</td>";
+                    echo "<td>" . $row["lng"] . "</td>";
+                    echo "<td>" . $row["description"] . "</td>";
+                    echo "<form action='markerdelete' method='POST'>";
+                    echo "<td>" . "<button name='delete' type='submit' value='" . $row["id"] . "'>" . "delete" . "</button>" . "</td>";
+                    echo "</form>";
+                    echo "</tr>";
+
+                }
+
+
+                $db->close();
+
+
+                echo "</table>";
             }
-
-
-            $db->close();
-
-
-            echo "</table>";
         }
         ?>
 
