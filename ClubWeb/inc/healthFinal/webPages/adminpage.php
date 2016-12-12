@@ -198,11 +198,31 @@ if(isset($_SESSION['accessLevelID']) == 5){echo "";}else{
 </div>
 
 <div id="result"></div>
+<!DOCTYPE html>
 
-<?php
-include '../webPages/footer.html';
-?>
+<link href="http://gcg.azurewebsites.net/healthFinal/CSS/footer-basic-centered.css?version=51" rel="stylesheet" />
 
+
+<footer class="footer-basic-centered">
+
+    <p class="footer-company-motto">Discover Aberdeen</p>
+
+    <p class="footer-links">
+        <a href="http://gcg.azurewebsites.net/ClubWeb/index">Home</a>
+        ·
+        <a href="http://gcg.azurewebsites.net/ClubWeb/viewclubs">Clubs</a>
+        ·
+        <a href="http://gcg.azurewebsites.net/ClubWeb/healthyLiving">Healthy Living</a>
+        ·
+        <a href="http://gcg.azurewebsites.net/ClubWeb/mapsindex">Maps</a>
+
+    </p>
+
+    <p class="footer-company-name">GraniteCityGeeks &copy; 2016</p>
+
+</footer>
+
+</html>
 </html>
 
 <script type="text/javascript">
@@ -218,7 +238,7 @@ include '../webPages/footer.html';
         }else if($('#text').val() == ''){
             alert('Text input can not be left blank');
         }else{
-            $.post('http://gcg.azurewebsites.net/editnewsfeed',{title:title,desc:desc,type:type}, function(data)
+            $.post('http://gcg.azurewebsites.net/scripts/editnewsfeed.php',{title:title,desc:desc,type:type}, function(data)
                 {
                     $('#result').html(data);
                     alert(data);
@@ -242,7 +262,7 @@ include '../webPages/footer.html';
             alert('Text input can not be left blank');
         }else{
 
-            $.post('http://gcg.azurewebsites.net/editnewsfeed',{title:title,desc:desc,type:type,oldTitle:oldTitle}, function(data)
+            $.post('http://gcg.azurewebsites.net/scripts/editnewsfeed.php',{title:title,desc:desc,type:type,oldTitle:oldTitle}, function(data)
                 {
                     $('#result').html(data);
                     alert(data);
@@ -258,7 +278,7 @@ include '../webPages/footer.html';
         var type = "delete";
         var toDelete = document.getElementById("toDelete").options[document.getElementById("toDelete").selectedIndex].text;
 
-        $.post('http://gcg.azurewebsites.net/editnewsfeed',{type:type,toDelete:toDelete}, function(data)
+        $.post('http://gcg.azurewebsites.net/scripts/editnewsfeed.php',{type:type,toDelete:toDelete}, function(data)
             {
 
                 $('#result').html(data);

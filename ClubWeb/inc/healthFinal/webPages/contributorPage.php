@@ -241,7 +241,7 @@ if(isset($_SESSION['accessLevelID']) == 2 || isset($_SESSION['accessLevelID']) =
         }else if($('#text').val() == ''){
             alert('Text input can not be left blank');
         }else{
-            $.post('editHealth.php',{title:title,desc:desc,type:type}, function(data)
+            $.post('http://gcg.azurewebsites.net/scripts/editHealth.php',{title:title,desc:desc,type:type}, function(data)
                 {
                     $('#result').html(data);
                     alert(data);
@@ -265,7 +265,7 @@ if(isset($_SESSION['accessLevelID']) == 2 || isset($_SESSION['accessLevelID']) =
             alert('Text input can not be left blank');
         }else{
 
-        $.post('editHealth.php',{title:title,desc:desc,type:type,oldTitle:oldTitle}, function(data)
+        $.post('http://gcg.azurewebsites.net/scripts/editHealth.php',{title:title,desc:desc,type:type,oldTitle:oldTitle}, function(data)
             {
                 $('#result').html(data);
                 alert(data);
@@ -281,7 +281,7 @@ if(isset($_SESSION['accessLevelID']) == 2 || isset($_SESSION['accessLevelID']) =
         var type = "delete";
         var toDelete = document.getElementById("toDelete").options[document.getElementById("toDelete").selectedIndex].text;
 
-        $.post('http://gcg.azurewebsites.net/ClubWeb/editHealth.php',{type:type,toDelete:toDelete}, function(data)
+        $.post('http://gcg.azurewebsites.net/scripts/editHealth.php',{type:type,toDelete:toDelete}, function(data)
             {
 
                 $('#result').html(data);
