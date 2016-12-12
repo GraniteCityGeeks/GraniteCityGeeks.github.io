@@ -38,13 +38,14 @@ include ("ClubWeb/inc/scripts/Header.php");
 
 </div>
 
-</php>
-include ("ClubWeb/inc/scripts/Footer.php");
-?>
+
 </body>
 
 
 </html>
+</php>
+include ("ClubWeb/inc/scripts/Footer.php");
+?>
 
 
 
