@@ -71,11 +71,15 @@ if (isset($_SESSION['username'])) //SESSION DOES EXIST
         while($row = $result->fetch_array()) {
             $userid = $row['userid'];
         }
+
         $clubtitle = $_POST["clubTitle"];
         $clubtxt = $_POST["ClubDescription"];
         $clubgenre = $_POST["genre"];
         $clubavatar = $_POST["avatar"];
-        $sql = "INSERT INTO port_club(clubTitle, description, genreid, photoid, clubcalendar, ownerid) VALUES('$clubtitle', '$clubtxt', '$clubgenre', '$clubavatar', 'No events upcoming', $userid)";
+        $sql = sprintf("INSERT INTO port_club(clubTitle, description, genreid, photoid, clubcalendar, ownerid) VALUES('$clubtitle', '$clubtxt', '$clubgenre', '$clubavatar', 'No events upcoming', $userid)",
+                        mysqli_real_escape_string($clubtitle),
+                        mysqli_real_escape_string($clubtxt));
+
         if (mysqli_query($db, $sql)) {
             echo "<p> creation successful </p>";
         } else {
