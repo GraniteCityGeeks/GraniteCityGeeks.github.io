@@ -14,9 +14,9 @@ if(isset($_SESSION['accessLevelID']) == 5){echo "";}else{
 ?>
 
 <html xmlns="http://www.w3.org/1999/html">
-<link href="../CSS/bootstrap.min.css" rel="stylesheet" />
-<link href="../CSS/half-slider.css?version=51" rel="stylesheet" />
-<link href="../CSS/healthPage.css" rel="stylesheet" />
+<link href="http://gcg.azurewebsites.net/healthFinal/CSS/bootstrap.min.css" rel="stylesheet" />
+<link href="http://gcg.azurewebsites.net/healthFinal/CSS/half-slider.css?version=51" rel="stylesheet" />
+<link href="http://gcg.azurewebsites.net/healthFinal/CSS/healthPage.css" rel="stylesheet" />
 
 
 <header id="myCarousel" class="carousel slide">
@@ -35,8 +35,8 @@ if(isset($_SESSION['accessLevelID']) == 5){echo "";}else{
     </div>
 </header>
 
-<script src="../js/jquery.js"></script>
-<script src="../js/bootstrap.min.js"></script>
+<script src="http://gcg.azurewebsites.net/healthFinal/js/jquery.js"></script>
+<script src="http://gcg.azurewebsites.net/healthFinal/js/bootstrap.min.js"></script>
 
 <script>
 
