@@ -1,5 +1,5 @@
 <?php
-include("dbconnect.php");
+include("scripts/dbconnect.php");
 
 //get variables from the form first by using GET
 $name = $_POST['name'];
