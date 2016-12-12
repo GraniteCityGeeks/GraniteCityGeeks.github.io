@@ -31,6 +31,9 @@ $rules = array(
     'deletemarker' => "/deletemarker",
     'create_club_article' =>"/clubarticle",
     'joinclub' => "/joinclub",
+    'adminpage' => "/adminpage",
+    'contributorpage' => "contributorpage",
+    'healthyliving' => "healthyliving",
     //
     // Home Page
     //
