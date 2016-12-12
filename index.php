@@ -1,6 +1,6 @@
 <?php
 include ("ClubWeb/inc/scripts/Header.php");
-include ("ClubWeb/inc/scripts/Footer.php");
+
 ?>
 
 <!DOCTYPE html>
@@ -38,9 +38,10 @@ include ("ClubWeb/inc/scripts/Footer.php");
 
 </div>
 
-
-
+</php>
+include ("ClubWeb/inc/scripts/Footer.php");
 </body>
+?>
 
 </html>
 
