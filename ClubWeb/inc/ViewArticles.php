@@ -83,7 +83,7 @@ echo "<div style=\"overflow-x:auto;\">";
 
 echo "<table>";
 
-echo "<tr> <th>Article ID</th> <th>Club Name</th> <th>Article</th> <th>Photo ID</th> </tr>";
+echo "<tr> <th>Article ID</th> <!--<th>Club Name</th>--> <th>Article</th> <th>Photo ID</th> </tr>";
 
 $result = $db->query($sql);
 while ($row = $result->fetch_array()) {
