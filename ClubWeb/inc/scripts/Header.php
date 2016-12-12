@@ -53,33 +53,3 @@ session_start();
         </ul>
     </nav>
 </header>
-
-<link href="http://gcg.azurewebsites.net/healthFinal/CSS/bootstrap.min.css" rel="stylesheet" />
-<link href="http://gcg.azurewebsites.net/healthFinal/CSS/half-slider.css?version=51" rel="stylesheet" />
-
-<header id="myCarousel" class="carousel slide">
-    <div class="carousel-inner">
-        <div class="item active">
-            <div class="fill" style="background-image: url('/healthFinal/Images/train.jpg')"></div>
-        </div>
-        <div class="item">
-            <div class="fill" style="background-image: url('/healthFinal/Images/rain.jpg')"></div>
-
-        </div>
-        <div class="item">
-            <div class="fill" style="background-image: url('/healthFinal/Images/tree.jpg')"></div>
-
-        </div>
-    </div>
-</header>
-<script src="http://gcg.azurewebsites.net/healthFinal/js/jquery.js"></script>
-<script src="http://gcg.azurewebsites.net/healthFinal/js/bootstrap.min.js"></script>
-
-<script>
-
-
-    $('.carousel').carousel({
-        interval: 5000
-    })
-
-</script>
