@@ -26,7 +26,7 @@ if (isset($_SESSION['username'])) {
     $checkquery = ("SELECT userid, clubid from port_usersinclubs WHERE userid = '$id' AND clubid = ''$clubid'");
 
     $checkresult = mysqli_query($db,$checkquery);
-    $row_no = mysqli_num_rows($checkresult);
+    $row_no = $checkresult->num_rows;
     if ($row_no > 0) {
         echo '<script language="javascript">';
         echo 'alert("user is already in club!")';
