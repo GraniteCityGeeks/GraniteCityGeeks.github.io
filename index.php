@@ -1,7 +1,4 @@
-<?php
-include ("ClubWeb/inc/scripts/Header.php");
 
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -19,6 +16,14 @@ include ("ClubWeb/inc/scripts/Header.php");
 
 
 <body>
+
+<ul id="nav">
+    <li><a href="http://gcg.azurewebsites.net/ClubWeb/">Clubs</a></li>
+    <li><a href="http://gcg.azurewebsites.net/ClubWeb/mapsindex">Maps</a></li>
+    <li><a href="http://gcg.azurewebsites.net/ClubWeb/healthyliving">Healthy Living</a></li>
+    <li><a href="page4.html">Page 4</a></li>
+    <li><a href="page5.html">Page 5</a></li>
+</ul>
 
 <div id="main">
 
