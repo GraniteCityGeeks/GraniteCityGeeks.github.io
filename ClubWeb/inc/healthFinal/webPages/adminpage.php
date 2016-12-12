@@ -68,11 +68,11 @@ if(isset($_SESSION['accessLevelID']) != 5){echo "";}else{
             <div class="fill" style="background-image: url('http://gcg.azurewebsites.net/healthFinal/Images/train.jpg')"></div>
         </div>
         <div class="item">
-            <div class="fill" style="background-image: url('../Images/rain.jpg')"></div>
+            <div class="fill" style="background-image: url('http://gcg.azurewebsites.net/healthFinal/Images/rain.jpg')"></div>
 
         </div>
         <div class="item">
-            <div class="fill" style="background-image: url('../Images/tree.jpg')"></div>
+            <div class="fill" style="background-image: url('http://gcg.azurewebsites.net/healthFinal/Images/tree.jpg')"></div>
 
         </div>
     </div>
