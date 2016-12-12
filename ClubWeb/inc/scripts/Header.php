@@ -46,7 +46,6 @@ ini_set('display_errors', 1);
                 echo "<li><a href='MarkerAdmin'>Create Map Info</a></li>";
                 echo "<li><a href='View'>View Users</a></li>";
             } else {
-                echo "<li><a href='createclub'>How</a></li>";
             }
             ?>
 
