@@ -8,7 +8,6 @@
 
 
     <link href="http://gcg.azurewebsites.net/healthFinal/CSS/NavbarMaster.css" rel="stylesheet" />
-    <link href="http://gcg.azurewebsites.net/healthFinal/CSS/NavbarMaster.css" rel="stylesheet" />
 
 </head >
 
@@ -95,7 +94,7 @@
     <ul class="ulProducts" runat="server" id="newsFeed" style="background-color: #f5f5f5">
         <h2>News Feed!</h2>
         <?php
-        include('http://gcg.azurewebsites.net/dbconnect');
+        include('dbconnect.php');
 
         /* this script loads the article the user clicked on.*/
 
@@ -126,7 +125,7 @@
         <h2>Article Titles! </h2>
 
         <?php
-        include('http://gcg.azurewebsites.net/dbconnect');
+        include('dbconnect.php');
         /* this script loads the article the user clicked on.*/
 
         $sql = "SELECT * FROM port_articles";
