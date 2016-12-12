@@ -28,17 +28,18 @@ ini_set('display_errors', 1);
     <nav>
         <ul id="nav">
             <li><a href="../">Home Page</a></li>
-            <li><a href="../blog">My Blog</a></li>
-            <li><a href=../"about">About Me</a></li>
-            <li><a href="../contactus">Contact Me</a></li>
-            <li><a href="../viewclubs">Clubs</a></li>
             <li><a href="../mapsindex">Maps</a></li>
+            <li><a href="../viewclubs">Clubs</a></li>
             <?
             if (isset($_SESSION['accessLevelID']) == 2){
-                echo "<li><a href='../createarticle'>Create Art</a></li>";
-                echo "<li><a href='../View'>View</a></li>";
                 echo "<li><a href='../createclub'>Create Clubs</a></li>";
                 echo "<li><a href='../modifyclub'>modify your Club</a></li>";
+                echo "<li><a href='../MarkerAdmin'>Create Map Info</a></li>";
+            } else if (isset($_SESSION['accessLevelID']) == 3){
+                echo "<li><a href='../MarkerAdmin'>Maps Editing</a></li>";
+            } else if (isset($_SESSION['accessLevelID']) == 4){
+                echo "<li><a href='../createclub'>Create Club</a></li>";
+                echo "<li><a href='../create_club_article'>Creat Club Article</a></li>";
             }
             ?>
 
