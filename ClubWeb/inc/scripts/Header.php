@@ -24,7 +24,7 @@ session_start();
     }
     ?>
     <nav>
-        <ul>
+        <ul id="nav">
             <li><a href="./">Home Page</a></li>
             <li><a href="mapsindex">Maps</a></li>
             <li><a href="viewclubs">Clubs</a></li>
