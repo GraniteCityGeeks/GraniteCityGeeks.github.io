@@ -72,3 +72,14 @@ session_start();
         </div>
     </div>
 </header>
+<script src="http://gcg.azurewebsites.net/healthFinal/js/jquery.js"></script>
+<script src="http://gcg.azurewebsites.net/healthFinal/js/bootstrap.min.js"></script>
+
+<script>
+
+
+    $('.carousel').carousel({
+        interval: 5000
+    })
+
+</script>
