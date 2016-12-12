@@ -40,6 +40,9 @@ $rules = array(
     '/healthFinal/webPages/dbconnect' => "/dbconnect",
     '/healthFinal/webPages/editHealth' => "/editHealth",
     '/healthFinal/webPages/editnewsfeed' => "/editnewsfeed",
+    'ViewArticles' => "/ViewArticles",
+    'deleteArticle' => "/deleteArticle/(?'clubarticleid'[\w\-]+)",
+    'confirmArticle' => "/confirmArticle/(?'clubarticleid'[\w\-]+)",
     //
     // Home Page
     //
