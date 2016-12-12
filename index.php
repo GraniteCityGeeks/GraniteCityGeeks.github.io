@@ -40,8 +40,9 @@ include ("ClubWeb/inc/scripts/Header.php");
 
 </php>
 include ("ClubWeb/inc/scripts/Footer.php");
-</body>
 ?>
+</body>
+
 
 </html>
 
