@@ -30,7 +30,7 @@
             <li><a href="./">Home Page</a></li>
             <li><a href="mapsindex">Maps</a></li>
             <li><a href="viewclubs">Clubs</a></li>
-            <li><a href="http://gcg.azurewebsites.net/ClubWeb/healthyLiving">Health</a></li>
+            <li><a href="http://gcg.azurewebsites.net/ClubWeb/index">Health</a></li>
             <?
             if ($_SESSION['accessLevelID'] == 2){
                 echo "<li><a href='clubarticle'>Add Club Article</a></li>";
