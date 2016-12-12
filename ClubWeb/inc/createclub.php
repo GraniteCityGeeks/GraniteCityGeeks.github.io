@@ -77,9 +77,9 @@ if (isset($_SESSION['username'])) //SESSION DOES EXIST
         $clubtxt = $_POST["ClubDescription"];
         $clubgenre = $_POST["genre"];
         $clubavatar = $_POST["avatar"];
-        $sql = sprintf("INSERT INTO port_club(clubTitle, description, genreid, photoid, clubcalendar, ownerid) VALUES('$clubtitle', '$clubtxt', '$clubgenre', '$clubavatar', 'No events upcoming', $userid)",
-                        mysqli_real_escape_string($clubtitle),
-                        mysqli_real_escape_string($clubtxt));
+        $db->real_escape_string($clubtitle);
+        $db->real_escape_string($clubtxt);
+        $sql = "INSERT INTO port_club(clubTitle, description, genreid, photoid, clubcalendar, ownerid) VALUES('$clubtitle', '$clubtxt', '$clubgenre', '$clubavatar', 'No events upcoming', $userid)";
 
 
 
