@@ -43,7 +43,7 @@
 
             </ul>
 
-                <ul class="nav right">
+                <ul class="nav ul right">
                      <li ><label style="Width=300px Font-Bold=true" ID="WelcomeLabel">Welcome User</label> </li>
                 </ul>
 
