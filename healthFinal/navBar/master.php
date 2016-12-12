@@ -40,8 +40,12 @@
                         </ul>
                      </ul>
                          </li>
-                <li class="right"><label style="Width=300px Font-Bold=true" ID="WelcomeLabel">Welcome User</label> </li>
+
             </ul>
+
+                <ul class="nav right">
+                     <li ><label style="Width=300px Font-Bold=true" ID="WelcomeLabel">Welcome User</label> </li>
+                </ul>
 
         </nav>
 
