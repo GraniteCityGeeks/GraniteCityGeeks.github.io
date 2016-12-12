@@ -7,7 +7,7 @@
     </title>
 
 
-    <link href="/healthFinal/CSS/NavbarMaster.css" rel="stylesheet" />
+    <link href="http://gcg.azurewebsites.net/healthFinal/CSS/NavbarMaster.css" rel="stylesheet" />
 
 </head >
 
@@ -16,12 +16,12 @@
     <header >
         <nav>
             <ul>
-                <li><a href="/healthFinal/webPages/index.php"><b>Home</b></a></li>
+                <li><a href="http://gcg.azurewebsites.net/ClubWeb/index"><b>Home</b></a></li>
                 <li>
-                    <a href="/ClubWeb/inc/Home.php"><b>Clubs</b></a>
+                    <a href="http://gcg.azurewebsites.net/ClubWeb"><b>Clubs</b></a>
                 </li>
-                <li><a href="/healthFinal/webPages/healthyLiving.php"><b>Healthy Living</b></a></li>
-                <li><a href="/ClubWeb/inc/mapsindex.php"><b>Local Trails</b></a></li>
+                <li><a href="http://gcg.azurewebsites.net/ClubWeb/healthLiving"><b>Healthy Living</b></a></li>
+                <li><a href="http://gcg.azurewebsites.net/ClubWeb/mapsindex"><b>Local Trails</b></a></li>
                 <li><a href="#"><b>Login</b></a></li>
                 <li><a href="#"><b>Site Users</b></a>
                     <ul>
