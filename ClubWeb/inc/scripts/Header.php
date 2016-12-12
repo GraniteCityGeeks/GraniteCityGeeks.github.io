@@ -46,6 +46,7 @@
                 echo "<li><a href='modifyclub'>modify your Club</a></li>";
                 echo "<li><a href='MarkerAdmin'>Create Map Info</a></li>";
                 echo "<li><a href='view'>View Users</a></li>";
+                echo "<li><a href='ViewArticles'>View Articless</a></li>";
             } else {
             }
             ?>
