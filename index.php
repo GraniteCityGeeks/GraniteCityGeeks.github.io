@@ -118,7 +118,7 @@
 </div>
 
 <?PHP
-include ("ClubWeb/inc/scripts/Footer.php");
+include ("/inc/scripts/Footer.php");
 ?>
 
 </body>
