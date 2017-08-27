@@ -4,11 +4,11 @@ session_start();
 
 <!DOCTYPE html>
 <html lang="en">
-<link href="/basicstyle.css" rel="stylesheet" />
+
 <head>
 
     <meta charset="UTF-8">
-    <title>Sportlethen</title>
+
     <!-- Title -->
     <title>Go Portlethen!</title>
     <!-- Meta -->
