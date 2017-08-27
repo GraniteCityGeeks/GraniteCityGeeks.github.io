@@ -9,7 +9,25 @@ session_start();
 
     <meta charset="UTF-8">
     <title>Sportlethen</title>
-
+    <!-- Title -->
+    <title>Go Portlethen!</title>
+    <!-- Meta -->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Portlethen (and surrounding communities) Information Resource">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <!-- Favicon -->
+    <link href="favicon.ico" rel="shortcut icon">
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/Style/assets/css/bootstrap.css" rel="stylesheet">
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="/Style/assets/css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="/Style/assets/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="/Style/assets/css/nexus.css" rel="stylesheet">
+    <link rel="stylesheet" href="/Style/assets/css/responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="/Style/assets/css/custom.css" rel="stylesheet">
+    <!-- Google Fonts-->
+    <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -31,25 +49,7 @@ session_start();
     <html lang="en">
     <!--<![endif]-->
     <head>
-        <!-- Title -->
-        <title>Go Portlethen!</title>
-        <!-- Meta -->
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-        <meta name="description" content="Portlethen (and surrounding communities) Information Resource">
-        <meta name="author" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-        <!-- Favicon -->
-        <link href="favicon.ico" rel="shortcut icon">
-        <!-- Bootstrap Core CSS -->
-        <link rel="stylesheet" href="/Style/assets/css/bootstrap.css" rel="stylesheet">
-        <!-- Template CSS -->
-        <link rel="stylesheet" href="/Style/assets/css/animate.css" rel="stylesheet">
-        <link rel="stylesheet" href="/Style/assets/css/font-awesome.css" rel="stylesheet">
-        <link rel="stylesheet" href="/Style/assets/css/nexus.css" rel="stylesheet">
-        <link rel="stylesheet" href="/Style/assets/css/responsive.css" rel="stylesheet">
-        <link rel="stylesheet" href="/Style/assets/css/custom.css" rel="stylesheet">
-        <!-- Google Fonts-->
-        <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300" rel="stylesheet" type="text/css">
+
     </head>
     <body>
     <div id="body-bg">
