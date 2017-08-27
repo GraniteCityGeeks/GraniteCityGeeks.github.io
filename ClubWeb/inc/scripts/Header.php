@@ -37,34 +37,7 @@ session_start();
         echo "<h3><a href='register'>Register</a></h3>";
     }
     ?>
-    <nav>
-        <ul id="nav">
-            <li><a href="./">Home Page</a></li>
-            <li><a href="mapsindex">Maps</a></li>
-            <li><a href="viewclubs">Clubs</a></li>
-            <li><a href="http://gcg.azurewebsites.net/ClubWeb/index">Health</a></li>
-            <?
-            if ($_SESSION['accessLevelID'] == 2){
-                echo "<li><a href='clubarticle'>Add Club Article</a></li>";
-                echo "<li><a href='MarkerAdmin'>Create Map Info</a></li>";
-            } else if ($_SESSION['accessLevelID'] == 3){
-                echo "<li><a href='MarkerAdmin'>Maps Editing</a></li>";
-            } else if ($_SESSION['accessLevelID'] == 4){
-                echo "<li><a href='createclub'>Create Club</a></li>";
-                echo "<li><a href='create_club_article'>Creat Club Article</a></li>";
-            } else if ($_SESSION['accessLevelID'] == 5){
-                echo "<li><a href='createclub'>Create Clubs</a></li>";
-                echo "<li><a href='clubarticle'>Create Club Article</a></li>";
-                echo "<li><a href='modifyclub'>modify your Club</a></li>";
-                echo "<li><a href='MarkerAdmin'>Create Map Info</a></li>";
-                echo "<li><a href='view'>View Users</a></li>";
-                echo "<li><a href='ViewArticles'>View Articles</a></li>";
-            } else {
-            }
-            ?>
 
-        </ul>
-    </nav>
 
     <div id="body-bg">
         <!-- Phone/Email -->
@@ -112,9 +85,7 @@ session_start();
                                     <a href="http://healthplaceholder.com" class="fa-comment ">Health</a>
 
                                 </li>
-                                <li>
-                                    <a href="http://side-pardon-3000.codio.io/GoPortlethen/HTML/contact.html" class="fa-comment ">Contact</a>
-                                </li>
+
 
 
                             </ul>
