@@ -76,9 +76,9 @@ session_start();
                 <div class="row">
                     <!-- Logo -->
                     <div class="logo">
-                        <a href="index.php" title="">
+                        <a href="http://gcg.azurewebsites.net/ClubWeb/" title="">
                             <!--  <img src="Style/assets/img/logo.png" alt="Logo" /> -->
-                            <h1>Go Portlethen</h1>
+
                         </a>
                     </div>
                     <!-- End Logo -->
@@ -95,21 +95,21 @@ session_start();
                             <ul id="hornavmenu" class="nav navbar-nav">
 
                                 <li>
-                                    <a href="index.php" class="fa-home active">Home</a>
+                                    <a href="http://gcg.azurewebsites.net/ClubWeb/" class="fa-home active">Home</a>
                                 </li>
                                 <li>
 
                                 </li>
                                 <li>
-                                    <a href="http://side-pardon-3000.codio.io/GoPortlethen/PHP/Clubs.php" class="fa-comment ">Clubs</a>
+                                    <a href="http://gcg.azurewebsites.net/ClubWeb/viewclubs" class="fa-comment ">Clubs</a>
 
                                 </li>
                                 <li>
-                                    <a href="http://side-pardon-3000.codio.io/GoPortlethen/PHP/map.php" class="fa-comment ">Maps</a>
+                                    <a href="http://gcg.azurewebsites.net/ClubWeb/mapsindex" class="fa-comment ">Maps</a>
 
                                 </li>
                                 <li>
-                                    <a href="http://side-pardon-3000.codio.io/GoPortlethen/HTML/health.html" class="fa-comment ">Health</a>
+                                    <a href="http://healthplaceholder.com" class="fa-comment ">Health</a>
 
                                 </li>
                                 <li>
