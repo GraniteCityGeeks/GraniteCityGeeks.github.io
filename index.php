@@ -36,7 +36,27 @@
 
 
 <body>
+<div id="body-bg">
+    <!-- Phone/Email -->
 
+    <!-- End Phone/Email -->
+    <!-- Header -->
+    <div id="header">
+        <div class="container">
+            <div class="row">
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="index.php" title="">
+                        <!--  <img src="Style/assets/img/logo.png" alt="Logo" /> -->
+                        <h1>Go Portlethen</h1>
+                    </a>
+                </div>
+                <!-- End Logo -->
+            </div>
+        </div>
+    </div>
+    <!-- End Header -->
+    <!-- Top Menu -->
 <ul id="nav">
     <li><a href="http://gcg.azurewebsites.net/ClubWeb/">Clubs</a></li>
     <li><a href="http://gcg.azurewebsites.net/ClubWeb/mapsindex">Maps</a></li>
