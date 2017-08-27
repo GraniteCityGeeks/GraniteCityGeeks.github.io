@@ -57,10 +57,39 @@
     </div>
     <!-- End Header -->
     <!-- Top Menu -->
-<ul id="nav">
-    <li><a href="http://gcg.azurewebsites.net/ClubWeb/">Clubs</a></li>
-    <li><a href="http://gcg.azurewebsites.net/ClubWeb/mapsindex">Maps</a></li>
-    <li><a href="http://gcg.azurewebsites.net/ClubWeb/healthyliving">Healthy Living</a></li>
+    <div id="hornav" class="bottom-border-shadow">
+        <div class="container no-padding border-bottom">
+            <div class="row">
+                <div class="col-md-8 no-padding">
+                    <div class="visible-lg">
+                        <ul id="hornavmenu" class="nav navbar-nav">
+
+                            <li>
+                                <a href="index.php" class="fa-home active">Home</a>
+                            </li>
+                            <li>
+
+                            </li>
+                            <li>
+                                <a href="http://side-pardon-3000.codio.io/GoPortlethen/PHP/Clubs.php" class="fa-comment ">Clubs</a>
+
+                            </li>
+                            <li>
+                                <a href="http://side-pardon-3000.codio.io/GoPortlethen/PHP/map.php" class="fa-comment ">Maps</a>
+
+                            </li>
+                            <li>
+                                <a href="http://side-pardon-3000.codio.io/GoPortlethen/HTML/health.html" class="fa-comment ">Health</a>
+
+                            </li>
+                            <li>
+                                <a href="http://side-pardon-3000.codio.io/GoPortlethen/HTML/contact.html" class="fa-comment ">Contact</a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </div>
 
 </ul>
 
