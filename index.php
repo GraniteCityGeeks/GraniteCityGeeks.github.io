@@ -17,10 +17,7 @@
 
 <body>
 
-<ul id="nav">
-    <li><a href="http://gcg.azurewebsites.net/ClubWeb/">Clubs</a></li>
-    <li><a href="http://gcg.azurewebsites.net/ClubWeb/mapsindex">Maps</a></li>
-    <li><a href="http://gcg.azurewebsites.net/ClubWeb/healthyliving">Healthy Living</a></li>
+
 
 </ul>
 
