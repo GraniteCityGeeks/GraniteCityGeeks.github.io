@@ -56,3 +56,7 @@ include ("ClubWeb/inc/scripts/Footer.php");
 
 
 </html>
+<?php
+include("ClubWeb/inc/scripts/dbconnect.php");
+include("ClubWeb/inc/scripts/header.php");
+?>
