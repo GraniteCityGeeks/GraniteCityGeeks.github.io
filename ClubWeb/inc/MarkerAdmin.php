@@ -23,6 +23,7 @@ session_start();
       <link rel="stylesheet" href="assets/css/responsive.css" rel="stylesheet">
       <link rel="stylesheet" href="assets/css/custom.css" rel="stylesheet">
       <link rel="stylesheet" href="assets/css/map.css" rel="stylesheet">
+
       <!-- Google Fonts-->
       <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300" rel="stylesheet" type="text/css">
   </head>
