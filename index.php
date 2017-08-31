@@ -1,8 +1,8 @@
 
 <?PHP
 include ("ClubWeb/inc/scripts/Footer.php");
-include("scripts/dbconnect.php");
-include("scripts/header.php");
+include("ClubWeb/inc/scripts/dbconnect.php");
+include("ClubWeb/inc/scripts/header.php");
 ?>
 <!DOCTYPE html>
 <html>
