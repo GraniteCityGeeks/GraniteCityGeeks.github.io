@@ -1,6 +1,5 @@
 
 <?PHP
-include ("ClubWeb/inc/scripts/Footer.php");
 include("ClubWeb/inc/scripts/dbconnect.php");
 include("ClubWeb/inc/scripts/header.php");
 ?>
