@@ -17,12 +17,7 @@ session_start();
       <!-- Bootstrap Core CSS -->
       <link rel="stylesheet" href="HTML/assets/css/bootstrap.css" rel="stylesheet">
       <!-- Template CSS -->
-      <link rel="stylesheet" href="assets/css/animate.css" rel="stylesheet">
-      <link rel="stylesheet" href="assets/css/font-awesome.css" rel="stylesheet">
-      <link rel="stylesheet" href="assets/css/nexus.css" rel="stylesheet">
-      <link rel="stylesheet" href="assets/css/responsive.css" rel="stylesheet">
-      <link rel="stylesheet" href="assets/css/custom.css" rel="stylesheet">
-      <link rel="stylesheet" href="assets/css/map.css" rel="stylesheet">
+      <link rel="stylesheet" href="/ClubWeb/inc/scripts/Style/css/map.css" rel="stylesheet">
 
       <!-- Google Fonts-->
       <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300" rel="stylesheet" type="text/css">
@@ -156,23 +151,23 @@ session_start();
     <!--Map src -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC8HwZx1Aknt-BHgT2vYtcgeBBvokVzWU&callback=initMap"
       async defer></script>
-    <script type="text/javascript" src="assets/js/map.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/ClubWeb/inc/assets/js/map.js" type="text/javascript"></script>
     <!--jquery -->
-    <script type="text/javascript" src="assets/js/jquery.min.js" type="text/javascript"></script>
-    <script type="text/javascript" src="assets/js/bootstrap.min.js" type="text/javascript"></script>
-    <script type="text/javascript" src="assets/js/scripts.js"></script>
+    <script type="text/javascript" src="/ClubWeb/inc/scripts/Style/assets/js/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/ClubWeb/inc/scripts/Style/assets/js/bootstrap.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/ClubWeb/inc/scripts/Style/assets/js/scripts.js"></script>
     <!-- Isotope - Portfolio Sorting -->
-    <script type="text/javascript" src="assets/js/jquery.isotope.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/ClubWeb/inc/scripts/Style/assets/js/jquery.isotope.js" type="text/javascript"></script>
     <!-- Mobile Menu - Slicknav -->
-    <script type="text/javascript" src="assets/js/jquery.slicknav.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/ClubWeb/inc/scripts/Style/assets/js/jquery.slicknav.js" type="text/javascript"></script>
     <!-- Animate on Scroll-->
-    <script type="text/javascript" src="assets/js/jquery.visible.js" charset="utf-8"></script>
+    <script type="text/javascript" src="/ClubWeb/inc/scripts/Style/assets/js/jquery.visible.js" charset="utf-8"></script>
     <!-- Sticky Div -->
-    <script type="text/javascript" src="assets/js/jquery.sticky.js" charset="utf-8"></script>
+    <script type="text/javascript" src="/ClubWeb/inc/scripts/Style/assets/js/jquery.sticky.js" charset="utf-8"></script>
     <!-- Slimbox2-->
-    <script type="text/javascript" src="assets/js/slimbox2.js" charset="utf-8"></script>
+    <script type="text/javascript" src="/ClubWeb/inc/scripts/Style/assets/js/slimbox2.js" charset="utf-8"></script>
     <!-- Modernizr -->
-    <script src="assets/js/modernizr.custom.js" type="text/javascript"></script>
+    <script src="/ClubWeb/inc/scripts/Style/modernizr.custom.js" type="text/javascript"></script>
     <!-- End JS -->
   </body>
 </html>
