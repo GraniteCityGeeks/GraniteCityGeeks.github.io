@@ -8,7 +8,7 @@ session_start();
     <!-- Title -->
     <title>Go Portlethen!</title>
     <!-- Favicon -->
-    <link rel="shortcut icon" href=Style/"favicon.ico" />
+    <link rel="shortcut icon" href="Style/favicon.ico" />
     <!-- Meta -->
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="Portlethen (and surrounding communities) Information Resource">
