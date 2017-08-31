@@ -1,24 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<link rel="stylesheet" href="basicstyle.css">
-<!--
-<link href="../CoreCSS/bootstrap.min.css" rel="stylesheet" />
-<link href="../CoreCSS/half-slider.css" rel="stylesheet" />
-<link href="../CoreCSS/healthPage.css" rel="stylesheet" />
--->
-<head>
-    <title> Go Portlethen </title>
-</head>
-<h1> Granite City Geeks - Go Portlethen</h1>
-<h2> Discover Aberdeen </h2>
-<br>
+
+<?PHP
+include ("ClubWeb/inc/scripts/Footer.php");
+?>
+
+
+
 
 
 
 <body>
-<?PHP
-include ("ClubWeb/inc/scripts/Footer.php");
-?>
+
 
 </body>
 <header>
