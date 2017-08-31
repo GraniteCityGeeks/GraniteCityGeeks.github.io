@@ -4,6 +4,14 @@ include ("ClubWeb/inc/scripts/Footer.php");
 include("scripts/dbconnect.php");
 include("scripts/header.php");
 ?>
+<!DOCTYPE html>
+<html>
+  <head>
+
+  </head>
+  <body>
+
+
 
 
 
