@@ -17,12 +17,12 @@ session_start();
       <!-- Bootstrap Core CSS -->
       <link rel="stylesheet" href="HTML/assets/css/bootstrap.css" rel="stylesheet">
       <!-- Template CSS -->
-      <link rel="stylesheet" href="HTML/assets/css/animate.css" rel="stylesheet">
-      <link rel="stylesheet" href="HTML/assets/css/font-awesome.css" rel="stylesheet">
-      <link rel="stylesheet" href="HTML/assets/css/nexus.css" rel="stylesheet">
-      <link rel="stylesheet" href="HTML/assets/css/responsive.css" rel="stylesheet">
-      <link rel="stylesheet" href="HTML/assets/css/custom.css" rel="stylesheet">
-      <link rel="stylesheet" href="HTML/assets/css/map.css" rel="stylesheet">
+      <link rel="stylesheet" href="assets/css/animate.css" rel="stylesheet">
+      <link rel="stylesheet" href="assets/css/font-awesome.css" rel="stylesheet">
+      <link rel="stylesheet" href="assets/css/nexus.css" rel="stylesheet">
+      <link rel="stylesheet" href="assets/css/responsive.css" rel="stylesheet">
+      <link rel="stylesheet" href="assets/css/custom.css" rel="stylesheet">
+      <link rel="stylesheet" href="assets/css/map.css" rel="stylesheet">
       <!-- Google Fonts-->
       <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300" rel="stylesheet" type="text/css">
   </head>
