@@ -40,7 +40,7 @@ session_start();
             <input type="text" id="txtboxMarkerName" class="form-control" placeholder="Enter marker name here">
 
             <label>Description</label>
-            <textarea class="form-control" name="description">
+            <textarea class="form-control" name="description"></textarea>
 
             <label for="txtboxLat"> Latitude </label>
             <input type="text" id="txtboxLat" class="form-control" placeholder="Latitude">
