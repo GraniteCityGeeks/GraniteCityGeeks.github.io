@@ -50,7 +50,92 @@ include ("ClubWeb/inc/scripts/Footer.php");
 ?>
 
 </body>
+<header>
+    <a href="/index.php"><h1>Go Portlethen</h1></a>
+    <?
+    if (isset($_SESSION['username'])) {
+        echo "<h3><a href='logout'>Logout({$_SESSION['username']})<img src={$_SESSION['photoID']} alt=\"Mountain View\" style=\"width:35px;height:35px;\"></a></h3>";
+    } else {
+        echo "<h3><a href='login'>Login</a></h3>";
+        echo "<h3><a href='register'>Register</a></h3>";
+    }
+    ?>
 
+
+    <div id="body-bg">
+        <!-- Phone/Email -->
+
+        <!-- End Phone/Email -->
+        <!-- Header -->
+        <div id="header">
+            <div class="container">
+                <div class="row">
+                    <!-- Logo -->
+                    <div class="logo">
+                        <a href="http://gcg.azurewebsites.net/ClubWeb/" title="">
+                            <!--  <img src="Style/assets/img/logo.png" alt="Logo" /> -->
+
+                        </a>
+                    </div>
+                    <!-- End Logo -->
+                </div>
+            </div>
+        </div>
+        <!-- End Header -->
+        <!-- Top Menu -->
+        <div id="hornav" class="bottom-border-shadow">
+            <div class="container no-padding border-bottom">
+                <div class="row">
+                    <div class="col-md-8 no-padding">
+                        <div class="visible-lg">
+                            <ul id="hornavmenu" class="nav navbar-nav">
+
+                                <li>
+                                    <a href="http://gcg.azurewebsites.net/ClubWeb/" class="fa-home active">Home</a>
+                                </li>
+                                <li>
+
+                                </li>
+                                <li>
+                                    <a href="http://gcg.azurewebsites.net/ClubWeb/viewclubs" class="fa-comment ">Clubs</a>
+
+                                </li>
+                                <li>
+                                    <a href="http://gcg.azurewebsites.net/ClubWeb/mapsindex" class="fa-comment ">Maps</a>
+
+                                </li>
+                                <li>
+                                    <a href="http://healthplaceholder.com" class="fa-comment ">Health</a>
+
+                                </li>
+
+
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 no-padding">
+                        <ul class="social-icons pull-right">
+                            <li class="social-rss">
+                                <a href="#" target="_blank" title="RSS"></a>
+                            </li>
+                            <li class="social-twitter">
+                                <a href="#" target="_blank" title="Twitter"></a>
+                            </li>
+                            <li class="social-facebook">
+                                <a href="#" target="_blank" title="Facebook"></a>
+                            </li>
+                            <li class="social-googleplus">
+                                <a href="#" target="_blank" title="Google+"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Top Menu -->
+        <!-- === END HEADER === -->
+</header>
 
 </html>
 <?php
