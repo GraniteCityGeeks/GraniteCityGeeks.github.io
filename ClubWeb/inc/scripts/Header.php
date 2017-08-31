@@ -8,7 +8,7 @@ session_start();
     <!-- Title -->
     <title>Go Portlethen!</title>
     <!-- Favicon -->
-    <link rel="shortcut icon" href="Style/favicon.ico" />
+    <link rel="shortcut icon" href="ClubWeb/inc/scripts/Style/favicon.ico" />
     <!-- Meta -->
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="Portlethen (and surrounding communities) Information Resource">
@@ -26,6 +26,9 @@ session_start();
     <link rel="stylesheet" href="/ClubWeb/inc/scripts/Style/assets/css/custom.css" rel="stylesheet">
     <!-- Google Fonts-->
     <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300" rel="stylesheet" type="text/css">
+    <!-- Map Javascript scripts -->
+
+
 </head>
 
 <body>
