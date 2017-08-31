@@ -43,7 +43,7 @@ session_start();
     }
     ?>
     <header class="main-header" role="banner">
-      <img src="inc/scripts/Style/banner.png" alt="Banner Image"/>
+      <img src="banner.png" alt="Banner Image"/>
     </header>
 
     <div id="body-bg">
