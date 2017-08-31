@@ -42,7 +42,9 @@ session_start();
         echo "<h3><a href='register'>Register</a></h3>";
     }
     ?>
-
+    <header class="main-header" role="banner">
+      <img src="inc/scripts/Style/banner.png" alt="Banner Image"/>
+    </header>
 
     <div id="body-bg">
         <!-- Phone/Email -->
