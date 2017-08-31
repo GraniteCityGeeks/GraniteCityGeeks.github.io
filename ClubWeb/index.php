@@ -1,7 +1,6 @@
 <?
 
-include("inc/scripts/dbconnect.php");
-include("inc/scripts/header.php");
+
 define('INCLUDE_DIR', dirname(__FILE__) . '/inc/');
 $rules = array(
     //
