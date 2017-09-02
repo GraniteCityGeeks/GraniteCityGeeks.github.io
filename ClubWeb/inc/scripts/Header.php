@@ -48,7 +48,7 @@ session_start();
       </center
     </header>
 
-    <div id="body-bg">
+<!--    <div id="body-bg"> -->
         <!-- Phone/Email -->
 
         <!-- End Phone/Email -->
