@@ -42,8 +42,10 @@ session_start();
         echo "<h3><a href='register'>Register</a></h3>";
     }
     ?>
-    <header class="main-header" role="banner">
-      <img src="banner.png" alt="Banner Image"/>
+    <header class="main-header" role="banner" >
+      <center>
+      <img src="banner.png" alt="Banner Image" />
+      </center
     </header>
 
     <div id="body-bg">
