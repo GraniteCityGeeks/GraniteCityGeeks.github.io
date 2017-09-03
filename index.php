@@ -9,15 +9,6 @@ include("ClubWeb/inc/scripts/header.php");
 
   </head>
   <body>
-
-
-
-
-
-
-
-
-<body>
   <div id="slideshow" class="bottom-border-shadow">
               <div class="container no-padding background-white bottom-border">
                   <div class="row">
@@ -34,16 +25,16 @@ include("ClubWeb/inc/scripts/header.php");
                           <!-- Carousel Images -->
                           <div class="carousel-inner">
                               <div class="item active">
-                                  <img src="HTML/assets/img/slideshow/slide1.jpg">
+                                  <img src="ClubWeb/inc/Style/assets/img/slideshow/slide1.jpg">
                               </div>
                               <div class="item">
-                                  <img src="HTML/assets/img/slideshow/slide2.jpg">
+                                  <img src="ClubWeb/inc/Style/assets/img/slideshow/slide2.jpg">
                               </div>
                               <div class="item">
-                                  <img src="HTML/assets/img/slideshow/slide3.jpg">
+                                  <img src="ClubWeb/inc/Style/assets/img/slideshow/slide3.jpg">
                               </div>
                               <div class="item">
-                                  <img src="HTML/assets/img/slideshow/slide4.jpg">
+                                  <img src="ClubWeb/inc/Style/assets/img/slideshow/slide4.jpg">
                               </div>
                           </div>
                           <!-- End Carousel Images -->
@@ -124,7 +115,7 @@ include("ClubWeb/inc/scripts/header.php");
                           <li class="portfolio-item col-sm-4 col-xs-6 margin-bottom-40">
                               <a href="#">
                                   <figure class="animate fadeInLeft">
-                                      <img alt="image1" src="HTML/assets/img/frontpage/image1.jpg">
+                                      <img alt="image1" src="ClubWeb/inc/Style/assets/img/frontpage/image1.jpg">
                                       <figcaption>
                                           <h3>Velit esse molestie</h3>
                                           <span>Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui et everti tamquam suavitate mea.</span>
@@ -137,7 +128,7 @@ include("ClubWeb/inc/scripts/header.php");
                           <li class="portfolio-item col-sm-4 col-xs-6 margin-bottom-40">
                               <a href="#">
                                   <figure class="animate fadeIn">
-                                      <img alt="image2" src="HTML/assets/img/frontpage/image2.jpg">
+                                      <img alt="image2" src="ClubWeb/inc/Style/assets/img/frontpage/image2.jpg">
                                       <figcaption>
                                           <h3>Quam nunc putamus</h3>
                                           <span>Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui et everti tamquam suavitate mea.</span>
@@ -150,7 +141,7 @@ include("ClubWeb/inc/scripts/header.php");
                           <li class="portfolio-item col-sm-4 col-xs-6 margin-bottom-40">
                               <a href="#">
                                   <figure class="animate fadeInRight">
-                                      <img alt="image3" src="HTML/assets/img/frontpage/image3.jpg">
+                                      <img alt="image3" src="ClubWeb/inc/Style/assets/img/frontpage/image3.jpg">
                                       <figcaption>
                                           <h3>Placerat facer possim</h3>
                                           <span>Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui et everti tamquam suavitate mea.</span>
@@ -163,7 +154,7 @@ include("ClubWeb/inc/scripts/header.php");
                           <li class="portfolio-item col-sm-4 col-xs-6 margin-bottom-40">
                               <a href="#">
                                   <figure class="animate fadeInLeft">
-                                      <img alt="image4" src="HTML/assets/img/frontpage/image4.jpg">
+                                      <img alt="image4" src="ClubWeb/inc/Style/assets/img/frontpage/image4.jpg">
                                       <figcaption>
                                           <h3>Nam liber tempor</h3>
                                           <span>Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui et everti tamquam suavitate mea.</span>
@@ -176,7 +167,7 @@ include("ClubWeb/inc/scripts/header.php");
                           <li class="portfolio-item col-sm-4 col-xs-6 margin-bottom-40">
                               <a href="#">
                                   <figure class="animate fadeIn">
-                                      <img alt="image5" src="HTML/assets/img/frontpage/image5.jpg">
+                                      <img alt="image5" src="ClubWeb/inc/Style/assets/img/frontpage/image5.jpg">
                                       <figcaption>
                                           <h3>Donec non urna</h3>
                                           <span>Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui et everti tamquam suavitate mea.</span>
@@ -189,7 +180,7 @@ include("ClubWeb/inc/scripts/header.php");
                           <li class="portfolio-item col-sm-4 col-xs-6 margin-bottom-40">
                               <a href="#">
                                   <figure class="animate fadeInRight">
-                                      <img alt="image6" src="HTML/assets/img/frontpage/image6.jpg">
+                                      <img alt="image6" src="ClubWeb/inc/Style/assets/img/frontpage/image6.jpg">
                                       <figcaption>
                                           <h3>Nullam consectetur</h3>
                                           <span>Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui et everti tamquam suavitate mea.</span>
@@ -246,21 +237,21 @@ include("ClubWeb/inc/scripts/header.php");
           </div>
           <!-- End Footer -->
           <!-- JS -->
-          <script type="text/javascript" src="HTML/assets/js/jquery.min.js" type="text/javascript"></script>
-          <script type="text/javascript" src="HTML/assets/js/bootstrap.min.js" type="text/javascript"></script>
-          <script type="text/javascript" src="HTML/assets/js/scripts.js"></script>
+          <script type="text/javascript" src="ClubWeb/inc/Style/assets/js/jquery.min.js" type="text/javascript"></script>
+          <script type="text/javascript" src="ClubWeb/inc/Style/assets/js/bootstrap.min.js" type="text/javascript"></script>
+          <script type="text/javascript" src="ClubWeb/inc/Style/assets/js/scripts.js"></script>
           <!-- Isotope - Portfolio Sorting -->
-          <script type="text/javascript" src="HTML/assets/js/jquery.isotope.js" type="text/javascript"></script>
+          <script type="text/javascript" src="ClubWeb/inc/Style/assets/js/jquery.isotope.js" type="text/javascript"></script>
           <!-- Mobile Menu - Slicknav -->
-          <script type="text/javascript" src="HTML/assets/js/jquery.slicknav.js" type="text/javascript"></script>
+          <script type="text/javascript" src="ClubWeb/inc/Style/assets/js/jquery.slicknav.js" type="text/javascript"></script>
           <!-- Animate on Scroll-->
-          <script type="text/javascript" src=HTML/"assets/js/jquery.visible.js" charset="utf-8"></script>
+          <script type="text/javascript" src=ClubWeb/inc/Style/assets/js/jquery.visible.js" charset="utf-8"></script>
           <!-- Sticky Div -->
-          <script type="text/javascript" src="HTML/assets/js/jquery.sticky.js" charset="utf-8"></script>
+          <script type="text/javascript" src="ClubWeb/inc/Style/assets/js/jquery.sticky.js" charset="utf-8"></script>
           <!-- Slimbox2-->
-          <script type="text/javascript" src="HTML/assets/js/slimbox2.js" charset="utf-8"></script>
+          <script type="text/javascript" src="ClubWeb/inc/Style/assets/js/slimbox2.js" charset="utf-8"></script>
           <!-- Modernizr -->
-          <script src="HTML/assets/js/modernizr.custom.js" type="text/javascript"></script>
+          <script src="ClubWeb/inc/Style/assets/js/modernizr.custom.js" type="text/javascript"></script>
           <!-- End JS -->
   </body>
 </html>
