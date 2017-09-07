@@ -24,6 +24,8 @@ session_start();
     <link rel="stylesheet" href="/ClubWeb/inc/scripts/Style/assets/css/nexus.css" rel="stylesheet">
     <link rel="stylesheet" href="/ClubWeb/inc/scripts/Style/assets/css/responsive.css" rel="stylesheet">
     <link rel="stylesheet" href="/ClubWeb/inc/scripts/Style/assets/css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="/ClubWeb/inc/scripts/Style/assets/css/map.css" rel="stylesheet">
+
     <!-- Google Fonts-->
     <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300" rel="stylesheet" type="text/css">
     <!-- Map Javascript scripts -->

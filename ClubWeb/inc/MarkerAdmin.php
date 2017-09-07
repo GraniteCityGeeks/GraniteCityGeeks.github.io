@@ -14,14 +14,14 @@ session_start();
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
       <!-- Favicon -->
       <link href="favicon.ico" rel="shortcut icon">
-      <!-- Bootstrap Core CSS -->
-      <link rel="stylesheet" href="HTML/assets/css/bootstrap.css" rel="stylesheet">
+
       <!-- Template CSS -->
       <link rel="stylesheet" href="/ClubWeb/inc/assets/css/map.css" rel="stylesheet">
 
       <!-- Google Fonts-->
       <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300" rel="stylesheet" type="text/css">
   </head>
+
   <body>
     <!-- Top Menu -->
     <!-- end header -->
@@ -30,7 +30,7 @@ session_start();
       <div class="row">
         <!--Map-->
         <div class="col-md-12">
-          <div id="map"></div>
+          <div id="map" style="width:100%; height:500px"></div>
         </div>
       </div>
       <div class="row">
