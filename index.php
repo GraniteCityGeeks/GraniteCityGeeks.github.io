@@ -25,16 +25,16 @@ include("ClubWeb/inc/scripts/header.php");
                           <!-- Carousel Images -->
                           <div class="carousel-inner">
                               <div class="item active">
-                                  <img src="ClubWeb/inc/Style/assets/img/slideshow/slide1.jpg">
+                                  <img src="slideshow/slide1.jpg">
                               </div>
                               <div class="item">
-                                  <img src="ClubWeb/inc/Style/assets/img/slideshow/slide2.jpg">
+                                  <img src="slideshow/slide2.jpg">
                               </div>
                               <div class="item">
-                                  <img src="ClubWeb/inc/Style/assets/img/slideshow/slide3.jpg">
+                                  <img src="slideshow/slide3.jpg">
                               </div>
                               <div class="item">
-                                  <img src="ClubWeb/inc/Style/assets/img/slideshow/slide4.jpg">
+                                  <img src="slideshow/slide4.jpg">
                               </div>
                           </div>
                           <!-- End Carousel Images -->
