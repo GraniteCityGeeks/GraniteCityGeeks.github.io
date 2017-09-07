@@ -1,12 +1,11 @@
+<?php
+include 'scripts/header.php';
+include("dbconnect.php");
+session_start();
+?>
 <html>
 
 <head>
-
-
-
-    <?php
-    include("dbconnect.php");
-    ?>
   <!-- Title -->
   <title>Go Portlethen!</title>
   <!-- Meta -->
@@ -120,28 +119,6 @@
       </div>
     </div>
   </div>
-
-  <!-- JS -->
-  <script type="text/javascript" src="assets/js/jquery.min.js" type="text/javascript"></script>
-  <script type="text/javascript" src="assets/js/bootstrap.min.js" type="text/javascript"></script>
-  <script type="text/javascript" src="assets/js/scripts.js"></script>
-  <!-- Isotope - Portfolio Sorting -->
-  <script type="text/javascript" src="assets/js/jquery.isotope.js" type="text/javascript"></script>
-  <!-- Mobile Menu - Slicknav -->
-  <script type="text/javascript" src="assets/js/jquery.slicknav.js" type="text/javascript"></script>
-  <!-- Animate on Scroll-->
-  <script type="text/javascript" src="assets/js/jquery.visible.js" charset="utf-8"></script>
-  <!-- Sticky Div -->
-  <script type="text/javascript" src="assets/js/jquery.sticky.js" charset="utf-8"></script>
-  <!-- Slimbox2-->
-  <script type="text/javascript" src="assets/js/slimbox2.js" charset="utf-8"></script>
-  <!-- Modernizr -->
-  <script src="HTML/assets/js/modernizr.custom.js" type="text/javascript"></script>
-  <!-- More maps -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC8HwZx1Aknt-BHgT2vYtcgeBBvokVzWU&callback=initMap"
-    async defer></script>
-  <script type="text/javascript" src="HTML/assets/js/map.js" type="text/javascript"></script>
-  <!-- End JS -->
   <!-- Footer -->
   <div id="footer" class="background-grey">
       <div class="container">
@@ -163,22 +140,35 @@
   <!-- End Footer -->
 
 
-  <!-- JS -->
-  <script type="text/javascript" src="HTML/assets/js/jquery.min.js" type="text/javascript"></script>
-  <script type="text/javascript" src="HTML/assets/js/bootstrap.min.js" type="text/javascript"></script>
-  <script type="text/javascript" src="HTML/assets/js/scripts.js"></script>
+  <script type="text/javascript" href="/ClubWeb/inc/assets/js/map.js" type="text/javascript"></script>
+  <!--jquery -->
+  <script type="text/javascript" href="/ClubWeb/inc/assets/js/jquery.min.js" type="text/javascript"></script>
+  <script type="text/javascript" href="/ClubWeb/inc/assets/js/bootstrap.min.js" type="text/javascript"></script>
+  <script type="text/javascript" href="/ClubWeb/inc/assets/js/scripts.js"></script>
   <!-- Isotope - Portfolio Sorting -->
-  <script type="text/javascript" src="HTML/assets/js/jquery.isotope.js" type="text/javascript"></script>
+  <script type="text/javascript" href="/ClubWeb/inc/scripts/Style/assets/js/jquery.isotope.js" type="text/javascript"></script>
   <!-- Mobile Menu - Slicknav -->
-  <script type="text/javascript" src="HTML/assets/js/jquery.slicknav.js" type="text/javascript"></script>
+  <script type="text/javascript" href="/ClubWeb/inc/assets/js/jquery.slicknav.js" type="text/javascript"></script>
   <!-- Animate on Scroll-->
-  <script type="text/javascript" src=HTML/"assets/js/jquery.visible.js" charset="utf-8"></script>
+  <script type="text/javascript" href="/ClubWeb/inc/assets/js/jquery.visible.js" charset="utf-8"></script>
   <!-- Sticky Div -->
-  <script type="text/javascript" src="HTML/assets/js/jquery.sticky.js" charset="utf-8"></script>
+  <script type="text/javascript" href="/ClubWeb/inc/assets/js/jquery.sticky.js" charset="utf-8"></script>
   <!-- Slimbox2-->
-  <script type="text/javascript" src="HTML/assets/js/slimbox2.js" charset="utf-8"></script>
+  <script type="text/javascript" href="/ClubWeb/inc/assets/js/slimbox2.js" charset="utf-8"></script>
   <!-- Modernizr -->
-  <script src="HTML/assets/js/modernizr.custom.js" type="text/javascript"></script>
+  <script href="/ClubWeb/inc/scripts/Style/modernizr.custom.js" type="text/javascript"></script>
   <!-- End JS -->
+  <!--<script type="text/javascript">
+    function initMap() {
+      var map;
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat:57.05474, lng:-2.13066},
+        zoom: 15
+      });
+    }-->
+    </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC8HwZx1Aknt-BHgT2vYtcgeBBvokVzWU&callback=initMap"
+    async defer></script>
+
 </body>
 </html>

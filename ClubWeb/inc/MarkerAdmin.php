@@ -17,7 +17,7 @@ session_start();
       <!-- Bootstrap Core CSS -->
       <link rel="stylesheet" href="HTML/assets/css/bootstrap.css" rel="stylesheet">
       <!-- Template CSS -->
-      <link rel="stylesheet" href="/ClubWeb/inc/scripts/Style/css/map.css" rel="stylesheet">
+      <link rel="stylesheet" href="/ClubWeb/inc/assets/css/map.css" rel="stylesheet">
 
       <!-- Google Fonts-->
       <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300" rel="stylesheet" type="text/css">
@@ -27,6 +27,12 @@ session_start();
     <!-- end header -->
     <!--begin content -->
     <div class="container-fluid">
+      <div class="row">
+        <!--Map-->
+        <div class="col-md-12">
+          <div id="map"></div>
+        </div>
+      </div>
       <div class="row">
         <!--Marker-->
         <div class="col-md-4">
@@ -89,11 +95,6 @@ session_start();
             <input type="submit" name="routesubmit" class="form-control" value="add to map">
           </div>
         </div>
-
-        <!--Map-->
-        <div class="col-md-4">
-          <div id="map"></div>
-        </div>
     </div>
     <div class="row">
       <div class="col-md-12">
@@ -146,10 +147,10 @@ session_start();
             ?>
 
         </div>
-
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC8HwZx1Aknt-BHgT2vYtcgeBBvokVzWU&callback=initMap"
-          async defer></script>
-        <script type="text/javascript" href="/ClubWeb/inc/assets/js/map.js" type="text/javascript"></script>
+      </div>
+    </div>
+  </div>
+        <!--<script type="text/javascript" href="/ClubWeb/inc/assets/js/map.js" type="text/javascript"></script> -->
         <!--jquery -->
         <script type="text/javascript" href="/ClubWeb/inc/assets/js/jquery.min.js" type="text/javascript"></script>
         <script type="text/javascript" href="/ClubWeb/inc/assets/js/bootstrap.min.js" type="text/javascript"></script>
@@ -167,6 +168,16 @@ session_start();
         <!-- Modernizr -->
         <script href="/ClubWeb/inc/scripts/Style/modernizr.custom.js" type="text/javascript"></script>
         <!-- End JS -->
-
+        <script type="text/javascript">
+          function initMap() {
+            var map;
+            map = new google.maps.Map(document.getElementById('map'), {
+              center: {lat:57.05474, lng:-2.13066},
+              zoom: 15
+            });
+          }
+          </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC8HwZx1Aknt-BHgT2vYtcgeBBvokVzWU&callback=initMap"
+          async defer></script>
   </body>
 </html>

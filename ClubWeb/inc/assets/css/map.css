@@ -1,15 +1,10 @@
+/* give it the full monty */
 #map {
+  height:500px;
+  width:100%;
+  overflow: scroll;
 
-  height:100%;
-  width:auto;
-  display:block;
-  padding:inherit;
-  margin: auto;
 }
-
- body {
-    overflow-x: hidden;
- }
 .heading {
   max-height: 130px;
 }
