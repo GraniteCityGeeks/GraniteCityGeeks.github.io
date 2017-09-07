@@ -140,7 +140,7 @@ session_start();
   <!-- End Footer -->
 
 
-  <script type="text/javascript" href="/ClubWeb/inc/assets/js/map.js" type="text/javascript"></script>
+  <!--<script type="text/javascript" href="/ClubWeb/inc/assets/js/map.js" type="text/javascript"></script> -->
   <!--jquery -->
   <script type="text/javascript" href="/ClubWeb/inc/assets/js/jquery.min.js" type="text/javascript"></script>
   <script type="text/javascript" href="/ClubWeb/inc/assets/js/bootstrap.min.js" type="text/javascript"></script>
@@ -158,14 +158,14 @@ session_start();
   <!-- Modernizr -->
   <script href="/ClubWeb/inc/scripts/Style/modernizr.custom.js" type="text/javascript"></script>
   <!-- End JS -->
-  <!--<script type="text/javascript">
+  <script type="text/javascript">
     function initMap() {
       var map;
       map = new google.maps.Map(document.getElementById('map'), {
         center: {lat:57.05474, lng:-2.13066},
         zoom: 15
       });
-    }-->
+    }
     </script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC8HwZx1Aknt-BHgT2vYtcgeBBvokVzWU&callback=initMap"
     async defer></script>
