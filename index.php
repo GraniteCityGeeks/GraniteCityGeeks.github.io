@@ -115,7 +115,7 @@ include("ClubWeb/inc/scripts/header.php");
                           <li class="portfolio-item col-sm-4 col-xs-6 margin-bottom-40">
                               <a href="#">
                                   <figure class="animate fadeInLeft">
-                                      <img alt="image1" src="ClubWeb/inc/Style/assets/img/frontpage/image1.jpg">
+                                      <img alt="image1" src="frontpage/image1.jpg">
                                       <figcaption>
                                           <h3>Velit esse molestie</h3>
                                           <span>Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui et everti tamquam suavitate mea.</span>
@@ -128,7 +128,7 @@ include("ClubWeb/inc/scripts/header.php");
                           <li class="portfolio-item col-sm-4 col-xs-6 margin-bottom-40">
                               <a href="#">
                                   <figure class="animate fadeIn">
-                                      <img alt="image2" src="ClubWeb/inc/Style/assets/img/frontpage/image2.jpg">
+                                      <img alt="image2" src="frontpage/image2.jpg">
                                       <figcaption>
                                           <h3>Quam nunc putamus</h3>
                                           <span>Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui et everti tamquam suavitate mea.</span>
@@ -141,7 +141,7 @@ include("ClubWeb/inc/scripts/header.php");
                           <li class="portfolio-item col-sm-4 col-xs-6 margin-bottom-40">
                               <a href="#">
                                   <figure class="animate fadeInRight">
-                                      <img alt="image3" src="ClubWeb/inc/Style/assets/img/frontpage/image3.jpg">
+                                      <img alt="image3" src="frontpage/image3.jpg">
                                       <figcaption>
                                           <h3>Placerat facer possim</h3>
                                           <span>Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui et everti tamquam suavitate mea.</span>
@@ -154,7 +154,7 @@ include("ClubWeb/inc/scripts/header.php");
                           <li class="portfolio-item col-sm-4 col-xs-6 margin-bottom-40">
                               <a href="#">
                                   <figure class="animate fadeInLeft">
-                                      <img alt="image4" src="ClubWeb/inc/Style/assets/img/frontpage/image4.jpg">
+                                      <img alt="image4" src="frontpage/image4.jpg">
                                       <figcaption>
                                           <h3>Nam liber tempor</h3>
                                           <span>Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui et everti tamquam suavitate mea.</span>
@@ -167,7 +167,7 @@ include("ClubWeb/inc/scripts/header.php");
                           <li class="portfolio-item col-sm-4 col-xs-6 margin-bottom-40">
                               <a href="#">
                                   <figure class="animate fadeIn">
-                                      <img alt="image5" src="ClubWeb/inc/Style/assets/img/frontpage/image5.jpg">
+                                      <img alt="image5" src="frontpage/image5.jpg">
                                       <figcaption>
                                           <h3>Donec non urna</h3>
                                           <span>Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui et everti tamquam suavitate mea.</span>
@@ -180,7 +180,7 @@ include("ClubWeb/inc/scripts/header.php");
                           <li class="portfolio-item col-sm-4 col-xs-6 margin-bottom-40">
                               <a href="#">
                                   <figure class="animate fadeInRight">
-                                      <img alt="image6" src="ClubWeb/inc/Style/assets/img/frontpage/image6.jpg">
+                                      <img alt="image6" src="frontpage/image6.jpg">
                                       <figcaption>
                                           <h3>Nullam consectetur</h3>
                                           <span>Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui et everti tamquam suavitate mea.</span>
