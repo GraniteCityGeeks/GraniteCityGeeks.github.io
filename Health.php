@@ -87,7 +87,7 @@ include("ClubWeb/inc/scripts/header.php");
                             <br>
 
                             <h2>Community Spotlight!</h2>
-<i>Articles published by users of this site!</i>
+                            <i>Articles published by users of this site!</i>
                             <hr class="pacman"/>
 
                                 <ul class="ulProducts" runat="server" id="newsFeed" style="background-color: #f5f5f5">
