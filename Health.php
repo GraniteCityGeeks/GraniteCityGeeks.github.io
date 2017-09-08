@@ -86,6 +86,31 @@ include("ClubWeb/inc/scripts/header.php");
                             <hr>
                             <br>
 
+                            <h2>Community Spotlight!</h2>
+<i>Articles published by users of this site!</i>
+                            <hr class="pacman"/>
+
+                                <ul class="ulProducts" runat="server" id="newsFeed" style="background-color: #f5f5f5">
+                            <h2>Article Titles! </h2>
+
+                            <?php
+                            include('scripts/dbconnect.php');
+                            /* this script loads the article the user clicked on.*/
+                            $sql = "SELECT * FROM port_articles";
+                            $result = $db->query($sql);
+                            if ($result->num_rows > 0) {
+                                // output data of each row
+                                while ($row = $result->fetch_assoc()) {
+                                    echo '<li class="display"><b>'.$row["title"].'</b><br>'.$row["text"].'</li><br>';
+                                }
+                            }
+                            else {
+                                echo "0 results";
+                                }
+                            $db->close();
+                            ?>
+                            </ul>
+
 
 
                           Kincardine and Mearns Town Profiles (from <b>Aberdeenshire Council</b> - November 2015):<br>
