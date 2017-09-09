@@ -97,6 +97,26 @@ session_start();
 
                                 </li>
 
+                                <?
+                                if (isset($_SESSION['accessLevelID']) == 2){
+                                    echo "<li><a href='../createclub'>Create Clubs</a></li>";
+                                    echo "<li><a href='../modifyclub'>modify your Club</a></li>";
+                                    echo "<li><a href='../MarkerAdmin'>Create Map Info</a></li>";
+                                } else if (isset($_SESSION['accessLevelID']) == 3){
+                                    echo "<li><a href='../MarkerAdmin'>Maps Editing</a></li>";
+                                } else if (isset($_SESSION['accessLevelID']) == 4){
+                                    echo "<li><a href='../createclub'>Create Club</a></li>";
+                                    echo "<li><a href='../create_club_article'>Creat Club Article</a></li>";
+                                } else if (isset($_SESSION['accessLevelID']) == 5){
+                                    echo "<li><a href='../createclub'>Create Clubs</a></li>";
+                                    echo "<li><a href='../create_club_article'>Creat Club Article</a></li>";
+                                    echo "<li><a href='../modifyclub'>modify your Club</a></li>";
+                                    echo "<li><a href='../MarkerAdmin'>Create Map Info</a></li>";
+                                    echo "<li><a href='../view'>View Users</a></li>";
+                                } else {
+                                }
+                                ?>
+
 
 
                             </ul>
