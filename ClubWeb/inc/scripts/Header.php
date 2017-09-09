@@ -108,7 +108,12 @@ session_start();
                                     echo "<li><a href='../createclub'>Create Club</a></li>";
                                     echo "<li><a href='../create_club_article'>Creat Club Article</a></li>";
                                 } else if (isset($_SESSION['accessLevelID']) == 5){
-                                    echo "<li><a href='../createclub'>Create Clubs</a></li>";
+                                    echo "<div class="dropdown-content">
+                                        <a href="#">Link 1</a>
+                                        <a href="#">Link 2</a>
+                                        <a href="#">Link 3</a>
+                                      </div>
+                                    </li>
                                     echo "<li><a href='../create_club_article'>Creat Club Article</a></li>";
                                     echo "<li><a href='../modifyclub'>modify your Club</a></li>";
                                     echo "<li><a href='../MarkerAdmin'>Create Map Info</a></li>";
