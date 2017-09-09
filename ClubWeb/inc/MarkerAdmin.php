@@ -35,7 +35,7 @@ session_start();
       </div>
       <div class="row">
         <!--Marker-->
-        <div class="col-md-4">
+        <div class="col-md-6">
           <h1>Add a marker </h1>
           <div class="form-group">
             <label for="txtboxMarkerName">Marker Name </label>
@@ -68,7 +68,7 @@ session_start();
         </div>
         <!--end marker -->
         <!--Route type -->
-        <div class="col-md-4">
+        <div class="col-md-6">
           <div class="form-group">
             <h1>Add a Route</h1>
             <label>Route Name</label>
@@ -173,7 +173,7 @@ session_start();
             var map;
             map = new google.maps.Map(document.getElementById('map'), {
               center: {lat:57.05474, lng:-2.13066},
-              zoom: 15
+              zoom: 8
             });
 
             function renderRoute(origin, destination, service, display) {
@@ -214,6 +214,34 @@ session_start();
               });
             }
 
+            function addMarker(LatLng, title, InfoWindow) {
+              var marker = new google.maps.Marker({
+                position: LatLng,
+                map:map,
+                title, title
+
+              });
+
+              function downloadUrl(url, callback) {
+                var request = window.ActiveXObject ?
+                  new ActiveXObject('Microsoft.XMLHTTP') :
+                  new XMLHttpRequest;
+
+                  request.onreadystatechange = function() {
+                    if (request.readyState == 4) {
+                      request.onreadystatechange = doNothing;
+                      callback(request, request.status);
+                    };
+                    request.open('GET', url, true);
+                    request.send(null);
+                  };
+                }
+
+              marker.addListener("click", function() {
+                InfoWindow.open(map, marker);
+              });
+            }
+
             var directionsService = new google.maps.DirectionsService;
             var directionDisplay = new google.maps.DirectionsRenderer( {
               draggable:true,
@@ -242,6 +270,23 @@ session_start();
             marker.addListener("click", function() {
               infowindow.open(map, marker);
             });
+
+            downloadUrl("http://gcg.azurewebsites.net/ClubWeb/markers");
+
+            var xml = data.responseXML;
+            var markers = xml.documentElement.getElementsbyTagName('markers');
+
+            Array.prototype.foreach.call(markers, function(markerElem) {
+              var name = markerElem.getAttribute('name');
+              var address = markerElem.getAttribute('address');
+              var lat = markerElem.getAttribute('lat');
+              var lng = markerElem.getAttribute('lng');
+              var type = markerElem.getAttribute('type');
+              var description = markerElem.getAttribute('description');
+
+              var latlng = new google.maps.LatLng()
+            });
+
 
           }
           </script>
