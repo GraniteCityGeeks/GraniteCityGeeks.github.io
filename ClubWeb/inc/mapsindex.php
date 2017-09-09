@@ -157,6 +157,8 @@ session_start();
   <script type="text/javascript" href="/ClubWeb/inc/assets/js/slimbox2.js" charset="utf-8"></script>
   <!-- Modernizr -->
   <script href="/ClubWeb/inc/scripts/Style/modernizr.custom.js" type="text/javascript"></script>
+  <!-- Map -->
+  <script href="/js/map.js" type="text/javascript"></script>
   <!-- End JS -->
   <script type="text/javascript">
     function initMap() {
