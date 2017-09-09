@@ -57,6 +57,9 @@ function renderRoute(origin, destination, service, display) {
     }
   });
 }
+
+//getting the distance of the route.
+
 function getDistance(origin, destination) {
   distancematrix.getDistanceMatrix( {
     origins: origin,

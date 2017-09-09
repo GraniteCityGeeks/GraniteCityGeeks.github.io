@@ -175,6 +175,62 @@ session_start();
               center: {lat:57.05474, lng:-2.13066},
               zoom: 15
             });
+
+            function renderRoute(origin, destination, service, display) {
+              service.route({
+                origin: origin,
+                destination: destination,
+                travelMode: 'DRIVING',
+                avoidTolls: true
+              }, function(response, status) {
+                if (status === "OK") {
+                  display.setDirections(response);
+                } else {
+                  alert("Murray's an idiot, here's an error code so you can correct him: " +
+                   status);
+                }
+              });
+            }
+
+            //getting the distance of the route.
+
+            function getDistance(origin, destination) {
+              distancematrix.getDistanceMatrix( {
+                origins: origin,
+                destinations: destination,
+                travelMode:"BICYCLING",
+                drivingOptions: {
+                  trafficModel: "optimistic"
+                },
+                unitSystem: "IMPERIAL",
+                avoidHighways: false,
+                avoidTolls: true,
+              }, function(response, status) {
+                var results = response.rows[0].elements
+
+                var element = results[0];
+                var distance = element.distance.text;
+                var duration = element.duration.text;
+              });
+            }
+            
+            var contentstring = "<p class='text-primary'>This is a test marker</p>";
+
+            var infowindow = new google.maps.InfoWindow({
+              content: contentstring
+            });
+
+            //marker
+            var marker = new google.maps.Marker({
+              position: latlng,
+              map:map,
+              title:"test marker"
+            });
+
+            marker.addListener("click", function() {
+              infowindow.open(map, marker);
+            });
+
           }
           </script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC8HwZx1Aknt-BHgT2vYtcgeBBvokVzWU&callback=initMap"
