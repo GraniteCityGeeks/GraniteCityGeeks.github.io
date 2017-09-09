@@ -284,7 +284,17 @@ session_start();
               var type = markerElem.getAttribute('type');
               var description = markerElem.getAttribute('description');
 
-              var latlng = new google.maps.LatLng()
+              var latlng = new google.maps.LatLng(
+                parseFloat(markerElem.getAttribute('lat')),
+                parseFloat(markerElem.getAttribute('lng')));
+
+              var infowindow = new google.maps.InfoWindow ({
+                content:description;
+              });
+              addMarker(LatLng, name, infowindow);
+
+
+
             });
 
 
