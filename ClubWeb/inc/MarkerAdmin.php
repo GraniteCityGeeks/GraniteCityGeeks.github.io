@@ -213,7 +213,19 @@ session_start();
                 var duration = element.duration.text;
               });
             }
-            
+
+            var directionsService = new google.maps.DirectionsService;
+            var directionDisplay = new google.maps.DirectionsRenderer( {
+              draggable:true,
+              map:map,
+
+            });
+
+            var distancematrix = new google.maps.DistanceMatrixService();
+
+            var latlng = {lat: 57.0617, lng: -2.1295};
+
+
             var contentstring = "<p class='text-primary'>This is a test marker</p>";
 
             var infowindow = new google.maps.InfoWindow({
