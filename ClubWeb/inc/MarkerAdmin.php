@@ -226,14 +226,6 @@ session_start();
                   InfoWindow.open(map, marker);
                 });
               }
-              var point = new google.maps.LatLng(
-                  2.000,
-                  2453);
-
-             var infowindow = new google.maps.InfoWindow({
-                  content: "<p>" + "He's a very naughty boy!" + "/p>"
-              });
-             addMarker(point, "idk", infowindow);
 
               function downloadUrl(url, callback) {
                   var request = window.ActiveXObject ?
@@ -254,7 +246,7 @@ session_start();
 
          //marker
 
-            downloadUrl("http://gcg.azurewebsites.net/ClubWeb/markers", function(data) {
+            downloadUrl(http://gcg.azurewebsites.net/ClubWeb/markers, function(data) {
               var xml = data.responseXML;
               var markers = xml.documentElement.getElementsByTagName('marker');
               Array.prototype.forEach.call(markers, function(markerElem) {
