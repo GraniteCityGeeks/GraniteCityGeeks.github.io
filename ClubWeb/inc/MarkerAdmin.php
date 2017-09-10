@@ -244,7 +244,7 @@ session_start();
                   request.open('GET', url, true);
                   request.send(null);
                 }
-
+                function doNothing() {}
 
          //marker
 
