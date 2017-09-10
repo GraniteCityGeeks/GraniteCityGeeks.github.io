@@ -293,9 +293,9 @@ session_start();
               });
               addMarker(LatLng, name, infowindow);
 
-            });
-
-          });
+            })''
+          }
+          
           </script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC8HwZx1Aknt-BHgT2vYtcgeBBvokVzWU&callback=initMap"
           async defer></script>
