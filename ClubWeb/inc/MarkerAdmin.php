@@ -52,13 +52,13 @@ session_start();
             <input type="text" name='lng' id="txtboxLng" class="form-control" placeholder="Longitude">
 
             <label>Route</label>
-            <select name="route" class="form-control" name='type'>
-              <option value="Cycling">Bike Route </option>
-              <option value="Running">Running Route </option>
-              <option value="walking">Walking Route </option>
+            <select name="route" class="form-control" name='route'>
+              <option value="Cycling">Bike Route</option>
+              <option value="Running">Running Route</option>
+              <option value="walking">Walking Route</option>
             </select>
             <label>Type</label>
-            <select name="environemnt" class="form-control">
+            <select name="environemnt" class="form-control" name='type'>
               <option value="Urban">Urban</option>
               <option value="Country">Countryside/Rural</option>
             </select>
@@ -254,12 +254,13 @@ session_start();
                     var name = markers[i].getAttribute('name');
                     var address = markers[i].getAttribute('address');
                     var type = markers[i].getAttribute('type');
+                    var type = markers[i].getAttribute('route');
                     var description = markers[i].getAttribute('description');
                     var point = new google.maps.LatLng(
                         parseFloat(markers[i].getAttribute('lat')),
                           parseFloat(markers[i].getAttribute('lng')));
                     var infowindow = new google.maps.InfoWindow({
-                      content: "<h1>" + name + "</h1>" + "<h4>" + type + "</h4>" + "<p>" + description + "</p>"
+                      content: "<h1>" + name + "</h1>" + "<h4>" + type + + " " + route + "</h4>" + "<p>" + description + "</p>"
                     });
 
                     addMarker(point, name, infowindow);

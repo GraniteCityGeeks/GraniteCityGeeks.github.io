@@ -24,6 +24,7 @@ while ($row = $result->fetch_array()){
     $newnode->setAttribute("lng", $row['lng']);
     $newnode->setAttribute("type", $row['type']);
     $newnode->setAttribute("description", $row['description']);
+    $newnode->setAttribute("route", $row['route']);
 }
 $result->close();
 $db->close();

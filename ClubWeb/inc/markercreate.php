@@ -8,10 +8,11 @@ $lat = $_POST['lat'];
 $lng = $_POST['lng'];
 $type = $_POST['type'];
 $desc = $_POST['markerdesc'];
+$route = $_POST['route'];
 
 //now insert into database.
 
-$query = "INSERT INTO port_markers(name, address, lat, lng, type, description) values ('$name', '$address', '$lat', '$lng', '$type', '$desc')";
+$query = "INSERT INTO port_markers(name, address, lat, lng, type, description, route) values ('$name', '$address', '$lat', '$lng', '$type', '$desc', '$route')";
 
 $result= $db->query($query);
 
