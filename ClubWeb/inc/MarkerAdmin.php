@@ -254,7 +254,7 @@ session_start();
                     var name = markers[i].getAttribute('name');
                     var address = markers[i].getAttribute('address');
                     var type = markers[i].getAttribute('type');
-                    var type = markers[i].getAttribute('route');
+                    var route = markers[i].getAttribute('route');
                     var description = markers[i].getAttribute('description');
                     var point = new google.maps.LatLng(
                         parseFloat(markers[i].getAttribute('lat')),
