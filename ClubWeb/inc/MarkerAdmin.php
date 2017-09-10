@@ -246,7 +246,7 @@ session_start();
 
               }
 
-            var directionsService = new google.maps.DirectionsService;
+          //  var directionsService = new google.maps.DirectionsService;
             var directionDisplay = new google.maps.DirectionsRenderer( {
               draggable:true,
               map:map,
