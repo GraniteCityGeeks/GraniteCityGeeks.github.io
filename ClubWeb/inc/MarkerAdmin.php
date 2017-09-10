@@ -260,20 +260,8 @@ session_start();
 
             var contentstring = "<p class='text-primary'>This is a test marker</p>";
 
-            var infowindow = new google.maps.InfoWindow({
-              content: contentstring
-            });
 
             //marker
-            var marker = new google.maps.Marker({
-              position: latlng,
-              map:map,
-              title:"test marker"
-            });
-
-            marker.addListener("click", function() {
-              infowindow.open(map, marker);
-            });
 
             downloadUrl("http://gcg.azurewebsites.net/ClubWeb/markers", function(data) {
               var xml = data.responseXML;
