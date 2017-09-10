@@ -258,9 +258,9 @@ session_start();
                         parseFloat(markers[i].getAttribute('lat')),
                           parseFloat(markers[i].getAttribute('lng')));
                     var infowindow = new google.maps.InfoWindow({
-                      content: "<p>" + description + "/p>"
+                      content: "<h1>" + name "</h1>" + "<h4>" + name + "<p>" + description + "</p>"
                     });
-                    
+
                     addMarker(point, name, infowindow);
 
                     };

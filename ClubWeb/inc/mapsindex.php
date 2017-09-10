@@ -165,9 +165,100 @@ session_start();
       var map;
       map = new google.maps.Map(document.getElementById('map'), {
         center: {lat:57.05474, lng:-2.13066},
-        zoom: 15
+        zoom: 8
       });
-    }
+
+
+      function renderRoute(origin, destination, service, display) {
+        service.route({
+          origin: origin,
+          destination: destination,
+          travelMode: 'DRIVING',
+          avoidTolls: true
+        }, function(response, status) {
+          if (status === "OK") {
+            display.setDirections(response);
+          } else {
+            alert("Murray's an idiot, here's an error code so you can correct him: " +
+             status);
+          }
+        });
+      }
+
+      //getting the distance of the route.
+
+      function getDistance(origin, destination) {
+        distancematrix.getDistanceMatrix( {
+          origins: origin,
+          destinations: destination,
+          travelMode:"BICYCLING",
+          drivingOptions: {
+            trafficModel: "optimistic"
+          },
+          unitSystem: "IMPERIAL",
+          avoidHighways: false,
+          avoidTolls: true,
+        }, function(response, status) {
+          var results = response.rows[0].elements
+
+          var element = results[0];
+          var distance = element.distance.text;
+          var duration = element.duration.text;
+        });
+      }
+
+      function addMarker(LatLng, title, InfoWindow) {
+        var marker = new google.maps.Marker({
+          position: LatLng,
+          map:map,
+          title, title
+          });
+
+          marker.addListener("click", function() {
+            InfoWindow.open(map, marker);
+          });
+        }
+
+        function downloadUrl(url, callback) {
+            var request = window.ActiveXObject ?
+            new ActiveXObject('Microsoft.XMLHTTP') :
+            new XMLHttpRequest;
+
+            request.onreadystatechange = function() {
+              if (request.readyState == 4) {
+                request.onreadystatechange = doNothing;
+                callback(request, request.status);
+              }
+            };
+
+            request.open('GET', url, true);
+            request.send(null);
+          }
+          function doNothing() {}
+
+   //marker
+
+      downloadUrl("http://gcg.azurewebsites.net/ClubWeb/markers", function(data) {
+        var xml = data.responseXML;
+        var markers = xml.documentElement.getElementsByTagName('markers');
+        for(var i=0; i < markers.length; i++) {
+              var name = markers[i].getAttribute('name');
+              var address = markers[i].getAttribute('address');
+              var type = markers[i].getAttribute('type');
+              var description = markers[i].getAttribute('description');
+              var point = new google.maps.LatLng(
+                  parseFloat(markers[i].getAttribute('lat')),
+                    parseFloat(markers[i].getAttribute('lng')));
+              var infowindow = new google.maps.InfoWindow({
+                content: "<h1>" + name "</h1>" + "<h4>" + name + "<p>" + description + "</p>"
+              });
+
+              addMarker(point, name, infowindow);
+
+              };
+            });
+
+          }
     </script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC8HwZx1Aknt-BHgT2vYtcgeBBvokVzWU&callback=initMap"
     async defer></script>
