@@ -246,7 +246,7 @@ session_start();
 
          //marker
 
-            downloadUrl(http://gcg.azurewebsites.net/ClubWeb/markers, function(data) {
+            downloadUrl("markers", function(data) {
               var xml = data.responseXML;
               var markers = xml.documentElement.getElementsByTagName('marker');
               Array.prototype.forEach.call(markers, function(markerElem) {
