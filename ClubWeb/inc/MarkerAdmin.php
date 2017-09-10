@@ -272,29 +272,28 @@ session_start();
             });
 
             downloadUrl("http://gcg.azurewebsites.net/ClubWeb/markers", function(data) {
+              var xml = data.responseXML;
+              var markers = xml.documentElement.getElementsByTagName('marker');
+              Array.prototype.forEach.call(markers, function(markerElem) {
+                    var name = markerElem.getAttribute('name');
+                    var address = markerElem.getAttribute('address');
+                    var type = markerElem.getAttribute('type');
+                    var point = new google.maps.LatLng(
+                        parseFloat(markerElem.getAttribute('lat')),
+                          parseFloat(markerElem.getAttribute('lng')));
 
-            var xml = data.responseXML;
-            var markers = xml.documentElement.getElementsbyTagName('markers');
-
-            Array.prototype.foreach.call(markers, function(markerElem) {
-              var name = markerElem.getAttribute('name');
-              var address = markerElem.getAttribute('address');
-              var lat = markerElem.getAttribute('lat');
-              var lng = markerElem.getAttribute('lng');
-              var type = markerElem.getAttribute('type');
-              var description = markerElem.getAttribute('description');
-
-              var latlng = new google.maps.LatLng(
-                parseFloat(markerElem.getAttribute('lat')),
-                parseFloat(markerElem.getAttribute('lng')));
-
-              var infowindow = new google.maps.InfoWindow ({
-                content:description
-              });
-              addMarker(LatLng, name, infowindow);
-
-            });
-          });
+                    
+                    var marker = new google.maps.Marker({
+                        map: map,
+                        position: point,
+                        label: icon.label
+                    });
+                    marker.addListener('click', function() {
+                      infoWindow.setContent(infowincontent);
+                      infoWindow.open(map, marker);
+                    });
+                  });
+               });
 
           </script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC8HwZx1Aknt-BHgT2vYtcgeBBvokVzWU&callback=initMap"
