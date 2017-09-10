@@ -271,7 +271,7 @@ session_start();
               infowindow.open(map, marker);
             });
 
-            downloadUrl("http://gcg.azurewebsites.net/ClubWeb/markers");
+            downloadUrl("http://gcg.azurewebsites.net/ClubWeb/markers") function(data) {
 
             var xml = data.responseXML;
             var markers = xml.documentElement.getElementsbyTagName('markers');
@@ -294,6 +294,7 @@ session_start();
               addMarker(LatLng, name, infowindow);
 
             });
+          }
 
 
           }
