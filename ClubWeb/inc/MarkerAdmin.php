@@ -260,6 +260,7 @@ session_start();
                     var infowindow = new google.maps.InfoWindow({
                       content: "<p>" + description + "/p>"
                     });
+                    
                     addMarker(point, name, infowindow);
 
                     };
