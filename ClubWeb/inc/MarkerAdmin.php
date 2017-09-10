@@ -233,7 +233,7 @@ session_start();
              var infowindow = new google.maps.InfoWindow({
                   content: "<p>" + "He's a very naughty boy!" + "/p>"
               });
-             addMarker(point, "idk", InfoWindow);
+             addMarker(point, "idk", infowindow);
 
               function downloadUrl(url, callback) {
                   var request = window.ActiveXObject ?
