@@ -262,7 +262,7 @@ session_start();
                     });
                     addMarker(point, name, infowindow);
 
-                    });
+                    };
                   });
 
                 }
