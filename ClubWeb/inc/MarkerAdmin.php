@@ -294,8 +294,6 @@ session_start();
               addMarker(LatLng, name, infowindow);
 
             });
-          }
-
 
           }
           </script>
