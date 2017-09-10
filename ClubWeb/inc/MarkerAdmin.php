@@ -226,8 +226,14 @@ session_start();
                   InfoWindow.open(map, marker);
                 });
               }
+              var point = new google.maps.LatLng(
+                  2.000,
+                  2453);
 
-
+             var infowindow = new google.maps.InfoWindow({
+                  content: "<p>" + "He's a very naughty boy!" + "/p>"
+              });
+             addMarker(point, "idk" "");
 
               function downloadUrl(url, callback) {
                   var request = window.ActiveXObject ?
