@@ -246,17 +246,17 @@ session_start();
 
          //marker
 
-            downloadUrl("http://gcg.azurewebsites.net/ClubWeb/markers", function(data) {
+            downloadUrl("markers", function(data) {
               var xml = data.responseXML;
               var markers = xml.documentElement.getElementsByTagName('marker');
-              Array.prototype.forEach.call(markers, function(markerElem) {
-                    var name = markerElem.getAttribute('name');
-                    var address = markerElem.getAttribute('address');
-                    var type = markerElem.getAttribute('type');
-                    var description = markerElem.getAttribute('description');
+              for(var i=0; i < markers.length; i++) {
+                    var name = markers[i].getAttribute('name');
+                    var address = markers[i].getAttribute('address');
+                    var type = markers[i].getAttribute('type');
+                    var description = markers[i].getAttribute('description');
                     var point = new google.maps.LatLng(
-                        parseFloat(markerElem.getAttribute('lat')),
-                          parseFloat(markerElem.getAttribute('lng')));
+                        parseFloat(markers[i].getAttribute('lat')),
+                          parseFloat(markers[i].getAttribute('lng')));
                     var infowindow = new google.maps.InfoWindow({
                       content: "<p>" + contentstring + "/p>"
                     });
