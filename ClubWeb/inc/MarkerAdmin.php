@@ -291,11 +291,11 @@ session_start();
                         parseFloat(markerElem.getAttribute('lat')),
                           parseFloat(markerElem.getAttribute('lng')));
 
-                    addMarker(point, name, description)
+                    addMarker(point, name, description);
 
                     });
                   });
-                }
+                
 
           </script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC8HwZx1Aknt-BHgT2vYtcgeBBvokVzWU&callback=initMap"
