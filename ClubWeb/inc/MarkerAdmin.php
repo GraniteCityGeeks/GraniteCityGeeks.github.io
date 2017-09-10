@@ -37,8 +37,8 @@ session_start();
         <!--Marker-->
         <div class="col-md-6">
           <h1>Add a marker </h1>
-          <form class="form-group" action='markercreate.php' method='POST'>
-            
+          <form class="form-group" action='markercreate' method='POST'>
+
             <label for="txtboxMarkerName">Marker Name </label>
             <input type="text" name='name' id="txtboxMarkerName" class="form-control" placeholder="Enter marker name here">
 
