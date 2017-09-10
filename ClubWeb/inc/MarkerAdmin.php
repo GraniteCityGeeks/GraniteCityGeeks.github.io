@@ -219,8 +219,13 @@ session_start();
                 position: LatLng,
                 map:map,
                 title, title
+                });
 
-              });
+                marker.addListener("click", function() {
+                  InfoWindow.open(map, marker);
+                });
+              }
+
 
 
               function downloadUrl(url, callback) {
@@ -240,10 +245,10 @@ session_start();
                 }
 
 
-              marker.addListener("click", function() {
-                InfoWindow.open(map, marker);
-              });
-            }
+                marker.addListener("click", function() {
+                  InfoWindow.open(map, marker);
+                });
+              }
 
             var directionsService = new google.maps.DirectionsService;
             var directionDisplay = new google.maps.DirectionsRenderer( {
@@ -281,22 +286,15 @@ session_start();
                     var name = markerElem.getAttribute('name');
                     var address = markerElem.getAttribute('address');
                     var type = markerElem.getAttribute('type');
+                    var description = markerElem.getAttribute('description');
                     var point = new google.maps.LatLng(
                         parseFloat(markerElem.getAttribute('lat')),
                           parseFloat(markerElem.getAttribute('lng')));
 
+                    addMarker(point, name, description)
 
-                    var marker = new google.maps.Marker({
-                        map: map,
-                        position: point,
-                        label: icon.label
-                    });
-                    marker.addListener('click', function() {
-                      infoWindow.setContent(infowincontent);
-                      infoWindow.open(map, marker);
                     });
                   });
-                });
               }
 
           </script>
