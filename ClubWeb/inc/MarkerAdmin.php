@@ -295,6 +295,7 @@ session_start();
 
                     });
                   });
+                }
               }
 
           </script>
