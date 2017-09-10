@@ -222,8 +222,9 @@ session_start();
 
               });
 
+
               function downloadUrl(url, callback) {
-                var request = window.ActiveXObject ?
+                  var request = window.ActiveXObject ?
                   new ActiveXObject('Microsoft.XMLHTTP') :
                   new XMLHttpRequest;
 
@@ -231,11 +232,13 @@ session_start();
                     if (request.readyState == 4) {
                       request.onreadystatechange = doNothing;
                       callback(request, request.status);
-                    };
-                    request.open('GET', url, true);
-                    request.send(null);
+                    }
                   };
+
+                  request.open('GET', url, true);
+                  request.send(null);
                 }
+
 
               marker.addListener("click", function() {
                 InfoWindow.open(map, marker);
@@ -282,7 +285,7 @@ session_start();
                         parseFloat(markerElem.getAttribute('lat')),
                           parseFloat(markerElem.getAttribute('lng')));
 
-                    
+
                     var marker = new google.maps.Marker({
                         map: map,
                         position: point,
@@ -293,7 +296,8 @@ session_start();
                       infoWindow.open(map, marker);
                     });
                   });
-               });
+                });
+
 
           </script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC8HwZx1Aknt-BHgT2vYtcgeBBvokVzWU&callback=initMap"
