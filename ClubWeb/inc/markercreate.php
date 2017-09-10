@@ -23,5 +23,5 @@ if (!$result) {
 
 echo("data entry successful");
 
-header("Location: mapsindex");
+header("Location: /mapsindex/");
 die();
