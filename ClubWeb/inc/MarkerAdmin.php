@@ -289,11 +289,9 @@ session_start();
                 parseFloat(markerElem.getAttribute('lng')));
 
               var infowindow = new google.maps.InfoWindow ({
-                content:description;
+                content:description
               });
               addMarker(LatLng, name, infowindow);
-
-
 
             });
 
