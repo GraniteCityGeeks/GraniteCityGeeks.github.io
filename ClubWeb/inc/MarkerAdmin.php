@@ -175,6 +175,7 @@ session_start();
               center: {lat:57.05474, lng:-2.13066},
               zoom: 8
             });
+          }
 
             function renderRoute(origin, destination, service, display) {
               service.route({
@@ -244,24 +245,24 @@ session_start();
                   request.send(null);
                 }
 
-              }
-
-          //  var directionsService = new google.maps.DirectionsService;
-          //  var directionDisplay = new google.maps.DirectionsRenderer( {
-          //    draggable:true,
-          //    map:map,
-
-          //  });
-
-          //  var distancematrix = new google.maps.DistanceMatrixService();
-
-            var latlng = {lat: 57.0617, lng: -2.1295};
 
 
-            var contentstring = "<p class='text-primary'>This is a test marker</p>";
+           var directionsService = new google.maps.DirectionsService;
+           var directionDisplay = new google.maps.DirectionsRenderer( {
+           draggable:true,
+           map:map,
+
+           });
+
+          var distancematrix = new google.maps.DistanceMatrixService();
+
+          var latlng = {lat: 57.0617, lng: -2.1295};
 
 
-            //marker
+          var contentstring = "<p class='text-primary'>This is a test marker</p>";
+
+
+         //marker
 
             downloadUrl("http://gcg.azurewebsites.net/ClubWeb/markers", function(data) {
               var xml = data.responseXML;
@@ -275,7 +276,7 @@ session_start();
                         parseFloat(markerElem.getAttribute('lat')),
                           parseFloat(markerElem.getAttribute('lng')));
                     var infowindow = new google.maps.InfoWindow({
-                      content: contentstring
+                      content: "<p>" + contentstring + "/p>";
                     });
                     addMarker(point, name, infowindow);
 
