@@ -244,10 +244,6 @@ session_start();
                   request.send(null);
                 }
 
-
-                marker.addListener("click", function() {
-                  InfoWindow.open(map, marker);
-                });
               }
 
             var directionsService = new google.maps.DirectionsService;
@@ -290,12 +286,14 @@ session_start();
                     var point = new google.maps.LatLng(
                         parseFloat(markerElem.getAttribute('lat')),
                           parseFloat(markerElem.getAttribute('lng')));
-
-                    addMarker(point, name, description);
+                    var infowindow = new google.maps.InfoWindow({
+                      content: contentstring
+                    });
+                    addMarker(point, name, infowindow);
 
                     });
                   });
-                
+
 
           </script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC8HwZx1Aknt-BHgT2vYtcgeBBvokVzWU&callback=initMap"
