@@ -37,21 +37,21 @@ session_start();
         <!--Marker-->
         <div class="col-md-6">
           <h1>Add a marker </h1>
-          <div class="form-group">
+          <form class="form-group" action='markercreate.php' method='POST'>
             <label for="txtboxMarkerName">Marker Name </label>
-            <input type="text" id="txtboxMarkerName" class="form-control" placeholder="Enter marker name here">
+            <input type="text" name='name' id="txtboxMarkerName" class="form-control" placeholder="Enter marker name here">
 
             <label>Description</label>
-            <textarea class="form-control" name="description"></textarea>
+            <textarea class="form-control" name="markerdesc"></textarea>
 
             <label for="txtboxLat"> Latitude </label>
-            <input type="text" id="txtboxLat" class="form-control" placeholder="Latitude">
+            <input type="text" name='lat' id="txtboxLat" class="form-control" placeholder="Latitude">
 
             <label for="txtboxLng"> Longitude </label>
-            <input type="text" id="txtboxLng" class="form-control" placeholder="Longitude">
+            <input type="text" name='lng' id="txtboxLng" class="form-control" placeholder="Longitude">
 
             <label>Route</label>
-            <select name="route" class="form-control">
+            <select name="route" class="form-control" name='type'>
               <option value="Cycling">Bike Route </option>
               <option value="Running">Running Route </option>
               <option value="walking">Walking Route </option>
@@ -64,7 +64,7 @@ session_start();
 
             <input type="submit" class="form-control" value="add to map" name="marker">
 
-          </div>
+          </form>
         </div>
         <!--end marker -->
         <!--Route type -->
