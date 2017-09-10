@@ -247,13 +247,13 @@ session_start();
               }
 
           //  var directionsService = new google.maps.DirectionsService;
-            var directionDisplay = new google.maps.DirectionsRenderer( {
-              draggable:true,
-              map:map,
+          //  var directionDisplay = new google.maps.DirectionsRenderer( {
+          //    draggable:true,
+          //    map:map,
 
-            });
+          //  });
 
-            var distancematrix = new google.maps.DistanceMatrixService();
+          //  var distancematrix = new google.maps.DistanceMatrixService();
 
             var latlng = {lat: 57.0617, lng: -2.1295};
 
