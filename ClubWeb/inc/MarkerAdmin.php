@@ -175,7 +175,7 @@ session_start();
               center: {lat:57.05474, lng:-2.13066},
               zoom: 8
             });
-          }
+
 
             function renderRoute(origin, destination, service, display) {
               service.route({
@@ -233,7 +233,7 @@ session_start();
              var infowindow = new google.maps.InfoWindow({
                   content: "<p>" + "He's a very naughty boy!" + "/p>"
               });
-             addMarker(point, "idk" "");
+             addMarker(point, "idk", InfoWindow);
 
               function downloadUrl(url, callback) {
                   var request = window.ActiveXObject ?
@@ -273,7 +273,7 @@ session_start();
                     });
                   });
 
-
+                }
           </script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC8HwZx1Aknt-BHgT2vYtcgeBBvokVzWU&callback=initMap"
           async defer></script>
