@@ -103,7 +103,7 @@ session_start();
             <table border="1" class="table">
 
                 <tr>
-                    <th>Id No</th>
+                    <th>Marker ID</th>
                     <th>Marker</th>
                     <th>Lat</th>
                     <th>Lng</th>
