@@ -5,5 +5,5 @@
 
     <p class="footer-company-name">GraniteCityGeeks &copy; 2016</p>
 
-      <div class="footer">
+  </div>
 </footer>
