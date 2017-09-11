@@ -24,9 +24,10 @@ while($row = $result->fetch_array()) {
     $clubID = $row['clubid'];
     $clubTitle = $row['clubTitle'];
 
-    echo "
-    <img src='{$pictureURL}'height='300', width='300'>
-    <h1><a href='Clubs/{$clubID}' name='linkref' id='link'>{$clubTitle}</a></h1>
+    echo "<tr>
+    <td><img src='{$pictureURL}'height='300', width='300'>
+    <h1><a href='Clubs/{$clubID}' name='linkref' id='link'>{$clubTitle}</a></h1><td>
+    </tr>
     ";
 
 
@@ -46,4 +47,3 @@ echo "</main>";
 
 include("scripts/footer.php");
 ?>
-
