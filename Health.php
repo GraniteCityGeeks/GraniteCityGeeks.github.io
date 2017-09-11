@@ -82,10 +82,7 @@ include("ClubWeb/inc/scripts/header.php");
                           <h2>Healthy Living</h2>
                           <p><b>This page will contain helpful information, tips & tricks for staying healthy!</b>
                             </p>
-                            <br>
                             <hr>
-                            <br>
-
                             <h2>Community Spotlight!</h2>
                             <i>Articles published by users of this site!</i>
                             <hr class="pacman"/>
