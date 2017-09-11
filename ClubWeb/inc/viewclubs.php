@@ -29,7 +29,7 @@ while($row = $result->fetch_array()) {
     $clubTitle = $row['clubTitle'];
     echo "<tr>";
     echo "<td><img src='{$pictureURL}'height='300', width='300'></td>";
-    echo "<td><h1><a href='Clubs/{$clubID}' name='linkref' id='link'>{$clubTitle}</a></h1></td>";
+    echo "<td><a href='Clubs/{$clubID}' name='linkref' id='link'>{$clubTitle}</a></td>";
     echo "</tr>";
 
     /*//echo "<img src='{$pictureURL}'height='300', width='300'>
