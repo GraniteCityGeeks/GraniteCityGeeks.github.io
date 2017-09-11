@@ -31,6 +31,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     //add the title
     echo "<img src= '" . $photo . "' height='300' width='300'>";
 
+    include("scripts/header_l2.php");
+
     echo "<h1>" . $title . "</h1> <br>";
 
     echo "<h5> Genre: " . $genre . "</h5> <br>";
@@ -137,7 +139,3 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     }
 }
     ?>
-
-
-
-
