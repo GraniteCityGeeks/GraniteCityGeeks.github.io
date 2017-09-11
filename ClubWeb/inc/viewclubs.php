@@ -13,7 +13,7 @@ echo "<main>";
 
 $total = $result->num_rows;
 
-echo "<h1> GoPortlethen clubs </h1>";
+echo "<h1> Portlethen clubs </h1>";
 
 echo "<h4> Displaying ". $total . " active clubs </h4>";
 
