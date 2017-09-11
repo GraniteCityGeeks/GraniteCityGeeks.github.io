@@ -25,6 +25,7 @@ while($row = $result->fetch_array()) {
     $clubID = $row['clubid'];
     $clubTitle = $row['clubTitle'];
 
+
     echo "<td><img src='{$pictureURL}'height='300', width='300'></td>";
     echo "<td><h1><a href='Clubs/{$clubID}' name='linkref' id='link'>{$clubTitle}</a></h1></td>";
 
