@@ -42,7 +42,7 @@ while($row = $result->fetch_array()) {
 
 }
 
-echo "</table>"
+echo "</table>";
 
 
 echo "</main>";
