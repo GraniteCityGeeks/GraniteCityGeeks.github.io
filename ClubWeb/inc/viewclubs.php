@@ -46,4 +46,3 @@ echo "</main>";
 
 include("scripts/footer.php");
 ?>
-
