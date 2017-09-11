@@ -16,7 +16,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     $result = $db->query($query);
 
     while ($row = $result->fetch_array()) {
-        //Paste the club
         $title = $row['clubTitle'];
         $desc = $row['clubDescription'];
         $calender = $row['clubcalendar'];
@@ -29,19 +28,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
 
     //add the title
-    echo "<img src= '" . $photo . "' height='300' width='300'>";
+    echo "<tr>";
 
-    echo "<h1>" . $title . "</h1> <br>";
+    echo "<td><img src= '" . $photo . "' height='300' width='300'></td>";
 
-    echo "<h5> Genre: " . $genre . "</h5> <br>";
+    echo "<td><h1>" . $title . "</h1> <br></td>";
 
-    echo "<h3> Description </h3> <br>";
+    echo "<td><h5> Genre: " . $genre . "</h5> <br></td>";
 
-    echo "<p>" . nl2br($desc, false) . "</p> <br>";
+    echo "<td><h3> Description </h3> <br></td>";
 
-    echo "<h3> Upcoming events </h3> <br>";
+    echo "<td><p>" . nl2br($desc, false) . "</p> <br></td>";
 
-    echo "<p>" . $calender . "</p> <br>";
+    echo "<td><h3> Upcoming events </h3> <br></td>";
+
+    echo "<td><p>" . $calender . "</p> <br></td>";
+
+    echo "</tr>";
 
 
     echo "<h3> Club Users </h3>";
