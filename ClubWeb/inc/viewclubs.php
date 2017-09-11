@@ -27,7 +27,7 @@ while($row = $result->fetch_array()) {
     echo "
     <div class='clubs'>
     <img src='{$pictureURL}'height='300', width='300'>
-    <h1><a href='Clubs/{$clubID}' name='linkref' id='link'>{$clubTitle}</a></h1>
+    <h1><a href='Clubs/{$clubID}' name='linkref' id='link'>{$clubTitle}</a></h1></div>
     ";
 
 
