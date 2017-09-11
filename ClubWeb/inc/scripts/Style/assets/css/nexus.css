@@ -19,7 +19,7 @@ TABLE OF CONTENTS
 	- Testimonials
 	- Accordions
 	- Tabs
-	- Progress Bars 
+	- Progress Bars
 	- Panels
 	- Social Icons
 	- Carousel
@@ -1024,7 +1024,7 @@ p.site-slogan {
 .slicknav_menu {
   *zoom: 1;
 }
-/* 
+/*
     User Default Style
     Change the following styles to modify the appearance of the menu.
 */
@@ -2227,109 +2227,109 @@ ul.social-icons li a:hover {
   transition-property: background-color;
 }
 .social-facebook a {
-  background: url(../img/social_icons/facebook.png);
+  background: url(/social_icons/facebook.png);
 }
 .social-facebook a:hover {
   background-color: #3b5998 !important;
 }
 .social-twitter a {
-  background: url(../img/social_icons/twitter.png);
+  background: url(/social_icons/twitter.png);
 }
 .social-twitter a:hover {
   background-color: #48c4d2 !important;
 }
 .social-googleplus a {
-  background: url(../img/social_icons/googleplus.png);
+  background: url(/social_icons/googleplus.png);
 }
 .social-googleplus a:hover {
   background-color: #d94a39 !important;
 }
 .social-youtube a {
-  background: url(../img/social_icons/youtube.png);
+  background: url(/social_icons/youtube.png);
 }
 .social-youtube a:hover {
   background-color: #f45750 !important;
 }
 .social-github a {
-  background: url(../img/social_icons/github.png);
+  background: url(/social_icons/github.png);
 }
 .social-github a:hover {
   background-color: #333333 !important;
 }
 .social-pinterest a {
-  background: url(../img/social_icons/pinterest.png);
+  background: url(/social_icons/pinterest.png);
 }
 .social-pinterest a:hover {
   background-color: #cb2027 !important;
 }
 .social-blogger a {
-  background: url(../img/social_icons/blogger.png);
+  background: url(/social_icons/blogger.png);
 }
 .social-blogger a:hover {
   background-color: #fb913f !important;
 }
 .social-dribbble a {
-  background: url(../img/social_icons/dribbble.png);
+  background: url(/social_icons/dribbble.png);
 }
 .social-dribbble a:hover {
   background-color: #ef5b92 !important;
 }
 .social-flickr a {
-  background: url(../img/social_icons/flickr.png);
+  background: url(/social_icons/flickr.png);
 }
 .social-flickr a:hover {
   background-color: #FD55AD !important;
 }
 .social-skype a {
-  background: url(../img/social_icons/skype.png);
+  background: url(/social_icons/skype.png);
 }
 .social-skype a:hover {
   background-color: #18b7f1 !important;
 }
 .social-digg a {
-  background: url(../img/social_icons/digg.png);
+  background: url(/social_icons/digg.png);
 }
 .social-digg a:hover {
   background-color: #2882c6 !important;
 }
 .social-linkedin a {
-  background: url(../img/social_icons/linkedin.png);
+  background: url(/social_icons/linkedin.png);
 }
 .social-linkedin a:hover {
   background-color: #71b2d0 !important;
 }
 .social-vimeo a {
-  background: url(../img/social_icons/vimeo.png);
+  background: url(/social_icons/vimeo.png);
 }
 .social-vimeo a:hover {
   background-color: #62a0ad !important;
 }
 .social-yahoo a {
-  background: url(../img/social_icons/yahoo.png);
+  background: url(/social_icons/yahoo.png);
 }
 .social-yahoo a:hover {
   background-color: #ab64bc !important;
 }
 .social-tumblr a {
-  background: url(../img/social_icons/tumblr.png);
+  background: url(/social_icons/tumblr.png);
 }
 .social-tumblr a:hover {
   background-color: #3a5976 !important;
 }
 .social-deviantart a {
-  background: url(../img/social_icons/deviantart.png);
+  background: url(/social_icons/deviantart.png);
 }
 .social-deviantart a:hover {
   background-color: #d0de21 !important;
 }
 .social-delicious a {
-  background: url(../img/social_icons/delicious.png);
+  background: url(/social_icons/delicious.png);
 }
 .social-delicious a:hover {
   background-color: #3274d1 !important;
 }
 .social-rss a {
-  background: url(../img/social_icons/rss.png);
+  background: url(/social_icons/rss.png);
 }
 .social-rss a:hover {
   background-color: #fe9900 !important;
