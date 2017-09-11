@@ -44,6 +44,13 @@ div.clubcolumn {
     border-style: solid;
 }
 
+div.clubUserList {
+  float: left;
+  width: 500px;
+  background-color: yellow;
+  overflow-y: scroll;
+}
+
 div.footer {
   width: 100%;
   align-content: center;
