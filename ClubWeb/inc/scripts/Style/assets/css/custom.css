@@ -43,3 +43,8 @@ div.clubcolumn {
     width: 33%;
     border-style: solid;
 }
+
+div.footer {
+  width: 100%;
+  align-content: center;
+}
