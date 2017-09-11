@@ -31,11 +31,9 @@ li.dropdown {
     text-align: left;
 }
 
-.table {
-  table-layout:fixed
-}
-
-.td {
-  overflow:hidden;
-  white-space:nowrap
+div.clubs {
+    background-color: black;
+    color: white;
+    margin: 20px 50px 20px 50px;
+    padding: 20px;
 }
