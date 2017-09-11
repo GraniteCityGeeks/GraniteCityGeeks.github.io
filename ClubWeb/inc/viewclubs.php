@@ -18,17 +18,22 @@ echo "<h1> Portlethen clubs </h1>";
 echo "<h4> Displaying ". $total . " active clubs </h4>";
 
 
-
+echo "<table border='1'>";
+echo "<tr>";
+echo "<th>Profile picture</th>";
+echo "<th>username</th>";
+echo "</tr>";
 while($row = $result->fetch_array()) {
     $pictureURL = $row['URL'];
     $clubID = $row['clubid'];
     $clubTitle = $row['clubTitle'];
+    echo "<tr>";
+    echo "<td><img src='{$pictureURL}'height='300', width='300'></td>";
+    echo "<td><h1><a href='Clubs/{$clubID}' name='linkref' id='link'>{$clubTitle}</a></h1></td>";
+    echo "</tr>";
 
-    echo "<table><tr>
-    <td><img src='{$pictureURL}'height='300', width='300'>
-    <h1><a href='Clubs/{$clubID}' name='linkref' id='link'>{$clubTitle}</a></h1><td>
-    </tr></table>
-    ";
+    /*//echo "<img src='{$pictureURL}'height='300', width='300'>
+    <h1><a href='Clubs/{$clubID}' name='linkref' id='link'>{$clubTitle}</a></h1>";*/
 
 
 
@@ -42,6 +47,7 @@ while($row = $result->fetch_array()) {
 
 }
 
+echo "</table>"
 
 echo "</main>";
 
