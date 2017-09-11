@@ -2,7 +2,7 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     include("scripts/dbconnect.php");
-    include("scripts/header_l2.php");
+    include("scripts/header.php");
     echo "
 <main>
 ";
@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     //add the title
     echo "<img src= '" . $photo . "' height='300' width='300'>";
 
-    include("scripts/header_l2.php");
+    include("scripts/header.php");
 
     echo "<h1>" . $title . "</h1> <br>";
 
