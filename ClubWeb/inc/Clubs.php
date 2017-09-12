@@ -28,7 +28,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
 
     //add the title
-    /*echo "<img src= '" . $photo . "' height='300' width='300'>";
+    /**/
+    echo "<img src= '" . $photo . "' height='300' width='300'>";
 
     echo "<h1>" . $title . "</h1> <br>";
 
@@ -41,7 +42,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     echo "<h3> Upcoming events </h3> <br>";
 
     echo "<p>" . $calender . "</p> <br>";
-    */
+    /**/
+
+    /*
     echo "
     <div class='clubDetails'>
       <img src='" . $photo . "' height='300' width='300'>
@@ -49,9 +52,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
       <h5> " . $genre . " </h5>
     </div>
     ";
+    /**/
 
 
-    /*echo "<h3> Club Users </h3>";
+    /**/
+    echo "<h3> Club Users </h3>";
     echo "<br><br>";
 
 
@@ -70,8 +75,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
     }
     echo "</table>";
-    */
+    /**/
 
+    /*
     echo "
     <div class='clubUserList'>
       <h3> Club Users </h3> <br>
@@ -92,6 +98,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
       </table>
     </div>
     ";
+    /**/
 
     if ($_SESSION['accessLevelID'] > 3) {
         echo "<form action='../joinclub' method = 'POST'>";
