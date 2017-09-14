@@ -1,54 +1,80 @@
 <?php
-include('scripts/dbconnect.php');
+include 'scripts/header.php';
 session_start();
-if (isset ($_SESSION['username'])) {
-    if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-        include("scripts/Header.php");
-        ?>
-        <main>
-            <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
-            <div id="marker-management" style="color:darkblue;font-family: 'Titillium Web', sans-serif;">
-                <h1>Markers</h1>
-                <table border="1" class="table">
+?>
 
-                    <tr>
-                        <th>name</th>
-                        <th>description</th>
-                        <th>genre</th>
-                        <th>avatar</th>
-                        <th>Delete</th>
-                    </tr>
+<html>
+  <head>
+      <!-- Title -->
+      <title>Map Editing</title>
+      <!-- Meta -->
+      <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+      <meta name="description" content="Portlethen (and surrounding communities) Information Resource">
+      <meta name="author" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+      <!-- Favicon -->
+      <link href="favicon.ico" rel="shortcut icon">
 
-                <?php
-                if (isset($_SESSION['username'])) {
+      <!-- Template CSS -->
+      <link rel="stylesheet" href="/ClubWeb/inc/assets/css/map.css" rel="stylesheet">
 
-                    if ($_SESSION['accessLevelID'] >= 3) {
-                        //connect to the database.
-                        include("/scripts/dbconnect.php");
+      <!-- Google Fonts-->
+      <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300" rel="stylesheet" type="text/css">
+  </head>
 
-                        $query = "SELECT * FROM port_markers";
+  <body>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="marker-management" style="color:darkblue;font-family: 'Titillium Web', sans-serif;">
+            <h1>Markers</h1>
+            <table border="1" class="table">
 
-                        $result = $db->query($query);
+                <tr>
+                    <th>Marker ID</th>
+                    <th>Marker</th>
+                    <th>Lat</th>
+                    <th>Lng</th>
+                    <th>description</th>
+                    <th>Delete</th>
+                </tr>
 
-                        while ($row = $result->fetch_array()) {
+            <?php
+            if (isset($_SESSION['username'])) {
 
-                            echo "<tr>";
-                            echo "<td>" . $row["name"] . "</td>";
-                            echo "<td>" . $row["description"] . "</td>";
-                            echo "<td>" . $row["genre"] . "</td>";
-                            echo "<td>" . $row["avatar"] . "</td>";
-                            echo "<form action='markerdelete' method='POST'>";
-                            echo "<td>" . "<button name='delete' type='submit' value='" . $row["id"] . "'>" . "delete" . "</button>" . "</td>";
-                            echo "</form>";
-                            echo "</tr>";
+                if ($_SESSION['accessLevelID'] >= 3) {
+                    //connect to the database.
+                    include("/scripts/dbconnect.php");
 
-                        }
+                    $query = "SELECT * FROM port_markers";
 
+                    $result = $db->query($query);
 
-                        $db->close();
+                    while ($row = $result->fetch_array()) {
 
+                        echo "<tr>";
+                        echo "<td>" . $row["id"] . "</td>";
+                        echo "<td>" . $row["name"] . "</td>";
+                        echo "<td>" . $row["lat"] . "</td>";
+                        echo "<td>" . $row["lng"] . "</td>";
+                        echo "<td>" . $row["description"] . "</td>";
+                        echo "<form action='markerdelete' method='POST'>";
+                        echo "<td>" . "<button name='delete' type='submit' value='" . $row["id"] . "'>" . "delete" . "</button>" . "</td>";
+                        echo "</form>";
+                        echo "</tr>";
 
-                        echo "</table>";
                     }
+
+
+                    $db->close();
+
+
+                    echo "</table>";
                 }
-                ?>
+            }
+            ?>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
