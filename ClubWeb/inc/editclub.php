@@ -88,7 +88,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 
-function updateClub($id, $newTitle, $newDescription, $newGenreID, $newPhotoID, $newClubCalendar, $newOwnerID, $db) {
+function updateClub($id, $title, $description, $genreID, $photoID, $clubcalendar, $ownerID, $db) {
     // Create query with new values
     $sql = "UPDATE port_club SET clubTitle='$title', description='$description', genreid='$genreID', photoid='$photoID', clubcalendar='$clubcalendar', ownerid='$ownerID' WHERE clubid='$id'";
     // Query database.
