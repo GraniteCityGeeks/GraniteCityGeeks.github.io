@@ -12,7 +12,7 @@ if (isset ($_SESSION['username'])) {
         //first check that the user is admin in club. Otherwise return the user back to viewclubs
         //query to check that the user manages a club.
         $id = $_SESSION['username'];
-        $query ="SELECT * From port_club as C, port_photo as P WHERE clubid IS NOT NULL AND C.photoid = P.photoid";
+        $query ="SELECT * From port_club";
 
         $result = $db->query($query);
 
