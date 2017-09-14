@@ -28,6 +28,7 @@ $rules = array(
     'modifyclub' => "/modifyclub",
     'createclub' => "/createclub",
     'editclubs' => "/editclubs",
+    'Delete' => "/Delete",
     'mapsindex' => "/mapsindex",
     'markers' => "/markers",
     'MarkerAdmin' => "/MarkerAdmin",
