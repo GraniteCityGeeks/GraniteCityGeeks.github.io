@@ -1,5 +1,8 @@
+<h1>Edit Club linked work</h1>
+<h2>The web page you are looking for cannot be found</h2>
+<h3>Please be patient while the elves from GCG fix this</h3>
 <?php
-include('scripts/dbconnect.php');
+/*include('scripts/dbconnect.php');
 session_start();
 if (isset ($_SESSION['username'])) {
 
@@ -44,4 +47,5 @@ if (isset ($_SESSION['username'])) {
         echo "</table>";
     }
 }
+*/
 ?>
