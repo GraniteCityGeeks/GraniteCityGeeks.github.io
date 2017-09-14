@@ -30,6 +30,7 @@ session_start();
             <table border="1" class="table">
 
                 <tr>
+                    <th>Club ID</th>
                     <th>Club Name</th>
                     <th>Description</th>
                     <th>Genre</th>
@@ -50,16 +51,16 @@ session_start();
                     while ($row = $result->fetch_array()) {
 
                         echo "<tr>";
-                        echo "<td>" . $row["name"] . "</td>";
-                        echo "<td>" . $row["description"] . "</td>";
-                        echo "<td>" . $row["genre"] . "</td>";
-                        echo "<form action='markerdelete' method='POST'>";
+                        echo "<td>" . $row["clubid"] . "</td>";
+                        echo "<td>" . $row["clubTitle"] . "</td>";
+                        echo "<td>" . $row["clubDescription"] . "</td>";
+                        echo "<td>" . $row["Genre"] . "</td>";
+                        echo "<form action='Delete' method='POST'>";
                         echo "<td>" . "<button name='delete' type='submit' value='" . $row["id"] . "'>" . "delete" . "</button>" . "</td>";
                         echo "</form>";
                         echo "</tr>";
 
                     }
-
 
                     $db->close();
 
