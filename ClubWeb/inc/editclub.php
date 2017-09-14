@@ -64,37 +64,37 @@ if (isset($params['clubid'])) {
     }
 }
 
-/*
 // Wait for submit button press
 if($_SERVER['REQUEST_METHOD'] === 'POST') {
     echo 'submit pressed';
     // Assign values from form to variables
-    $newUsername = $_POST['username'];
-    $newPassword = $_POST['password'];
-    $newBio = $_POST['bio'];
+    $newTitle = $_POST['title'];
+    $newDescription = $_POST['description'];
+    $newGenreID = $_POST['genreID'];
     $newPhotoID = $_POST['photoID'];
-    $newAccessLevelID = $_POST['accessLevelID'];
+    $newClubCalendar = $_POST['clubcalendar'];
+    $newOwnerID = $_POST['ownerID'];
     $id = $_POST['id'];
 
-    // Check if username or password is empty
-    if ($newUsername == '' || $newPassword == '') {
+    // Check if title or description is empty
+    if ($newTitle == '' || $newDescription == '') {
         // Re-display form with existing values and inform user (no changes made)
         //renderForm($id, $username, $password,$bio,$photoID,$accessLevelID,$db);
-        echo "Please make sure the user has a username and password";
+        echo "Please make sure the club has a title and description";
     } else {
         // Update user's details in database
-        echo 'updateUser called!';
-        updateUser($id, $newUsername, $newPassword, $newBio, $newPhotoID, $newAccessLevelID, $db);
+        echo 'updateClub called!';
+        updateClub($id, $newTitle, $newDescription, $newGenreID, $newPhotoID, $newClubCalendar, $newOwnerID, $db);
     }
 }
 
-function updateUser($id, $username, $password, $bio, $photoID, $accessLevelID, $db) {
+function updateUser($id, $newTitle, $newDescription, $newGenreID, $newPhotoID, $newClubCalendar, $newOwnerID, $db) {
     // Create query with new values
-    $sql = "UPDATE port_users SET username='$username', password='$password', bio='$bio', accessLevelID='$accessLevelID', photoID='$photoID' WHERE userID='$id'";
+    $sql = "UPDATE port_club SET clubTitle='$title', description='$description', genreid='$genreID', photoid='$photoID', clubcalendar='$clubcalendar', ownerid='$ownerID' WHERE clubid='$id'";
     // Query database.
     var_dump($sql);
     if (mysqli_query($db, $sql)) {
-        echo "User updated!";
+        echo "Club updated!";
     } else {
         // Report error if unsuccessful
         echo "Error: " . $sql . "<br>" . mysqli_error($db);
@@ -102,7 +102,6 @@ function updateUser($id, $username, $password, $bio, $photoID, $accessLevelID, $
 
     mysqli_close($db);
 }
-*/
 
 //    if (isset($_POST['submit'])) {
 //
