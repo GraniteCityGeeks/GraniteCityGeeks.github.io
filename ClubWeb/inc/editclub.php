@@ -67,7 +67,7 @@ if (isset($params['clubid'])) {
 if($_SERVER['REQUEST_METHOD'] === 'POST') {
     echo 'submit pressed';
     // Assign values from form to variables
-    $newTitle = $_POST['clubTitle'];
+    $newTitle = $_POST['title'];
     $newDescription = $_POST['description'];
     $newGenreID = $_POST['genreID'];
     $newPhotoID = $_POST['photoID'];
