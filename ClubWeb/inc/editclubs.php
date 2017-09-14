@@ -26,15 +26,13 @@ session_start();
     <div class="row">
       <div class="col-md-12">
         <div id="marker-management" style="color:darkblue;font-family: 'Titillium Web', sans-serif;">
-            <h1>Markers</h1>
+            <h1>Clubs</h1>
             <table border="1" class="table">
 
                 <tr>
-                    <th>Marker ID</th>
-                    <th>Marker</th>
-                    <th>Lat</th>
-                    <th>Lng</th>
-                    <th>description</th>
+                    <th>Club Name</th>
+                    <th>Description</th>
+                    <th>Genre</th>
                     <th>Delete</th>
                 </tr>
 
@@ -45,18 +43,16 @@ session_start();
                     //connect to the database.
                     include("/scripts/dbconnect.php");
 
-                    $query = "SELECT * FROM port_markers";
+                    $query = "SELECT * FROM port_club";
 
                     $result = $db->query($query);
 
                     while ($row = $result->fetch_array()) {
 
                         echo "<tr>";
-                        echo "<td>" . $row["id"] . "</td>";
                         echo "<td>" . $row["name"] . "</td>";
-                        echo "<td>" . $row["lat"] . "</td>";
-                        echo "<td>" . $row["lng"] . "</td>";
                         echo "<td>" . $row["description"] . "</td>";
+                        echo "<td>" . $row["genre"] . "</td>";
                         echo "<form action='markerdelete' method='POST'>";
                         echo "<td>" . "<button name='delete' type='submit' value='" . $row["id"] . "'>" . "delete" . "</button>" . "</td>";
                         echo "</form>";
