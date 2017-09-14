@@ -88,12 +88,12 @@ echo "<tr> <th>ID</th> <th>Name</th> <th>Description</th> <th>URL</th> </tr>";
 $result = $db->query($sql);
 while ($row = $result->fetch_array()) {
     echo "<tr>";
-    echo '<td>' . $row['id'] . '</td>';
-    echo '<td>' . $row['title'] . '</td>';
+    echo '<td>' . $row['clubid'] . '</td>';
+    echo '<td>' . $row['clubTitle'] . '</td>';
     echo '<td>' . $row['description'] . '</td>';
 //    echo '<td> <input type="submit" value="Edit">';
 //    echo '<td><a href="edit" class="edit' . $row['userID']. '">Edit</a></td>';
-    echo '<td><a href="modifyclub/' . $row['id'] . '">Edit</a></td>';
+    echo '<td><a href="modifyclub/' . $row['clubid'] . '">Edit</a></td>';
     echo '<td><a href="clubdelete/' . $row['clubID'] . '">Delete</a></td>';
     echo "</tr>";
 }
