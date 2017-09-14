@@ -13,7 +13,7 @@ function renderForm($id, $title, $description,$genreID,$photoID,$clubcalendar, $
     <form action="editclub" method="post">
             <input type="hidden" name="id" value="<?php echo $id; ?>"/>
             <p><strong>ID:</strong> <?php echo $id; ?></p>
-            <strong>Title: *</strong> <input type="text" name="title" value="<?php echo $title; ?>"/><br/>
+            <strong>Title: *</strong> <input type="text" name="clubTitle" value="<?php echo $title; ?>"/><br/>
             <strong>Description: *</strong> <input type="text" name="description" value="<?php echo $description; ?>"/><br/>
             <strong>GenreID: *</strong> <input type="text" name="genreid" value="<?php echo $genreID; ?>"/><br/>
             <strong>PhotoID: *</strong> <input type="text" name="photoid" value="<?php echo $photoID; ?>"/><br/>
@@ -67,7 +67,7 @@ if (isset($params['clubid'])) {
 if($_SERVER['REQUEST_METHOD'] === 'POST') {
     echo 'submit pressed';
     // Assign values from form to variables
-    $newTitle = $_POST['title'];
+    $newTitle = $_POST['clubTitle'];
     $newDescription = $_POST['description'];
     $newGenreID = $_POST['genreid'];
     $newPhotoID = $_POST['photoid'];
