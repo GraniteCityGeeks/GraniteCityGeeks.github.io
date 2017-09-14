@@ -10,7 +10,7 @@ function renderForm($id, $title, $description,$genreID,$photoID,$clubcalendar, $
 
     ?>
     <main>
-    <form action="edit" method="post">
+    <form action="editclub" method="post">
             <input type="hidden" name="id" value="<?php echo $id; ?>"/>
             <p><strong>ID:</strong> <?php echo $id; ?></p>
             <strong>Title: *</strong> <input type="text" name="title" value="<?php echo $title; ?>"/><br/>
