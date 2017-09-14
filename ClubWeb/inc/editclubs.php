@@ -104,7 +104,7 @@ while ($row = $result->fetch_array()) {
 
 echo "</table>";
 
-echo '<td><a href="add" class="add" >Add</a></td>';
+echo '<td><a href="createclub" class="add" >Add</a></td>';
 
 ?>
 
