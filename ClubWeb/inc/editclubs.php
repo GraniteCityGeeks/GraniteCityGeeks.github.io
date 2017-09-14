@@ -83,7 +83,7 @@ echo "<div style=\"overflow-x:auto;\">";
 
 echo "<table>";
 
-echo "<tr> <th>ID</th> <th>Name</th> <th>Description</th> <th>URL</th> </tr>";
+echo "<tr> <th>ID</th> <th>Name</th> <th>Description</th> <th>GenreID</th> <th>PhotoID</th> <th>ClubCalendar</th> <th>OwnerID</th></tr>";
 
 $result = $db->query($sql);
 while ($row = $result->fetch_array()) {
@@ -91,6 +91,10 @@ while ($row = $result->fetch_array()) {
     echo '<td>' . $row['clubid'] . '</td>';
     echo '<td>' . $row['clubTitle'] . '</td>';
     echo '<td>' . $row['description'] . '</td>';
+    echo '<td>' . $row['genreid'] . '</td>';
+    echo '<td>' . $row['photoid'] . '</td>';
+    echo '<td>' . $row['clubcalendar'] . '</td>';
+    echo '<td>' . $row['ownerid'] . '</td>';
 //    echo '<td> <input type="submit" value="Edit">';
 //    echo '<td><a href="edit" class="edit' . $row['userID']. '">Edit</a></td>';
     echo '<td><a href="modifyclub/' . $row['clubid'] . '">Edit</a></td>';
