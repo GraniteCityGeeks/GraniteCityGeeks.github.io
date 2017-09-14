@@ -15,8 +15,8 @@ function renderForm($id, $title, $description,$genreID,$photoID,$clubcalendar, $
             <p><strong>ID:</strong> <?php echo $id; ?></p>
             <strong>Title: *</strong> <input type="text" name="title" value="<?php echo $title; ?>"/><br/>
             <strong>Description: *</strong> <input type="text" name="description" value="<?php echo $description; ?>"/><br/>
-            <strong>GenreID: *</strong> <input type="text" name="genreID" value="<?php echo $description; ?>"/><br/>
-            <strong>PhotoID: *</strong> <input type="text" name="photoID" value="<?php echo $description; ?>"/><br/>
+            <strong>GenreID: *</strong> <input type="text" name="genreID" value="<?php echo $genreID; ?>"/><br/>
+            <strong>PhotoID: *</strong> <input type="text" name="photoID" value="<?php echo $photoID; ?>"/><br/>
             <strong>Club Calendar:</strong>  <input type="text" name="clubcalendar" value="<?php echo $clubcalendar; ?>"></br>
             <strong>OwnerID:</strong>  <input type="text" name="ownerID" value="<?php echo $ownerID; ?>"></br>
             <p><input type="submit" value="Submit"></p>
