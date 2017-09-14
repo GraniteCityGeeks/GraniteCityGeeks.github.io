@@ -1,5 +1,5 @@
 <?php
-$userID = $params['clubid'];
+$clubid = $params['clubid'];
 include("scripts/dbconnect.php");
 
 if (isset($params['clubid']))
