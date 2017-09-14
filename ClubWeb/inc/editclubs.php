@@ -20,7 +20,7 @@ th, td {
     padding: 8px;
 }
 th {
-    background-color: #3daf6a;
+    background-color: #0000ff;
     color: white;
 }
 
