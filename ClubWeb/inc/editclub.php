@@ -1,7 +1,7 @@
 <?php
 if (isset($_SESSION['username'])) {
 
-    if ($_SESSION['accessLevelID'] >= 3) {
+    if ($_SESSION['accessLevelID'] >= 1) {
         //connect to the database.
         include("/scripts/dbconnect.php");
 
@@ -16,8 +16,8 @@ if (isset($_SESSION['username'])) {
             echo "<td>" . $row["description"] . "</td>";
             echo "<td>" . $row["genre"] . "</td>";
             echo "<td>" . $row["avatar"] . "</td>";
-            echo "<form action='Delete' method='POST'>";
-            echo "<td>" . "<button name='delete' type='submit' value='" . $row["id"] . "'>" . "delete" . "</button>" . "</td>";
+            echo "<form action='markerdelete' method='POST'>";
+            echo "<td>" . "<button name='delete' type='submit' value='" . $row["name"] . "'>" . "delete" . "</button>" . "</td>";
             echo "</form>";
             echo "</tr>";
 
