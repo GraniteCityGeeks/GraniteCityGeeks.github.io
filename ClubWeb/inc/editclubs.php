@@ -1,77 +1,111 @@
 <?php
-include 'scripts/header.php';
-session_start();
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+include("scripts/header.php");
+
+include("scripts/dbconnect.php");
+
+$sql = "SELECT * FROM port_club";
+
+echo "<style>
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+th {
+    background-color: #3daf6a;
+    color: white;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+.edit {
+	-moz-box-shadow: 0px 0px 0px 0px #3dc21b;
+	-webkit-box-shadow: 0px 0px 0px 0px #3dc21b;
+	box-shadow: 0px 0px 0px 0px #3dc21b;
+	background-color:#44c767;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	border-radius:15px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:16px;
+	padding:6px 12px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.edit:hover {
+	background-color:#5cbf2a;
+}
+.edit:active {
+	position:relative;
+	top:1px;
+}
+.add {
+	-moz-box-shadow: 0px 0px 0px 0px #3dc21b;
+	-webkit-box-shadow: 0px 0px 0px 0px #3dc21b;
+	box-shadow: 0px 0px 0px 0px #3dc21b;
+	background-color:#44c767;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	border-radius:15px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:16px;
+	padding:6px 12px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.add:hover {
+	background-color:#5cbf2a;
+}
+.add:active {
+	position:relative;
+	top:1px;
+}
+</style>";
+
+echo "<p><b>View All</b></p>";
+
+echo "<div style=\"overflow-x:auto;\">";
+
+echo "<table>";
+
+echo "<tr> <th>ID</th> <th>Name</th> <th>Description</th> <th>Genre</th> <th>URL</th> </tr>";
+
+$result = $db->query($sql);
+while ($row = $result->fetch_array()) {
+    echo "<tr>";
+    echo '<td>' . $row['clubid'] . '</td>';
+    echo '<td>' . $row['name'] . '</td>';
+    echo '<td>' . $row['description'] . '</td>';
+    echo '<td>' . $row['Genre'] . '</td>';
+    echo '<td>' . $row['URL'] . '</td>';
+//    echo '<td> <input type="submit" value="Edit">';
+//    echo '<td><a href="edit" class="edit' . $row['userID']. '">Edit</a></td>';
+    echo '<td><a href="modifyclub/' . $row['clubID'] . '">Edit</a></td>';
+    echo '<td><a href="clubdelete/' . $row['clubID'] . '">Delete</a></td>';
+    echo "</tr>";
+}
+
+echo "</table>";
+
+echo '<td><a href="add" class="add" >Add</a></td>';
+
 ?>
 
-<html>
-  <head>
-      <!-- Title -->
-      <title>Map Editing</title>
-      <!-- Meta -->
-      <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-      <meta name="description" content="Portlethen (and surrounding communities) Information Resource">
-      <meta name="author" content="">
-      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-      <!-- Favicon -->
-      <link href="favicon.ico" rel="shortcut icon">
+</body>
 
-      <!-- Template CSS -->
-      <link rel="stylesheet" href="/ClubWeb/inc/assets/css/map.css" rel="stylesheet">
-
-      <!-- Google Fonts-->
-      <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300" rel="stylesheet" type="text/css">
-  </head>
-
-  <body>
-    <div class="row">
-      <div class="col-md-12">
-        <div id="marker-management" style="color:darkblue;font-family: 'Titillium Web', sans-serif;">
-            <h1>Clubs</h1>
-            <table border="1" class="table">
-
-                <tr>
-                    <th>ClubID</th>
-                    <th>Club name</th>
-                    <th>Description</th>
-                    <th>Genre</th>
-                    <th>Delete</th>
-                </tr>
-
-            <?php
-            if (isset($_SESSION['username'])) {
-
-                if ($_SESSION['accessLevelID'] >= 3) {
-                    //connect to the database.
-                    include("/scripts/dbconnect.php");
-
-                    $query = "SELECT * FROM port_club";
-
-                    $result = $db->query($query);
-
-                    while ($row = $result->fetch_array()) {
-
-                        echo "<tr>";
-                        echo "<td>" . $row["clubid"] . "</td>";
-                        echo "<td>" . $row["clubTitle"] . "</td>";
-                        echo "<td>" . $row["clubDescription"] . "</td>";
-                        echo "<td>" . $row["Genre"] . "</td>";
-                        echo "<form action='Delete' method='POST'>";
-                        echo "<td>" . "<button name='delete' type='submit' value='" . $row["clubid"] . "'>" . "delete" . "</button>" . "</td>";
-                        echo "</form>";
-                        echo "</tr>";
-
-                    }
-
-                    $db->close();
-
-
-                    echo "</table>";
-                }
-            }
-            ?>
-
-        </div>
-      </div>
-    </div>
-  </body>
 </html>

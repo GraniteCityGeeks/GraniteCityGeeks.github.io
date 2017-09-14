@@ -1,22 +1,22 @@
 <?php
-$userID = $params['userID'];
+$userID = $params['clubID'];
 include("scripts/dbconnect.php");
 
-if (isset($params['userID']))
+if (isset($params['clubID']))
 
 {
 
-    $sql = "DELETE FROM port_users WHERE userID=$userID";
+    $sql = "DELETE FROM port_club WHERE clubid=$clubID";
     $result = $db->query($sql);
 
-    header("Location: /ClubWeb/View");
+    header("Location: /ClubWeb/editclubs");
 
 }
 
 else
 
 {
-    header("Location: /ClubWeb/View");
+    header("Location: /ClubWeb/editclubs");
 }
 
 
