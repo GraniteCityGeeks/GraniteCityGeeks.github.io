@@ -15,10 +15,10 @@ function renderForm($id, $title, $description,$genreID,$photoID,$clubcalendar, $
             <p><strong>ID:</strong> <?php echo $id; ?></p>
             <strong>Title: *</strong> <input type="text" name="title" value="<?php echo $title; ?>"/><br/>
             <strong>Description: *</strong> <input type="text" name="description" value="<?php echo $description; ?>"/><br/>
-            <strong>GenreID: *</strong> <input type="text" name="genreid" value="<?php echo $description; ?>"/><br/>
-            <strong>PhotoID: *</strong> <input type="text" name="photoid" value="<?php echo $description; ?>"/><br/>
+            <strong>GenreID: *</strong> <input type="text" name="genreID" value="<?php echo $description; ?>"/><br/>
+            <strong>PhotoID: *</strong> <input type="text" name="photoID" value="<?php echo $description; ?>"/><br/>
             <strong>Club Calendar:</strong>  <input type="text" name="clubcalendar" value="<?php echo $clubcalendar; ?>"></br>
-            <strong>OwnerID:</strong>  <input type="text" name="ownerid" value="<?php echo $ownerID; ?>"></br>
+            <strong>OwnerID:</strong>  <input type="text" name="ownerID" value="<?php echo $ownerID; ?>"></br>
             <p><input type="submit" value="Submit"></p>
             </form>
         </main>
@@ -51,13 +51,12 @@ if (isset($params['clubid'])) {
     // Check row has values
     if ($row) {
         // Assign values in row to variables
-        $id = $row['clubid'];
         $title = $row['clubTitle'];
         $description = $row['description'];
-        $genreID = $row['genreid'];
-        $photoID = $row['photoid'];
+        $genreID = $row['genreID'];
+        $photoID = $row['photoID'];
         $clubcalendar = $row['clubcalendar'];
-        $ownerID = $row['ownerid'];
+        $ownerID = $row['ownerID'];
 
         // Display the form with the user's current values
         renderForm($id, $title, $description,$genreID,$photoID,$clubcalendar, $ownerID);
@@ -70,10 +69,10 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Assign values from form to variables
     $newTitle = $_POST['title'];
     $newDescription = $_POST['description'];
-    $newGenreID = $_POST['genreid'];
-    $newPhotoID = $_POST['photoid'];
+    $newGenreID = $_POST['genreID'];
+    $newPhotoID = $_POST['photoID'];
     $newClubCalendar = $_POST['clubcalendar'];
-    $newOwnerID = $_POST['ownerid'];
+    $newOwnerID = $_POST['ownerID'];
     $id = $_POST['id'];
 
     // Check if title or description is empty
@@ -90,7 +89,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 function updateClub($id, $title, $description, $genreID, $photoID, $clubcalendar, $ownerID, $db) {
     // Create query with new values
-    $sql = "UPDATE port_club SET clubTitle='$title', description='$description', genreid='$genreID', photoid='$photoID', clubcalendar='$clubcalendar', ownerid='$ownerID' WHERE clubid='$id'";
+    $sql = "UPDATE port_club SET clubTitle='$title', description='$description', genreID='$genreID', photoID='$photoID', clubcalendar='$clubcalendar', ownerID='$ownerID' WHERE clubID='$id'";
     // Query database.
     var_dump($sql);
     if (mysqli_query($db, $sql)) {
