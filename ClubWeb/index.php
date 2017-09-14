@@ -28,6 +28,7 @@ $rules = array(
     'modifyclub' => "/modifyclub/(?'clubid'[\w\-]+)",
     'createclub' => "/createclub",
     'clubdelete' => "/clubdelete/(?'clubid'[\w\-]+)",
+    'editclub' => "/editclub/(?'clubid'[\w\-]+)",
     'adminviewclubs' => "/adminviewclubs",
     'Delete' => "/Delete",
     'mapsindex' => "/mapsindex",
