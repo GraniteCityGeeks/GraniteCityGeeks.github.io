@@ -2,46 +2,53 @@
 include('scripts/dbconnect.php');
 session_start();
 if (isset ($_SESSION['username'])) {
-
     if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         include("scripts/Header.php");
         ?>
         <main>
             <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
-        <?
-        //first check that the user is admin in club. Otherwise return the user back to viewclubs
-        //query to check that the user manages a club.
-        $id = $_SESSION['username'];
-        $query ="SELECT * From port_club";
+            <div id="marker-management" style="color:darkblue;font-family: 'Titillium Web', sans-serif;">
+                <h1>Markers</h1>
+                <table border="1" class="table">
 
-        $result = $db->query($query);
+                    <tr>
+                        <th>name</th>
+                        <th>description</th>
+                        <th>genre</th>
+                        <th>avatar</th>
+                        <th>Delete</th>
+                    </tr>
 
-        if (!$result) {
-            header('Location: Clubs');
+                <?php
+                if (isset($_SESSION['username'])) {
 
-        } else  {
-            //if a club has been found, continue.
-            //get results from the query.
+                    if ($_SESSION['accessLevelID'] >= 3) {
+                        //connect to the database.
+                        include("/scripts/dbconnect.php");
 
-        while ($row = $result->fetch_array()) {
+                        $query = "SELECT * FROM port_markers";
 
-            echo "<tr>";
-            echo "<td>" . $row["name"] . "</td>";
-            echo "<td>" . $row["description"] . "</td>";
-            echo "<td>" . $row["genre"] . "</td>";
-            echo "<td>" . $row["avatar"] . "</td>";
-            echo "<form action='markerdelete' method='POST'>";
-            echo "<td>" . "<button name='delete' type='submit' value='" . $row["name"] . "'>" . "delete" . "</button>" . "</td>";
-            echo "</form>";
-            echo "</tr>";
+                        $result = $db->query($query);
 
-        }
+                        while ($row = $result->fetch_array()) {
+
+                            echo "<tr>";
+                            echo "<td>" . $row["name"] . "</td>";
+                            echo "<td>" . $row["description"] . "</td>";
+                            echo "<td>" . $row["genre"] . "</td>";
+                            echo "<td>" . $row["avatar"] . "</td>";
+                            echo "<form action='markerdelete' method='POST'>";
+                            echo "<td>" . "<button name='delete' type='submit' value='" . $row["id"] . "'>" . "delete" . "</button>" . "</td>";
+                            echo "</form>";
+                            echo "</tr>";
+
+                        }
 
 
-        $db->close();
+                        $db->close();
 
 
-        echo "</table>";
-    }
-}
-?>
+                        echo "</table>";
+                    }
+                }
+                ?>
