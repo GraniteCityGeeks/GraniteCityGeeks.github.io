@@ -83,16 +83,14 @@ echo "<div style=\"overflow-x:auto;\">";
 
 echo "<table>";
 
-echo "<tr> <th>ID</th> <th>Name</th> <th>Description</th> <th>Genre</th> <th>URL</th> </tr>";
+echo "<tr> <th>ID</th> <th>Name</th> <th>Description</th> <th>URL</th> </tr>";
 
 $result = $db->query($sql);
 while ($row = $result->fetch_array()) {
     echo "<tr>";
     echo '<td>' . $row['id'] . '</td>';
-    echo '<td>' . $row['name'] . '</td>';
+    echo '<td>' . $row['title'] . '</td>';
     echo '<td>' . $row['description'] . '</td>';
-    echo '<td>' . $row['Genre'] . '</td>';
-    echo '<td>' . $row['URL'] . '</td>';
 //    echo '<td> <input type="submit" value="Edit">';
 //    echo '<td><a href="edit" class="edit' . $row['userID']. '">Edit</a></td>';
     echo '<td><a href="modifyclub/' . $row['id'] . '">Edit</a></td>';
