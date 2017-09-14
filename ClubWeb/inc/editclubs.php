@@ -30,8 +30,8 @@ session_start();
             <table border="1" class="table">
 
                 <tr>
-                    <th>Club ID</th>
-                    <th>Club Name</th>
+                    <th>ClubID</th>
+                    <th>Club name</th>
                     <th>Description</th>
                     <th>Genre</th>
                     <th>Delete</th>
@@ -56,7 +56,7 @@ session_start();
                         echo "<td>" . $row["clubDescription"] . "</td>";
                         echo "<td>" . $row["Genre"] . "</td>";
                         echo "<form action='Delete' method='POST'>";
-                        echo "<td>" . "<button name='delete' type='submit' value='" . $row["id"] . "'>" . "delete" . "</button>" . "</td>";
+                        echo "<td>" . "<button name='delete' type='submit' value='" . $row["clubid"] . "'>" . "delete" . "</button>" . "</td>";
                         echo "</form>";
                         echo "</tr>";
 
