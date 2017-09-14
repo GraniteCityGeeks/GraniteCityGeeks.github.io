@@ -100,7 +100,7 @@ session_start();
                                 <?
                                 if (isset($_SESSION['accessLevelID']) == 2){
                                     echo "<li><a href='../ClubWeb/createclub'>Create Clubs</a></li>";
-                                    echo "<li><a href='../ClubWeb/Edit'>modify your Club</a></li>";
+                                    echo "<li><a href='../ClubWeb/editclub'>modify your Club</a></li>";
                                     echo "<li><a href='../ClubWeb/MarkerAdmin'>Create Map Info</a></li>";
                                 } else if (isset($_SESSION['accessLevelID']) == 3){
                                     echo "<li><a href='../ClubWeb/MarkerAdmin'>Maps Editing</a></li>";
