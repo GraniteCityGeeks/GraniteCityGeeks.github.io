@@ -105,9 +105,6 @@ session_start();
                                 } else if (isset($_SESSION['accessLevelID']) == 4){
 
                                 } else if (isset($_SESSION['accessLevelID']) == 5){
-
-                                    echo
-
                                     echo "<style>
                                     div class='container'>
                                       <h2>Dropdowns</h2>
