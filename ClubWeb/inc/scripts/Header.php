@@ -97,8 +97,7 @@ session_start();
 
                                 </li>
 
-                                <li>
-                                <div class="dropdown">
+                                <li div class="dropdown">
                                  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
                                  <span class="caret"></span></button>
                                  <ul class="dropdown-menu">
