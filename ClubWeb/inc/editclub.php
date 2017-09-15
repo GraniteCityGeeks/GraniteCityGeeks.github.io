@@ -1,5 +1,5 @@
 <?php
-include("scripts/headerl2.php");
+include("scripts/header_l2.php");
 
 
 ini_set('display_errors', 1);
@@ -32,7 +32,7 @@ $id = $params['clubid'];
 if (isset($params['clubid'])) {
 
     // Get all attributes for that user
-    $sql = "SELECT * FROM port_users WHERE userID='$id'";
+    $sql = "SELECT * FROM port_club WHERE clubid='$id'";
     $result = mysqli_query($db, $sql);
 
 //    if (!$result) {
