@@ -1,5 +1,5 @@
 <?php
-include("scripts/header_l2.php");
+include("scripts/header.php");
 
 
 ini_set('display_errors', 1);
