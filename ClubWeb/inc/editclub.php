@@ -15,10 +15,6 @@ function renderForm($id, $title, $description,$genreID,$photoID,$clubcalendar, $
             <p><strong>ID:</strong> <?php echo $id; ?></p>
             <strong>Title: *</strong> <input type="text" name="clubTitle" value="<?php echo $title; ?>"/><br/>
             <strong>Description: *</strong> <input type="text" name="description" value="<?php echo $description; ?>"/><br/>
-            <strong>GenreID: *</strong> <input type="text" name="genreid" value="<?php echo $genreID; ?>"/><br/>
-            <strong>PhotoID: *</strong> <input type="text" name="photoid" value="<?php echo $photoID; ?>"/><br/>
-            <strong>Club Calendar:</strong>  <input type="text" name="clubcalendar" value="<?php echo $clubcalendar; ?>"></br>
-            <strong>OwnerID:</strong>  <input type="text" name="ownerid" value="<?php echo $ownerID; ?>"></br>
             <p><input type="submit" value="Submit"></p>
             </form>
         </main>
@@ -54,13 +50,9 @@ if (isset($params['clubid'])) {
         $id = $row['clubid'];
         $title = $row['clubTitle'];
         $description = $row['description'];
-        $genreID = $row['genreid'];
-        $photoID = $row['photoid'];
-        $clubcalendar = $row['clubcalendar'];
-        $ownerID = $row['ownerid'];
 
         // Display the form with the user's current values
-        renderForm($id, $title, $description,$genreID,$photoID,$clubcalendar, $ownerID);
+        renderForm($id, $title, $description);
     }
 }
 
@@ -70,11 +62,6 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Assign values from form to variables
     $newTitle = $_POST['clubTitle'];
     $newDescription = $_POST['description'];
-    $newGenreID = $_POST['genreid'];
-    $newPhotoID = $_POST['photoid'];
-    $newClubCalendar = $_POST['clubcalendar'];
-    $newOwnerID = $_POST['ownerid'];
-    $newID = $_POST['clubid'];
 
     // Check if title or description is empty
     if ($newTitle == '' || $newDescription == '') {
@@ -84,13 +71,13 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
     } else {
         // Update user's details in database
         echo 'updateClub called!';
-        updateClub($newID, $newTitle, $newDescription, $newGenreID, $newPhotoID, $newClubCalendar, $newOwnerID, $db);
+        updateClub($newID, $newTitle, $newDescription, $db);
     }
 }
 
-function updateClub($id, $title, $description, $genreID, $photoID, $clubcalendar, $ownerID, $db) {
+function updateClub($id, $title, $description, $db) {
     // Create query with new values
-    $sql = "UPDATE port_club SET clubid = '$id', clubTitle='$title', description='$description', genreid='$genreID', photoid='$photoID', clubcalendar='$clubcalendar', ownerid='$ownerID' WHERE clubid='$id'";
+    $sql = "UPDATE port_club SET clubid = '$id', clubTitle='$title', description='$description' WHERE clubid='$id'";
     // Query database.
     var_dump($sql);
     if (mysqli_query($db, $sql)) {
