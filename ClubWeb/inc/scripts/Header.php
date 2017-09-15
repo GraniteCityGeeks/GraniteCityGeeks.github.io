@@ -108,15 +108,21 @@ session_start();
 
                                     echo
 
-  "<div class='btn-group'><button type='button' class='btn btn-default dropdown-toggle' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
-    Action <span class='caret'></span>
-  </button>
-  <ul class='dropdown-menu'>
-    <li><a href='#'>Action</a></li>
-    <li><a href='#'>Another action</a></li>
-    <li><a href='#'>Something else here</a></li>
-    <li role='separator' class='divider'></li>
-    <li><a href='#'>Separated link</a></li>";
+                                    echo "<style>
+                                    div class='container'>
+                                      <h2>Dropdowns</h2>
+                                      <p>The .dropdown class is used to indicate a dropdown menu.</p>
+                                      <p>Use the .dropdown-menu class to actually build the dropdown menu.</p>
+                                      <p>To open the dropdown menu, use a button or a link with a class of .dropdown-toggle and data-toggle="dropdown".</p>
+                                      <div class='dropdown'>
+                                        <button class='btn btn-primary dropdown-toggle' type='button' data-toggle='dropdown'>Dropdown Example
+                                        <span class='caret'></span></button>
+                                        <ul class='dropdown-menu'>
+                                          <li><a href='#'>HTML</a></li>
+                                          <li><a href='#'>CSS</a></li>
+                                          <li><a href='#'>JavaScript</a></li>
+                                        </ul>
+                                    </style>";
                                 } else {
                                 }
                                 ?>
