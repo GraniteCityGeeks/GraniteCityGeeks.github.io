@@ -61,6 +61,13 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Assign values from form to variables
     $newclubTitle = $row['clubTitle'];
     $newdescription = $row['description'];
+    // Check if username or password is empty
+    if ($newclubTitle == '' || $newdescription == '') {
+        // Re-display form with existing values and inform user (no changes made)
+        //renderForm($id, $username, $password,$bio,$photoID,$accessLevelID,$db);
+        echo "Please make sure the club has a title and description";
+    } else {
+        // Update user's details in database
         echo 'updateClub called!';
         updateUser($id, $newclubTitle, $newdescription, $db);
     }
