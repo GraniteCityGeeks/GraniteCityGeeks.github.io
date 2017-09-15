@@ -51,6 +51,7 @@ if (isset($params['clubid'])) {
     // Check row has values
     if ($row) {
         // Assign values in row to variables
+        $id = $row['clubid'];
         $title = $row['clubTitle'];
         $description = $row['description'];
         $genreID = $row['genreid'];
@@ -73,7 +74,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
     $newPhotoID = $_POST['photoid'];
     $newClubCalendar = $_POST['clubcalendar'];
     $newOwnerID = $_POST['ownerid'];
-    $id = $_POST['clubid'];
+    $newID = $_POST['clubid'];
 
     // Check if title or description is empty
     if ($newTitle == '' || $newDescription == '') {
@@ -83,7 +84,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
     } else {
         // Update user's details in database
         echo 'updateClub called!';
-        updateClub($id, $newTitle, $newDescription, $newGenreID, $newPhotoID, $newClubCalendar, $newOwnerID, $db);
+        updateClub($newID, $newTitle, $newDescription, $newGenreID, $newPhotoID, $newClubCalendar, $newOwnerID, $db);
     }
 }
 
