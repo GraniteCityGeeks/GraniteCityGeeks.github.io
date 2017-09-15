@@ -97,6 +97,7 @@ session_start();
 
                                 </li>
 
+                                <li>
                                 <div class="dropdown">
                                  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
                                  <span class="caret"></span></button>
@@ -106,6 +107,7 @@ session_start();
                                    <li><a href="#">JavaScript</a></li>
                                  </ul>
                                 </div>
+                                <li>
 
                                 <?
                                 if (isset($_SESSION['accessLevelID']) == 2){
