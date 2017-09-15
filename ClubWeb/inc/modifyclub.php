@@ -53,10 +53,8 @@ if (isset ($_SESSION['username'])) {
 
     } else if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $clubdesc = $_POST['clubdesc'];
-        $clubdesc = $db->real_escape_string($clubdesc);
         $id = $_POST['id'];
         $clubcalendar = $_POST['clubcalendar'];
-        $clubcalendar = $db->real_escape_string($clubcalendar);
         $insert = ("UPDATE port_club SET description = '$clubdesc', clubcalendar = '$clubcalendar' WHERE clubid = $id");
         if (mysqli_query($db, $insert)) {
             header('Location: viewclubs');
