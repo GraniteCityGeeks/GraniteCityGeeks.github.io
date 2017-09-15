@@ -1,19 +1,19 @@
 <?php
-include("scripts/header.php");
+include("scripts/header_l2.php");
 
 
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-function renderForm($id, $title, $description){
+function renderForm($id, $clubTitle, $description, $db){
 
     ?>
     <main>
     <form action="editclub" method="post">
-            <input type="hidden" name="clubid" value="<?php echo $id; ?>"/>
+            <input type="hidden" name="id" value="<?php echo $id; ?>"/>
             <p><strong>ID:</strong> <?php echo $id; ?></p>
-            <strong>Title: *</strong> <input type="text" name="clubTitle" value="<?php echo $title; ?>"/><br/>
+            <strong>Title: *</strong> <input type="text" name="clubTitle" value="<?php echo $clubTitle; ?>"/><br/>
             <strong>Description: *</strong> <input type="text" name="description" value="<?php echo $description; ?>"/><br/>
             <p><input type="submit" value="Submit"></p>
             </form>
@@ -32,7 +32,7 @@ $id = $params['clubid'];
 if (isset($params['clubid'])) {
 
     // Get all attributes for that user
-    $sql = "SELECT * FROM port_club WHERE clubid='$id'";
+    $sql = "SELECT * FROM port_users WHERE userID='$id'";
     $result = mysqli_query($db, $sql);
 
 //    if (!$result) {
@@ -47,12 +47,11 @@ if (isset($params['clubid'])) {
     // Check row has values
     if ($row) {
         // Assign values in row to variables
-        $id = $row['clubid'];
-        $title = $row['clubTitle'];
+        $clubTitle = $row['clubTitle'];
         $description = $row['description'];
 
         // Display the form with the user's current values
-        renderForm($id, $title, $description);
+        renderForm($id, $clubTitle, $description, $db);
     }
 }
 
@@ -60,24 +59,23 @@ if (isset($params['clubid'])) {
 if($_SERVER['REQUEST_METHOD'] === 'POST') {
     echo 'submit pressed';
     // Assign values from form to variables
-    $newTitle = $_POST['clubTitle'];
-    $newDescription = $_POST['description'];
-
-    // Check if title or description is empty
-    if ($newTitle == '' || $newDescription == '') {
+    $newclubTitle = $row['clubTitle'];
+    $newdescription = $row['description'];
+    // Check if username or password is empty
+    if ($newclubTitle == '' || $newdescription == '') {
         // Re-display form with existing values and inform user (no changes made)
         //renderForm($id, $username, $password,$bio,$photoID,$accessLevelID,$db);
         echo "Please make sure the club has a title and description";
     } else {
         // Update user's details in database
         echo 'updateClub called!';
-        updateClub($newID, $newTitle, $newDescription, $db);
+        updateUser($id, $newclubTitle, $newdescription, $db);
     }
 }
 
-function updateClub($id, $title, $description, $db) {
+function updateUser($id, $clubTitle, $description, $db) {
     // Create query with new values
-    $sql = "UPDATE port_club SET clubid = '$id', clubTitle='$title', description='$description' WHERE clubid='$id'";
+    $sql = "UPDATE port_club SET clubTitle='$clubTitle', description='$description' WHERE clubid='$id'";
     // Query database.
     var_dump($sql);
     if (mysqli_query($db, $sql)) {
@@ -89,6 +87,7 @@ function updateClub($id, $title, $description, $db) {
 
     mysqli_close($db);
 }
+
 
 //    if (isset($_POST['submit'])) {
 //
