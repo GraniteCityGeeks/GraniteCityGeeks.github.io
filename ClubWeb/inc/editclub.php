@@ -89,7 +89,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 function updateClub($id, $title, $description, $genreID, $photoID, $clubcalendar, $ownerID, $db) {
     // Create query with new values
-    $sql = "UPDATE port_club SET clubTitle='$title', description='$description', genreid='$genreID', photoid='$photoID', clubcalendar='$clubcalendar', ownerid='$ownerID' WHERE clubid='$id'";
+    $sql = "UPDATE port_club SET clubid = '$id', clubTitle='$title', description='$description', genreid='$genreID', photoid='$photoID', clubcalendar='$clubcalendar', ownerid='$ownerID' WHERE clubid='$id'";
     // Query database.
     var_dump($sql);
     if (mysqli_query($db, $sql)) {
