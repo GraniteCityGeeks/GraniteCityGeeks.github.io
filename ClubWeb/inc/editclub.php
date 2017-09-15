@@ -69,11 +69,11 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
     } else {
         // Update user's details in database
         echo 'updateClub called!';
-        updateUser($id, $newclubTitle, $newdescription, $db);
+        updateClub($id, $newclubTitle, $newdescription, $db);
     }
 }
 
-function updateUser($id, $clubTitle, $description, $db) {
+function updateClub($id, $clubTitle, $description, $db) {
     // Create query with new values
     $sql = "UPDATE port_club SET clubTitle='$clubTitle', description='$description' WHERE clubid='$id'";
     // Query database.
