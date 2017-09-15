@@ -73,7 +73,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
     $newPhotoID = $_POST['photoid'];
     $newClubCalendar = $_POST['clubcalendar'];
     $newOwnerID = $_POST['ownerid'];
-    $id = $_POST['id'];
+    $id = $_POST['clubid'];
 
     // Check if title or description is empty
     if ($newTitle == '' || $newDescription == '') {
