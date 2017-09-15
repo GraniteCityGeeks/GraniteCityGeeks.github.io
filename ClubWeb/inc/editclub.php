@@ -59,8 +59,10 @@ if (isset($params['clubid'])) {
 if($_SERVER['REQUEST_METHOD'] === 'POST') {
     echo 'submit pressed';
     // Assign values from form to variables
-    $newclubTitle = $row['clubTitle'];
-    $newdescription = $row['description'];
+    $newclubTitle = $_POST['clubTitle'];
+    $newdescription = $_POST['description'];
+    $id = $_POST['id'];
+
     // Check if username or password is empty
     if ($newclubTitle == '' || $newdescription == '') {
         // Re-display form with existing values and inform user (no changes made)
