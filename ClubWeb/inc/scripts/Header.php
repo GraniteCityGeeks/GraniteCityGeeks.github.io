@@ -99,19 +99,16 @@ session_start();
 
                                 <?
                                 if (isset($_SESSION['accessLevelID']) == 2){
-                                    echo "<li><a href='../ClubWeb/createclub'>Create Clubs</a></li>";
-                                    echo "<li><a href='../ClubWeb/modifyclub'>modify your Club</a></li>";
-                                    echo "<li><a href='../ClubWeb/adminviewclubs'>Modify Clubs</a></li>";
-                                    echo "<li><a href='../ClubWeb/MarkerAdmin'>Create Map Info</a></li>";
+
                                 } else if (isset($_SESSION['accessLevelID']) == 3){
-                                    echo "<li><a href='../ClubWeb/MarkerAdmin'>Maps Editing</a></li>";
+
                                 } else if (isset($_SESSION['accessLevelID']) == 4){
-                                    echo "<li><a href='../ClubWeb/createclub'>Create Club</a></li>";
-                                    echo "<li><a href='../ClubWeb/create_club_article'>Creat Club Article</a></li>";
+
                                 } else if (isset($_SESSION['accessLevelID']) == 5){
-                                    echo "<li><a href='http://gcg.azurewebsites.net/ClubWeb/inc/Admin.php'>Admin</a></li>";
-                                    echo '<div class="btn-group">
-  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  
+                                    echo
+
+  '<div class="btn-group"><button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Action <span class="caret"></span>
   </button>
   <ul class="dropdown-menu">
