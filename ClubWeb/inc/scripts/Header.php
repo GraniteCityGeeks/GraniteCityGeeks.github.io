@@ -96,10 +96,10 @@ session_start();
                                     <a href="http://gcg.azurewebsites.net/Health.php" class="fa-comment ">Health</a>
 
                                 </li>
-
+                                <?
+                                if (isset($_SESSION['accessLevelID']) > 1){
                                 <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Admin <span class="caret"></span></a>
                                   <ul class="dropdown-menu">
-                                    <?
                                     if (isset($_SESSION['accessLevelID']) == 2){
                                         echo "<li><a href='../ClubWeb/createclub'>Create Clubs</a></li>";
                                         echo "<li><a href='../ClubWeb/modifyclub'>modify your Club</a></li>";
@@ -114,7 +114,10 @@ session_start();
                                         echo "<li><a href='http://gcg.azurewebsites.net/ClubWeb/inc/Admin.php'>Admin</a></li>";
 
                                     } else {
+
                                     }
+                                  } else {}
+
                                     ?>
                                   </ul>
                                 <li>
