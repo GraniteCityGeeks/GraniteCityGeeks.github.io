@@ -6,7 +6,7 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-function renderForm($id, $title, $description,$genreID,$photoID,$clubcalendar, $ownerID){
+function renderForm($id, $title, $description){
 
     ?>
     <main>
