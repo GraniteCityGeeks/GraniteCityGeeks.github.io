@@ -51,12 +51,12 @@ div.clubDetails {
   border-style: solid;
 }
 
-div.clubDetails img {
+/*div.clubDetails img {
   display: inline-block;
-}
+}*/
 
 div.clubInfo {
-  /*position: relative;*/
+  position: relative;
   margin: 20px 20px 20px 320px;
 }
 
