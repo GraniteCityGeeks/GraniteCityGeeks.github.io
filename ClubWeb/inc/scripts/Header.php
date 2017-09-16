@@ -64,7 +64,7 @@ session_start();
         <!-- End Header -->
         <!-- Top Menu -->
         <div id="hornav" class="bottom-border-shadow">
-            <div class="container no-padding border-bottom">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-10 no-padding">
                         <div class="visible-lg">
