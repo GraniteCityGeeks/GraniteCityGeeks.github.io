@@ -63,7 +63,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
     $newdescription = $_POST['description'];
     $id = $_POST['id'];
 
-    // Check if username or password is empty
+    // Check if fields are empty
     if ($newclubTitle == '' || $newdescription == '') {
         // Re-display form with existing values and inform user (no changes made)
         //renderForm($id, $username, $password,$bio,$photoID,$accessLevelID,$db);
@@ -76,6 +76,10 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 
 function updateClub($id, $clubTitle, $description, $db) {
+    // Escape strings to avoid sql errors
+    $id = mysqli_real_escape_string($db, $id);
+    $clubTitle = mysqli_real_escape_string($db, $clubTitle);
+    $description = mysqli_real_escape_string($db, $description);
     // Create query with new values
     $sql = "UPDATE port_club SET clubTitle = '" . $clubTitle . "' , description = '" . $description . "' WHERE clubid = '" . $id . "';";
     // Query database.
