@@ -66,7 +66,7 @@ session_start();
         <div id="hornav" class="bottom-border-shadow">
             <div class="container no-padding border-bottom">
                 <div class="row">
-                    <div class="col-md-10 no-padding">
+                    <div class="col-md-8 no-padding">
                         <div class="visible-lg">
                             <ul id="hornavmenu" class="nav navbar-nav">
 
