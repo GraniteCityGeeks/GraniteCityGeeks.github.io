@@ -124,7 +124,7 @@ session_start();
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-4 no-padding">
+                    <div class="col-md-6 no-padding">
                         <ul class="social-icons pull-right">
                             <li class="social-rss">
                                 <a href="#" target="_blank" title="RSS"></a>
