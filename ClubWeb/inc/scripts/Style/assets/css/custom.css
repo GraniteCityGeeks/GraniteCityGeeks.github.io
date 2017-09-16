@@ -44,6 +44,17 @@ div.clubcolumn {
     border-style: solid;
 }
 
+div.clubDetails {
+  float: left;
+  width: 80%;
+  border-style: solid;
+}
+
+div.clubInfo {
+  float: left;
+  margin: 20px 20px 20px 320px;
+}
+
 div.clubUserList {
   float: left;
   width: 500px;

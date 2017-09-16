@@ -48,8 +48,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     echo "
     <div class='clubDetails'>
       <img src='" . $photo . "' height='300' width='300'>
-      <h1> " . $title . " </h1>
-      <h5> " . $genre . " </h5>
+      <div class='clubInfo'>
+        <h1> " . $title . " </h1>
+        <h5> " . $genre . " </h5>
+      </div>
     </div>
     ";
     /**/
