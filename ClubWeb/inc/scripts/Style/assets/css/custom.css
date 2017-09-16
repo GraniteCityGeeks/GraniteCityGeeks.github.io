@@ -46,6 +46,7 @@ div.clubcolumn {
 
 div.clubDetails {
   float: left;
+  position: relative;
   width: 80%;
   display: inline-block;
   border-style: solid;
