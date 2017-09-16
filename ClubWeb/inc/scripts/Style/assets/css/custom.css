@@ -44,7 +44,7 @@ div.clubcolumn {
     border-style: solid;
 }
 
-div.clubDetails {
+/*div.clubDetails {
   float: left;
   position: relative;
   width: 80%;
@@ -63,7 +63,7 @@ div.clubInfo {
   position: relative;
   margin: 20px 20px 20px 320px;
   background-color: yellow;
-}
+}*/
 
 div.clubUserList {
   float: left;
