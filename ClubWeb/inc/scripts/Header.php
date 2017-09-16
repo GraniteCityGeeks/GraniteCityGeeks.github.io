@@ -113,6 +113,7 @@ session_start();
                                         echo "<li><a href='http://gcg.azurewebsites.net/ClubWeb/inc/Admin.php'>Admin</a></li>";
 
                                     } else {
+                                      echo "<li><a href='http://gcg.azurewebsites.net/ClubWeb/'>Account</a></li>";
 
                                     }
                                     ?>
