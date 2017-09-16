@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
 
     //add the title
-    /**/
+    /*
     echo "<img src= '" . $photo . "' height='300' width='300'>";
 
     echo "<h1>" . $title . "</h1> <br>";
@@ -44,7 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     echo "<p>" . $calender . "</p> <br>";
     /**/
 
-    /*
+    /**/
     echo "
     <div class='clubDetails'>
       <img src='" . $photo . "' height='300' width='300'>
