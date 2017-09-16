@@ -39,9 +39,11 @@ session_start();
     <?
     if (isset($_SESSION['username'])) {
         echo "<h3><a href='http://gcg.azurewebsites.net/ClubWeb/logout'>Logout({$_SESSION['username']})<img src={$_SESSION['photoID']} alt=\"Mountain View\" style=\"width:35px;height:35px;\"></a></h3>";
+        echo "<li><a href='http://gcg.azurewebsites.net/ClubWeb/'>Account</a></li>";
     } else {
         echo "<h3><a href='http://gcg.azurewebsites.net/ClubWeb/login'>Login</a></h3>";
         echo "<h3><a href='register'>Register</a></h3>";
+
     }
     ?>
     <header class="main-header" role="banner" >
@@ -113,7 +115,7 @@ session_start();
                                         echo "<li><a href='http://gcg.azurewebsites.net/ClubWeb/inc/Admin.php'>Admin</a></li>";
 
                                     } else {
-                                      echo "<li><a href='http://gcg.azurewebsites.net/ClubWeb/'>Account</a></li>";
+
 
                                     }
                                     ?>
