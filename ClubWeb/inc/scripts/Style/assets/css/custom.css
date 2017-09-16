@@ -59,6 +59,7 @@ div.clubDetails {
 div.clubInfo {
   position: relative;
   margin: 20px 20px 20px 320px;
+  background-color: yellow;
 }
 
 div.clubUserList {
