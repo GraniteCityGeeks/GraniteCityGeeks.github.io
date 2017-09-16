@@ -124,7 +124,7 @@ session_start();
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-4 no-padding">
+                    <div class="col-md-2 no-padding">
                         <ul class="social-icons pull-right">
 
                             <li class="social-twitter">
@@ -133,7 +133,7 @@ session_start();
                             <li class="social-facebook">
                                 <a href="#" target="_blank" title="Facebook"></a>
                             </li>
-                            
+
                         </ul>
                     </div>
                 </div>
