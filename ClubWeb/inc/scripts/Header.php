@@ -37,6 +37,7 @@ session_start();
 <header>
     <a href="/index.php"><h1>Go Portlethen</h1></a>
     <?
+<<<<<<< HEAD
    -    if (isset($_SESSION['username'])) {
    -        echo "<h3><a href='http://gcg.azurewebsites.net/ClubWeb/logout'>Logout({$_SESSION['username']})<img src={$_SESSION['photoID']} alt=\"Mountain View\" style=\"width:35px;height:35px;\"></a></h3>";
    -        echo "<li><a href='http://gcg.azurewebsites.net/ClubWeb/'>Account</a></li>";
@@ -99,6 +100,108 @@ session_start();
    +                                  ?>
                                 </ul>
                             </div>
+=======
+    if (isset($_SESSION['username'])) {
+        echo "<h3><a href='http://gcg.azurewebsites.net/ClubWeb/logout'>Logout({$_SESSION['username']})<img src={$_SESSION['photoID']} alt=\"Mountain View\" style=\"width:35px;height:35px;\"></a></h3>";
+    } else {
+        echo "<h3><a href='http://gcg.azurewebsites.net/ClubWeb/login'>Login</a></h3>";
+        echo "<h3><a href='register'>Register</a></h3>";
+    }
+    ?>
+    <header class="main-header" role="banner" >
+      <center>
+      <img src="clouds_banner.jpg" alt="Banner Image" />
+      </center
+    </header>
+
+<!--    <div id="body-bg"> -->
+        <!-- Phone/Email -->
+
+        <!-- End Phone/Email -->
+        <!-- Header -->
+        <div id="header">
+            <div class="container">
+                <div class="row">
+                    <!-- Logo -->
+                    <div class="logo">
+                        <a href="http://gcg.azurewebsites.net/ClubWeb/" title="">
+                            <!--  <img src="Style/assets/img/logo.png" alt="Logo" /> -->
+
+                        </a>
+                    </div>
+                    <!-- End Logo -->
+                </div>
+            </div>
+        </div>
+        <!-- End Header -->
+        <!-- Top Menu -->
+        <div id="hornav" class="bottom-border-shadow">
+            <div class="container no-padding border-bottom">
+                <div class="row">
+                    <div class="col-md-8 no-padding">
+                        <div class="visible-lg">
+                            <ul id="hornavmenu" class="nav navbar-nav">
+
+                                <li>
+                                    <a href="http://gcg.azurewebsites.net/ClubWeb/" class="fa-home active">Home</a>
+                                </li>
+                                <li>
+
+                                </li>
+                                <li>
+                                    <a href="http://gcg.azurewebsites.net/ClubWeb/viewclubs" class="fa-comment ">Clubs</a>
+
+                                </li>
+                                <li>
+                                    <a href="http://gcg.azurewebsites.net/ClubWeb/mapsindex" class="fa-comment ">Maps</a>
+
+                                </li>
+                                <li>
+                                    <a href="http://gcg.azurewebsites.net/Health.php" class="fa-comment ">Health</a>
+
+                                </li>
+                                <?
+                                if (isset($_SESSION['accessLevelID']) < 2){
+                                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Admin <span class="caret"></span></a>
+                                  <ul class="dropdown-menu">
+                                    <?
+                                    if (isset($_SESSION['accessLevelID']) == 2){
+                                        echo "<li><a href='../ClubWeb/createclub'>Create Clubs</a></li>";
+                                        echo "<li><a href='../ClubWeb/modifyclub'>modify your Club</a></li>";
+                                        echo "<li><a href='../ClubWeb/adminviewclubs'>Modify Clubs</a></li>";
+                                        echo "<li><a href='../ClubWeb/MarkerAdmin'>Create Map Info</a></li>";
+                                    } else if (isset($_SESSION['accessLevelID']) == 3){
+                                        echo "<li><a href='../ClubWeb/MarkerAdmin'>Maps Editing</a></li>";
+                                    } else if (isset($_SESSION['accessLevelID']) == 4){
+                                        echo "<li><a href='../ClubWeb/createclub'>Create Club</a></li>";
+                                        echo "<li><a href='../ClubWeb/create_club_article'>Creat Club Article</a></li>";
+                                    } else if (isset($_SESSION['accessLevelID']) == 5){
+                                        echo "<li><a href='http://gcg.azurewebsites.net/ClubWeb/inc/Admin.php'>Admin</a></li>";
+
+                                    } else {
+
+                                    }
+                                    ?>
+                                  </ul>
+                                <li>
+
+                                <?
+                                if (isset($_SESSION['accessLevelID']) == 2){
+
+                                } else if (isset($_SESSION['accessLevelID']) == 3){
+
+                                } else if (isset($_SESSION['accessLevelID']) == 4){
+
+                                } else if (isset($_SESSION['accessLevelID']) == 5){
+
+                                } else {
+                                }
+                                ?>
+
+
+
+                            </ul>
+>>>>>>> 4942506ba885023af2ea6fe2b54895d0300afaa0
                         </div>
                     <div class="col-md-4 no-padding">
                         <ul class="social-icons pull-right">
