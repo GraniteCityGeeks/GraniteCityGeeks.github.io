@@ -67,7 +67,7 @@ session_start();
             <div class="container no-padding border-bottom">
                 <div class="row">
                     <div class="col-md-10 no-padding">
-                        <div class="visible-lg">
+                        <div class="navbar navbar-light bg-faded">
                             <ul id="hornavmenu" class="nav navbar-nav">
 
                                 <li>
