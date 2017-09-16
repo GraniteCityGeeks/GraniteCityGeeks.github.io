@@ -128,7 +128,7 @@ session_start();
                         <ul class="social-icons pull-right">
 
                             <li class="social-twitter">
-                                <a href="#" target="_blank" title="Twitter"></a>
+                                <a href="https://twitter.com/search?q=portlethen&src=typd" target="_blank" title="Twitter"></a>
                             </li>
                             <li class="social-facebook">
                                 <a href="https://www.facebook.com/Sportlethen/" target="_blank" title="Facebook"></a>
