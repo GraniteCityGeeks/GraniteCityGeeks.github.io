@@ -36,15 +36,6 @@ session_start();
 <body>
 <header>
     <a href="/index.php"><h1>Go Portlethen</h1></a>
-    <?
-    if (isset($_SESSION['username'])) {
-        echo "<h3><a href='http://gcg.azurewebsites.net/ClubWeb/logout'>Logout({$_SESSION['username']})<img src={$_SESSION['photoID']} alt=\"Mountain View\" style=\"width:35px;height:35px;\"></a></h3>";
-        echo "<li><a href='http://gcg.azurewebsites.net/ClubWeb/'>Account</a></li>";
-    } else {
-        echo "<h3><a href='http://gcg.azurewebsites.net/ClubWeb/login'>Login</a></h3>";
-        echo "<h3><a href='register'>Register</a></h3>";
-    }
-    ?>
     <header class="main-header" role="banner" >
       <center>
       <img src="/Banner.png" alt="Banner Image" />
@@ -118,14 +109,15 @@ session_start();
                                   </ul>
                                 <li>
 
-                                <?
-                                if (isset($_SESSION['accessLevelID']) == 2){
-                                } else if (isset($_SESSION['accessLevelID']) == 3){
-                                } else if (isset($_SESSION['accessLevelID']) == 4){
-                                } else if (isset($_SESSION['accessLevelID']) == 5){
-                                } else {
-                                }
-                                ?>
+                                  <?
+                                  if (isset($_SESSION['username'])) {
+                                      echo "<li><a href='http://gcg.azurewebsites.net/ClubWeb/logout'>Logout({$_SESSION['username']})<img src={$_SESSION['photoID']} alt=\"Mountain View\" style=\"width:35px;height:35px;\"></a></li>";
+                                      echo "<li><a href='http://gcg.azurewebsites.net/ClubWeb/'>Account</a></li>";
+                                  } else {
+                                      echo "<li><a href='http://gcg.azurewebsites.net/ClubWeb/login'>Login</a></li>";
+                                      echo "<li><a href='register'>Register</a></li>";
+                                  }
+                                  ?>
 
 
 
