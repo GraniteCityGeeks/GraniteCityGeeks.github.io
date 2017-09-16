@@ -36,19 +36,9 @@ session_start();
 <body>
 <header>
     <a href="/index.php"><h1>Go Portlethen</h1></a>
-    <?
-    if (isset($_SESSION['username'])) {
-        echo "<h3><a href='http://gcg.azurewebsites.net/ClubWeb/logout'>Logout({$_SESSION['username']})<img src={$_SESSION['photoID']} alt=\"Mountain View\" style=\"width:35px;height:35px;\"></a></h3>";
-        echo "<li><a href='http://gcg.azurewebsites.net/ClubWeb/'>Account</a></li>";
-    } else {
-        echo "<h3><a href='http://gcg.azurewebsites.net/ClubWeb/login'>Login</a></h3>";
-        echo "<h3><a href='register'>Register</a></h3>";
-
-    }
-    ?>
     <header class="main-header" role="banner" >
       <center>
-      <img src="/Banner.png" alt="Banner Image" />
+      <img src="clouds_banner.jpg" alt="Banner Image" />
       </center
     </header>
 
@@ -98,7 +88,9 @@ session_start();
                                     <a href="http://gcg.azurewebsites.net/Health.php" class="fa-comment ">Health</a>
 
                                 </li>
-                                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><? if (isset($_SESSION['accessLevelID']) => 2){ echo "User"; } else { echo "Nothing"} ?> <span class="caret"></span></a>
+                                <?
+                                if (isset($_SESSION['accessLevelID']) < 2){
+                                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Admin <span class="caret"></span></a>
                                   <ul class="dropdown-menu">
                                     <?
                                     if (isset($_SESSION['accessLevelID']) == 2){
@@ -116,27 +108,17 @@ session_start();
 
                                     } else {
 
-
                                     }
                                     ?>
-                                  </ul>
                                 <li>
-
-                                <?
-                                if (isset($_SESSION['accessLevelID']) == 2){
-
-                                } else if (isset($_SESSION['accessLevelID']) == 3){
-
-                                } else if (isset($_SESSION['accessLevelID']) == 4){
-
-                                } else if (isset($_SESSION['accessLevelID']) == 5){
-
-                                } else {
-                                }
-                                ?>
-
-
-
+                                  <?
+                                  if (isset($_SESSION['username'])) {
+                                      echo "<h3><a href='http://gcg.azurewebsites.net/ClubWeb/logout'>Logout({$_SESSION['username']})<img src={$_SESSION['photoID']} alt=\"Mountain View\" style=\"width:35px;height:35px;\"></a></h3>";
+                                  } else {
+                                      echo "<h3><a href='http://gcg.azurewebsites.net/ClubWeb/login'>Login</a></h3>";
+                                      echo "<h3><a href='register'>Register</a></h3>";
+                                  }
+                                  ?>
                             </ul>
                         </div>
                     </div>
