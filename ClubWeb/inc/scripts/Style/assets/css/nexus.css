@@ -719,6 +719,7 @@ p.site-slogan {
   box-shadow: 0 -4px 0 #33747a inset, 0 0 20px rgba(0, 0, 0, 0.1);
   min-height: 60px;
   display: block;
+  width: 100%;
 }
 #hornav .navbar-nav {
   float: none;
