@@ -46,7 +46,7 @@ session_start();
     ?>
     <header class="main-header" role="banner" >
       <center>
-      <img src="clouds_banner.jpg" alt="Banner Image" />
+      <img src="/Banner.png" alt="Banner Image" />
       </center
     </header>
 
