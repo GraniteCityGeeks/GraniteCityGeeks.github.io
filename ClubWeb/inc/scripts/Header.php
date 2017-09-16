@@ -131,7 +131,7 @@ session_start();
                                 <a href="#" target="_blank" title="Twitter"></a>
                             </li>
                             <li class="social-facebook">
-                                <a href="#" target="_blank" title="Facebook"></a>
+                                <a href="https://www.facebook.com/Sportlethen/" target="_blank" title="Facebook"></a>
                             </li>
 
                         </ul>
