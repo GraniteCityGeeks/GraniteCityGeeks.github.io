@@ -52,11 +52,14 @@ div.clubDetails {
   border-style: solid;
 }
 
-/*div.clubDetails img {
+div.clubDetails img {
+  float: left;
   display: inline-block;
-}*/
+}
 
 div.clubInfo {
+  float: left;
+  width: 70%;
   position: relative;
   margin: 20px 20px 20px 320px;
   background-color: yellow;
