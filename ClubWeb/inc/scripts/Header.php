@@ -98,7 +98,7 @@ session_start();
                                     <a href="http://gcg.azurewebsites.net/Health.php" class="fa-comment ">Health</a>
 
                                 </li>
-                                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Admin <span class="caret"></span></a>
+                                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><? if (isset($_SESSION['accessLevelID']) => 2){ echo "User"; } else { echo "Nothing"} <span class="caret"></span></a>
                                   <ul class="dropdown-menu">
                                     <?
                                     if (isset($_SESSION['accessLevelID']) == 2){
