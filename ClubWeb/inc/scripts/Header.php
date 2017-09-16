@@ -111,7 +111,7 @@ session_start();
 
                                   <?
                                   if (isset($_SESSION['username'])) {
-                                      echo "<li><a href='http://gcg.azurewebsites.net/ClubWeb/logout'>Logout({$_SESSION['username']})<img src={$_SESSION['photoID']} alt=\"Mountain View\" style=\"width:30px;height:30px;\"></a></li>";
+                                      echo "<li><a href='http://gcg.azurewebsites.net/ClubWeb/logout'>Logout({$_SESSION['username']})<img src={$_SESSION['photoID']} alt=\"Mountain View\" style=\"width:20px;height:20px;\"></a></li>";
                                       echo "<li><a href='http://gcg.azurewebsites.net/ClubWeb/'>Account</a></li>";
                                   } else {
                                       echo "<li><a href='http://gcg.azurewebsites.net/ClubWeb/login'>Login</a></li>";
