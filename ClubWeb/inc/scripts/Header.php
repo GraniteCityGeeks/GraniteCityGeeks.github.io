@@ -67,7 +67,7 @@ session_start();
             <div class="container no-padding border-bottom">
                 <div class="row">
                     <div class="col-md-10 no-padding">
-                        <div class="navbar navbar-light bg-faded">
+                        <div class="visible-lg">
                             <ul id="hornavmenu" class="nav navbar-nav">
 
                                 <li>
@@ -128,7 +128,7 @@ session_start();
                         <ul class="social-icons pull-right">
 
                             <li class="social-twitter">
-                                <a href="https://twitter.com/search?q=portlethen&src=typd" target="_blank" title="Twitter"></a>
+                                <a href="#" target="_blank" title="Twitter"></a>
                             </li>
                             <li class="social-facebook">
                                 <a href="https://www.facebook.com/Sportlethen/" target="_blank" title="Facebook"></a>
