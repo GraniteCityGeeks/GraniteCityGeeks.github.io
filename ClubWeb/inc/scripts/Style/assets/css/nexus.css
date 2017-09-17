@@ -757,7 +757,7 @@ p.site-slogan {
 }
 #hornav .nav > li > a:hover,
 #hornav .nav > li > a:focus {
-  background-color: transparent;
+  
 }
 /* Dropdown Menu */
 #hornav ul ul {
