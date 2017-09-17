@@ -738,6 +738,7 @@ p.site-slogan {
 #hornav ul#hornavmenu > li > a,
 #hornav ul#hornavmenu > li > span {
   color: #e3e3e3;
+  background-color: rgb(157, 156, 172)
   font-size: 15px;
   font-weight: normal;
   letter-spacing: 1px;
