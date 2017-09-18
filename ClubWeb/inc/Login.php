@@ -5,8 +5,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     <main>
       <div style="text-align: center;">
         <br/>
-        <br/>
-        <p><ul> Please Log In  <ul/></p>
+        <p><u> Please Log In  </u></p>
         <br/>
         <form action="login" method="post">
           <label for="username">Username:</label>
