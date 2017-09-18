@@ -1,7 +1,8 @@
 <?
 session_start();
-document.oncontextmenu = document.body.oncontextmenu = function() {return false;}
 ?>
+
+<script> document.oncontextmenu = document.body.oncontextmenu = function() {return false;} </script>
 
 <!DOCTYPE html>
 <html lang="en">
