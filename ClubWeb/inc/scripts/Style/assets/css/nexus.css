@@ -746,6 +746,7 @@ p.site-slogan {
   padding: 19px 16px 20px;
   text-transform: uppercase;
   display: block;
+  border-style: solid;
 }
 #hornav ul#hornavmenu > li > a:hover,
 #hornav ul#hornavmenu > li > span:hover,
