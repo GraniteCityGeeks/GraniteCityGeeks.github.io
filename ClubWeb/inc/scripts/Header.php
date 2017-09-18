@@ -69,7 +69,7 @@ session_start();
                 <div class="row">
                     <div class="col-md-10 no-padding">
                         <div class="visible-lg">
-                            <ul id="hornavmenu" class="nav navbar">
+                            <ul id="hornavmenu" class="nav navbar-nav">
                                 <li>
                                     <a href="http://gcg.azurewebsites.net/ClubWeb/" class="fa-home active">Home</a>
                                 </li>
@@ -120,7 +120,7 @@ session_start();
 
                             </ul>
 
-                            <ul id="hornavmenu" class="nav navbar-nav navbar-right">
+                            <ul class="nav navbar-nav navbar-right">
                               <?
                               if (isset($_SESSION['username'])) {
                                   echo "<li><a href='http://gcg.azurewebsites.net/ClubWeb/logout'>Logout({$_SESSION['username']})<img src={$_SESSION['photoID']} alt=\"Mountain View\" style=\"width:20px;height:20px;\"></a></li>";
