@@ -113,7 +113,8 @@ session_start();
                                         //Nothing Here should have code
                                       }
                                     } else {
-                                      echo "<li></li></ul>";
+                                      echo "<li><a href='http://gcg.azurewebsites.net/ClubWeb/inc/Admin.php'>See</a></li>";
+                                      echo "</ul>";
                                     }
                                       ?>
 
