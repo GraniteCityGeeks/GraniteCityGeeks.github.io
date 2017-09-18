@@ -33,7 +33,7 @@ session_start();
     <!--Map src -->
 </head>
 
-<body oncontextmenu="return false;">
+<body>
 <header>
     <a href="/index.php"><h1>Go Portlethen</h1></a>
     <header class="main-header" role="banner" >
