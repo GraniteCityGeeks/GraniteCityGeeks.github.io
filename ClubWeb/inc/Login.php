@@ -3,6 +3,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     include("scripts/header.php");
     ?>
     <main>
+      <div style="text-align: center;">
         <form action="login" method="post">
           <label for="username">Username:</label>
             <input type="text" name="username" placeholder="username"></br>
@@ -10,6 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             <input type="password" name="password" placeholder="password"></br>
             <p><input type="submit" value="Login!"></p>
         </form>
+      </div>
     </main>
     <?
     include("scripts/footer.php");
