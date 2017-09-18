@@ -2,8 +2,6 @@
 session_start();
 ?>
 
-<script> document.oncontextmenu = document.body.oncontextmenu = function() {return false;} </script>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,7 +33,7 @@ session_start();
     <!--Map src -->
 </head>
 
-<body>
+<body oncontextmenu="return false;">
 <header>
     <a href="/index.php"><h1>Go Portlethen</h1></a>
     <header class="main-header" role="banner" >
