@@ -737,7 +737,7 @@ p.site-slogan {
 }
 #hornav ul#hornavmenu > li > a,
 #hornav ul#hornavmenu > li > span {
-  color: #e3e3e3;
+  color: #4f4f4f;
   background-color: rgb(157, 156, 172)
   font-size: 15px;
   font-weight: normal;
@@ -757,7 +757,7 @@ p.site-slogan {
 }
 #hornav .nav > li > a:hover,
 #hornav .nav > li > a:focus {
-  
+
 }
 /* Dropdown Menu */
 #hornav ul ul {
