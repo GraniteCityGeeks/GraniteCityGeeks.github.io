@@ -69,7 +69,7 @@ session_start();
                 <div class="row">
                     <div class="col-md-10 no-padding">
                         <div class="visible-lg">
-                            <ul id="hornavmenu" class="nav navbar-nav navbar-centre">
+                            <class="nav navbar-inverse">
                                 <li>
                                     <a href="http://gcg.azurewebsites.net/ClubWeb/" class="fa-home active">Home</a>
                                 </li>
