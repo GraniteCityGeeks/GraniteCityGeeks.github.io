@@ -84,6 +84,7 @@ session_start();
                                     <a href="http://gcg.azurewebsites.net/ClubWeb/mapsindex" class="fa-comment ">Maps</a>
 
                                 </li>
+
                                 <li>
                                     <a href="http://gcg.azurewebsites.net/Health.php" class="fa-comment ">Health</a>
 
@@ -110,8 +111,6 @@ session_start();
                                       ?>
                                   </ul>
 
-                                  <li>
-
                                   <?
                                   if (isset($_SESSION['username'])) {
                                       echo "<li><a href='http://gcg.azurewebsites.net/ClubWeb/logout'>Logout({$_SESSION['username']})<img src={$_SESSION['photoID']} alt=\"Mountain View\" style=\"width:20px;height:20px;\"></a></li>";
@@ -121,10 +120,6 @@ session_start();
                                       echo "<li><a href='register'>Register</a></li>";
                                   }
                                   ?>
-
-                                  </li>
-
-
 
                             </ul>
                         </div>
