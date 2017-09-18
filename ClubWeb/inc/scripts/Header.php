@@ -63,24 +63,6 @@ session_start();
         </div>
         <!-- End Header -->
 
-        <!-- SideBar -->
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-sm-3 col-lg-2">
-              <nav class="navbar navbar-default navbar-fixed-side">
-                <!-- normal collapsible navbar markup -->
-              </nav>
-            </div>
-            <div class="col-sm-9 col-lg-10">
-              <!-- your page content -->
-              <li>
-                  <a href="http://gcg.azurewebsites.net/ClubWeb/" class="fa-home active">Sidebar</a>
-              </li>
-            </div>
-          </div>
-        </div>
-        <!-- End Sidebar -->
-
         <!-- Top Menu -->
         <div id="hornav" class="bottom-border-shadow">
             <div class="container-fluid">
