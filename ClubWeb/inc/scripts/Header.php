@@ -70,6 +70,15 @@ session_start();
                         <div class="visible-lg">
                             <ul id="hornavmenu" class="nav navbar-nav">
 
+                                  <?
+                                  if (isset($_SESSION['username'])) {
+                                      echo "<li><a href='http://gcg.azurewebsites.net/ClubWeb/logout'>Logout({$_SESSION['username']})<img src={$_SESSION['photoID']} alt=\"Mountain View\" style=\"width:20px;height:20px;\"></a></li>";
+                                      echo "<li><a href='http://gcg.azurewebsites.net/ClubWeb/'>Account</a></li>";
+                                  } else {
+                                      echo "<li><a href='http://gcg.azurewebsites.net/ClubWeb/login'>Login</a></li>";
+                                      echo "<li><a href='register'>Register</a></li>";
+                                  }
+                                  ?>
                                 <li>
                                     <a href="http://gcg.azurewebsites.net/ClubWeb/" class="fa-home active">Home</a>
                                 </li>
@@ -113,20 +122,10 @@ session_start();
                                         //Nothing Here should have code
                                       }
                                     } else {
-                                      echo "<li><a href='http://gcg.azurewebsites.net/ClubWeb/inc/Admin.php'>See</a></li>";
+                                      echo "<li></li>";
                                       echo "</ul>";
                                     }
                                       ?>
-
-                                  <?
-                                  if (isset($_SESSION['username'])) {
-                                      echo "<li><a href='http://gcg.azurewebsites.net/ClubWeb/logout'>Logout({$_SESSION['username']})<img src={$_SESSION['photoID']} alt=\"Mountain View\" style=\"width:20px;height:20px;\"></a></li>";
-                                      echo "<li><a href='http://gcg.azurewebsites.net/ClubWeb/'>Account</a></li>";
-                                  } else {
-                                      echo "<li><a href='http://gcg.azurewebsites.net/ClubWeb/login'>Login</a></li>";
-                                      echo "<li><a href='register'>Register</a></li>";
-                                  }
-                                  ?>
 
                             </ul>
                         </div>
