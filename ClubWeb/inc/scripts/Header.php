@@ -98,19 +98,24 @@ session_start();
                                           echo "<li><a href='../ClubWeb/modifyclub'>modify your Club</a></li>";
                                           echo "<li><a href='../ClubWeb/adminviewclubs'>Modify Clubs</a></li>";
                                           echo "<li><a href='../ClubWeb/MarkerAdmin'>Create Map Info</a></li>";
+                                          echo "</ul>";
                                       } else if (isset($_SESSION['accessLevelID']) == 3){
                                           echo "<li><a href='../ClubWeb/MarkerAdmin'>Maps Editing</a></li>";
+                                          echo "</ul>";
                                       } else if (isset($_SESSION['accessLevelID']) == 4){
                                           echo "<li><a href='../ClubWeb/createclub'>Create Club</a></li>";
                                           echo "<li><a href='../ClubWeb/create_club_article'>Creat Club Article</a></li>";
+                                          echo "</ul>";
                                       } else if (isset($_SESSION['accessLevelID']) == 5){
                                           echo "<li><a href='http://gcg.azurewebsites.net/ClubWeb/inc/Admin.php'>Admin</a></li>";
+                                          echo "</ul>";
                                       } else {
-                                        echo "<li></li>";
+                                        //Nothing Here should have code
                                       }
-                                      }
+                                    } else {
+                                      echo "<li></li></ul>";
+                                    }
                                       ?>
-                                  </ul>
 
                                   <?
                                   if (isset($_SESSION['username'])) {
