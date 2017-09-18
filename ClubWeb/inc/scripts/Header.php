@@ -88,34 +88,26 @@ session_start();
                                     <a href="http://gcg.azurewebsites.net/Health.php" class="fa-comment ">Health</a>
 
                                 </li>
-                                <?
-                                if (isset($_SESSION['accessLevelID']) == 2){
-
-                                echo "< li class='dropdown'><a class='dropdown-toggle' data-toggle='dropdown' href='#'>Admin <span class='caret'></span></a>";
-                                  echo "<ul class='dropdown-menu'>";
+                                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Admin <span class="caret"></span></a>
+                                  <ul class="dropdown-menu">
+                                    <?
                                     if (isset($_SESSION['accessLevelID']) == 2){
                                         echo "<li><a href='../ClubWeb/createclub'>Create Clubs</a></li>";
                                         echo "<li><a href='../ClubWeb/modifyclub'>modify your Club</a></li>";
                                         echo "<li><a href='../ClubWeb/adminviewclubs'>Modify Clubs</a></li>";
                                         echo "<li><a href='../ClubWeb/MarkerAdmin'>Create Map Info</a></li>";
-                                        echo "</ul> </li>";                                        
                                     } else if (isset($_SESSION['accessLevelID']) == 3){
                                         echo "<li><a href='../ClubWeb/MarkerAdmin'>Maps Editing</a></li>";
-                                        echo "</ul> </li>";
                                     } else if (isset($_SESSION['accessLevelID']) == 4){
                                         echo "<li><a href='../ClubWeb/createclub'>Create Club</a></li>";
                                         echo "<li><a href='../ClubWeb/create_club_article'>Creat Club Article</a></li>";
-                                        echo "</ul> </li>";
                                     } else if (isset($_SESSION['accessLevelID']) == 5){
                                         echo "<li><a href='http://gcg.azurewebsites.net/ClubWeb/inc/Admin.php'>Admin</a></li>";
-                                    echo "</ul> </li>";
                                     } else {
                                     }
-                                  } else {
-                                    echo "</ul> </li>";
-                                    }
                                     ?>
-
+                                  </ul>
+                                <li>
 
                                   <?
                                   if (isset($_SESSION['username'])) {
