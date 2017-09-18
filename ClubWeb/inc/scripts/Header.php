@@ -106,6 +106,7 @@ session_start();
                                       } else if (isset($_SESSION['accessLevelID']) == 5){
                                           echo "<li><a href='http://gcg.azurewebsites.net/ClubWeb/inc/Admin.php'>Admin</a></li>";
                                       } else {
+                                        echo "<li></li>";
                                       }
                                       }
                                       ?>
