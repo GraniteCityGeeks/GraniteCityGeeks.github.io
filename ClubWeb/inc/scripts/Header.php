@@ -1,5 +1,6 @@
 <?
 session_start();
+document.oncontextmenu = document.body.oncontextmenu = function() {return false;}
 ?>
 
 <!DOCTYPE html>
