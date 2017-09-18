@@ -3,8 +3,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     include("scripts/header.php");
     ?>
     <main>
-      <p> Please Log In: </p>
       <div style="text-align: center;">
+        <br/>
+        <br/>
+        <p><ul> Please Log In  <ul/></p>
+        <br/>
         <form action="login" method="post">
           <label for="username">Username:</label>
             <input type="text" name="username" placeholder="username"></br>
