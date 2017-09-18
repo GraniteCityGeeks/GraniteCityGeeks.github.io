@@ -120,7 +120,7 @@ session_start();
 
                             </ul>
 
-                            <ul class="nav navbar-nav navbar-right">
+                            <ul id="hornavmenu" class="nav navbar-nav navbar-right">
                               <?
                               if (isset($_SESSION['username'])) {
                                   echo "<li><a href='http://gcg.azurewebsites.net/ClubWeb/logout'>Logout({$_SESSION['username']})<img src={$_SESSION['photoID']} alt=\"Mountain View\" style=\"width:20px;height:20px;\"></a></li>";
