@@ -738,7 +738,7 @@ p.site-slogan {
 #hornav ul#hornavmenu > li > a,
 #hornav ul#hornavmenu > li > span {
   color: #4f4f4f;
-  background-color: rgb(157, 156, 172)
+  background-color:rgb(84, 84, 84)
   font-size: 15px;
   font-weight: normal;
   letter-spacing: 1px;
@@ -746,7 +746,7 @@ p.site-slogan {
   padding: 19px 16px 20px;
   text-transform: uppercase;
   display: block;
-  border-style: solid;
+  border-style: outset;
 }
 #hornav ul#hornavmenu > li > a:hover,
 #hornav ul#hornavmenu > li > span:hover,
