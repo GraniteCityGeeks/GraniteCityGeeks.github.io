@@ -10,7 +10,7 @@ if (isset($_SESSION['username'])) {
 } else {
     echo "
 <main>
-<p>Welcome to the clubs page.</p>
+<p>Welcome to the Home page.</p>
 </main>
 ";
 }
