@@ -1,5 +1,6 @@
 <?php
-include('/scripts/dbconnect.php');
+include("..ClubWeb/inc/scripts/dbconnect.php");
+include("../ClubWeb/inc/scripts/header.php");
 $type = $_POST['type'];
 if($type=="insert") {
     $sql = "INSERT INTO port_articles (title, text) VALUES ('" .mysql_escape_string($_POST['title']). "', '" .mysql_escape_string($_POST['desc']). "')";

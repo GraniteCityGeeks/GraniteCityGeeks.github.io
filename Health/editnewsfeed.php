@@ -1,5 +1,5 @@
 <?php
-include('/scripts/dbconnect.php');
+include("..ClubWeb/inc/scripts/dbconnect.php");
 include("../ClubWeb/inc/scripts/header.php");
 $type = $_POST['type'];
 if($type=="insert") {
