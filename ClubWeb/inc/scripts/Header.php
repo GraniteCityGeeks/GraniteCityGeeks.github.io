@@ -90,7 +90,7 @@ session_start();
 
                                 </li>
 
-                                <? if (isset($_SESSION['username']) & isset($_SESSION['accessLevelID'] > 1) {
+                                <? if (isset($_SESSION['username']) {
                                 echo "<li class='dropdown'><a class='dropdown-toggle' data-toggle='dropdown' href='#'>Admin <span class='caret'></span></a>";
                                 echo "<ul class='dropdown-menu'>";
 
