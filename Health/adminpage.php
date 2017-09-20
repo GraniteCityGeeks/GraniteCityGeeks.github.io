@@ -1,6 +1,6 @@
 <?php
 
-include("/ClubWeb/inc/scripts/header.php");
+include("../ClubWeb/inc/scripts/header.php");
 ?>
 <?php
 session_start();
