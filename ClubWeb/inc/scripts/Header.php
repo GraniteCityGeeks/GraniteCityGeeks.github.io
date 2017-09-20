@@ -114,6 +114,7 @@ session_start();
                                       #Health Contributor
                                       else if ($_SESSION['accessLevelID'] == 6){
                                           echo "<li><a href='../ClubWeb/adminpage'>Admin</a></li>";
+                                          echo "<li><a href='../Health/healthyliving.php'>Health</a></li>";
                                           echo "</ul>";
                                       }
                                       #Site Admin
