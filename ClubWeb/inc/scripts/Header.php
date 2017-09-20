@@ -127,7 +127,7 @@ session_start();
                                       echo "<li></li>";
                                       echo "</ul>";
                                     }
-                                  }
+
                                       ?>
 
                             </ul>
