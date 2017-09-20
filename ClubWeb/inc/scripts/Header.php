@@ -93,20 +93,36 @@ session_start();
                                 <? if (isset($_SESSION['username'])) {
                                 echo "<li class='dropdown'><a class='dropdown-toggle' data-toggle='dropdown' href='#'>Admin <span class='caret'></span></a>";
                                 echo "<ul class='dropdown-menu'>";
+
+                                        #??
                                       if (isset($_SESSION['accessLevelID']) == 2){
                                           echo "<li><a href='../ClubWeb/createclub'>Create Clubs</a></li>";
                                           echo "<li><a href='../ClubWeb/modifyclub'>modify your Club</a></li>";
                                           echo "<li><a href='../ClubWeb/adminviewclubs'>Modify Clubs</a></li>";
                                           echo "<li><a href='../ClubWeb/MarkerAdmin'>Create Map Info</a></li>";
                                           echo "</ul>";
+                                          #Map Admin
                                       } else if (isset($_SESSION['accessLevelID']) == 3){
                                           echo "<li><a href='../ClubWeb/MarkerAdmin'>Maps Editing</a></li>";
                                           echo "</ul>";
+                                          #Club Admin
                                       } else if (isset($_SESSION['accessLevelID']) == 4){
                                           echo "<li><a href='../ClubWeb/createclub'>Create Club</a></li>";
                                           echo "<li><a href='../ClubWeb/create_club_article'>Creat Club Article</a></li>";
                                           echo "</ul>";
-                                      } else if (isset($_SESSION['accessLevelID']) == 5){
+                                      }
+
+                                      #Health Contributor
+                                      else if (isset($_SESSION['accessLevelID']) == 4.5){
+                                          echo "<li><a href='/Health/adminpage.php'>Admin</a></li>";
+                                          echo "<li><a href='/Health/contributorpage.php'>Contributor</a></li>";
+                                          echo "<li><a href='/Health/editHealth.php'>Edit Health</a></li>";
+                                          echo "<li><a href='/Health/editnewsfeed.php'>Edit News Feed</a></li>";
+                                          echo "<li><a href='/Health/healthyliving.php'>Healthy Living</a></li>";
+                                          echo "</ul>";
+                                      }
+                                      #Site Admin
+                                      else if (isset($_SESSION['accessLevelID']) == 5){
                                           echo "<li><a href='http://gcg.azurewebsites.net/ClubWeb/inc/Admin.php'>Admin</a></li>";
                                           echo "</ul>";
                                       } else {
