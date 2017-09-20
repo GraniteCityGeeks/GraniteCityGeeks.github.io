@@ -111,14 +111,13 @@ session_start();
                                           echo "<li><a href='../ClubWeb/create_club_article'>Creat Club Article</a></li>";
                                           echo "</ul>";
                                       }
-
                                       #Health Contributor
                                       else if (isset($_SESSION['accessLevelID']) == 6){
-                                          echo "<li><a href='/Health/adminpage.php'>Admin</a></li>";
-                                          echo "<li><a href='/Health/contributorpage.php'>Contributor</a></li>";
-                                          echo "<li><a href='/Health/editHealth.php'>Edit Health</a></li>";
-                                          echo "<li><a href='/Health/editnewsfeed.php'>Edit News Feed</a></li>";
-                                          echo "<li><a href='/Health/healthyliving.php'>Healthy Living</a></li>";
+                                          echo "<li><a href='../Health/adminpage.php'>Admin</a></li>";
+                                          echo "<li><a href='../Health/contributorpage.php'>Contributor</a></li>";
+                                          echo "<li><a href='../Health/editHealth.php'>Edit Health</a></li>";
+                                          echo "<li><a href='../Health/editnewsfeed.php'>Edit News Feed</a></li>";
+                                          echo "<li><a href='../Health/healthyliving.php'>Healthy Living</a></li>";
                                           echo "</ul>";
                                       }
                                       #Site Admin
@@ -132,6 +131,7 @@ session_start();
                                       echo "<li></li>";
                                       echo "</ul>";
                                     }
+                                  }
                                       ?>
 
                             </ul>
