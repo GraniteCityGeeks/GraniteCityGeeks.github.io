@@ -95,7 +95,7 @@ session_start();
                                 echo "<ul class='dropdown-menu'>";
 
                                         #??
-                                      if ($_SESSION['accessLevelID'] == 2){
+                                      if (isset($_SESSION['accessLevelID']) == 2){
                                           echo "<li><a href='../ClubWeb/createclub'>Create Clubs</a></li>";
                                           echo "<li><a href='../ClubWeb/modifyclub'>modify your Club</a></li>";
                                           echo "<li><a href='../ClubWeb/adminviewclubs'>Modify Clubs</a></li>";
@@ -117,7 +117,7 @@ session_start();
                                           echo "</ul>";
                                       }
                                       #Site Admin
-                                      else if ($_SESSION['accessLevelID'] == 5){
+                                      else if (isset($_SESSION['accessLevelID']) == 5){
                                           echo "<li><a href='http://gcg.azurewebsites.net/ClubWeb/inc/Admin.php'>Admin</a></li>";
                                           echo "</ul>";
                                       } else {
