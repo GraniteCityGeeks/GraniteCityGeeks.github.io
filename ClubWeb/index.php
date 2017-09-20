@@ -49,6 +49,7 @@ $rules = array(
     'ViewArticles' => "/ViewArticles",
     'deleteArticle' => "/deleteArticle/(?'clubarticleid'[\w\-]+)",
     'confirmArticle' => "/confirmArticle/(?'clubarticleid'[\w\-]+)",
+    'adminpage' => "/adminpage",
     //
     // Home Page
     //
