@@ -95,24 +95,24 @@ session_start();
                                 echo "<ul class='dropdown-menu'>";
 
                                         #??
-                                      if (isset($_SESSION['accessLevelID']) == 2){
+                                      if ($_SESSION['accessLevelID'] == 2){
                                           echo "<li><a href='../ClubWeb/createclub'>Create Clubs</a></li>";
                                           echo "<li><a href='../ClubWeb/modifyclub'>modify your Club</a></li>";
                                           echo "<li><a href='../ClubWeb/adminviewclubs'>Modify Clubs</a></li>";
                                           echo "<li><a href='../ClubWeb/MarkerAdmin'>Create Map Info</a></li>";
                                           echo "</ul>";
                                           #Map Admin
-                                      } else if (isset($_SESSION['accessLevelID']) == 3){
+                                      } else if ($_SESSION['accessLevelID'] == 3){
                                           echo "<li><a href='../ClubWeb/MarkerAdmin'>Maps Editing</a></li>";
                                           echo "</ul>";
                                           #Club Admin
-                                      } else if (isset($_SESSION['accessLevelID']) == 4){
+                                      } else if ($_SESSION['accessLevelID'] == 4){
                                           echo "<li><a href='../ClubWeb/createclub'>Create Club</a></li>";
                                           echo "<li><a href='../ClubWeb/create_club_article'>Creat Club Article</a></li>";
                                           echo "</ul>";
                                       }
                                       #Health Contributor
-                                      else if (isset($_SESSION['accessLevelID']) == 6){
+                                      else if ($_SESSION['accessLevelID'] == 6){
                                           echo "<li><a href='../ClubWeb/adminpage'>Admin</a></li>";
                                           echo "</ul>";
                                       }
